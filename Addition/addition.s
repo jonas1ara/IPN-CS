@@ -1,4 +1,4 @@
-	.file	"suma.c"
+	.file	"addition.c"
 	.text
 	.section	.rodata
 .LC0:
