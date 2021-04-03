@@ -3,9 +3,9 @@ Making decisions if
 
 Equality operators:                   	 |                 Relantionship operators:
 	== X is equal to Y                                        	> X Is greater than Y
-	!= X is different from  Y									< X Is less than Y
-																>= X is greater than or equal to Y
-																<= X is less than or equal to Y
+	!= X is different from  Y					< X Is less than Y
+									>= X is greater than or equal to Y
+									<= X is less than or equal to Y
 */
 
 #include <stdio.h>
