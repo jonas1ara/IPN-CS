@@ -2,13 +2,13 @@
 	.text
 	.section	.rodata
 .LC0:
-	.string	"Dime tu edad:"
+	.string	"Tell me your age:"
 .LC1:
 	.string	"%d"
 .LC2:
-	.string	"Eres mayor de edad"
+	.string	"You're of legal age"
 .LC3:
-	.string	"No puedes entrar"
+	.string	"You're underage"
 	.text
 	.globl	main
 	.type	main, @function
