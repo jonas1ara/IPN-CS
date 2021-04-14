@@ -8,7 +8,7 @@ _These instructions will allow you to obtain a working copy of the project on yo
 
 
 
-### Pre-requirements 📋
+## Pre-requirements 📋
 
 _What things you need to install the software and how to install it_
 
@@ -23,7 +23,7 @@ Flat text editor as vim, nano or notepad (I use vim)
 ```
 
 
-### Installing pre-requirements 🔧
+## Installing pre-requirements 🔧
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
@@ -43,7 +43,7 @@ _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para 
 
 ## Using the compiler ⚙️
 
-_Linux_
+### Linux
 
 _Compiler_
 
@@ -89,7 +89,7 @@ quit
 ```
 <img src=/Gifs/5.gif alt="#"/>
 
-_Windows_
+### Windows
 
 _Same commands but with extension .exe_
 
@@ -136,7 +136,7 @@ quit
 ```
 <img src=/Gifs/15.gif alt="#"/>
 
-_MacOS_
+### MacOS
 
 _Same commands but with extension .out_
 
