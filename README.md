@@ -179,24 +179,28 @@ quit
 
 ## Deployment 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+_Add notes_
 
 ```
-Da un ejemplo
+For example
 ```
 
 
 ## Build with 🛠️
 
-* [Powerline10k](https://github.com/romkatv/powerlevel10k) - Powerline10k Theme
-* [Blog of Scott Hanselman](https://www.hanselman.com/) - This guy is GREAT 😵
-* [The digital life](https://www.the-digital-life.com/en/) - Check this out
+* [GCC](https://gcc.gnu.org/) - GNU Compiler Collection
+* [MinGW](http://mingw-w64.org/doku.php) - Minimalist GNU for Windows
+* [Vim](https://www.vim.org/) - The all-powerful vim
+* [WSL](https://docs.microsoft.com/en-us/windows/wsl/) - Windows Subsystem for Linux 2
+* [Language C](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=language+c+dennis&qid=1618383287&sr=8-1) - The C programming language of Dennis Ritchie
+* [UPIIT](www.upiit.ipn.mx) - Tlaxcala Campus Interdisciplinary Engineering Unit
 
 
 ## Expressions of gratitude
 
-* Thank you for reviewing this repo-tutorial to customize windows 10 with Fluent Design for .NET Developers 🤓
+* Thank you for reviewing this repo-tutorial 🤓
 * Expect more tutorials of .NET
+* I hope i helped you
 
 ---
-⌨️ With ❤️ By [Jonas-Lara](https://github.com/Jonas-Lara) 😊
+⌨️ With ❤️ By [Jonas-Lara](https://github.com/Jonas-Lara) on behalf of [UPIIT](www.upiit.ipn.mx)
