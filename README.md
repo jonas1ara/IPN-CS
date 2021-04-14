@@ -203,4 +203,4 @@ For example
 * I hope i helped you
 
 ---
-⌨️ With ❤️ By [Jonas-Lara](https://github.com/Jonas-Lara) on behalf of [UPIIT](www.upiit.ipn.mx)
+⌨️ With ❤️ By Jonas-Lara on behalf of [UPIIT](www.upiit.ipn.mx)
