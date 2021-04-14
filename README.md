@@ -4,7 +4,7 @@ _This is a UPIIT C/C++ languages repository_
 
 ## Starting 🚀
 
-_These instructions will allow you to obtain a working copy of the project on your local machine for development and testing purposes _
+_These instructions will allow you to obtain a working copy of the project on your local machine for development and testing purposes_
 
 
 
