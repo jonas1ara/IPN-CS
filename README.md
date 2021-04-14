@@ -23,7 +23,7 @@ Flat text editor as vim, nano or notepad (I use vim)
 ```
 
 
-### Instalación 🔧
+### Installing pre-requirements 🔧
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
@@ -41,10 +41,79 @@ hasta finalizar
 
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
-## Ejecutando las pruebas ⚙️
+## Using the compiler ⚙️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+_Linux_
 
+```
+Da un ejemplo
+```
+<img src=/Gifs/1.gif alt="#"/>
+
+```
+Da un ejemplo
+```
+<img src=/Gifs/2.gif alt="#"/>
+
+```
+Da un ejemplo
+```
+<img src=/Gifs/3.gif alt="#"/>
+
+```
+Da un ejemplo
+```
+<img src=/Gifs/4.gif alt="#"/>
+
+```
+Da un ejemplo
+```
+<img src=/Gifs/5.gif alt="#"/>
+
+_Windows_
+
+_Same commands but with extension .exe_
+
+```
+Da un ejemplo
+```
+<img src=/Gifs/11.gif alt="#"/>
+
+```
+Da un ejemplo
+```
+<img src=/Gifs/12.gif alt="#"/>
+
+```
+Da un ejemplo
+```
+<img src=/Gifs/13.gif alt="#"/>
+
+```
+Da un ejemplo
+```
+<img src=/Gifs/14.gif alt="#"/>
+
+```
+Da un ejemplo
+```
+<img src=/Gifs/15.gif alt="#"/>
+
+_MacOS_
+
+_Same commands but with extension .out_
+
+```
+Da un ejemplo
+```
+
+```
+Da un ejemplo
+```
+
+```
+Da un ejemplo
+```
 
 ## Y las pruebas de estilo de codificación ⌨️
 
@@ -67,5 +136,10 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 * [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
 
 
-## Autores ✒️
+## Expressions of gratitude
 
+* Thank you for reviewing this repo-tutorial to customize windows 10 with Fluent Design for .NET Developers 🤓
+* Expect more tutorials of .NET
+
+---
+⌨️ With ❤️ By [Jonas-Lara](https://github.com/Jonas-Lara) 😊
