@@ -187,11 +187,9 @@ Da un ejemplo
 
 ## Build with 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [Powerline10k](https://github.com/romkatv/powerlevel10k) - Powerline10k Theme
+* [Blog of Scott Hanselman](https://www.hanselman.com/) - This guy is GREAT 😵
+* [The digital life](https://www.the-digital-life.com/en/) - Check this out
 
 
 ## Expressions of gratitude
