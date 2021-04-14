@@ -193,7 +193,7 @@ For example
 * [Vim](https://www.vim.org/) - The all-powerful vim
 * [WSL](https://docs.microsoft.com/en-us/windows/wsl/) - Windows Subsystem for Linux 2
 * [Language C](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=language+c+dennis&qid=1618383287&sr=8-1) - The C programming language of Dennis Ritchie
-* [UPIIT](www.upiit.ipn.mx) - Tlaxcala Campus Interdisciplinary Engineering Unit
+* [UPIIT](https://www.upiit.ipn.mx/) - Tlaxcala Campus Interdisciplinary Engineering Unit
 
 
 ## Expressions of gratitude
@@ -203,4 +203,4 @@ For example
 * I hope i helped you
 
 ---
-⌨️ With ❤️ By Jonas-Lara on behalf of [UPIIT](www.upiit.ipn.mx)
+⌨️ With ❤️ By [Jonas-Lara](https://github.com/Jonas-Lara) on behalf of [UPIIT](https://www.upiit.ipn.mx/)
