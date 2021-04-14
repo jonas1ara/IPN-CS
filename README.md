@@ -45,28 +45,44 @@ _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para 
 
 _Linux_
 
+_Compiler_
 ```
-Da un ejemplo
+vim helloworld.c
 ```
 <img src=/Gifs/1.gif alt="#"/>
-
 ```
-Da un ejemplo
+gcc helloworld.c -o helloworld
 ```
 <img src=/Gifs/2.gif alt="#"/>
-
 ```
-Da un ejemplo
+./helloworld
 ```
 <img src=/Gifs/3.gif alt="#"/>
 
+_Assembler_
 ```
-Da un ejemplo
+gcc -S helloworld.c
+```
+```
+vim helloworld.s
 ```
 <img src=/Gifs/4.gif alt="#"/>
 
+_Debug_
 ```
-Da un ejemplo
+gdb helloworld
+```
+```
+b main
+```
+```
+run
+```
+```
+n
+```
+```
+quit
 ```
 <img src=/Gifs/5.gif alt="#"/>
 
@@ -74,58 +90,94 @@ _Windows_
 
 _Same commands but with extension .exe_
 
+_Compiler_
 ```
-Da un ejemplo
+vim helloworld.c
 ```
 <img src=/Gifs/11.gif alt="#"/>
-
 ```
-Da un ejemplo
+gcc helloworld.c -o helloworld.exe
 ```
 <img src=/Gifs/12.gif alt="#"/>
-
 ```
-Da un ejemplo
+.\helloworld.exe
 ```
 <img src=/Gifs/13.gif alt="#"/>
 
+_Assembler_
 ```
-Da un ejemplo
+gcc -S helloworld.c
+```
+```
+vim helloworld.s
 ```
 <img src=/Gifs/14.gif alt="#"/>
 
+_Debug_
 ```
-Da un ejemplo
+gdb .\helloworld.exe
+```
+```
+b main
+```
+```
+run
+```
+```
+n
+```
+```
+quit
 ```
 <img src=/Gifs/15.gif alt="#"/>
-
 _MacOS_
 
 _Same commands but with extension .out_
 
+_Compiler_
 ```
-Da un ejemplo
+vim helloworld.c
+```
+```
+gcc helloworld.c -o helloworld.out
+```
+```
+./helloworld.out
 ```
 
+_Assembler_
 ```
-Da un ejemplo
+gcc -S helloworld.c
+```
+```
+vim helloworld.s
 ```
 
+_Debug_
 ```
-Da un ejemplo
+gdb helloworld.out
+```
+```
+b main
+```
+```
+run
+```
+```
+n
+``````
+quit
 ```
 
-## Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
 
 ## Deployment 📦
 
 _Agrega notas adicionales sobre como hacer deploy_
+
+```
+Da un ejemplo
+```
+
 
 ## Build with 🛠️
 
