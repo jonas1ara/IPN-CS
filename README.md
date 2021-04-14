@@ -200,7 +200,7 @@ For example
 
 * Thank you for reviewing this repo-tutorial 🤓
 * Expect more tutorials of .NET
-* I hope i helped you
+* I hope I helped you
 
 ---
 ⌨️ With ❤️ By [Jonas-Lara](https://github.com/Jonas-Lara) on behalf of [UPIIT](https://www.upiit.ipn.mx/)
