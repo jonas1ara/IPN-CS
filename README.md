@@ -46,14 +46,17 @@ _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para 
 _Linux_
 
 _Compiler_
+
 ```
 vim helloworld.c
 ```
 <img src=/Gifs/1.gif alt="#"/>
+
 ```
 gcc helloworld.c -o helloworld
 ```
 <img src=/Gifs/2.gif alt="#"/>
+
 ```
 ./helloworld
 ```
@@ -95,10 +98,12 @@ _Compiler_
 vim helloworld.c
 ```
 <img src=/Gifs/11.gif alt="#"/>
+
 ```
 gcc helloworld.c -o helloworld.exe
 ```
 <img src=/Gifs/12.gif alt="#"/>
+
 ```
 .\helloworld.exe
 ```
