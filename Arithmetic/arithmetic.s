@@ -2,14 +2,14 @@
 	.text
 	.section	.rodata
 .LC0:
-	.string	"Ingrese un n\303\272mero:"
+	.string	"Enter a number:"
 .LC1:
 	.string	"%d"
 .LC2:
-	.string	"Ingreso el segundo n\303\272mero:"
+	.string	"Enter the second number:"
 	.align 8
 .LC3:
-	.string	"El resultado de la operaci\303\263n es: %d\n"
+	.string	"The result of the operation is: %d\n"
 	.text
 	.globl	main
 	.type	main, @function
@@ -21,31 +21,41 @@ main:
 	.cfi_offset 6, -16
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
-	subq	$16, %rsp
-	movl	$.LC0, %edi
-	call	puts
-	leaq	-8(%rbp), %rax
+	subq	$32, %rsp
+	movl	$2, -4(%rbp)
+	movl	$3, -8(%rbp)
+	leaq	.LC0(%rip), %rdi
+	call	puts@PLT
+	leaq	-16(%rbp), %rax
 	movq	%rax, %rsi
-	movl	$.LC1, %edi
+	leaq	.LC1(%rip), %rdi
 	movl	$0, %eax
-	call	__isoc99_scanf
-	movl	$.LC2, %edi
-	call	puts
-	leaq	-12(%rbp), %rax
+	call	__isoc99_scanf@PLT
+	leaq	.LC2(%rip), %rdi
+	call	puts@PLT
+	leaq	-20(%rbp), %rax
 	movq	%rax, %rsi
-	movl	$.LC1, %edi
+	leaq	.LC1(%rip), %rdi
 	movl	$0, %eax
-	call	__isoc99_scanf
-	movl	-8(%rbp), %eax
-	movl	-12(%rbp), %ecx
+	call	__isoc99_scanf@PLT
+	movl	-16(%rbp), %edx
+	movl	-20(%rbp), %eax
+	subl	%eax, %edx
+	movl	%edx, %eax
+	imull	-4(%rbp), %eax
 	cltd
-	idivl	%ecx
-	movl	%eax, -4(%rbp)
-	movl	-4(%rbp), %eax
+	idivl	-8(%rbp)
+	movl	%eax, %ecx
+	movl	-16(%rbp), %edx
+	movl	-20(%rbp), %eax
+	addl	%edx, %eax
+	imull	%ecx, %eax
+	movl	%eax, -12(%rbp)
+	movl	-12(%rbp), %eax
 	movl	%eax, %esi
-	movl	$.LC3, %edi
+	leaq	.LC3(%rip), %rdi
 	movl	$0, %eax
-	call	printf
+	call	printf@PLT
 	movl	$0, %eax
 	leave
 	.cfi_def_cfa 7, 8
@@ -53,5 +63,5 @@ main:
 	.cfi_endproc
 .LFE0:
 	.size	main, .-main
-	.ident	"GCC: (GNU) 11.0.1 20210324 (Red Hat 11.0.1-0)"
+	.ident	"GCC: (Debian 8.3.0-6) 8.3.0"
 	.section	.note.GNU-stack,"",@progbits

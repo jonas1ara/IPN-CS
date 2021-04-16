@@ -14,8 +14,8 @@ main:
 	.cfi_offset 6, -16
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
-	movl	$.LC0, %edi
-	call	puts
+	leaq	.LC0(%rip), %rdi
+	call	puts@PLT
 	movl	$0, %eax
 	popq	%rbp
 	.cfi_def_cfa 7, 8
@@ -23,5 +23,5 @@ main:
 	.cfi_endproc
 .LFE0:
 	.size	main, .-main
-	.ident	"GCC: (GNU) 11.0.1 20210324 (Red Hat 11.0.1-0)"
+	.ident	"GCC: (Debian 8.3.0-6) 8.3.0"
 	.section	.note.GNU-stack,"",@progbits

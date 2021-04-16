@@ -1,22 +1,22 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
 	
-	int num1, num2, resultado;
+	int num1, num2, result;
 	int a=2;
 	int b=3;
 	
-	printf("Ingrese un número:\n");	
+	printf("Enter a number:\n");	
 	scanf("%d",&num1);
 
-	printf("Ingreso el segundo número:\n");
+	printf("Enter the second number:\n");
 	scanf("%d",&num2);
 
-	/*resultado = num1 / num2;*/ //Cambiar operador por cualquiera de los operadores aritméticos; suma, resta, división y multiplicación. Vuelve a compilar.
+	/*result = num1 / num2;*/ //Change operator to any of the arithmetic operators; addition, subtraction, division and multiplication. Recompile.
 	
-	resultado = a*(num1-num2) / b*(num1+num2);
+	result = a*(num1-num2) / b*(num1+num2);
 	
-	printf("El resultado de la operación es: %d\n", resultado);
+	printf("The result of the operation is: %d\n", result);
 
 	return 0;
 }

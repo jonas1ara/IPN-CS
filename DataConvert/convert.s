@@ -18,18 +18,14 @@ main:
 	movl	$80, -4(%rbp)
 	movss	.LC0(%rip), %xmm0
 	movss	%xmm0, -8(%rbp)
-	pxor	%xmm0, %xmm0
-	cvtsi2ssl	-4(%rbp), %xmm0
+	cvtsi2ss	-4(%rbp), %xmm0
 	movss	-8(%rbp), %xmm1
 	addss	%xmm1, %xmm0
 	movss	%xmm0, -12(%rbp)
-	pxor	%xmm2, %xmm2
-	cvtss2sd	-12(%rbp), %xmm2
-	movq	%xmm2, %rax
-	movq	%rax, %xmm0
-	movl	$.LC1, %edi
+	cvtss2sd	-12(%rbp), %xmm0
+	leaq	.LC1(%rip), %rdi
 	movl	$1, %eax
-	call	printf
+	call	printf@PLT
 	movl	$0, %eax
 	leave
 	.cfi_def_cfa 7, 8
@@ -41,5 +37,5 @@ main:
 	.align 4
 .LC0:
 	.long	1110782771
-	.ident	"GCC: (GNU) 11.0.1 20210324 (Red Hat 11.0.1-0)"
+	.ident	"GCC: (Debian 8.3.0-6) 8.3.0"
 	.section	.note.GNU-stack,"",@progbits
