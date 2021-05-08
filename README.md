@@ -25,31 +25,31 @@ Flat text editor as vim, nano or notepad (I use vim)
 
 ## Installing pre-requirements 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose en Windows y Linux_
+_A series of step-by-step examples that tells you what to run to have a development environment running on Windows and Linux_
 
 _Windows_
 
-_Descarga e instala [MinGW](https://sourceforge.net/projects/mingw/)_
+_Download and install [MinGW](https://sourceforge.net/projects/mingw/)_
 
 <img src=/Gifs/Instalation/1.png alt="#"/>
 
-_Selecciona los paquetes que vayas a utilizar, en este caso usaremos el mingw32-base y mingw32-gcc-g++_
+_Select the packages you are going to use, in this case we will use the mingw32-base and mingw32-gcc-g++_
 
 <img src=/Gifs/Instalation/2.png alt="#"/>
 
-_Si quieres ser más especifico abre todos los paquetes y selecciona The GNU  C Compiler_
+_If you want to be more specific open all packages and select The GNU C Compiler_
 
 <img src=/Gifs/Instalation/3.png alt="#"/>
 
-_Para poder hacer debug a tus programas necesitas el Gdb, es un debugger para C (and C++), abre todos los programas y selecciona  mingw32-gdb_
+_To be able to debug your programs you need the Gdb, it is a debugger for C (and C++), open all programs and select mingw32-gdb_
 
 <img src=/Gifs/Instalation/4.png alt="#"/>
 
-_Aplica cambios_
+_Apply changes_
 
 <img src=/Gifs/Instalation/5.png alt="#"/>
 
-_Copia la ruta C:\MinGW\bin a las variables de entorno del path_
+_Copies the path C:\MinGW\bin to the environment variables_
 
 ```
 C:\MinGW\bin
@@ -57,7 +57,7 @@ C:\MinGW\bin
 
 <img src=/Gifs/Instalation/6.png alt="#"/>
 
-_Abre un CMD o Powershell y  comprueba la instalación_
+_Open a CMD or Powershell and check the installation with the following commands:_
 
 ```
 gdb --version
@@ -70,9 +70,9 @@ gcc --version
 
 _Linux_
 
-_La mayoría de distros ya tienen gcc por defecto pero sino, copia y pega estos comandos según tu distribución_
+_Most distros already have gcc by default but otherwise, copy and paste these commands according to your distribution_
 
-_Debian ó Ubuntu_
+_Debian or Ubuntu_
 
 ```
 sudo apt install build-essential -y
@@ -82,7 +82,7 @@ sudo apt install gdb -y
 ```
 <img src=/Gifs/Instalation/8.png alt="#"/>
 
-_Red Hat ó Fedora_
+_Red Hat or Fedora_
 
 ```
 sudo dnf install gcc -y
@@ -90,7 +90,7 @@ sudo dnf install gcc -y
 ```
 sudo dnf install gdb -y
 ```
-_SUSE ó OpenSUSE_
+_SUSE or OpenSUSE_
 
 ```
 sudo zypper install gcc -y
@@ -99,7 +99,7 @@ sudo zypper install gcc -y
 sudo zypper install gdb -y
 ```
 
-_Si requieres vim en windows basta con abrir una terminal y escribir_
+_If you require vim in Windows just open a terminal and write:_
 
 ```
 winget install vim
@@ -107,7 +107,7 @@ winget install vim
 
 <img src=/Gifs/Instalation/9.png alt="#"/>
 
-_Si requieres vim en linux basta con abrir una terminal y escribir_
+_If you require vim in Linux just open a terminal and write:_
 
 ```
 sudo apt install vim -y
