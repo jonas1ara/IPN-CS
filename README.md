@@ -258,7 +258,7 @@ quit
 ```
 
 
-## Levels 📦
+## Algorithm Levels 📦
 
 _Beginner_
 
