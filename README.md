@@ -99,6 +99,29 @@ sudo zypper install gcc -y
 sudo zypper install gdb -y
 ```
 
+_Si requieres vim en windows basta con abrir una terminal y escribir_
+
+```
+winget install vim
+```
+
+<img src=/Gifs/Instalation/9.png alt="#"/>
+
+_Si requieres vim en linux basta con abrir una terminal y escribir_
+
+```
+sudo apt install vim -y
+```
+```
+sudo dnf install vim -y
+```
+```
+sudo zypper install vim -y
+```
+<img src=/Gifs/Instalation/10.png alt="#"/>
+
+
+
 ## Using the compiler ⚙️
 
 ### Linux
