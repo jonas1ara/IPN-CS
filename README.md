@@ -32,6 +32,7 @@ _Dí cómo será ese paso_
 ```
 Da un ejemplo
 ```
+<img src=/Gifs/Instalation/1.png alt="#"/>
 
 _Y repite_
 
@@ -39,7 +40,20 @@ _Y repite_
 hasta finalizar
 ```
 
+<img src=/Gifs/Instalation/2.png alt="#"/>
+
+<img src=/Gifs/Instalation/3.png alt="#"/>
+
+<img src=/Gifs/Instalation/4.png alt="#"/>
+
+<img src=/Gifs/Instalation/5.png alt="#"/>
+
+<img src=/Gifs/Instalation/6.png alt="#"/>
+
+<img src=/Gifs/Instalation/7.png alt="#"/>
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+
+<img src=/Gifs/Instalation/8.png alt="#"/>
 
 ## Using the compiler ⚙️
 
