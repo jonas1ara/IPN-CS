@@ -37,11 +37,11 @@ _Selecciona los paquetes que vayas a utilizar, en este caso usaremos el mingw32-
 
 <img src=/Gifs/Instalation/2.png alt="#"/>
 
-_Si quieres ser mas especifico abre todos los paquetes y selecciona The GNU  C Compiler_
+_Si quieres ser más especifico abre todos los paquetes y selecciona The GNU  C Compiler_
 
 <img src=/Gifs/Instalation/3.png alt="#"/>
 
-_Para poder hacer debug a tus programas necesitas el Gdb es un debugger para C (and C++), abre todos los programas y selecciona  mingw32-gdb_
+_Para poder hacer debug a tus programas necesitas el Gdb, es un debugger para C (and C++), abre todos los programas y selecciona  mingw32-gdb_
 
 <img src=/Gifs/Instalation/4.png alt="#"/>
 
@@ -49,7 +49,7 @@ _Aplica cambios_
 
 <img src=/Gifs/Instalation/5.png alt="#"/>
 
-_Copia la ruta C:\MinGW\bin a las variable de entorno del path_
+_Copia la ruta C:\MinGW\bin a las variables de entorno del path_
 
 ```
 C:\MinGW\bin
@@ -70,7 +70,7 @@ gcc --version
 
 _Linux_
 
-_La mayoría de distros ya tienen gcc por defecto pero copia y pega estos comandos según tu distribución_
+_La mayoría de distros ya tienen gcc por defecto pero sino, copia y pega estos comandos según tu distribución_
 
 _Debian ó Ubuntu_
 
@@ -98,8 +98,6 @@ sudo zypper install gcc -y
 ```
 sudo zypper install gdb -y
 ```
-
-<img src=/Gifs/Instalation/8.png alt="#"/>
 
 ## Using the compiler ⚙️
 
