@@ -25,33 +25,79 @@ Flat text editor as vim, nano or notepad (I use vim)
 
 ## Installing pre-requirements 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose en Windows y Linux_
 
-_Dí cómo será ese paso_
+_Windows_
 
-```
-Da un ejemplo
-```
+_Descarga e instala [MinGW](https://sourceforge.net/projects/mingw/)_
+
 <img src=/Gifs/Instalation/1.png alt="#"/>
 
-_Y repite_
-
-```
-hasta finalizar
-```
+_Selecciona los paquetes que vayas a utilizar, en este caso usaremos el mingw32-base y mingw32-gcc-g++_
 
 <img src=/Gifs/Instalation/2.png alt="#"/>
 
+_Si quieres ser mas especifico abre todos los paquetes y selecciona The GNU  C Compiler_
+
 <img src=/Gifs/Instalation/3.png alt="#"/>
+
+_Para poder hacer debug a tus programas necesitas el Gdb es un debugger para C (and C++), abre todos los programas y selecciona  mingw32-gdb_
 
 <img src=/Gifs/Instalation/4.png alt="#"/>
 
+_Aplica cambios_
+
 <img src=/Gifs/Instalation/5.png alt="#"/>
+
+_Copia la ruta C:\MinGW\bin a las variable de entorno del path_
+
+```
+C:\MinGW\bin
+```
 
 <img src=/Gifs/Instalation/6.png alt="#"/>
 
+_Abre un CMD o Powershell y  comprueba la instalación_
+
+```
+gdb --version
+```
+```
+gcc --version
+```
+
 <img src=/Gifs/Instalation/7.png alt="#"/>
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+
+_Linux_
+
+_La mayoría de distros ya tienen gcc por defecto pero copia y pega estos comandos según tu distribución_
+
+_Debian ó Ubuntu_
+
+```
+sudo apt install build-essential -y
+```
+```
+sudo apt install gdb -y
+```
+<img src=/Gifs/Instalation/8.png alt="#"/>
+
+_Red Hat ó Fedora_
+
+```
+sudo dnf install gcc -y
+```
+```
+sudo dnf install gdb -y
+```
+_SUSE ó OpenSUSE_
+
+```
+sudo zypper install gcc -y
+```
+```
+sudo zypper install gdb -y
+```
 
 <img src=/Gifs/Instalation/8.png alt="#"/>
 
