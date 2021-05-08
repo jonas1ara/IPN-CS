@@ -258,13 +258,18 @@ quit
 ```
 
 
-## Deployment 📦
+## Levels 📦
 
-_Add notes_
+_Beginner_
 
-```
-For example
-```
+_Intermediate_
+
+_Advanced_
+
+
+## Final Project 📦
+
+_Pin Pong_
 
 
 ## Build with 🛠️
