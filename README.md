@@ -16,18 +16,16 @@ _Herramientas que necesita para usar este reposotorio y cómo instalarlo_
 GCC (GNU Compiler Collection) pre-instalado en MacOS
 ```
 ```
-[MinGW](https://sourceforge.net/projects/mingw/)
+MinGW (Minimalist GNU for Windows)
 ```
 ```
-Un editor para hombres; VIM
+Un editor para hombres: VIM
 ```
 
 
 ## Instalando requisitos 🔧
 
-_Se usa Windows porque la mayoría de universitarios en México lo usan y la verdad, ha mejorado muchisimo, a continuación mostramos los pasos para configurar tu máquina Windows_
-
-_Estamos tratando de que Microsoft apruebe el uso de MinGW con Winget..._
+_Se usa Windows porque la mayoría de universitarios en México lo usan y la verdad, ha mejorado muchisimo, a continuación mostramos los pasos para configurar tu máquina Windows y estoy tratando de que Microsoft apruebe el uso de MinGW con Winget..._
 
 _Windows_
 
@@ -41,13 +39,9 @@ _Si quisieras usar un paquete especifico ve a All Packages y selecciona tus paqu
 
 <img src=/Gifs/Instalation/3.png alt="#"/>
 
-_Para habilitar el Debugger en tus programas necesitas Gdb, es el Debugger para C (y C++), Abre All Packages y selecciona mingw32-gdb_
+_Para habilitar el Debugger en tus programas necesitas Gdb, es el Debugger para C (y C++), Abre All Packages y selecciona mingw32-gdb y aplica los cambios_
 
 <img src=/Gifs/Instalation/4.png alt="#"/>
-
-_Apply changes_
-
-<img src=/Gifs/Instalation/5.png alt="#"/>
 
 _Copia la ruta C:\MinGW\bin a las variables de entorno_
 
