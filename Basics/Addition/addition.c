@@ -2,19 +2,19 @@
 
 int main() {
 
-	int num1; //Int to define integer variables.
+	int num1; //Int; define variables enteras
 	int num2;
-	int result;
+	int resultado;
 
-	printf("Enter a number integer:\n");
-	scanf("%d",&num1); //Scanf to read, store the user-given value, %d: decimal integer, and address operator indicates where to store.
+	printf("Ingresa un número entero:\n");
+	scanf("%d",&num1); //Scanf para leer, almacenar el valor especificado por el usuario, %d: entero decimal y el operador de dirección indica dónde almacenar.
 	
-	printf("Enter other number integer:\n");
+	printf("Ingresa otro número entero:\n");
 	scanf("%d",&num2);
 
-	result= num1 + num2; //Add operation to be stored in the result variable
+	resultado= num1 + num2; //Suma las variables num1 y num2 para guardarlas en resultado.
 	
-	printf("The result of the sum is: %d\n",result); //%d to print us an integer and , the result variable of operation.
+	printf("El resultado de la suma es: %d\n",resultado); //%d para imprimir el valor entero, <<resultado>> es variable a imprimir.
 
 	return 0;	
 

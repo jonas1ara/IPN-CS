@@ -1,47 +1,49 @@
 # Ipn.c
 
-_This is a UPIIT C/C++ languages repository_
+_Este es un repositorio de lenguaje C, hecho por alumnos de Unidad Profesional Interdisciplinaria de Ingeniería Campus Tlaxcala_
 
-## Starting 🚀
+## Iniciando 🚀
 
-_These instructions will allow you to obtain a working copy of the project on your local machine for development and testing purposes_
+_Estas instrucciones le permitirán obtener una copia de trabajo del proyecto en su máquina local para fines de desarrollo y pruebas_
 
 
 
-## Pre-requirements 📋
+## Requisitos 📋
 
-_What things you need to install the software and how to install it_
+_Herramientas que necesita para usar este reposotorio y cómo instalarlo_
 
 ```
-GCC (GNU Compiler Collection) pre-installed on Mac
+GCC (GNU Compiler Collection) pre-instalado en MacOS
 ```
 ```
 MinGW (Minimalist GNU for Windows)
 ```
 ```
-Flat text editor as vim, nano or notepad (I use vim)
+Un editor para hombres; VIM
 ```
 
 
-## Installing pre-requirements 🔧
+## Instalando requisitos 🔧
 
-_A series of step-by-step examples that tells you what to run to have a development environment running on Windows and Linux_
+_Se usa Windows porque la mayoría de universitarios en México lo usan y la verdad, ha mejorado muchisimo, a continuación mostramos los pasos para configurar tu máquina Windows_
+
+_Estamos tratando de que Microsoft apruebe el uso de MinGW con Winget..._
 
 _Windows_
 
-_Download and install [MinGW](https://sourceforge.net/projects/mingw/)_
+_Descarga e instala [MinGW](https://sourceforge.net/projects/mingw/)_
 
 <img src=/Gifs/Instalation/1.png alt="#"/>
 
-_Select the packages you are going to use, in this case we will use the mingw32-base and mingw32-gcc-g++_
+_Selecciona los paquetes que usaras, para este repositorio usaremos mingw32-base y mingw32-gcc-g++_
 
 <img src=/Gifs/Instalation/2.png alt="#"/>
 
-_If you want to be more specific open all packages and select The GNU C Compiler_
+_Si quisieras usar un paquete especifico ve a All Packages y selecciona tus paquetes_
 
 <img src=/Gifs/Instalation/3.png alt="#"/>
 
-_To be able to debug your programs you need the Gdb, it is a debugger for C (and C++), open all programs and select mingw32-gdb_
+_Para habilitar el Debugger en tus programas necesitas Gdb, es el Debugger para C (y C++), Abre All Packages y selecciona mingw32-gdb_
 
 <img src=/Gifs/Instalation/4.png alt="#"/>
 
@@ -49,7 +51,7 @@ _Apply changes_
 
 <img src=/Gifs/Instalation/5.png alt="#"/>
 
-_Copies the path C:\MinGW\bin to the environment variables_
+_Copia la ruta C:\MinGW\bin a las variables de entorno_
 
 ```
 C:\MinGW\bin
@@ -57,7 +59,7 @@ C:\MinGW\bin
 
 <img src=/Gifs/Instalation/6.png alt="#"/>
 
-_Open a CMD or Powershell and check the installation with the following commands:_
+_Abre la [Terminal de Windows](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab/) y comprueba la instalación con los siguientes comandos:_
 
 ```
 gdb --version
@@ -68,107 +70,13 @@ gcc --version
 
 <img src=/Gifs/Instalation/7.png alt="#"/>
 
-_Linux_
-
-_Most distros already have gcc by default but otherwise, copy and paste these commands according to your distribution_
-
-_Debian or Ubuntu_
-
-```
-sudo apt install build-essential -y
-```
-```
-sudo apt install gdb -y
-```
-<img src=/Gifs/Instalation/8.png alt="#"/>
-
-_Red Hat or Fedora_
-
-```
-sudo dnf install gcc -y
-```
-```
-sudo dnf install gdb -y
-```
-_SUSE or OpenSUSE_
-
-```
-sudo zypper install gcc -y
-```
-```
-sudo zypper install gdb -y
-```
-
-_If you require vim in Windows just open a terminal and write:_
+_Si requieres [VIM](https://www.vim.org/download.php), basta con abrir una terminal y usar winget_
 
 ```
 winget install vim
 ```
 
-<img src=/Gifs/Instalation/9.png alt="#"/>
-
-_If you require vim in Linux just open a terminal and write:_
-
-```
-sudo apt install vim -y
-```
-```
-sudo dnf install vim -y
-```
-```
-sudo zypper install vim -y
-```
-<img src=/Gifs/Instalation/10.png alt="#"/>
-
-
-
 ## Using the compiler ⚙️
-
-### Linux
-
-_Compiler_
-
-```
-vim helloworld.c
-```
-<img src=/Gifs/1.gif alt="#"/>
-
-```
-gcc helloworld.c -o helloworld
-```
-<img src=/Gifs/2.gif alt="#"/>
-
-```
-./helloworld
-```
-<img src=/Gifs/3.gif alt="#"/>
-
-_Assembler_
-```
-gcc -S helloworld.c
-```
-```
-vim helloworld.s
-```
-<img src=/Gifs/4.gif alt="#"/>
-
-_Debug_
-```
-gdb helloworld
-```
-```
-b main
-```
-```
-run
-```
-```
-n
-```
-```
-quit
-```
-<img src=/Gifs/5.gif alt="#"/>
 
 ### Windows
 
@@ -217,76 +125,34 @@ quit
 ```
 <img src=/Gifs/15.gif alt="#"/>
 
-### MacOS
+## Algoritmia 📦
 
-_Same commands but with extension .out_
+_[Iniciante](https://www.vim.org/download.php)_
 
-_Compiler_
-```
-vim helloworld.c
-```
-```
-gcc helloworld.c -o helloworld.out
-```
-```
-./helloworld.out
-```
+_[Intermedio](https://www.vim.org/download.php)_
 
-_Assembler_
-```
-gcc -S helloworld.c
-```
-```
-vim helloworld.s
-```
+_[Avanzados](https://www.vim.org/download.php)_
 
-_Debug_
-```
-gdb helloworld.out
-```
-```
-b main
-```
-```
-run
-```
-```
-n
-```
-```
-quit
-```
+## Graduate en C 📦
+
+_[Ping Pong](https://www.vim.org/download.php)_
 
 
-## Algorithm Levels 📦
-
-_Beginner_
-
-_Intermediate_
-
-_Advanced_
-
-
-## Final Project 📦
-
-_Pin Pong_
-
-
-## Build with 🛠️
+## Construido con 🛠️
 
 * [GCC](https://gcc.gnu.org/) - GNU Compiler Collection
 * [MinGW](http://mingw-w64.org/doku.php) - Minimalist GNU for Windows
-* [Vim](https://www.vim.org/) - The all-powerful vim
-* [WSL](https://docs.microsoft.com/en-us/windows/wsl/) - Windows Subsystem for Linux 2
-* [Language C](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=language+c+dennis&qid=1618383287&sr=8-1) - The C programming language of Dennis Ritchie
-* [UPIIT](https://www.upiit.ipn.mx/) - Tlaxcala Campus Interdisciplinary Engineering Unit
+* [Vim](https://www.vim.org/) - El todo poderoso vim
+* [Language C](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=language+c+dennis&qid=1618383287&sr=8-1) - El lenguaje C de Dennis Ritchie
+* [UPIIT](https://www.upiit.ipn.mx/) - Unidad Profesional Interdisciplinaria de Ingeniería Campus Tlaxcala
+
+## Expresiones de gratitud
 
 
-## Expressions of gratitude
-
-* Thank you for reviewing this repo-tutorial 🤓
-* Expect more tutorials of .NET
-* I hope I helped you
+* Gracias a la maestra Silvia Sánchez Márquez - Matemáticas Discretas en UPIIT.
+* Gracias al maestro Essau Escobar - Fundamentos de Programación en UPIIT.
+* Gracias por revisar este tutorial 🤓
+* Espero haberte ayudado
 
 ---
-⌨️ With ❤️ By [Jonas-Lara](https://github.com/Jonas-Lara) on behalf of [UPIIT](https://www.upiit.ipn.mx/)
+Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) colaborando para que el futuro capital humano de [UPIIT](https://www.upiit.ipn.mx/) detone la economía de este estado.

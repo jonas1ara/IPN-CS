@@ -1,67 +1,68 @@
 	.file	"arithmetic.c"
+	.def	___main;	.scl	2;	.type	32;	.endef
+	.section .rdata,"dr"
+LC0:
+	.ascii "Ingresa un n\303\272mero entero:\0"
+LC1:
+	.ascii "%d\0"
+LC2:
+	.ascii "Ingresa otro n\303\272mero entero:\0"
+	.align 4
+LC3:
+	.ascii "El resultado de la operaci\303\263n es: %d\12\0"
 	.text
-	.section	.rodata
-.LC0:
-	.string	"Enter a number:"
-.LC1:
-	.string	"%d"
-.LC2:
-	.string	"Enter the second number:"
-	.align 8
-.LC3:
-	.string	"The result of the operation is: %d\n"
-	.text
-	.globl	main
-	.type	main, @function
-main:
-.LFB0:
+	.globl	_main
+	.def	_main;	.scl	2;	.type	32;	.endef
+_main:
+LFB10:
 	.cfi_startproc
-	pushq	%rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
-	movq	%rsp, %rbp
-	.cfi_def_cfa_register 6
-	subq	$32, %rsp
-	movl	$2, -4(%rbp)
-	movl	$3, -8(%rbp)
-	leaq	.LC0(%rip), %rdi
-	call	puts@PLT
-	leaq	-16(%rbp), %rax
-	movq	%rax, %rsi
-	leaq	.LC1(%rip), %rdi
-	movl	$0, %eax
-	call	__isoc99_scanf@PLT
-	leaq	.LC2(%rip), %rdi
-	call	puts@PLT
-	leaq	-20(%rbp), %rax
-	movq	%rax, %rsi
-	leaq	.LC1(%rip), %rdi
-	movl	$0, %eax
-	call	__isoc99_scanf@PLT
-	movl	-16(%rbp), %edx
-	movl	-20(%rbp), %eax
+	pushl	%ebp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movl	%esp, %ebp
+	.cfi_def_cfa_register 5
+	andl	$-16, %esp
+	subl	$48, %esp
+	call	___main
+	movl	$2, 44(%esp)
+	movl	$3, 40(%esp)
+	movl	$LC0, (%esp)
+	call	_puts
+	leal	32(%esp), %eax
+	movl	%eax, 4(%esp)
+	movl	$LC1, (%esp)
+	call	_scanf
+	movl	$LC2, (%esp)
+	call	_puts
+	leal	28(%esp), %eax
+	movl	%eax, 4(%esp)
+	movl	$LC1, (%esp)
+	call	_scanf
+	movl	32(%esp), %edx
+	movl	28(%esp), %eax
 	subl	%eax, %edx
 	movl	%edx, %eax
-	imull	-4(%rbp), %eax
+	imull	44(%esp), %eax
 	cltd
-	idivl	-8(%rbp)
+	idivl	40(%esp)
 	movl	%eax, %ecx
-	movl	-16(%rbp), %edx
-	movl	-20(%rbp), %eax
+	movl	32(%esp), %edx
+	movl	28(%esp), %eax
 	addl	%edx, %eax
 	imull	%ecx, %eax
-	movl	%eax, -12(%rbp)
-	movl	-12(%rbp), %eax
-	movl	%eax, %esi
-	leaq	.LC3(%rip), %rdi
-	movl	$0, %eax
-	call	printf@PLT
+	movl	%eax, 36(%esp)
+	movl	36(%esp), %eax
+	movl	%eax, 4(%esp)
+	movl	$LC3, (%esp)
+	call	_printf
 	movl	$0, %eax
 	leave
-	.cfi_def_cfa 7, 8
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.ident	"GCC: (Debian 8.3.0-6) 8.3.0"
-	.section	.note.GNU-stack,"",@progbits
+LFE10:
+	.ident	"GCC: (MinGW.org GCC-6.3.0-1) 6.3.0"
+	.def	_puts;	.scl	2;	.type	32;	.endef
+	.def	_scanf;	.scl	2;	.type	32;	.endef
+	.def	_printf;	.scl	2;	.type	32;	.endef
