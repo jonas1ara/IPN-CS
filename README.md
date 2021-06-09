@@ -70,7 +70,7 @@ gcc --version
 
 <img src=/Gifs/Instalation/7.png alt="#"/>
 
-_Si requieres [VIM](https://www.vim.org/download.php), basta con abrir una terminal y usar winget_
+_Si requieres [VIM](https://github.com/Jonas-Lara/Vimrc), basta con abrir una terminal y usar winget_
 
 ```
 winget install vim
@@ -143,6 +143,7 @@ _[Ping Pong](https://www.vim.org/download.php)_
 * [GCC](https://gcc.gnu.org/) - GNU Compiler Collection
 * [MinGW](http://mingw-w64.org/doku.php) - Minimalist GNU for Windows
 * [Vim](https://www.vim.org/) - El todo poderoso vim
+* [VIM](https://github.com/Jonas-Lara/Vimrc) - Mi configuración de VIM
 * [Language C](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=language+c+dennis&qid=1618383287&sr=8-1) - El lenguaje C de Dennis Ritchie
 * [UPIIT](https://www.upiit.ipn.mx/) - Unidad Profesional Interdisciplinaria de Ingeniería Campus Tlaxcala
 
