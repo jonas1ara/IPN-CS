@@ -16,7 +16,7 @@ _Herramientas que necesita para usar este reposotorio y cómo instalarlo_
 GCC (GNU Compiler Collection) pre-instalado en MacOS
 ```
 ```
-MinGW (Minimalist GNU for Windows)
+[MinGW](https://sourceforge.net/projects/mingw/)
 ```
 ```
 Un editor para hombres; VIM
@@ -31,9 +31,7 @@ _Estamos tratando de que Microsoft apruebe el uso de MinGW con Winget..._
 
 _Windows_
 
-_Descarga e instala [MinGW](https://sourceforge.net/projects/mingw/)_
-
-<img src=/Gifs/Instalation/1.png alt="#"/>
+_Despues de descargar e instalar [MinGW](https://sourceforge.net/projects/mingw/)_
 
 _Selecciona los paquetes que usaras, para este repositorio usaremos mingw32-base y mingw32-gcc-g++_
 
