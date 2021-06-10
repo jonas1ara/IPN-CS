@@ -12,7 +12,8 @@
 
 #include<stdio.h>
 
-int main(){
+int main()
+{
 	/*	
 		Sistemas de coordenadas
 			Col... 0 1 2 // Columnas tienen el valor vertical

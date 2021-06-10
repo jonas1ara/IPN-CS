@@ -1,27 +1,30 @@
 /*
-	//Calls by reference; function to raise a number to the cube.
+	//Llamadas por referencia; para elevar un número al cubo.
 
-	Many functions require the ability to modify one or more variables in a function call in that case we can avoid over loads are making copies of the object or our variable.
+	Muchas funciones requieren la capacidad de modificar una o más variables en una llamada de función en ese caso que podemos evitar sobre cargas están haciendo copias del objeto o nuestra variable.
 
 */
 
 
 #include <stdio.h>
 
-void cubo(int *n); //Prototype of our function, pointer argument.
+void cubo(int *n); //Prototipo de nuestra función, argumento de apuntador.
 
-int main() {
-	
+int main() 
+{	
 	int num = 5;
-	printf("Original value: %i\n",num);
-	cubo(&num); //I tell num to assign you the value returned by the functioni, reference with &
-	printf("The new valor: %i\n", num);
+	printf("Valor original: %i\n",num);
+	cubo(&num); //Le deciamos a num que le asigne el valor devuelto por la función, haga referencia con &
+	printf("El nuevo valor: %i\n", num);
 	
 	return 0;	
-}
-void cubo(int *n) { //void value are not required to return a value, it will receive the parameter that we send above and will use it as *n
-	*n = *n * *n * *n;
 
 }
+void cubo(int *n) ///Valor VOID no son necesarios para devolver un valor, recibirá el parámetro que enviamos anteriormente y lo utilizará como *n
+	{
+	
+	*n = *n * *n * *n;
+
+	}
 
 
