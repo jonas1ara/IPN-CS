@@ -1,27 +1,29 @@
 /*
-Making decisions if
+	Condicionales en C
 
-Equality operators:                   	 |                 Relantionship operators:
-	== X is equal to Y                                        	> X Is greater than Y
-	!= X is different from  Y					< X Is less than Y
-									>= X is greater than or equal to Y
-									<= X is less than or equal to Y
+	Operadores de igualdad:                   	 |      	Operadores de relación:
+		== X es igual a Y                                     	 	   > X Es mayor que Y
+		!= X es diferente de  Y								  		< X  Es menor que Y
+																				>= X Es mayor o igual que Y
+																				<= X Es es menor o igual que Y
 */
 
 #include <stdio.h>
 
 int main() {
 
-	int age;
+	int edad;
 	
-	printf("Tell me your age:\n");
-	scanf("%d",&age);
+	printf("Dime tu edad:\n");
+	scanf("%d",&edad);
 
-	if(age >=18) {
+	if(edad >=18) 
+	{
 		printf("Eres mayor de edad\n");
-	} else {
-		printf("You're underage\n");
-	}
+	} else 
+		{
+		printf("Eres menor de edad\n");
+		}
 
 	return 0;
 

@@ -1,9 +1,13 @@
-#include <stdio.h> //Directive(Indicates that the standard input and output header be included in the program)
+/*
+	Hola mundo 🤣🤣
+*/
 
-int main(void) //Main function of the program, inside goes the block of code to be executed and VOID clearly specifies that main can be called only without any parameters.
+#include <stdio.h> //Directive(Indica que el encabezado de entrada y salida estándar se incluya en el programa)
+
+int main(void) //Función principal del programa, dentro va el bloque de código a ejecutar y VOID especifica claramente que main puede ser llamado sólo sin ningún parámetro.
 
 {
-	printf("Hello world\n"); //Print a character string, \n the escape character, and the ; indicates that that line of code has been completed.
+	printf("Hola Mundo\n"); //Imprimir una cadena de caracteres, n el carácter de escape y el ; indica que se ha completado esa línea de código.
 
-	return 0; //Return0 indicates that the program was successfully finished.
+	return 0; //Return 0 indica que el programa finalizó correctamente.
 }

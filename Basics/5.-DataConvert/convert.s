@@ -1,41 +1,57 @@
 	.file	"convert.c"
+	.def	___main;	.scl	2;	.type	32;	.endef
+	.section .rdata,"dr"
+LC1:
+	.ascii "Esta es la suma: %.3f\12\0"
+	.align 4
+LC2:
+	.ascii "\12Y estos son el entero convertido: \12Integer: %i\12Floating: %.2f\12Double: %.3f\12Character: %c\12\0"
 	.text
-	.section	.rodata
-.LC1:
-	.string	"%.3f\n"
-	.text
-	.globl	main
-	.type	main, @function
-main:
-.LFB0:
+	.globl	_main
+	.def	_main;	.scl	2;	.type	32;	.endef
+_main:
+LFB10:
 	.cfi_startproc
-	pushq	%rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
-	movq	%rsp, %rbp
-	.cfi_def_cfa_register 6
-	subq	$16, %rsp
-	movl	$80, -4(%rbp)
-	movss	.LC0(%rip), %xmm0
-	movss	%xmm0, -8(%rbp)
-	cvtsi2ss	-4(%rbp), %xmm0
-	movss	-8(%rbp), %xmm1
-	addss	%xmm1, %xmm0
-	movss	%xmm0, -12(%rbp)
-	cvtss2sd	-12(%rbp), %xmm0
-	leaq	.LC1(%rip), %rdi
-	movl	$1, %eax
-	call	printf@PLT
+	pushl	%ebp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movl	%esp, %ebp
+	.cfi_def_cfa_register 5
+	andl	$-16, %esp
+	subl	$48, %esp
+	call	___main
+	movl	$80, 44(%esp)
+	flds	LC0
+	fstps	40(%esp)
+	fildl	44(%esp)
+	fadds	40(%esp)
+	fstps	36(%esp)
+	flds	36(%esp)
+	fstpl	4(%esp)
+	movl	$LC1, (%esp)
+	call	_printf
+	movl	44(%esp), %eax
+	movsbl	%al, %eax
+	fildl	44(%esp)
+	fildl	44(%esp)
+	fxch	%st(1)
+	movl	%eax, 24(%esp)
+	fstpl	16(%esp)
+	fstpl	8(%esp)
+	movl	44(%esp), %eax
+	movl	%eax, 4(%esp)
+	movl	$LC2, (%esp)
+	call	_printf
 	movl	$0, %eax
 	leave
-	.cfi_def_cfa 7, 8
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.section	.rodata
+LFE10:
+	.section .rdata,"dr"
 	.align 4
-.LC0:
+LC0:
 	.long	1110782771
-	.ident	"GCC: (Debian 8.3.0-6) 8.3.0"
-	.section	.note.GNU-stack,"",@progbits
+	.ident	"GCC: (MinGW.org GCC-6.3.0-1) 6.3.0"
+	.def	_printf;	.scl	2;	.type	32;	.endef

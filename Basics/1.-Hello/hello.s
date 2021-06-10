@@ -1,27 +1,30 @@
 	.file	"hello.c"
+	.def	___main;	.scl	2;	.type	32;	.endef
+	.section .rdata,"dr"
+LC0:
+	.ascii "Hola Mundo\0"
 	.text
-	.section	.rodata
-.LC0:
-	.string	"Hello world"
-	.text
-	.globl	main
-	.type	main, @function
-main:
-.LFB0:
+	.globl	_main
+	.def	_main;	.scl	2;	.type	32;	.endef
+_main:
+LFB10:
 	.cfi_startproc
-	pushq	%rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
-	movq	%rsp, %rbp
-	.cfi_def_cfa_register 6
-	leaq	.LC0(%rip), %rdi
-	call	puts@PLT
+	pushl	%ebp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movl	%esp, %ebp
+	.cfi_def_cfa_register 5
+	andl	$-16, %esp
+	subl	$16, %esp
+	call	___main
+	movl	$LC0, (%esp)
+	call	_puts
 	movl	$0, %eax
-	popq	%rbp
-	.cfi_def_cfa 7, 8
+	leave
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.ident	"GCC: (Debian 8.3.0-6) 8.3.0"
-	.section	.note.GNU-stack,"",@progbits
+LFE10:
+	.ident	"GCC: (MinGW.org GCC-6.3.0-1) 6.3.0"
+	.def	_puts;	.scl	2;	.type	32;	.endef

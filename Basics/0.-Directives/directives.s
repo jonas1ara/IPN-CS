@@ -1,8 +1,12 @@
-	.file	"dowhile.c"
+	.file	"directives.c"
 	.def	___main;	.scl	2;	.type	32;	.endef
 	.section .rdata,"dr"
+	.align 4
 LC0:
-	.ascii "%i\12\0"
+	.ascii "Este es el valor de la suma entre la constante simbolica y 3: %i\12\0"
+	.align 4
+LC1:
+	.ascii "El cubo de la variable a es:  %i\12\0"
 	.text
 	.globl	_main
 	.def	_main;	.scl	2;	.type	32;	.endef
@@ -17,15 +21,18 @@ LFB10:
 	andl	$-16, %esp
 	subl	$32, %esp
 	call	___main
-	movl	$1, 28(%esp)
-L2:
-	movl	28(%esp), %eax
+	movl	$3, 28(%esp)
+	movl	$6, 24(%esp)
+	movl	24(%esp), %eax
 	movl	%eax, 4(%esp)
 	movl	$LC0, (%esp)
 	call	_printf
-	addl	$1, 28(%esp)
-	cmpl	$10, 28(%esp)
-	jle	L2
+	movl	28(%esp), %eax
+	imull	28(%esp), %eax
+	imull	28(%esp), %eax
+	movl	%eax, 4(%esp)
+	movl	$LC1, (%esp)
+	call	_printf
 	movl	$0, %eax
 	leave
 	.cfi_restore 5

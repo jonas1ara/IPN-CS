@@ -1,38 +1,39 @@
 	.file	"for.c"
+	.def	___main;	.scl	2;	.type	32;	.endef
+	.section .rdata,"dr"
+LC0:
+	.ascii "%i\12\0"
 	.text
-	.section	.rodata
-.LC0:
-	.string	"%i\n"
-	.text
-	.globl	main
-	.type	main, @function
-main:
-.LFB0:
+	.globl	_main
+	.def	_main;	.scl	2;	.type	32;	.endef
+_main:
+LFB10:
 	.cfi_startproc
-	pushq	%rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
-	movq	%rsp, %rbp
-	.cfi_def_cfa_register 6
-	subq	$16, %rsp
-	movl	$1, -4(%rbp)
-	jmp	.L2
-.L3:
-	movl	-4(%rbp), %eax
-	movl	%eax, %esi
-	movl	$.LC0, %edi
-	movl	$0, %eax
-	call	printf
-	addl	$1, -4(%rbp)
-.L2:
-	cmpl	$10, -4(%rbp)
-	jle	.L3
+	pushl	%ebp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movl	%esp, %ebp
+	.cfi_def_cfa_register 5
+	andl	$-16, %esp
+	subl	$32, %esp
+	call	___main
+	movl	$1, 28(%esp)
+	jmp	L2
+L3:
+	movl	28(%esp), %eax
+	movl	%eax, 4(%esp)
+	movl	$LC0, (%esp)
+	call	_printf
+	addl	$1, 28(%esp)
+L2:
+	cmpl	$10, 28(%esp)
+	jle	L3
 	movl	$0, %eax
 	leave
-	.cfi_def_cfa 7, 8
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.ident	"GCC: (GNU) 11.0.1 20210324 (Red Hat 11.0.1-0)"
-	.section	.note.GNU-stack,"",@progbits
+LFE10:
+	.ident	"GCC: (MinGW.org GCC-6.3.0-1) 6.3.0"
+	.def	_printf;	.scl	2;	.type	32;	.endef

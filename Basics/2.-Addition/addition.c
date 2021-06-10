@@ -1,3 +1,7 @@
+/*
+	Adición, este es el preambulo para operaciones aritméticas
+*/
+
 #include <stdio.h>
 
 int main() {
@@ -14,7 +18,7 @@ int main() {
 
 	resultado= num1 + num2; //Suma las variables num1 y num2 para guardarlas en resultado.
 	
-	printf("El resultado de la suma es: %d\n",resultado); //%d para imprimir el valor entero, <<resultado>> es variable a imprimir.
+	printf("El resultado de la suma es: %d\n",resultado); //%d para imprimir el valor entero, resultado es variable a imprimir.
 
 	return 0;	
 

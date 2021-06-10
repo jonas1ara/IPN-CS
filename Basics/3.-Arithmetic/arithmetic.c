@@ -1,3 +1,7 @@
+/*
+	Operaciones aritméticas en C
+*/
+
 #include <stdio.h>
 
 int main() {
@@ -12,8 +16,6 @@ int main() {
 	printf("Ingresa otro número entero:\n");
 	scanf("%d",&num2);
 
-	/*result = num1 / num2;*/ //Change operator to any of the arithmetic operators; addition, subtraction, division and multiplication. Recompile.
-	
 	resultado = a*(num1-num2) / b*(num1+num2); //Intercambia el operador aritmético; suma, resta, división y/o multiplicación.
 	
 	printf("El resultado de la operación es: %d\n", resultado);

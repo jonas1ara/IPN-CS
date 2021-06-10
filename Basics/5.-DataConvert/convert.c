@@ -1,16 +1,18 @@
+/*
+	Conversión de datos en C
+*/
+
 #include <stdio.h>
 
 int main () {
 	
-	int a = 80; //We initialize an integer variable to 80
-	float f = 45.3; //We initialize a floating variable in 45.3
-	float sum = (float)a + f; //we add (float)a to turn the integer into floating and sum
+	int a = 80; //Se inicializa la variable a en 80
+	float f = 45.3; //Se inicializa la variable flotante 43.5
+	float sum = (float)a + f; //Aderimos (float)a para convertir el entero a en flotante y sumarlo con el entero f
 
-	printf("%.3f\n",sum);
-/*
-	//uncomments this printf, comment on the one above and recompile
-	printf("Integer: %i\nFloating: %.2f\nDouble: %.3f\nCharacter: %c\n",a, (float)a, (double)a, (char)a);
-*/
+	printf("Esta es la suma: %.3f\n",sum);
+
+	printf("\nY estos son el entero convertido: \nEntero: %i\nFlotante: %.2f\nDoble: %.3f\nCarácter: %c\n",a, (float)a, (double)a, (char)a);
 
 	return 0;
 

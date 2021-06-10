@@ -1,37 +1,35 @@
+/*	
+	Switch en C, darle opciones al usuario.
+*/
+
 #include<stdio.h>
 
 int main() {
 
-	int cases;
+	int casos;
 
-	printf("Enter a number:\n");
-	scanf("%i",&cases);
+	printf("Ingresa un número:\n");
+	scanf("%i",&casos);
 	
-	switch(cases){
+	switch(casos){
 		case 1:
-			printf("You chose the case #1\n");
+			printf("Elegiste el caso #1\n");
 			break;
-		
 		case 2:	
-			printf("You chose the case #2\n");
+			printf("Elegiste el caso #2\n");
 			break;
-		
 		case 3:
-			printf("You chose the case #3\n");
+			printf("Elegiste el caso #3\n");
 			break;
-			
 		case 4:	
-			printf("You chose the case #4\n");
+			printf("Elegiste el caso #4\n");
 			break;
-	
 		case 5:	
-			printf("You chose the case #5\n");
+			printf("Elegiste el caso #5\n");
 			break;
-
 		default:
-			printf("We didn't find your case... :/\n");
+			printf("No encontramos el caso que elegiste... :/\n");
 			break;
-	
 	}
 
 	return 0;

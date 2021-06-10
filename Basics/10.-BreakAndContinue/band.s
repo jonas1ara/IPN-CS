@@ -1,4 +1,4 @@
-	.file	"dowhile.c"
+	.file	"band.c"
 	.def	___main;	.scl	2;	.type	32;	.endef
 	.section .rdata,"dr"
 LC0:
@@ -17,15 +17,21 @@ LFB10:
 	andl	$-16, %esp
 	subl	$32, %esp
 	call	___main
-	movl	$1, 28(%esp)
-L2:
+	movl	$0, 28(%esp)
+	jmp	L2
+L4:
+	addl	$1, 28(%esp)
+	cmpl	$3, 28(%esp)
+	jne	L3
+	jmp	L2
+L3:
 	movl	28(%esp), %eax
 	movl	%eax, 4(%esp)
 	movl	$LC0, (%esp)
 	call	_printf
-	addl	$1, 28(%esp)
-	cmpl	$10, 28(%esp)
-	jle	L2
+L2:
+	cmpl	$7, 28(%esp)
+	jle	L4
 	movl	$0, %eax
 	leave
 	.cfi_restore 5
