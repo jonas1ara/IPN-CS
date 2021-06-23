@@ -20,7 +20,7 @@ int main()
     printf("Ingrese el valor de b: ");
     scanf("%d", &b);
 
-	if(a&&b!=0)
+	if(a&&b>0)
 	{
     producto = a * b;
 
@@ -40,7 +40,7 @@ int main()
 
     } while (residuo != 0); //No va a dejar de repetir el ciclo hasta que residuo sea diferente de 0
 
-    mcm = producto / mcd; // mcm(a,b)=a+b/mcd(a.b)
+    mcm = producto / mcd; // mcm(a,b)=a*b/mcd(a,b)
 
     printf("El Mínimo común múltiplo es: %d\n", mcm);
 	} else{
