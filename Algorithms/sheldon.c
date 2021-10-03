@@ -27,14 +27,13 @@ int main() {
             }
         }
 
-        /* mostrar el numero
-         * y actualizar el contador */
+        /* mostrar el numero y actualizar el contador */
         if (es_primo) {
             printf("%d ", n);
             numero = n; 
             primos_por_mostrar--; //Reduciendo el valor de primos
             
-            //Invertir numeros
+            /*Invertir números*/
             int invertir=0;
 
             while(numero!=0) //721 != 0
@@ -47,7 +46,7 @@ int main() {
                     //2da pasada: 1 * 10 = 10 + 2 = 12
                     //3ra pasada: 12 * 10 = 120 + 7 = 127
                 }
-                
+                /*Comprobar si el número espejo es primo o compuesto*/
                 int count = 0;
                 for (int i = 1; i <= invertir; i++)
                 {
@@ -66,10 +65,12 @@ int main() {
                 }
 
         }
-        n++; //actualizar el contador
+        
+        n++; //actualizar el contador Es decir si n valia 2 ahora vale 2
 
     }
 
     printf("\n");
+
     return 0;
 }
