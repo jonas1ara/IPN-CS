@@ -65,8 +65,8 @@ int main() {
                 }
 
         }
-        
-        n++; //actualizar el contador Es decir si n valia 2 ahora vale 2
+
+        n++; //actualizar el contador, es decir si n valia 2 ahora vale 2
 
     }
 
