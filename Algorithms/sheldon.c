@@ -55,6 +55,7 @@ int main() {
                         count++;
                     }
                 }
+                /*Mostrar el número espejo*/
                 if (count>2)
                 {
                     printf("Su espejo no es primo: %d\n", invertir);
@@ -66,7 +67,7 @@ int main() {
 
         }
 
-        n++; //actualizar el contador, es decir si n valia 2 ahora vale 2
+        n++; //Actualizar el contador, es decir si n valia 2 ahora vale 2
 
     }
 
