@@ -17,7 +17,7 @@ _Usa CS50 IDE, es un IDE hecho y soportado por la universidad de Harvard para es
 
 _[CS50 IDE](https://ide.cs50.io)_
 
-<img src=/1.jpeg alt="#"/>
+<img src=/1.jpg alt="#"/>
 
 
 ## Construido con 🛠️

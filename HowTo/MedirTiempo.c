@@ -9,12 +9,8 @@ int main () {
     struct timeval begin, end;
     gettimeofday(&begin, 0);
     
-    //Code to measure
-    int iterations = 1000*1000*1000;
-    for (int i=0; i<iterations; i++) {
-        sum += add;
-        add /= 2.0;
-    }
+    ///////Code to measure/////////
+    
     
     // Stop measuring time and calculate the elapsed time
     gettimeofday(&end, 0);
