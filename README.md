@@ -8,14 +8,14 @@ _Este es un repositorio de lenguaje C, hecho para que no sigan las generaciones 
 _Herramientas que necesita para usar este reposotorio y cómo instalarlo_
 
 ```
-CS50 IDE
+Visual Studio Code for web
 ```
 
 ## Como usar este repositorio 🔧
 
 _Usa CS50 IDE, es un IDE hecho y soportado por la universidad de Harvard para estudiantes y maestros_
 
-_[CS50 IDE](https://ide.cs50.io)_
+_[Blog del reositorio](https://jonas-lara.github.io/Blog-Ipn.c/)_
 
 <img src=/1.jpg alt="#"/>
 
