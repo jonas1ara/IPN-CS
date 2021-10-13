@@ -16,9 +16,7 @@ Programiz Online C Compiler
 
 ## Como usar este repositorio 🔧
 
-_Teclea la tecla . para abrir VS Code for web_
-
-_Visual Studio Code for web_
+_Teclea la tecla . para abrir Visual Studio Code for web_
 
 <img src=17.png alt="#"/>
 
