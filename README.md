@@ -20,7 +20,7 @@ _Teclea la tecla . para abrir VS Code for web y usa el compilador online para co
 
 _[Programiz](https://www.programiz.com/c-programming/online-compiler/)_
 
-<img src=/1.jpg alt="#"/>
+<img src=1.jpg alt="#"/>
 
 
 ## Construido con 🛠️
