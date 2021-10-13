@@ -18,6 +18,10 @@ Programiz Online C Compiler
 
 _Teclea la tecla . para abrir VS Code for web y usa el compilador online para compilar tu código_
 
+_Visual Studio Code for web_
+
+<img src=17.jpeg alt="#"/>
+
 _[Programiz](https://www.programiz.com/c-programming/online-compiler/)_
 
 <img src=23.jpeg alt="#"/>
