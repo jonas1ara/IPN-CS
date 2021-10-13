@@ -10,19 +10,22 @@ _Herramientas que necesita para usar este reposotorio y cómo instalarlo_
 ```
 Visual Studio Code for web
 ```
+```
+Programiz Online C Compiler 
+```
 
 ## Como usar este repositorio 🔧
 
-_Usa CS50 IDE, es un IDE hecho y soportado por la universidad de Harvard para estudiantes y maestros_
+_Teclea la tecla . para abrir VS Code for web y usa el compilador online para compilar tu código_
 
-_[Blog del reositorio](https://jonas-lara.github.io/Blog-Ipn.c/)_
+_[Programiz](https://www.programiz.com/c-programming/online-compiler/)_
 
 <img src=/1.jpg alt="#"/>
 
 
 ## Construido con 🛠️
 
-* [CS50 IDE](https://ide.cs50.io/) - CS50 IDE 
+* [Programiz](https://www.programiz.com/c-programming/online-compiler/) - Programiz Online C Compiler 
 * [Language C](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=language+c+dennis&qid=1618383287&sr=8-1) - El lenguaje C de Dennis Ritchie
 * [UPIIT](https://www.upiit.ipn.mx/) - Unidad Profesional Interdisciplinaria de Ingeniería Campus Tlaxcala
 
