@@ -1,10 +1,3 @@
-/*
-    Nombre del programa: El mejor número
-    Fecha: 3 Octubre del 2021
-    Autor: Aspire Linux
-    Descripción: ¿Existen otros valores primos "p", tales que el número espejo de "p" también sea primo?
-
-*/
 #include <stdio.h>
 
 int main() {
