@@ -34,4 +34,4 @@ _Usa el compilador online [Programiz](https://www.programiz.com/c-programming/on
 ## Expresiones de gratitud
 
 ---
-Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) colaborando para que el futuro capital humano de [UPIIT](https://www.upiit.ipn.mx/) detone la economía de este estado.
+Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) colaborando para que el futuro capital humano de [UPIIT](https://www.upiit.ipn.mx/) no sea otra generación perdida.
