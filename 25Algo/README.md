@@ -1,14 +1,20 @@
-#Ipn.c
+# Ipn.c
 
 _25 Algoritmos que todo matemático debería conocer_
 
 <img src=/Resources/25.jpeg alt="#"/>
+
+## Algoritmos
+
+_Basicos_
 
 _[1.-Huffman Algo]()_
 
 _[2.-Compression Algo]()_
 
 _[3.-Euclid´s Algo]()_
+
+_Arreglos_
 
 _[4.-Kadane´s Algo]()_
 
@@ -24,6 +30,8 @@ _[9.-Boyer-More Algo]()_
 
 _[10.-Majority Algo]()_
 
+_Ordenamiento_
+
 _[11.-Insertion Sort]()_
 
 _[12.-Selection Sort]()_
@@ -36,6 +44,8 @@ _[15.-Heap Sort]()_
 
 _[16.-Counting Sort]()_
 
+_Búsqueda_
+
 _[17.-Binary Search]()_
 
 _[18.-Interpolation Search]()_
@@ -43,6 +53,8 @@ _[18.-Interpolation Search]()_
 _[19.-Depth First Search]()_
 
 _[20.-Breadth First Search]()_
+
+_Grafos_
 
 _[21.-Kruskal´s Algo]()_
 
