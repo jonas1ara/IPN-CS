@@ -5,12 +5,19 @@ _25 Algoritmos que todo matemático debería conocer_
 <img src=/Resources/25.jpeg alt="#"/>
 
 _[1.-Huffman Algo]()_
+
 _[2.-Compression Algo]()_
+
 _[3.-Euclid´s Algo]()_
+
 _[4.-Kadane´s Algo]()_
+
 _[5.-Floyd´s Algo]()_
+
 _[6.-Detection Algo]()_
+
 _[7.-KMP Algo]()_
+
 _[8.-Quick Select Algo]()_
 _[9.-Boyer-More Algo]()_
 _[10.-Majority Algo]()_
