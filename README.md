@@ -18,11 +18,11 @@ Programiz Online C Compiler
 
 _Teclea la tecla . para abrir Visual Studio Code for web_
 
-<img src=17.png alt="#"/>
+<img src=/Recursos/17.png alt="#"/>
 
 _Usa el compilador online [Programiz](https://www.programiz.com/c-programming/online-compiler/) para probar tu código_
 
-<img src=23.jpeg alt="#"/>
+<img src=/Recursos/23.jpeg alt="#"/>
 
 
 ## Construido con 🛠️
