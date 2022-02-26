@@ -5,7 +5,7 @@
 #include <time.h>
 
 #define MAX 1000000
-#define NUMS_TO_GENERATE 1000
+#define NUMS_TO_GENERATE 1000001
  
 int main () {
     double sum = 0;
