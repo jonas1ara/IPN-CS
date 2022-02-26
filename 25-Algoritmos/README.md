@@ -1,6 +1,6 @@
 # Ipn.c
 
-_25 Algoritmos que todo matemático debería conocer_
+_25 Algoritmos que todo matemático debería conocer 😁😁_
 
 <img src=/Recursos/25.jpeg alt="#"/>
 
