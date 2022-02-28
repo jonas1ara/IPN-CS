@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define max 8
+#define max 7
 
 int arr[8] = {5,4,8,7,6,1,2,3};
 int aux[7];
