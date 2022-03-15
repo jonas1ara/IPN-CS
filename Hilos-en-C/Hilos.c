@@ -19,15 +19,19 @@ typedef struct
 void* mostrar_perimetro(void *input)
 {
 	Triangulo *tmp_triangulo = (Triangulo*)input;
-	
-	
+	int perimetro = tmp_triangulo->a+tmp_triangulo->b+tmp_triangulo->c;
+	printf("El perimetro es: %d\n",perimetro);
 }
 
 int main()
 {
-	printf("
-
-
+	Triangulo mis_triangulos[]={{0,10,15,28},{1,4,17,22},{2,32,10,91}};
+	pthread_t threads[3];
+	for (int i = 0; i < 3; i++)
+	{
+		pthread_create(&threads[i],NULL,mostrar_perimetro, (void*)&mis_triangulos[i]);
+		pthread_join(threads[i],NULL);
+	}
 	return 0;
 }
 
