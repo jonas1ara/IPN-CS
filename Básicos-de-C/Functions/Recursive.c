@@ -1,8 +1,8 @@
 /*	Recursive functions
 
-Recursive functions have the property of calling themselves
+Las funciones recursivas tienen la propiedad de llamarse ellas mismas
 
-	Example of the factorial of a number
+	Ejemplo del factorial de un número
 
 	5! = 5 * 4 * 3 * 2 * 1 o  5*4! = 120
 	4! = 4 * 3 * 2 * 1 * o 4*3! = 24
@@ -14,24 +14,32 @@ Recursive functions have the property of calling themselves
 
 #include <stdio.h>
 
-long factorial(long number); //function prototype, defined as type long with parameter number
-int main() {
-	
+long factorial(long number); // Prototipo de función
+//definida como tipo long con el parametro número
+
+int main()
+{
+
 	int number;
-	printf("Enter a number: \n");
-	scanf("%i",&number);
-	
-	for (int i = 0;  i <= number; i++) {
+	printf("Ingresa un número: \n");
+	scanf("%i", &number);
+
+	for (int i = 0; i <= number; i++)
+	{
 		printf("%ld\n", factorial(i));
 	}
-	
+
 	return 0;
 }
-long factorial(long number) { //factorail function, type date long with parameter number
+long factorial(long number)
+{ // Función factorial, definida como tipo long con el parámetro number
 
-	if (number <= 1) {
+	if (number <= 1)
+	{
 		return 1;
-	} else {
-		return(number * factorial(number - 1)); 
+	}
+	else
+	{
+		return (number * factorial(number - 1));
 	}
 }
