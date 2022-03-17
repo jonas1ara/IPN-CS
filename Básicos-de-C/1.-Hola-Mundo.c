@@ -2,7 +2,7 @@
 	Hola mundo 🤣🤣
 */
 
-#include <stdio.h> //Directive(Indica que el encabezado de entrada y salida estándar se incluya en el programa)
+#include <stdio.h> //Directiva(Indica que el encabezado de entrada y salida estándar se incluya en el programa)
 
 int main(void) //Función principal del programa, dentro va el bloque de código a ejecutar y VOID especifica claramente que main puede ser llamado sólo sin ningún parámetro.
 
