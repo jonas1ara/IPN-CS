@@ -6,7 +6,7 @@ _25 Algoritmos que todo matemático debería conocer 😁😁_
 
 ## Algoritmos
 
-_Basicos_
+_Básicos_
 
 _[1.-Huffman Algo]()_
 
