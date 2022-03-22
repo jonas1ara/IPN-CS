@@ -1,9 +1,8 @@
 # Ipn.c
 
-_Este es un repositorio del curso de programación en UPIIT del lenguaje C_
-
 ![](/000/Ipn.svg)
 
+_Este es un repositorio del curso de programación en UPIIT del lenguaje C_
 
 ## Requisitos 📋
 
