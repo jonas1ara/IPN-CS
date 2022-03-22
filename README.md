@@ -21,8 +21,6 @@ El editor de texto de tu preferencia
 
 _Si estas en Linux o MacOS ya tienes instalado un compilador para el lenguaje C, pero si estas en Windows te recomiendo seguir este [Tutorial](https://www.youtube.com/watch?v=v3ENcQpoA5A) de @FaztTech para descargar MinGW y usarlo con VS Code_
 
-<img src=/000/23.jpeg alt="#"/>
-
 ## Construido con 🛠️
 
 * [VS Code](https://code.visualstudio.com/) - Visual Studio Code
