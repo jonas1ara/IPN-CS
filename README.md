@@ -4,37 +4,32 @@
 
 [![Generic badge](https://img.shields.io/badge/Made%20with-C-rgb(1,143,204).svg)](https://shields.io/)
 
-_Este es un repositorio del curso de programación en UPIIT del lenguaje C_
+_Este es un repositorio del curso fundamentos de programación, el curso de algoritmos y estructuras de datos y del curso análisis y diseño de algoritmos en la Unidad Profesional Interdisciplinaria de Ingeniería en Tlaxcala, esta dirigido a estudiantes y profesionales que esten interesados en el desarrollo de sistemas, sistemas embebidos y en aprender algoritmos y estructuras de datos, COMPLETAMENTE EN ESPAÑOL para la mejor compresión y el gusto de los hispanohablantes_
 
 ## Requisitos 📋
 
 _Herramientas que necesita para usar este reposotorio y cómo instalarlo_
 
 ```
-Visual Studio Code for web
+GCC o Clang
 ```
 ```
-Programiz Online C Compiler 
+El editor de texto de tu preferencia
 ```
 
 ## Como usar este repositorio 🔧
 
-_Teclea la tecla . para abrir Visual Studio Code for web_
-
-<img src=/000/17.png alt="#"/>
-
-_Usa el compilador online [Programiz](https://www.programiz.com/c-programming/online-compiler/) para probar tu código_
+_Si estas en Linux o MacOS ya tienes instalado un compilador para el lenguaje C, pero si estas en Windows te recomiendo seguir este [Tutorial](https://www.youtube.com/watch?v=v3ENcQpoA5A) de @FaztTech para descargar MinGW y usarlo con VS Code_
 
 <img src=/000/23.jpeg alt="#"/>
 
-
 ## Construido con 🛠️
 
-* [Programiz](https://www.programiz.com/c-programming/online-compiler/) - Programiz Online C Compiler 
+* [VS Code](https://code.visualstudio.com/) - Visual Studio Code
 * [Language C](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=language+c+dennis&qid=1618383287&sr=8-1) - El lenguaje C de Dennis Ritchie
 * [UPIIT](https://www.upiit.ipn.mx/) - Unidad Profesional Interdisciplinaria de Ingeniería Campus Tlaxcala
 
 ## Expresiones de gratitud
 
 ---
-Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) colaborando para que el futuro capital humano de [UPIIT](https://www.upiit.ipn.mx/) no sea otra generación perdida.
+Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) de [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado en internet.
