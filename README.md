@@ -13,10 +13,7 @@ _Herramientas que necesita para usar este repositorio y cómo instalarlo_
 ![alt text](/000/vs.png)
 
 ```
-GCC o Clang
-```
-```
-El editor de texto de tu preferencia
+Un compilador para C/C++ y el editor de texto de tu preferencia
 ```
 
 _Si estas en Linux o MacOS ya tienes instalado un compilador para el lenguaje C, pero si estas en Windows te recomiendo seguir este [Tutorial](https://www.youtube.com/watch?v=v3ENcQpoA5A) de @FaztTech para descargar MinGW y usarlo con VS Code_
