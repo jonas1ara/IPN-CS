@@ -32,4 +32,4 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
 ## Expresiones de gratitud
 
 ---
-Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) de [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado en internet.
+Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) de [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado.
