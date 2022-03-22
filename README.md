@@ -2,6 +2,8 @@
 
 _Este es un repositorio del curso de programación en UPIIT del lenguaje C_
 
+![](/000/Ipn.svg)
+
 
 ## Requisitos 📋
 
@@ -18,11 +20,11 @@ Programiz Online C Compiler
 
 _Teclea la tecla . para abrir Visual Studio Code for web_
 
-<img src=/Recursos/17.png alt="#"/>
+<img src=/000/17.png alt="#"/>
 
 _Usa el compilador online [Programiz](https://www.programiz.com/c-programming/online-compiler/) para probar tu código_
 
-<img src=/Recursos/23.jpeg alt="#"/>
+<img src=/000/23.jpeg alt="#"/>
 
 
 ## Construido con 🛠️
