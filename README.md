@@ -4,7 +4,7 @@
 
 [![Generic badge](https://img.shields.io/badge/Made%20with-C-rgb(1,143,204).svg)](https://shields.io/)
 
-_Este es un repositorio del curso fundamentos de programación, el curso de algoritmos y estructuras de datos y del curso análisis y diseño de algoritmos de la  **Unidad Profesional Interdisciplinaria de Ingeniería en Tlaxcala del IPN**, esta dirigido a estudiantes y profesionales que esten interesados en el desarrollo de sistemas, sistemas embebidos y en aprender algoritmos y estructuras de datos, **COMPLETAMENTE EN ESPAÑOL** para la mejor compresión y el gusto de los hispanohablantes_
+_Este es un repositorio del curso fundamentos de programación, el curso de algoritmos y estructuras de datos y del curso análisis y diseño de algoritmos de la  **Unidad Profesional Interdisciplinaria de Ingeniería campus Tlaxcala del IPN**, esta dirigido a estudiantes y profesionales que esten interesados en el desarrollo de sistemas, sistemas embebidos y en aprender algoritmos y estructuras de datos, **COMPLETAMENTE EN ESPAÑOL** para la mejor compresión y el gusto de los hispanohablantes_
 
 ## Requisitos 📋
 
