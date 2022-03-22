@@ -2,6 +2,8 @@
 
 ![](/000/Ipn.svg)
 
+[![Generic badge](https://img.shields.io/badge/Made%20with-FSharp-rgb(1,143,204).svg)](https://shields.io/)
+
 _Este es un repositorio del curso de programación en UPIIT del lenguaje C_
 
 ## Requisitos 📋
