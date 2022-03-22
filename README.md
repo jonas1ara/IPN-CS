@@ -10,6 +10,8 @@ _Este es un repositorio del curso fundamentos de programación, el curso de algo
 
 _Herramientas que necesita para usar este repositorio y cómo instalarlo_
 
+![alt text](/000/vs.png)
+
 ```
 GCC o Clang
 ```
