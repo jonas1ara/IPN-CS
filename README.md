@@ -1,6 +1,6 @@
 # Ipn.c
 
-![](/000/Ipn.svg)
+![](/00.-Sources/Ipn.svg)
 
 [![Generic badge](https://img.shields.io/badge/Made%20with-C-rgb(1,143,204).svg)](https://shields.io/)
 
@@ -10,7 +10,7 @@ _Este es un repositorio del curso fundamentos de programación, el curso de algo
 
 _Herramientas que necesita para usar este repositorio y cómo instalarlo_
 
-![alt text](/000/vs.png)
+![alt text](/00.-Sources/vs.png)
 
 ```
 Un compilador para C/C++ y el editor de texto de tu preferencia
