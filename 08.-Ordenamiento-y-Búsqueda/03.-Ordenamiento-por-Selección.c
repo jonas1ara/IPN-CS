@@ -1,38 +1,68 @@
 #include <stdio.h>
+#include <stdbool.h>
 
-int main()
-{
-    int arr[8] = {5,4,8,7,6,1,2,3};
-    int i, j, minimo, temp;
+#define MAX 7
 
-    printf("Disordered: \n");
-    for (i = 0; i < 8; i++)
-    {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
+int intArray[MAX] = {4,6,3,2,1,9,7};
 
-    //Selection Sort Algorithm
-    for (i = 0; i < 8; i++)
-    {
-        minimo = i;
-        for (j = i+1; j < 8; j++)
-        {
-            if (arr[minimo] > arr[j])
-            {
-                minimo = j;
-            }
-        }
-        temp = arr[i];
-        arr[i] = arr[minimo];
-        arr[minimo] = temp;
-    }
-    printf("Sorted by Selection Sort: \n");
-    for (i = 0; i < 8; i++)
-    {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-    
-    return 0;
+void printline(int count) {
+   int i;
+	
+   for(i = 0;i < count-1;i++) {
+      printf("=");
+   }
+	
+   printf("=\n");
+}
+
+void display() {
+   int i;
+   printf("[");
+	
+   // navigate through all items 
+   for(i = 0;i < MAX;i++) {
+      printf("%d ", intArray[i]);
+   }
+	
+   printf("]\n");
+}
+
+void selectionSort() {
+   int indexMin,i,j;
+	
+   // loop through all numbers 
+   for(i = 0; i < MAX-1; i++) { 
+	
+      // set current element as minimum 
+      indexMin = i;
+		
+      // check the element to be minimum 
+      for(j = i+1;j < MAX;j++) {
+         if(intArray[j] < intArray[indexMin]) {
+            indexMin = j;
+         }
+      }
+
+      if(indexMin != i) {
+         printf("Items swapped: [ %d, %d ]\n" , intArray[i], intArray[indexMin]); 
+			
+         // swap the numbers 
+         int temp = intArray[indexMin];
+         intArray[indexMin] = intArray[i];
+         intArray[i] = temp;
+      }          
+
+      printf("Iteration %d#:",(i+1));
+      display();
+   }
+}  
+
+void main() {
+   printf("Input Array: ");
+   display();
+   printline(50);
+   selectionSort();
+   printf("Output Array: ");
+   display();
+   printline(50);
 }

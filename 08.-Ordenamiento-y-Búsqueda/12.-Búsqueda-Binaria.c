@@ -1,53 +1,83 @@
 #include <stdio.h>
 
-int main()
-{
-    int arr[8] = {1,2,3,4,5,6,7,8};
-    int inf, sup, mitad, dato = 7;
-    char band = 'F';
+#define MAX 20
 
-    
-    //Binary search algorithm
+// array of items on which linear search will be conducted. 
+int intArray[MAX] = {1,2,3,4,6,7,9,11,12,14,15,16,17,19,33,34,43,45,55,66};
 
-    inf = 0;
-    sup = 8;
+void printline(int count) {
+   int i;
+	
+   for(i = 0;i <count-1;i++) {
+      printf("=");
+   }
+	
+   printf("=\n");
+}
 
-   
-    while (inf!=sup)
-    {
+int find(int data) {
+   int lowerBound = 0;
+   int upperBound = MAX -1;
+   int midPoint = -1;
+   int comparisons = 0;      
+   int index = -1;
+	
+   while(lowerBound <= upperBound) {
+      printf("Comparison %d\n" , (comparisons +1) );
+      printf("lowerBound : %d, intArray[%d] = %d\n",lowerBound,lowerBound,
+         intArray[lowerBound]);
+      printf("upperBound : %d, intArray[%d] = %d\n",upperBound,upperBound,
+         intArray[upperBound]);
+      comparisons++;
+		
+      // compute the mid point
+      // midPoint = (lowerBound + upperBound) / 2;
+      midPoint = lowerBound + (upperBound - lowerBound) / 2;	
+		
+      // data found
+      if(intArray[midPoint] == data) {
+         index = midPoint;
+         break;
+      } else {
+         // if data is larger 
+         if(intArray[midPoint] < data) {
+            // data is in upper half
+            lowerBound = midPoint + 1;
+         }
+         // data is smaller 
+         else {
+            // data is in lower half 
+            upperBound = midPoint -1;
+         }
+      }               
+   }
+   printf("Total comparisons made: %d" , comparisons);
+   return index;
+}
 
-        if((arr[mitad]==sup)&&(arr[mitad]<dato)){
-            break;
-        }
-        mitad = (inf+sup)/2;
-        if (arr[mitad] == dato)
-        {
-            band = 'V';
-            break;
-        }
-        if(arr[mitad] > dato)
-        {
-            sup = mitad;
-            mitad = (inf+sup)/2;
-        }
-        if(arr[mitad] < dato)
-        {
-            inf = mitad;
-            mitad = (inf+sup)/2;
-        }
-    
-    }
-    if (band == 'V')
-        {
-            printf("The number exist in the position: %d\n", mitad);
+void display() {
+   int i;
+   printf("[");
+	
+   // navigate through all items 
+   for(i = 0;i<MAX;i++) {
+      printf("%d ",intArray[i]);
+   }
+	
+   printf("]\n");
+}
 
-        }
-        else
-        {
-            printf("The number does not exist\n");
-        }
-    
+void main() {
+   printf("Input Array: ");
+   display();
+   printline(50);
+	
+   //find location of 1
+   int location = find(55);
 
-    return 0;
-
+   // if element was found 
+   if(location != -1)
+      printf("\nElement found at location: %d" ,(location+1));
+   else
+      printf("\nElement not found.");
 }
