@@ -1,3 +1,5 @@
+# Puedes amar Linux sin odiar a Microsoft
+
 ## Instalar GTK4 en una distribución basada en Debian
 
 _Para instalar el paquete binario_
