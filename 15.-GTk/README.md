@@ -1,4 +1,4 @@
-# Puedes amar Linux sin odiar a Microsoft
+# Puedes amar 🐧 sin odiar a Microsoft
 
 ## Instalar GTK4 en una distribución basada en Debian
 
