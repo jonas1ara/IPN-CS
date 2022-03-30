@@ -19,7 +19,9 @@ sudo apt install gtk-4-examples
 
 ![GTK-PreWork](/00.-Sources/gtkprework.gif)
 
-_Una vez instalado necesitas probar que los paquetes funcionan, copia y pega el código del Hola mundo en GTK4 en un archivo llamado Hola-mundo.c_
+## Usando GTK4 en Ubuntu 21.10
+
+_Una vez instalado necesitas probar que los paquetes funcionan, copia y pega en un archivo llamado Hola-mundo.c el código de un tradicional "Hola mundo" en GTK4_
 
 ```c
 #include <gtk/gtk.h>
