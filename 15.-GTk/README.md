@@ -1,4 +1,4 @@
-_Como instalar GTK4 para desarrollar desde Ubuntu_
+## Instalar GTK4 en una distribución basada en Debian
 
 _Para instalar el paquete binario_
 
@@ -21,7 +21,7 @@ sudo apt install gtk-4-examples
 
 _Una vez instalado necesitas probar que los paquetes funcionan, copia y pega el código del Hola mundo en GTK4 en un archivo llamado Hola-mundo.c_
 
-```
+```c
 #include <gtk/gtk.h>
 
 static void
@@ -82,7 +82,7 @@ gcc $( pkg-config --cflags gtk4 ) -o Hola-mundo Hola-mundo.c $( pkg-config --lib
 
 _gcc es el compilador que va a utilizar, etc._
 
-_Esto nos crea un ejecutable llamado Hola-mundo, ejecutalo de la siguiente manera_
+_Todo esto nos crea un ejecutable llamado Hola-mundo, ejecutalo de la siguiente manera_
 
 ```
 ./Hola-mundo
