@@ -1,18 +1,3 @@
-/*
-    No es mi código pero es interesante estudiarlo :D
-
-    Compila con: gcc -o Dona Dona.c -lm
-
-    Links a 2 videos que lo explica: 
-
-    Lex Friedman:
-    https://www.youtube.com/watch?v=DEqXNfs_HhY&t=44s
-
-    Joma Tech:
-    https://www.youtube.com/watch?v=sW9npZVpiMI
-
-*/
-
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
