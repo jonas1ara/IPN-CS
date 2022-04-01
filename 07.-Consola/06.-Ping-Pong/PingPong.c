@@ -15,7 +15,9 @@
 #include <math.h> //Funciones para la obtención de números aleatorios ( rand() ).
 #include <pthread.h> //Ejecución con varios hilos.
 #include <time.h> //Proporciona time() que nos devuelve la hora.
- 
+#include <stdlib.h>
+#include <unistd.h>
+
 /*******************************/
 int salir_ncurses(); //Cierra el modo ncurses.
 void dibujar_marco(); //Dibuja el marco.

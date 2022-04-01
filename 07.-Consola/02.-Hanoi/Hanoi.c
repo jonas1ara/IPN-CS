@@ -32,6 +32,7 @@ _de_Hanoi_parte_2
  
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
  
  
 void imprime( int *tab, int fil, int col, int ultNum )
