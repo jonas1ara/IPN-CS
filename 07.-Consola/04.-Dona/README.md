@@ -14,7 +14,7 @@ _Ejecuta_
 ./Dona
 ```
 
-<img src=/000/dona.gif alt="#"/>
+<img src=/00.-Sources/dona.gif alt="#"/>
 
 ## Explicación y contexto 
 
