@@ -1,6 +1,6 @@
 # Tic tac toe en nuestra lengua "gato"
 
-_ 😁😁_
+_😁😁_
 
 _Compila con gcc o clang y ejecuta_
 
