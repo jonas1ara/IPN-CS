@@ -2,5 +2,5 @@
 
 _Estructuras de datos en C_
 
-<img src=/000/DS.jpeg alt="#"/>
+<img src=/00.-Sources/DS.jpeg alt="#"/>
 
