@@ -15,7 +15,7 @@ clang -o Hanoi Hanoi.c
 
 ## Explicación 
 
-_En esta ocasión por ser parte de uno de los temas más importantes decidí explicarlo en el [blog]() de este repositorio junto con el tema de recursión, el código esta comentado, entonces ve el siguiente video, lee el [post](), trata de leer y entender el código y haz tus apuntes _
+_En esta ocasión por ser parte de uno de los temas más importantes decidí explicarlo en el [blog]() de este repositorio junto con el tema de recursión, el código esta comentado, entonces ve el siguiente video, lee el [post](), trata de leer y entender el código y haz tus apuntes_
 
 _Te dejo un [video](https://www.youtube.com/watch?v=LM68IQvIo_E) acerca de las torres de Hanoi con [Eduardo Saenz de Cabezón](https://www.youtube.com/channel/UCH-Z8ya93m7_RD02WsCSZYA) un divulgador matemático bastante citado en este repositorio_
 
