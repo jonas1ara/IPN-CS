@@ -1,28 +1,39 @@
 # Ncurses
 
-## Instalar GTK4 en una distribución basada en Debian
+## Instalar Ncurses en una distribución basada en Debian
 
-_Para instalar el paquete binario_
+_Para instalar la librería_
 
 ```
 sudo apt-get install libncurses5-dev libncursesw5-dev
 ```
 
-![GTK-PreWork](/00.-Sources/preworkNcurses.gif)
+![Ncurses-PreWork](/00.-Sources/preworkNcurses.gif)
 
 ## Usando Ncurses en Ubuntu 
 
-_Una vez instalado necesitas probar que los paquetes funcionan, copia y pega en un archivo llamado Hola-mundo.c el código de un tradicional "Hola mundo" en GTK4_
+_Una vez instalado necesitas probar que la librería  funciona, copia y pega en un archivo llamado Ncurses.c para crear el demo de la librería "Ncurses"_
 
 ```c
-#include <stdio.h>
 #include <ncurses.h>
-
-int main()
+#include <stdlib.h>
+#include <stdio.h>
+//Función principal
+int main(void)
 {
-  printf("Hello");
+    initscr();
 
-  return 0;
+    addstr("-----------------\n| Ipn.c |\n| Ncurses Demo  |\n-----------------\n\n");
+    refresh();
+
+    addstr("\npresiona cualquier tecla para salir...");
+    refresh();
+
+    getch();
+
+    endwin();
+
+    return EXIT_SUCCESS;
 }
 ```
 
@@ -38,4 +49,4 @@ _Todo esto nos crea un ejecutable llamado Ncurses, ejecutalo de la siguiente man
 ```
 ./Ncurses
 ```
-![GTK-PreWork](/00.-Sources/Ncurses.gif)
+![GTK-PreWork](/00.-Sources/demoNcurses.gif)
