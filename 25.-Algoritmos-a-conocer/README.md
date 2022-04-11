@@ -2,7 +2,7 @@
 
 _25 Algoritmos que todo matemático debería conocer 😁😁_
 
-<img src=/000/25.jpeg alt="#"/>
+<img src=/00.-Sources/25.jpeg alt="#"/>
 
 ## Algoritmos
 
@@ -12,7 +12,7 @@ _[1.-Huffman Algo]()_
 
 _[2.-Compression Algo]()_
 
-_[3.-Euclid´s Algo]()_
+_[3.-Euclid´s Algo](https://github.com/Jonas-Lara/Ipn.c/blob/master/04.-Algoritmos-Es%C3%A1u/07-Mcd.c)_
 
 _Arreglos_
 
