@@ -3,7 +3,9 @@
 #include <stdlib.h>
 #include <time.h>
 
+//Constante MAX que define el tamaño máximo de los números  a generar
 #define MAX 1000000
+//Constante N que define el número de números a generar
 #define NUMS_TO_GENERATE 1000
  
 int main() {
