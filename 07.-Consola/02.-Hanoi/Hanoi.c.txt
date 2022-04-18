@@ -32,9 +32,8 @@ _de_Hanoi_parte_2
  
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
- 
- 
+#include <windows.h>
+
 void imprime( int *tab, int fil, int col, int ultNum )
 {
  /*
@@ -139,17 +138,17 @@ Poscondición:
  if( disc==1 )
  {
  // Se borra la pantalla, se imprime la tabla y se hace una pausa que varia dependiendo del numero de discos:
- system("clear");
+ system("cls");
  mueveDisco( tab, fil, col, ultNum, O, D );
- if(col<=5) system("sleep 0.8"); else if(col<=10) system("sleep 0.3"); else if(col<=15) system("sleep 0.06"); else if(col>15) system("sleep 0.02");
+ if(col<=5) Sleep(.8); else if(col<=10) Sleep(.3); else if(col<=15) Sleep(0.06); else if(col>15) Sleep(0.02);
  }
  else
  {
  hanoi( tab, fil, col, disc-1, ultNum, O, D, A );
  
- system("clear");
+ system("cls");
  mueveDisco( tab, fil, col, ultNum, O, D );
- if(col<=5) system("sleep 0.8"); else if(col<=10) system("sleep 0.3"); else if(col<=15) system("sleep 0.06"); else if(col>15) system("sleep 0.02");
+ if(col<=5) Sleep(0.8); else if(col<=10) Sleep(0.3); else if(col<=15) Sleep(0.06); else if(col>15) Sleep(0.02);
  
  hanoi( tab, fil, col, disc-1, ultNum, A, O, D );
  };
@@ -184,9 +183,9 @@ int main()
  ultNum = disc;
  
  // Se imprime el tablero antes de iniciar ningún movimiento:
- system("clear");
+ system("cls");
  imprime( tablero, fil, col, ultNum );
- system("sleep 1");
+ Sleep(1.0);
  
  
  // Se llama a hanoi para comenzar "la partida":
