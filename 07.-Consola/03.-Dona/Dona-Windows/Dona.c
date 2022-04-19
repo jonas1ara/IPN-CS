@@ -1,8 +1,7 @@
-// gcc Dona.c -o Dona -lncurses -lm
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
-#include <unistd.h>
+#include <windows.h>
 
 int main() {
     float A = 0, B = 0;
@@ -43,7 +42,7 @@ int main() {
             A += 0.00004;
             B += 0.00002;
         }
-        usleep(30000);
+        Sleep(.00003);
     }
     return 0;
 }
