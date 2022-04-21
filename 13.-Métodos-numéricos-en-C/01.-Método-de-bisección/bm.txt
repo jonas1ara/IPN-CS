@@ -1,0 +1,7 @@
+Bisection Method
+  I                 P              F(P)
+  1    1.50000000e+00     2.3750000e+00 
+
+Approximate solution P =  1.50000000 
+with F(P) =   2.37500000
+Number of iterations =   1    Tolerance =  1.11100000e+00
