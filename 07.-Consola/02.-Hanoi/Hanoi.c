@@ -155,7 +155,7 @@ Poscondición:
 };
 
 
-main()
+int main()
 {
 	int fil=3, col, *tablero = NULL;
 	int f, c, disc=1, ultNum;
