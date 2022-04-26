@@ -11,7 +11,7 @@ _Estos archivos te permitirán tener tu configuración de vim y tmux como la mí
 
 _Ubuntu en WSL2_
 
-<img src=/00.-Sources/dotFiles/Captures/vimrc.png alt="Linux"/>
+<img src=/00.-Sources/dotFiles/Captures/WSL.png alt="Linux"/>
 
 ## Construido con 🛠️
 
