@@ -25,7 +25,7 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
 
 ## Construido con 🛠️
 
-* [VS Code](https://code.visualstudio.com/) - Visual Studio Code
+* [VIM](https://www.vim.org/) - VIM
 * [Language C](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=language+c+dennis&qid=1618383287&sr=8-1) - El lenguaje C de Dennis Ritchie
 * [UPIIT](https://www.upiit.ipn.mx/) - Unidad Profesional Interdisciplinaria de Ingeniería campus Tlaxcala
 
