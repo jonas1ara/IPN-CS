@@ -18,7 +18,7 @@ Un compilador para C/C++ y el editor de texto de tu preferencia
 
 _Si estas en Linux o MacOS ya tienes instalado un compilador para el lenguaje C, pero si estas en Windows te recomiendo seguir este [Tutorial](https://www.youtube.com/watch?v=v3ENcQpoA5A) de @FaztTech para descargar MinGW y usarlo con VS Code_
 
-_ADVERTENCIA: Este repositorio no esta pensado en usarse con Windows por temas especificos que son el uso de Make, las aplicaciones de Consola usan Ncurses, el manejo de hilos es con pthread y no con posix por lo cuál no funciona en windows, las librerías de libcurl solo funcionan en Unix, el script para instalar las herramientas es un script de bash por lo tanto sólo funciona para windows y por último la librería GTK para crear aplicaciones gráficas en GNOME es para ayudar al escritorio de Linux🤷‍♂️_
+_ADVERTENCIA: Este repositorio no esta pensado en usarse con Windows por temas especificos que son el uso de Make, las aplicaciones de Consola usan Ncurses, el manejo de hilos es con pthread y no con posix por lo cuál no funciona en windows, las librerías de libcurl solo funcionan en Unix, el script para instalar las herramientas es un script de bash por lo tanto sólo funciona para windows y por último la librería GTK para crear aplicaciones gráficas en GNOME es para ayudar al escritorio de Linux🤷‍♂️ , si estas en windows y si te interesan esos temas te recomiendo usar WSL_
 
 ## Como usar este repositorio 🔧
 
