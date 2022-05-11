@@ -5,11 +5,13 @@ void vectorRec_inv(int arr[], int n);
 
 int main()
 {
-	int arr[] = {1,2,3,4,5,6};
-	vectorRec(arr,5);
-	printf("\n");
+	int arr[] = {1,2,3,4,5,6};	
 	vectorRec_inv(arr, 5);
 	printf("\n");
+
+	vectorRec(arr,5);
+	printf("\n");
+
 	return 0;
 }
 

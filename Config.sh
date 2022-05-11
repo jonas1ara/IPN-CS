@@ -17,3 +17,4 @@ echo "Librerías para GTK4"
 
 sudo apt install libgtk-4-1 libgtk-4-dev -y
 
+
