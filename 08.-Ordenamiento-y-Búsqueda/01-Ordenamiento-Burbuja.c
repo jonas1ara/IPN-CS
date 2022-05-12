@@ -9,7 +9,7 @@ void display(){
    int i;
    printf("[");
 	
-   // navigate through all items 
+   // navegar a traves de arreglo
    for(i = 0; i < MAX; i++) {
       printf("%d ",list[i]);
    }
@@ -22,17 +22,17 @@ void bubbleSort() {
    int i,j;
    bool swapped = false;       
    
-   // loop through all numbers 
+   // Recorrer todos los elementos del arreglo
    for(i = 0; i < MAX-1; i++) { 
       swapped = false;
 		
-      // loop through numbers falling ahead 
+      // Recorrer los números que se adelantan
       for(j = 0; j < MAX-1-i; j++) {
-         printf("Items compared: [ %d, %d ] ", list[j],list[j+1]);
+         printf("Elementos : [ %d, %d ] ", list[j],list[j+1]);
 
-         // check if next number is lesser than current no
-         //   swap the numbers. 
-         //  (Bubble up the highest number) 
+         // Checar si el número siguiente es menor que el actual
+         //   Intercambiar los números 
+         //  (Sube el número más alto) 
 			
          if(list[j] > list[j+1]) {
             temp = list[j];
@@ -40,28 +40,28 @@ void bubbleSort() {
             list[j+1] = temp;
 
             swapped = true;
-            printf(" => swapped [%d, %d]\n",list[j],list[j+1]);
+            printf(" => Intecarmbiado [%d, %d]\n",list[j],list[j+1]);
          } else {
-            printf(" => not swapped\n");
+            printf(" => No intercambiado\n");
          }
       }
 
-      // if no number was swapped that means 
-      //   array is sorted now, break the loop. 
+      // Si no se intercambió ningún número, eso significa
+      //  Arreglo ordenado, romper el ciclo. 
       if(!swapped) {
          break;
       }
       
-      printf("Iteration %d#: ",(i+1)); 
+      printf("Iteración %d#: ",(i+1)); 
       display();                     
    }    
 }
 
 int main() {
-   printf("Input Array: ");
+   printf("Arreglo de entrada: ");
    display();
    printf("\n");
    bubbleSort();
-   printf("\nOutput Array: ");
+   printf("\nArreglo de salida: ");
    display();
 }
