@@ -2,66 +2,71 @@
 
 #define MAX 20
 
-// array of items on which linear search will be conducted.
-int intArray[MAX] = {1,2,3,4,6,7,9,11,12,14,15,16,17,19,33,34,43,45,55,66};
+// Conjunto de elementos sobre los que se realizará la búsqueda lineal
+int arr[MAX] = {1,2,3,4,6,7,9,11,12,14,15,16,17,19,33,34,43,45,55,66};
 
-void printline(int count) {
+void display() {
+   int i;
+   printf("[");
+	
+   // Navegar a tráves de todos los elementos 
+   for(i = 0;i<MAX;i++) // MAX = 20
+   {
+      printf("%d ",arr[i]);
+   }
+   printf("]\n");
+}
+
+void printline(int count) //Lo que manden en la función se asigna a count
+{
    int i;
 	
-   for(i = 0;i <count-1;i++) {
+   for(i = 0;i <count-1;i++) 
+   {
       printf("=");
    }
 	
    printf("=\n");
 }
 
-// this method makes a linear search. 
-int find(int data) {
-
+// Esta función realiza una búsqueda lineal.
+int find(int data) //Lo que manden en la función se asigna a data
+{
    int comparisons = 0;
    int index = -1;
    int i;
 
-   // navigate through all items 
-   for(i = 0;i<MAX;i++) {
-	
-      // count the comparisons made 
+   // Navegar a tráves de todos los elementos
+   for(i = 0;i<MAX;i++) 
+   {
+      // Contar las comparaciones hechas
       comparisons++;
 		
-      // if data found, break the loop
-      if(data == intArray[i]) {
+      // Si se encuentra el dato, se rompe el bucle
+      if(data == arr[i]) 
+      {
          index = i;
          break;
       }
    }   
 	
-   printf("Total comparisons made: %d", comparisons);
+   printf("Comparaciones totales hechas: %d", comparisons);
    return index;
 }
 
-void display() {
-   int i;
-   printf("[");
-	
-   // navigate through all items 
-   for(i = 0;i<MAX;i++) {
-      printf("%d ",intArray[i]);
-   }
-	
-   printf("]\n");
-}
 
-void main() {
-   printf("Input Array: ");
+
+int main() {
+   printf("Array de entrada: ");
    display();
-   printline(50);
+   printline(75);
 	
-   //find location of 1
-   int location = find(55);
+   //Encontrar la ubicación de un elemento
+   int location = find(50);
 
-   // if element was found 
+   // Si el elemento se encuentra en el array 
    if(location != -1)
-      printf("\nElement found at location: %d" ,(location+1));
+      printf("\nElemento encontrado en la posición: %d\n" ,(location+1));
    else
-      printf("Element not found.");
+      printf("\nElemento no encontrado ...\n");
 }
