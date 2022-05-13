@@ -19,7 +19,7 @@ void display() {
    int i;
    printf("[");
 	
-   // navigate through all items 
+   // Navegar a través del arreglo 
    for(i = 0;i < MAX;i++) {
       printf("%d ",intArray[i]);
    }
@@ -33,16 +33,16 @@ void insertionSort() {
    int holePosition;
    int i;
   
-   // loop through all numbers 
+   // Ciclo a tráves de todos los números del arreglo
    for(i = 1; i < MAX; i++) { 
 	
-      // select a value to be inserted. 
+      // Selecciona un valor para ser insertado 
       valueToInsert = intArray[i];
 		
-      // select the hole position where number is to be inserted 
+      // Selecciona el espacio donde el valor será insertado 
       holePosition = i;
 		
-      // check if previous no. is larger than value to be inserted 
+      // Comprobar si el anterior no es mayor que el valor a insertar 
       while (holePosition > 0 && intArray[holePosition-1] > valueToInsert) {
          intArray[holePosition] = intArray[holePosition-1];
          holePosition--;
@@ -51,7 +51,7 @@ void insertionSort() {
 
       if(holePosition != i) {
          printf(" item inserted : %d, at position : %d\n" , valueToInsert,holePosition);
-         // insert the number at hole position 
+         // Inserte el número en la posición del agujero
          intArray[holePosition] = valueToInsert;
       }
 
