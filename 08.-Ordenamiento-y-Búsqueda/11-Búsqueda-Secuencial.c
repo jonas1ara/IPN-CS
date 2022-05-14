@@ -17,6 +17,8 @@ void display() {
    printf("]\n");
 }
 
+//Función para imprimir la división de los elementos
+
 void printline(int count) //Lo que manden en la función se asigna a count
 {
    int i;
@@ -53,8 +55,6 @@ int find(int data) //Lo que manden en la función se asigna a data
    printf("Comparaciones totales hechas: %d", comparisons);
    return index;
 }
-
-
 
 int main() {
    printf("Array de entrada: ");

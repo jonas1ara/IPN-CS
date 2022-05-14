@@ -1,68 +1,81 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 #define MAX 7
 
-int intArray[MAX] = {4,6,3,2,1,9,7};
+int arr[MAX] = {4,6,3,2,1,9,7};
 
-void printline(int count) {
+void display() 
+{
+   int i;
+   printf("[");
+	
+   // Navegar a tráves de todos los elementos del arreglo
+   for(i = 0;i < MAX;i++) 
+   {
+      printf("%d ", arr[i]);
+   }
+	
+   printf("]\n");
+}
+
+void printline(int count) 
+{
    int i;
 	
-   for(i = 0;i < count-1;i++) {
+   for(i = 0;i < count-1;i++) 
+   {
       printf("=");
    }
 	
    printf("=\n");
 }
 
-void display() {
-   int i;
-   printf("[");
-	
-   // navigate through all items 
-   for(i = 0;i < MAX;i++) {
-      printf("%d ", intArray[i]);
-   }
-	
-   printf("]\n");
-}
+/*Algoritmo de ordenamiento por selección*/
+/*Divide el arreglo en dos, consiste en encontrar el elemento más pequeño dentro del subarreglo desordenado 
+y lo mueve al último indice del subarreglo ordenado*/
 
-void selectionSort() {
+void selectionSort() 
+{
    int indexMin,i,j;
 	
-   // loop through all numbers 
-   for(i = 0; i < MAX-1; i++) { 
-	
-      // set current element as minimum 
+   // Ciclo a tráves de todos los elementos del arreglo
+   for(i = 0; i < MAX-1; i++) 
+   { 
+      //  Establecer el elemento actual como el mínimo
       indexMin = i;
 		
-      // check the element to be minimum 
-      for(j = i+1;j < MAX;j++) {
-         if(intArray[j] < intArray[indexMin]) {
+      // Compruebe que el elemento sea mínimo
+      for(j = i+1;j < MAX;j++) 
+      {
+         if(arr[j] < arr[indexMin]) 
+         {
             indexMin = j;
          }
       }
 
-      if(indexMin != i) {
-         printf("Items swapped: [ %d, %d ]\n" , intArray[i], intArray[indexMin]); 
+      if(indexMin != i) 
+      {
+         printf("Elementos intercambiados: [ %d, %d ]\n" , arr[i], arr[indexMin]); 
 			
-         // swap the numbers 
-         int temp = intArray[indexMin];
-         intArray[indexMin] = intArray[i];
-         intArray[i] = temp;
+         // Intercambio de números 
+         int temp = arr[indexMin];
+         arr[indexMin] = arr[i];
+         arr[i] = temp;
       }          
 
-      printf("Iteration %d#:",(i+1));
+      printf("Iteración %d#:",(i+1));
       display();
    }
 }  
 
-void main() {
-   printf("Input Array: ");
+int main() 
+{
+   printf("Ordenamiento por selección con complejidad O(n²) \n\n");
+   printf("Arreglo de entrada: ");
    display();
    printline(50);
    selectionSort();
-   printf("Output Array: ");
+   printf("Arreglo de salida: ");
    display();
    printline(50);
 }

@@ -1,60 +1,65 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 #define MAX 7
 
-int intArray[MAX] = {4,6,3,2,1,9,7};
+int arr[MAX] = {4,6,3,2,1,9,7};
 
-void printline(int count) {
-   int i;
-	
-   for(i = 0;i < count-1;i++) {
-      printf("=");
-   }
-	
-   printf("=\n");
-}
-
-void display() {
+void display() 
+{
    int i;
    printf("[");
 	
-   // navigate through all items 
-   for(i = 0;i < MAX;i++) {
-      printf("%d ",intArray[i]);
+   // Navegar a través de todos los elementos del arreglo
+   for(i = 0;i < MAX;i++) 
+   {
+      printf("%d ",arr[i]);
    }
 	
    printf("]\n");
 }
 
-void shellSort() {
+void printline(int count) 
+{
+   int i;
+	
+   for(i = 0;i < count-1;i++) 
+   {
+      printf("=");
+   }
+   printf("=\n");
+}
+
+void shellSort() 
+{
    int inner, outer;
    int valueToInsert;
    int interval = 1;   
    int elements = MAX;
    int i = 0;
    
-   while(interval <= elements/3) {
+   while(interval <= elements/3) 
+   {
       interval = interval*3 +1;
    }
 
    while(interval > 0) {
-      printf("iteration %d#:",i); 
+      printf("Iteración %d#:",i); 
       display();
       
-      for(outer = interval; outer < elements; outer++) {
-         valueToInsert = intArray[outer];
+      for(outer = interval; outer < elements; outer++) 
+      {
+         valueToInsert = arr[outer];
          inner = outer;
 			
-         while(inner > interval -1 && intArray[inner - interval] 
+         while(inner > interval -1 && arr[inner - interval] 
             >= valueToInsert) {
-            intArray[inner] = intArray[inner - interval];
+            arr[inner] = arr[inner - interval];
             inner -=interval;
-            printf(" item moved :%d\n",intArray[inner]);
+            printf(" Elemento movido :%d\n",arr[inner]);
          }
          
-         intArray[inner] = valueToInsert;
-         printf(" item inserted :%d, at position :%d\n",valueToInsert,inner);
+         arr[inner] = valueToInsert;
+         printf(" Elemento insertado :%d, at position :%d\n",valueToInsert,inner);
       }
 		
       interval = (interval -1) /3;
@@ -62,12 +67,14 @@ void shellSort() {
    }          
 }
 
-int main() {
-   printf("Input Array: ");
+int main() 
+{
+   printf("Ordenamiento burbuja con complejidad Ο(n log n) \n\n");
+   printf("Arreglo de entrada: ");
    display();
    printline(50);
    shellSort();
-   printf("Output Array: ");
+   printf("Arreglo de salida: ");
    display();
    printline(50);
    return 1;
