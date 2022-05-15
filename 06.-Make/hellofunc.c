@@ -3,7 +3,7 @@
 
 void myPrintHelloMake(void) {
 
-  printf("Hello Makefiles from WSL2!\n");
+  printf("Hola makefiles desde Ubuntu 22.04\n");
 
   return;
 }

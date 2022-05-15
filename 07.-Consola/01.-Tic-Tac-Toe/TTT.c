@@ -1,5 +1,5 @@
-//This is a tic tac toe game written in C designed for beginners
-//(This doesn't contain the use of pointers or other more advanced C topics)
+//Este es el juego de Tic-Tac-Toe diseñado para principiantes.
+//Este juego no contiene punteros o un uso avanzado de C
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -145,7 +145,7 @@ void computerMove()
 }
 char checkWinner()
 {
-   //check rows
+   //Checar filas
    for(int i = 0; i < 3; i++)
    {
       if(board[i][0] == board[i][1] && board[i][0] == board[i][2])
@@ -153,7 +153,7 @@ char checkWinner()
          return board[i][0];
       }
    }
-   //check columns
+   //Checar columnas
    for(int i = 0; i < 3; i++)
    {
       if(board[0][i] == board[1][i] && board[0][i] == board[2][i])
@@ -161,7 +161,7 @@ char checkWinner()
          return board[0][i];
       }
    }
-   //check diagonals
+   //Checar diagonales
    if(board[0][0] == board[1][1] && board[0][0] == board[2][2])
    {
       return board[0][0];
@@ -177,13 +177,13 @@ void printWinner(char winner)
 {
    if(winner == PLAYER)
    {
-      printf("YOU WIN!");
+      printf("¡Ganaste!");
    }
    else if(winner == COMPUTER)
    {
-      printf("YOU LOSE!");
+      printf("¡Perdiste :( !");
    }
    else{
-      printf("IT'S A TIE!");
+      printf("¡Empate !");
    }
 }
