@@ -123,7 +123,7 @@ void playerMove()
 }
 void computerMove()
 {
-   //creates a seed based on current time
+   //Crea una semilla basada en la hora actual
    srand(time(0));
    int x;
    int y;
