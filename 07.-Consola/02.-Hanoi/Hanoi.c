@@ -1,6 +1,5 @@
 ﻿/*
-	5x07-Torres_de_Hanoi_parte_2
-	24/01/2012
+
 
 	Escribe un programa (se recomienda que sea recursivo) que dé solución al problema de las torres de Hanoi.
 	El enunciado es el siguiente: Se dispone de una torre formada por varios discos de diferentes diámetros denominada torre O (origen),
@@ -29,8 +28,8 @@
 */
 
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h> //directiva de entradas y salidas estandar
+#include <stdlib.h> //directiva para el uso de memoría dinámica
 #include <unistd.h>
 
 void imprime( int *tab, int fil, int col, int ultNum )

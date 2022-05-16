@@ -1,12 +1,8 @@
 /*
------Creado por neob
------Juego de ping-pong.
+
 -----Compilar con gcc -o pong pong.c -lncurses -lpthread .
------Controles:
--- W - Mover la paleta hacia arriba.
--- S - Mover la paleta hacia abajo.
--- A - Mover la paleta hacia la izquierda.
--- D - Mover la paleta hacia la derecha.
+
+
 */
  
  
