@@ -5,7 +5,7 @@
 #include <time.h>
 
 #define MAX 1000000
-#define NUMS_TO_GENERATE 101
+#define NUMS_TO_GENERATE 100
  
 int main () {
     double sum = 0;
@@ -21,7 +21,7 @@ int main () {
 	//Declaro variables enteras y un arreglo que esta definido por una constante
    int numeros[NUMS_TO_GENERATE] = { 0 }, N, aux ;
 
-	printf("Este programa genera %d números aleatorios y los ordenada usando el algoritmo de ordenamiento por selección", NUMS_TO_GENERATE-1);
+	printf("Este programa genera %d números aleatorios y los ordenada usando el algoritmo de ordenamiento por selección", NUMS_TO_GENERATE);
 	printf("\n\nArreglo de elementos desordenados:\n ");
 
 	//Genaramos números aleatorios

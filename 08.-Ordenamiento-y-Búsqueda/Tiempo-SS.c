@@ -1,17 +1,26 @@
 #include <stdio.h>
+#include <sys/time.h>
 #include <stdlib.h>
 #include <time.h>
 
 //Constante MAX que define el tamaño máximo de los números  a generar
 #define MAX 1000000
 //Constante N que define el número de números a generar
-#define NUMS_TO_GENERATE 101
- 
-int main() {
-	int numeros[NUMS_TO_GENERATE] = { 0 }, N, temp, minimo ;
+#define NUMS_TO_GENERATE 100
+
+int main () {
+    double sum = 0;
+    double add = 1;
+    
+    int numeros[NUMS_TO_GENERATE] = { 0 }, N, temp, minimo ;
 
 
-	printf("Este programa genera %d números aleatorios y los ordenada usando el algoritmo de ordenamiento por selección:\n", NUMS_TO_GENERATE-1);
+    // Start measuring time
+    struct timeval begin, end;
+    gettimeofday(&begin, 0);
+    
+    //Code to measure
+   	printf("Este programa genera %d números aleatorios y los ordenada usando el algoritmo de ordenamiento por selección:\n", NUMS_TO_GENERATE);
 	printf("Arreglo de números generados:\n ");
 
     srand(time(NULL));
@@ -53,6 +62,17 @@ int main() {
 	{
 		printf("%d.- %d\n ", i, numeros[i]);	
 	}
-	
-    exit(EXIT_SUCCESS);
+   
+    
+    // Stop measuring time and calculate the elapsed time
+    gettimeofday(&end, 0);
+    long seconds = end.tv_sec - begin.tv_sec;
+    long microseconds = end.tv_usec - begin.tv_usec;
+    double elapsed = seconds + microseconds*1e-6;
+    
+    printf("Result: %.20f\n", sum);
+    
+    printf("Time measured: %.3f seconds.\n", elapsed);
+    
+    return 0;
 }
