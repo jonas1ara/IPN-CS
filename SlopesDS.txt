@@ -1,0 +1,59 @@
+Algoritmos de ordenamiento:
+	-Merge sort
+	-Quick sort
+	-Shell sort
+	
+Notación asintótica:
+	-Análisis de algoritmos
+	-Introducción
+	
+Backtracking:
+	-N Queens
+	-Rata en laberinto
+	-Sudoku
+	
+Busquedas:
+	-Secuencial
+	-Binario
+	-Interpolación
+	
+
+	
+Algoritmos:
+	-Huffman Algo
+	-Compression Algo
+	-Euclidś Algo
+	-Kadane's Algo
+	-Floyd's Algo
+	-KMP Algo
+	-Quick Select Algo
+	-Boyer-More Algo
+	-Majority Algo
+	
+Algoritmos Esáu 1
+	-Convolución de matrices
+	-Juego del ahorcado
+	-Número espejo recursivo
+	-PI-montecarlo
+	-Numeros racionales
+	-Encontrando palabras
+	
+Algoritmos Esáu 2
+	-Tiempo de ordenamiento ... 
+	-Tiempo de búsqueda ...
+	-Ordenamiento N bolsas ...
+	-Salir del laberinto ...
+	
+Memoría dinámica:
+	-Malloc y Realloc
+	
+Básicos de C:
+	-Punteros y funciones
+	-Cadenas en C
+	
+How To:
+	-Invertir arreglo
+	-Comparar valores del arreglo
+	
+
+
