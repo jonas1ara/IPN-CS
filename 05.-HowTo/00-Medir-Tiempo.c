@@ -9,7 +9,7 @@ int main () {
     struct timeval begin, end;
     gettimeofday(&begin, 0);
     
-    ///////Código a medir/////////
+    ///////Coloca aquí el código a medir/////////
     
     
     // Detiene la medición de tiempo y retiene la medida transcurrida

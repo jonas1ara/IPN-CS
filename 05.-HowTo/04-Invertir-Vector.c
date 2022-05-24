@@ -1,32 +1,28 @@
-#include <stdio.h>
+#include<stdio.h>
 
-void printArr(int arr[], int length);
+void reversee(int arr[], int start, int end)
+{
+	int temp;
+	while (start < end)
+	{
+		temp = arr[start];
+		arr[start] = arr[end];
+		arr[end] = temp;
+		start++;
+		end--;
+	}
+}	
 
 int main()
 {
-	int arr[] = {10 ,4, 3, 5, 5}, arr2[5];
+	int arr[] = {1, 2, 3, 4, 5, 6};
+	int n = sizeof(arr) / sizeof(arr[0]);
 	
-	int arr_length = sizeof(arr) / sizeof(int), arr2_length = sizeof(arr2) / sizeof(int);
-	
-	printArr(arr, arr_length);
-	
-	int i, j;
-	
-	for(i = arr_length-1, j = 0; i >= 0 && j < arr2_length; i--, j++)
+	reversee(arr, 0, n-1);
+	printf("Reversed array is \n");
+	for(int i=0;i<n;i++)
 	{
-		arr2[j] = arr[i];
-		printf("%d ", arr2[j]);
+	    printf("%d ",arr[i]);
 	}
-	printf("\n");
 	return 0;
-}
-
-void printArr(int arr[], int length)
-{
-	int i;
-	for(i = 0; i < length; i++)
-	{
-		printf("%d ", arr[i]);
-	}
-	printf("\n \n");
 }
