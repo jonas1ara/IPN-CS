@@ -10,12 +10,13 @@
 int main() {
 
 	int numeros[NUMS_TO_GENERATE] = { 0 }, N ;
+	//Declara arreglo vacio del tamaño que tome NUMS_TO_GENERATE 
  
-    srand(time(NULL));
+    srand(time(NULL)); //Semilla para empezar el conteo
     for (int i = 0; i < NUMS_TO_GENERATE; i++){
-        N = rand() % MAX;
+        N = rand() % MAX; //Función rand() para generar números pseudo aleatorios desde la semilla hasta el valor que tome MAX y son almacenados en la variable N
  		
-    	printf("%d.- %d\n",i, N);
+    	printf("%d.- %d\n",i, N); //Se imprime variable N y el número del número que es
 
 	 }
 
