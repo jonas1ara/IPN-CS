@@ -1,23 +1,24 @@
 #include <stdio.h>
 
-void ordenar (int v[]);
-void imprimir (int v[]);
+void ordenar ();
+void imprimir ();
 
 #define Length 10
 
 
 int main()
 {
-	int v[Length] = {4,7,8,9,6,5,2,1,3,0};
-	imprimir (v);
+	int arr[Length] = {4,7,8,9,6,5,2,1,3,0};
+	imprimir (arr); //Imprime el arreglo desordenado
 
-	ordenar (v);
-	imprimir (v);
+	ordenar (arr); //Retorna el arreglo ordenado
+	imprimir (arr);
 
 	return 0;
 }
 
-void ordenar(int v[])
+//Ordenamiento
+void ordenar(int arr[])
 {
 	int i, j, aux;
 
@@ -25,23 +26,23 @@ void ordenar(int v[])
 	{
 		for (j = i; j < 10; j++)
 		{
-			if (v[i] > v[j])
+			if (arr[i] > arr[j])
 			{
-				aux = v[i];
-				v[i] = v[j];
-				v[j] = aux;
+				aux = arr[i];
+				arr[i] = arr[j];
+				arr[j] = aux;
 			}
 		}
 	}
 }
 
-void imprimir(int v[])
+void imprimir(int arr[])
 {
 	int i;
 	
 	for (i=0; i < Length; i++)
 	{
-		printf("%i ", v[i]);
+		printf("%i ", arr[i]);
 	}
 	printf("\n");
 }

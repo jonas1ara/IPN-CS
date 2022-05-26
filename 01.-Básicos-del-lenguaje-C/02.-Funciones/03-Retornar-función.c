@@ -1,18 +1,18 @@
-#include <stdio.h> //directive include
+#include <stdio.h> //directiva include
 
-int sum(); //sum function
-int num3 = 5; //global variable; integer type
-int main() { //main function
+int sum(); //función suma
+int num3 = 5; //variable global de tipo entero
+int main() { //función principal
 
 	int num1, num2;
 	
-	printf("Enter the firts value: \n");
+	printf("Ingresa el primer valor: \n");
 	scanf("%i", &num1);
 
-	printf("Enter the second value:\n");
+	printf("Ingresa el segundo valor:\n");
 	scanf("%i", &num2);
 	
-	printf("El resultado es: %i\n", sum(num1,num2)); // Print sum function	
+	printf("El resultado es: %i\n", sum(num1,num2)); // Imprimir lo que retorna la función suma	
 
 	return 0;
 
