@@ -5,8 +5,8 @@
 
 #include <stdio.h>
 
-int main(){
-	
+int main()
+{
 	int num = 0;
 
 	while(num<=7)

@@ -1,6 +1,6 @@
 /*	Recursive functions
 
-Las funciones recursivas tienen la propiedad de llamarse ellas mismas
+Las funciones recursivas tienen la propiedad de llamar a una versión reducida de ellas mismas
 
 	Ejemplo del factorial de un número
 
@@ -14,7 +14,7 @@ Las funciones recursivas tienen la propiedad de llamarse ellas mismas
 
 #include <stdio.h>
 
-long factorial(long number); // Prototipo de función
+long factorial(); // Prototipo de función
 //definida como tipo long con el parametro número
 
 int main()
@@ -26,7 +26,7 @@ int main()
 
 	for (int i = 0; i <= number; i++)
 	{
-		printf("%ld\n", factorial(i));
+		printf("%ld\t", factorial(i));
 	}
 
 	return 0;

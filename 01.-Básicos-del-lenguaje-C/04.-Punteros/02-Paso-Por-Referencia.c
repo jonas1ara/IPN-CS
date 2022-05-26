@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 
-void cubo(int *n); //Prototipo de nuestra función, argumento de apuntador.
+void cubo(); 
 
 int main() 
 {	
@@ -18,13 +18,13 @@ int main()
 	printf("El nuevo valor: %i\n", num);
 	
 	return 0;	
-
 }
+
 void cubo(int *n) ///Valor VOID no son necesarios para devolver un valor, recibirá el parámetro que enviamos anteriormente y lo utilizará como *n
-	{
+{
 	
 	*n = *n * *n * *n;
 
-	}
+}
 
 

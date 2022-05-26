@@ -22,6 +22,6 @@ int suma() {
 	int num2 = 4;
 	int sum = num1 + num2;
 
-	return sum;	//Retorna el variable de la función
+	return sum;	//Retorna el valor de la función
 
 }

@@ -1,30 +1,30 @@
 /*
 
-	C provee el operador binario para determinar el tamño en bytes de un arreglo o cualquier otro tipo de dato
+	C provee el operador binario para determinar el tamaño en bytes de un arreglo o cualquier otro tipo de dato
 
-sizeof(array); returns: 80 ---> the size of the entire array.
-sizeof(ptr);   returns: 8  ---> the size of the pointer or pointer.
-sizeof(*ptr);  returns: 4  --->the size of the first object in the array (the "pointers" point only to one object in the array, which by default is the first).
+sizeof(array); returns: 80 ---> El tamaño del arreglo entero.
+sizeof(ptr);   returns: 8  ---> El tamaño de un puntero.
+sizeof(*ptr);  returns: 4  ---> El tamaño del primer objeto en el arreglo (los "punteros" solo apuntan a un objeto en el arreglo, que por defecto es el primero).
 
 */
 
 #include <stdio.h>
 
-size_t getsize(float *ptr); //Prototipo de la función
+size_t getsize(); //Prototipo de la función
 
 int main() 
 {	
-	float array[20]; //Arreglo de tipo flotante
-	printf("El número de bytes en el array es: %lu\n", getsize(array)); //Imprimimos el valor de nuestro array, enviando la llamada a la función getsize y pasandola al mismo array
-
-	printf("El número de bytes en el array es: %lu \n", sizeof(array)); //largo sin firmar nos permitirá poder imprimir el valor en bytes y como parámetro le pasamos el arreglo flotante, ya que al usar flotante almacena 4 bytes y lo multiplica por el tamaño del arreglo
-	
+	float arr[20]; //Arreglo de tipo flotante
+	printf("El número de bytes en el array es: %lu\n", getsize(arr)); //Imprimimos el valor de nuestro array, enviando la llamada a la función getsize y pasandola al mismo array
+	//Primer imprime el tamaño del primer objeto en el arreglo = 4
+	printf("El número de bytes en el array es: %lu \n", sizeof(arr)); //largo sin firmar nos permitirá poder imprimir el valor en bytes y como parámetro le pasamos el arreglo flotante, ya que al usar flotante almacena 4 bytes y lo multiplica por el tamaño del arreglo
+	//Imprime el valor del arreglo en bytes 4 * 20 = 80
 	return 0;
 }
 size_t getsize(float *ptr)
-{ //Function of type size that receives our float type array by making it our pointer, size_t is a type defined by the standard of C as an integer type and the value we must return must not have a sign
+{ //Función de tipo size que recibe nuestro array de tipo float convirtiéndolo en nuestro puntero, size_t es un tipo definido por el estándar de C como un tipo entero y el valor que debemos devolver no debe tener signo
 	
-	return sizeof(*ptr);// We return the sizeof of our pointer.
+	return sizeof(*ptr);// Retornamos sizeof el tamaño de todo el arreglo
 
 }
 

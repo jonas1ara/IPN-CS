@@ -14,6 +14,7 @@ int main(){
 	{
 		printf("%i\n",contador);
 		contador++; //Adherir 1 a contador
+		
 	} while(contador <=10); //Condicionar el bloque anterior
 	
 	return 0;
