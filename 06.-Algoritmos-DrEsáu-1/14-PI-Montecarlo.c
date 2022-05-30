@@ -6,15 +6,15 @@ void plano(int n);
 int main()
 {
 	//1.-Imprimir un cuadro y buscar sentencias logicas para que nos imprima un espacio o numeral
-	
-	plano(int n);
+	int n = 10;
+
+	plano(n);
 	
 	return 0;
 }
 
-void plano(int n, int j, int i)
+void plano(int n)
 {
-	int n = 10;
 	
 	for(int j = 0; j <= n*2; j++) //y
 	{
