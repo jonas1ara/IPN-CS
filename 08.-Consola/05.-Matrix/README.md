@@ -6,6 +6,6 @@ _En este proyecto se trata entender el uso de ncurses, la modularización y el u
 
 ## Explicación  
 
-_Se hizo un [post]() en el blog donde se explica el desarrollo de este proyecto, por favor leelo, en un futuro cercano en ese mismo blog explicaré como empaquetar esta app para instalarlo con apt_
+_Se hizo un [post]() en el blog donde se explica el desarrollo de este proyecto, por favor leelo._
 
 
