@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+
+//Función que genera un número aleatorio entre 0 y 2
 void aleatorio(int *vector, int N);
 
 int main()
@@ -30,7 +32,7 @@ int main()
             printf("%d ", *(contador+i));
         }
     }
-
+    //Liberar memoria de un vector dinámico
     free(contador);
     return 0;
 }
