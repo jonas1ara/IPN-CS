@@ -18,7 +18,7 @@ _Busca en el indíce el problema que te interesa_
 |009| Carácter a binario | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/06.-Algoritmos-DrEs%C3%A1u-1/Algoritmos/09-Car%C3%A1cter-a-Binario.c)|asdfghjkl| Fácil|
 |010| Sheldon Cooper | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/06.-Algoritmos-DrEs%C3%A1u-1/Algoritmos/10-Sheldon-Cooper.c)|asdfghjkl| Fácil|
 |011| Convolución de matrices | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/06.-Algoritmos-DrEs%C3%A1u-1/Algoritmos/11-Convoluci%C3%B3n-de-Matrices.c)|asdfghjkl| Medio|
-|012| Juego del ahorcado | [C](hhttps://github.com/Jonas-Lara/IPN-CS/blob/master/06.-Algoritmos-DrEs%C3%A1u-1/Algoritmos/12-Juego-de-Ahorcado.c)|asdfghjkl| Medio|
+|012| Juego del ahorcado | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/06.-Algoritmos-DrEs%C3%A1u-1/Algoritmos/12-Juego-de-Ahorcado.c)|asdfghjkl| Medio|
 |013| Número espejo recursivo | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/06.-Algoritmos-DrEs%C3%A1u-1/Algoritmos/13-Numero-espejo-recursivo.c)|asdfghjkl| Medio|
 |014| Cálculo de PI con el método montecarlo | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/06.-Algoritmos-DrEs%C3%A1u-1/Algoritmos/14-PI-Montecarlo.c)|asdfghjkl| Medio|
 |015| Números racionales | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/06.-Algoritmos-DrEs%C3%A1u-1/Algoritmos/15-Numeros-Racionales.c)|asdfghjkl| Medio|
