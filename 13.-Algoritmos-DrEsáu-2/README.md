@@ -3,7 +3,7 @@
 
 ## Dictados por el Dr. Esaú Escobar
 
-_Busca en el indíce el problema que te interesa, todos los algoritmos están comentados al inicio sobre la técnica que se ocupa y lo que se quiere lograr_
+_Busca en el indíce el problema que te interesa_
 
 | # | Titulo | Solución | Descripción | Dificultad |
 |---| ----- | -------- | ---------- |---------- |
