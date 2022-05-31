@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int primos_por_mostrar, n, d;
+    int primos_por_mostrar, n;
     int es_primo;
 
     printf("Cuantos primos desea mostrar: ");
@@ -12,16 +12,16 @@ int main() {
 
         /* determinar si n es primo */
         es_primo = 1;
-        for (d = 2; d < n; ++d) {
-            if (n % d == 0) {
+        for (int i= 2; i < n; i++) {
+            if (n % i == 0) {
                 es_primo = 0;
                 break;
             }
         }
-
         /* mostrar el numero
          * y actualizar el contador */
-        if (es_primo) {
+        if (es_primo) 
+        {
             printf("%d ", n);
             primos_por_mostrar--;
         }
