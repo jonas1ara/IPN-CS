@@ -13,7 +13,7 @@ int main()
 {
     
     int a = 4; //Variable entera llamada a que reserva 4 bytes de memoria
-    int *apt = &a; //La variable apuntador se asigna con * y APUNTAMOS a nuestra variable a con & para referirnos a la valor alojado en esta variable
+    int *apt = &a; //La variable apuntador se asigna con * y APUNTAMOS a nuestra variable a con & para referirnos al valor alojado en esta variable
     printf("%p\n", apt); //Imprimir la dirección de memoria con %p, nos da la dirección de memoria como un entero hexadecimal*/
  
     return 0;
