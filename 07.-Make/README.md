@@ -1,4 +1,4 @@
-# Explicación de este tema
+# Explicación
 
 ## De hecho tengo un post que lo explica
 
