@@ -1,3 +1,8 @@
+/*
+	Un struct en C permite usar algo parecido a los objetos anónimos de OOP. No son clases, simplemente son
+	un modo de agrupar un objeto de determinado tipo con ciertas propiedades.
+*/
+
 #include <stdio.h>
 
 typedef struct

@@ -3,10 +3,8 @@
 
 #include <gtk/gtk.h>
 
-/*
-static void
-activate (GtkApplication* app,
-          gpointer        user_data)
+
+static void activate (GtkApplication* app, gpointer        user_data)
 {
   GtkWidget *window;
 
@@ -16,11 +14,8 @@ activate (GtkApplication* app,
   gtk_widget_show (window);
 }
 
-*/
 
-int
-main (int    argc,
-      char **argv)
+int main (int    argc, char **argv)
 {
   GtkApplication *app;
   int status;
