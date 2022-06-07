@@ -24,7 +24,7 @@ _Cuando se resuelven los subproblemas más pequeños, esta etapa los combina rec
 ### Algoritmos basados en este enfoque:
 
 | # | Titulo | Implementación | Complejidad |
-|---| ----- | -------- | ---------- |---------- |
+|---| ----- | -------- | ---------- |
 |001|Ordenamiento por mezcla| [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/10.-Algoritmos/06.-Ordenamiento/04-Ordenamiento-por-Mezcla.c) |Ο (n log n)|
 |002|Ordenamiento rápido | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/10.-Algoritmos/06.-Ordenamiento/05-Ordenamiento-R%C3%A1pido.c)|Ο (n log n)|
 |003|Búsqueda binaria | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/10.-Algoritmos/07.-B%C3%BAsqueda/12-B%C3%BAsqueda-Binaria.c)|Ο (log n)|
