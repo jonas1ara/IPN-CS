@@ -33,47 +33,47 @@ void display()
 
 int find(int data) 
 {
-   int lowerBound = 0;
-   int upperBound = MAX -1;
-   int midPoint = -1;
-   int comparisons = 0;      
+   int limiteInferior = 0;
+   int limiteSuperior = MAX -1;
+   int puntoMedio = -1;
+   int comparacion = 0;      
    int index = -1;
 	
-   while(lowerBound <= upperBound) 
+   while(limiteInferior <= limiteSuperior) 
    {
-      printf("Comparación %d\n" , (comparisons +1) );
-      printf("Límite inferior : %d, arr[%d] = %d\n",lowerBound,lowerBound,
-         arr[lowerBound]);
-      printf("Límite superior : %d, arr[%d] = %d\n",upperBound,upperBound,
-         arr[upperBound]);
-      comparisons++;
+      printf("Comparación %d\n" , (comparacion +1) );
+      printf("Límite inferior : %d, arr[%d] = %d\n",limiteInferior,limiteInferior,
+         arr[limiteInferior]);
+      printf("Límite superior : %d, arr[%d] = %d\n",limiteSuperior,limiteSuperior,
+         arr[limiteSuperior]);
+      comparacion++;
 		
       // Calcular el punto medio
       // punto medio = (límite inferior + límite superior) / 2;
-      midPoint = lowerBound + (upperBound - lowerBound) / 2;	
+      puntoMedio = limiteInferior + (limiteSuperior - limiteInferior) / 2;	
 		
       // Dato encontrado
-      if(arr[midPoint] == data) 
+      if(arr[puntoMedio] == data) 
       {
-         index = midPoint;
+         index = puntoMedio;
          break;
       } else 
       {
          // Si los datos son más grandes
-         if(arr[midPoint] < data) 
+         if(arr[puntoMedio] < data) 
          {
             // Los datos están en la mitad superior
-            lowerBound = midPoint + 1;
+            limiteInferior = puntoMedio + 1;
          }
          // Los datos son mas pequeños
          else 
          {
             // Los datos están en la mitad inferior
-            upperBound = midPoint -1;
+            limiteSuperior = puntoMedio -1;
          }
       }               
    }
-   printf("Total de comparaciones hechas: %d" , comparisons);
+   printf("Total de comparaciones hechas: %d" , comparacion);
    return index;
 }
 
