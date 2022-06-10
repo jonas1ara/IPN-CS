@@ -50,6 +50,7 @@ int find(int data)
 		
       // Calcular el punto medio
       // punto medio = (límite inferior + límite superior) / 2;
+      //Va disminuyendo el rango de búsqueda
       puntoMedio = limiteInferior + (limiteSuperior - limiteInferior) / 2;	
 		
       // Dato encontrado
