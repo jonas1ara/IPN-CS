@@ -31,38 +31,38 @@ void printline(int count)
 
 void shellSort() 
 {
-   int inner, outer;
-   int valueToInsert;
-   int interval = 1;   
-   int elements = MAX;
+   int interna, externa;
+   int valoraInsertar;
+   int intervalo = 1;   
+   int elementos = MAX;
    int i = 0;
    
-   while(interval <= elements/3) 
+   while(intervalo <= elementos/3) 
    {
-      interval = interval*3 +1;
+      intervalo = intervalo*3 +1;
    }
 
-   while(interval > 0) {
+   while(intervalo > 0) {
       printf("Iteración %d#:",i); 
       display();
       
-      for(outer = interval; outer < elements; outer++) 
+      for(externa = intervalo; externa < elementos; externa++) 
       {
-         valueToInsert = arr[outer];
-         inner = outer;
+         valoraInsertar = arr[externa];
+         interna = externa;
 			
-         while(inner > interval -1 && arr[inner - interval] 
-            >= valueToInsert) {
-            arr[inner] = arr[inner - interval];
-            inner -=interval;
-            printf(" Elemento movido :%d\n",arr[inner]);
+         while(interna > intervalo -1 && arr[interna - intervalo] 
+            >= valoraInsertar) {
+            arr[interna] = arr[interna - intervalo];
+            interna -=intervalo;
+            printf(" Elemento movido :%d\n",arr[interna]);
          }
          
-         arr[inner] = valueToInsert;
-         printf(" Elemento insertado :%d, at position :%d\n",valueToInsert,inner);
+         arr[interna] = valoraInsertar;
+         printf(" Elemento insertado :%d, at position :%d\n",valoraInsertar,interna);
       }
 		
-      interval = (interval -1) /3;
+      intervalo = (intervalo -1) /3;
       i++;
    }          
 }
