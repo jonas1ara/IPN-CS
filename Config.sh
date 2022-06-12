@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Este script instala las librerías para trabajar con este repositorio"
+echo "Este script instala las herramientas, librerías y compiladores para trabajar con este repositorio"
 echo " "
 
 sudo apt update && sudo apt upgrade -y
