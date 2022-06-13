@@ -6,7 +6,7 @@ echo " "
 sudo apt update && sudo apt upgrade -y
 
 echo " "
-echo "Herramientas y compiladores: "
+echo "Herramientas, debugger y compiladores: "
 echo " "
 
 sudo apt install build-essential gdb clang make
