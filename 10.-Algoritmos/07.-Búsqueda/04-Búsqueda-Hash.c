@@ -19,19 +19,19 @@ int hashCode(int key) {
 }
 
 struct DataItem *search(int key) {
-   //get the hash 
+   //Consigue el hash 
    int hashIndex = hashCode(key);  
 	
-   //move in array until an empty 
+   //Mover en matriz until una vacía 
    while(hashArray[hashIndex] != NULL) {
 	
       if(hashArray[hashIndex]->key == key)
          return hashArray[hashIndex]; 
 			
-      //go to next cell
+      //Ve a la siguiente celda
       ++hashIndex;
 		
-      //wrap around the table
+      //Wrap alrededor de la tabla
       hashIndex %= SIZE;
    }        
 	
@@ -44,15 +44,15 @@ void insert(int key,int data) {
    item->data = data;  
    item->key = key;
 
-   //get the hash 
+   //Consigue el Hash 
    int hashIndex = hashCode(key);
 
-   //move in array until an empty or deleted cell
+   //Mover en matriz until una vacía o borrar celda
    while(hashArray[hashIndex] != NULL && hashArray[hashIndex]->key != -1) {
-      //go to next cell
+      //Ve a la siguiente celda
       ++hashIndex;
 		
-      //wrap around the table
+      //Envolver alrededor de la tabla
       hashIndex %= SIZE;
    }
 	
@@ -62,24 +62,24 @@ void insert(int key,int data) {
 struct DataItem* delete(struct DataItem* item) {
    int key = item->key;
 
-   //get the hash 
+   //Consigue el Hash
    int hashIndex = hashCode(key);
 
-   //move in array until an empty
+   //Mover en matriz hasta una vacía
    while(hashArray[hashIndex] != NULL) {
 	
       if(hashArray[hashIndex]->key == key) {
          struct DataItem* temp = hashArray[hashIndex]; 
 			
-         //assign a dummy item at deleted position
+         //Asignar un elemento dummy en la posición eliminada
          hashArray[hashIndex] = dummyItem; 
          return temp;
       }
 		
-      //go to next cell
+      //Ve a la siguiente celda
       ++hashIndex;
 		
-      //wrap around the table
+      //Envolver alrededor de la tabla
       hashIndex %= SIZE;
    }      
 	
@@ -119,17 +119,17 @@ int main() {
    item = search(37);
 
    if(item != NULL) {
-      printf("Element found: %d\n", item->data);
+      printf("Elemento encontrado: %d\n", item->data);
    } else {
-      printf("Element not found\n");
+      printf("Elemento no encontrado\n");
    }
 
    delete(item);
    item = search(37);
 
    if(item != NULL) {
-      printf("Element found: %d\n", item->data);
+      printf("Elemento encontrado: %d\n", item->data);
    } else {
-      printf("Element not found\n");
+      printf("Elemento no encontrado\n");
    }
 }
