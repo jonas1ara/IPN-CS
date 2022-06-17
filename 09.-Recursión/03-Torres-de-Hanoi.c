@@ -1,25 +1,27 @@
 #include <stdio.h>
 
-void Toh(int, char, char, char);
+void Hanoi(char, char, char, int);
 
 int main()
 {
-	int e;
-	printf("Ingresa el número de discos: ");
- 	scanf("%d",&e);
-	printf("\n");
-	Toh(e, 'A', 'B', 'C');
-	return (0);
+	Hanoi('A', 'B', 'C', 3);
+	
+	return 0;
 }
 
-void Toh(int n, char Beg, char Aux, char End)
+void Hanoi(char varInicial, char varCentral, char varFinal, int n)
 {
-	if(n>=1)
+	if(n==1)//Caso base
 	{
-		Toh(n-1, Beg, End, Aux);
-		printf("%d Disk move %c to %c\n",n, Beg, End);
-		Toh(n-1, Aux, Beg, End);
+		//Cuándo nos quede un solo disco por mover a la varilla final, es el caso base
+		printf("Mover disco %d desde varilla %c a varilla %c\n", n, varInicial, varFinal);
+	}
+	else //Caso recursivo, una versión reducida de la misma función
+	{
+		// 
+		Hanoi(varInicial, varFinal, varCentral, n-1);	
+		printf("Mover disco %d desde varilla %c a varilla %c\n", n, varInicial, varFinal);
+		Hanoi(varCentral, varInicial, varFinal, n-1);
 	}
 }
-
 
