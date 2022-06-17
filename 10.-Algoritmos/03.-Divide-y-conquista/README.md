@@ -3,7 +3,7 @@
 
 _En el enfoque de divide y vencerás, el problema en cuestión, se divide en subproblemas más pequeños y luego cada problema se resuelve de forma independiente. Cuando seguimos dividiendo los subproblemas en subproblemas aún más pequeños, eventualmente podemos llegar a una etapa en la que no sea posible más división. Se resuelven esos subproblemas "atómicos" más pequeños posibles (fracciones). La solución de todos los subproblemas finalmente se fusiona para obtener la solución de un problema original._
 
-<img src=/00.-Sources/DyV.png  alt="#"/>
+<img src=/00.-Sources/DyC.png  alt="#"/>
 
 _**En términos generales, podemos entender el enfoque de dividir y conquistar en un proceso de tres pasos:**_
 
