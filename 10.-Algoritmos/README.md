@@ -1,8 +1,11 @@
 # Complejidad algoritmica de algoritmos de búsqueda y ordenamiento
 
+## Introducción
+
 ## Notación Asintótica 
 
-<img src=/00.-Sources/Complejidad.png  alt="#"/>
+### Complejidad temporal
+
+### Complejidad espacial
 
 ## Análisis de algoritmos
-
