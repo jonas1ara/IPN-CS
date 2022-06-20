@@ -5,8 +5,9 @@
 int a[MAX] = {4,6,3,2,1,9,7};
 int b[6];
 
+void dividir(int , int ) ;
 void mezclando(int , int , int ); 
-void ordenar(int , int ) ;
+
 
 int main() 
 { 
@@ -17,7 +18,7 @@ int main()
    for(int i = 0; i < MAX; i++)
       printf("%d ", a[i]);
 
-   ordenar(0, MAX);
+   dividir(0, MAX);
 
    printf("\nArreglo de salida: \n");
    
@@ -27,7 +28,26 @@ int main()
    printf("\n");
 }
 
-//Recibe por valor el inicio, la mitas y el fin del arreglo
+//Recibe por valor dos enteros que representan el rango de elementos a ordenar
+void dividir(int inicio, int final) 
+{
+   //Caso base; solo hay un elemento
+   if(inicio < final) 
+   {
+      //Indicara la mitad del arreglo
+      int mitad = (inicio + final) / 2;
+      //Dividir la parte izquierda del arreglo
+      dividir(inicio, mitad);
+      //Dividir la parte derecha del arreglo
+      dividir(mitad+1, final);
+      mezclando(inicio, mitad, final);
+   } else 
+   { 
+      return;
+   }   
+}
+
+//Recibe por valor el inicio, la mitad y el fin del arreglo
 void mezclando(int inicio, int mitad, int final) 
 {
    //i1 es el inicio del arreglo 1 y i2 es el inicio del arreglo 2
@@ -64,22 +84,5 @@ void mezclando(int inicio, int mitad, int final)
       a[i] = b[i];
 }
 
-//Recibe por valor dos enteros que representan el rango de elementos a ordenar
-void ordenar(int inicio, int final) 
-{
-   //Caso base; solo hay un elemento
-   if(inicio < final) 
-   {
-      //Indicara la mitad del arreglo
-      int mitad = (inicio + final) / 2;
-      //Dividir la parte izquierda del arreglo
-      ordenar(inicio, mitad);
-      //Dividir la parte derecha del arreglo
-      ordenar(mitad+1, final);
-      mezclando(inicio, mitad, final);
-   } else 
-   { 
-      return;
-   }   
-}
+
 
