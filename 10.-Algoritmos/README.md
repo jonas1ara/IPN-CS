@@ -1,6 +1,6 @@
 # Complejidad algoritmica de algoritmos de búsqueda y ordenamiento
 
-![](/00.-Sources/bigO.jpg)
+![](/00.-Sources/bigO.png)
 
 ## Introducción
 
