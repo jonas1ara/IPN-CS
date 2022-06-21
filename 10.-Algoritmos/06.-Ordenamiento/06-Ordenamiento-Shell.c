@@ -40,7 +40,6 @@ void ordenamiento_Shell() {
    while(intervalo > 0) {
       printf("iteración #%d:",i); 
       imprimirArreglo();
-      //final = 4; 4 < elementos; aumenta final en 1
       for(final = intervalo; final < elementos; final++) 
       {
       //se asigna el valor del elemento a insertar
