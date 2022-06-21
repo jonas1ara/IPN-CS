@@ -1,32 +1,25 @@
 #include <stdio.h>
 
-#define MAX 7
+#define MAX 8
 
-int arr[MAX] = {4,6,3,2,1,9,7};
+int arr[MAX] = {35, 33, 42, 10, 14, 19, 27, 44};
 
-
-void display() 
+void imprimirArreglo() 
 {
-   int i;
    printf("[");
-	
    // Navegar a través del arreglo 
-   for(i = 0;i < MAX;i++) {
+   for(int i = 0;i < MAX;i++) {
       printf("%d ",arr[i]);
    }
-	
    printf("]\n");
 }
 
-void printline(int count) 
-{
-   int i;
-	
-   for(i = 0;i < count-1;i++) 
+void imprimirLineas(int count) 
+{	
+   for(int i = 0;i < count-1;i++) 
    {
       printf("=");
-   }
-	
+   }	
    printf("=\n");
 }
 
@@ -34,39 +27,36 @@ void printline(int count)
 /*Divide el arreglo en dos y toma un elemento del subarreglo desordenado a la vez y 
 lo inserta en su posición correcta en el subarreglo ordenado*/
 
-void insertionSort() 
+void ordenamiento_por_inserccion() 
 {
-   int valueToInsert;
-   int holePosition;
-   int i;
+   int valor_a_insertar;
+   int posicion_a_insertar;
   
    // Ciclo a tráves de todos los números del arreglo
-   for(i = 1; i < MAX; i++) { 
+   for(int i = 1; i < MAX; i++) { 
 	
       // Selecciona un valor para ser insertado 
-      valueToInsert = arr[i];
+      valor_a_insertar = arr[i];
 		
       // Selecciona el espacio donde el valor será insertado 
-      holePosition = i;
+      posicion_a_insertar = i;
 		
       // Comprobar si el anterior no es mayor que el valor a insertar 
-      while (holePosition > 0 && arr[holePosition-1] > valueToInsert) 
+      while (posicion_a_insertar > 0 && arr[posicion_a_insertar-1] > valor_a_insertar) 
       {
-         arr[holePosition] = arr[holePosition-1];
-         holePosition--;
-         printf(" Elementos movidos : %d\n" , arr[holePosition]);
+         arr[posicion_a_insertar] = arr[posicion_a_insertar-1];
+         posicion_a_insertar--;
+         printf(" Elementos movidos : %d\n" , arr[posicion_a_insertar]);
       }
 
-      if(holePosition != i) 
+      if(posicion_a_insertar != i) 
       {
-         printf(" Elemento insertado : %d, en la posición: %d\n" , valueToInsert,holePosition);
+         printf(" Elemento insertado : %d, en la posición: %d\n" , valor_a_insertar,posicion_a_insertar);
          // Inserte el número en la posición del agujero
-         arr[holePosition] = valueToInsert;
+         arr[posicion_a_insertar] = valor_a_insertar;
       }
-
       printf("Iteración %d#:",i);
-      display();
-		
+      imprimirArreglo();
    }  
 }
 
@@ -74,10 +64,10 @@ int main()
 {
    printf("Ordenamiento por insercción con complejidad O(n²) \n\n");
    printf("Arreglo de entrada: ");
-   display();
-   printline(50);
-   insertionSort();
+   imprimirArreglo();
+   imprimirLineas(50);
+   ordenamiento_por_inserccion();
    printf("Arreglo de salida: ");
-   display();
-   printline(50);
+   imprimirArreglo();
+   imprimirLineas(50);
 }

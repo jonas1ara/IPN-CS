@@ -1,16 +1,15 @@
 #include <stdio.h>
 
-#define MAX 7
+#define MAX 8
 
-int arr[MAX] = {4,6,3,2,1,9,7};
+int arr[MAX] = {35, 33, 42, 10, 14, 19, 27, 44};
 
-void display() 
+void imprimirArreglo() 
 {
-   int i;
    printf("[");
 	
    // Navegar a tráves de todos los elementos del arreglo
-   for(i = 0;i < MAX;i++) 
+   for(int i = 0;i < MAX;i++) 
    {
       printf("%d ", arr[i]);
    }
@@ -18,11 +17,9 @@ void display()
    printf("]\n");
 }
 
-void printline(int count) 
-{
-   int i;
-	
-   for(i = 0;i < count-1;i++) 
+void imprimirLineas(int count) 
+{	
+   for(int i = 0;i < count-1;i++) 
    {
       printf("=");
    }
@@ -34,37 +31,37 @@ void printline(int count)
 /*Divide el arreglo en dos, consiste en encontrar el elemento más pequeño dentro del subarreglo desordenado 
 y lo mueve al último indice del subarreglo ordenado*/
 
-void selectionSort() 
+void ordenamiento_por_Seleccion() 
 {
-   int indexMin,i,j;
+   int indice_Minimo,i,j;
 	
    // Ciclo a tráves de todos los elementos del arreglo
    for(i = 0; i < MAX-1; i++) 
    { 
       //  Establecer el elemento actual como el mínimo
-      indexMin = i;
+      indice_Minimo = i;
 		
       // Compruebe que el elemento sea mínimo
       for(j = i+1;j < MAX;j++) 
       {
-         if(arr[j] < arr[indexMin]) 
+         if(arr[j] < arr[indice_Minimo]) 
          {
-            indexMin = j;
+            indice_Minimo = j;
          }
       }
 
-      if(indexMin != i) 
+      if(indice_Minimo != i) 
       {
-         printf("Elementos intercambiados: [ %d, %d ]\n" , arr[i], arr[indexMin]); 
+         printf("Elementos intercambiados: [ %d, %d ]\n" , arr[i], arr[indice_Minimo]); 
 			
          // Intercambio de números 
-         int temp = arr[indexMin];
-         arr[indexMin] = arr[i];
+         int temp = arr[indice_Minimo];
+         arr[indice_Minimo] = arr[i];
          arr[i] = temp;
       }          
 
       printf("Iteración %d#:",(i+1));
-      display();
+      imprimirArreglo();
    }
 }  
 
@@ -72,10 +69,10 @@ int main()
 {
    printf("Ordenamiento por selección con complejidad O(n²) \n\n");
    printf("Arreglo de entrada: ");
-   display();
-   printline(50);
-   selectionSort();
+   imprimirArreglo();
+   imprimirLineas(50);
+   ordenamiento_por_Seleccion();
    printf("Arreglo de salida: ");
-   display();
-   printline(50);
+   imprimirArreglo();
+   imprimirLineas(50);
 }

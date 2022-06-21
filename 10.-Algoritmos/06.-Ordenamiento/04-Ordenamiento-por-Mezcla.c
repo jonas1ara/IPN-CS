@@ -1,22 +1,22 @@
 #include <stdio.h>
 
-#define MAX 7
+#define MAX 8
 
-int a[MAX] = {4,6,3,2,1,9,7};
-int b[6];
+int a[MAX] = {35, 33, 42, 10, 14, 19, 27, 44};
+int b[MAX];
 
 void dividir(int , int ) ;
-void mezclando(int , int , int ); 
-
+void mezclar_elementos(int , int , int ); 
 
 int main() 
 { 
 
-   printf("Ordenamiento burbuja con complejidad Ο(n log n) \n\n");
+   printf("Ordenamiento por mezcla con complejidad Ο(n log n) \n\n");
    printf("Arreglo de entrada: \n");
-   
    for(int i = 0; i < MAX; i++)
       printf("%d ", a[i]);
+
+      printf("\n\n");
 
    dividir(0, MAX);
 
@@ -25,7 +25,7 @@ int main()
    for(int i = 1; i <= MAX; i++)
       printf("%d ", a[i]);
    
-   printf("\n");
+   printf("\n\n");
 }
 
 //Recibe por valor dos enteros que representan el rango de elementos a ordenar
@@ -40,7 +40,7 @@ void dividir(int inicio, int final)
       dividir(inicio, mitad);
       //Dividir la parte derecha del arreglo
       dividir(mitad+1, final);
-      mezclando(inicio, mitad, final);
+      mezclar_elementos(inicio, mitad, final);
    } else 
    { 
       return;
@@ -48,7 +48,7 @@ void dividir(int inicio, int final)
 }
 
 //Recibe por valor el inicio, la mitad y el fin del arreglo
-void mezclando(int inicio, int mitad, int final) 
+void mezclar_elementos(int inicio, int mitad, int final) 
 {
    //i1 es el inicio del arreglo 1 y i2 es el inicio del arreglo 2
    int i1, i2, i;
@@ -70,7 +70,7 @@ void mezclando(int inicio, int mitad, int final)
       //Recordar que b es un arreglo vacio, que se declaro al inicio
    }
    
-   //Ciclos while para mezclar los arreglos a y b
+   //Ciclos while para mezclar_elementos los arreglos a y b
    //Mientras que el arreglo 1 se pueda recorrer, se copia el valor del arreglo 1 a la siguiente posición del arreglo 2
    while(i1 <= mitad)    
       b[i++] = a[i1++];

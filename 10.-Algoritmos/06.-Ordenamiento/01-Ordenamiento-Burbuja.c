@@ -1,33 +1,39 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define MAX 7
+#define MAX 8
 
-int arr[MAX] = {4,6,3,2,1,9,7};
+int arr[MAX] = {35, 33, 42, 10, 14, 19, 27, 44};
 
-void display()
+void imprimirArreglo()
 {
-   int i;
-   printf("[");
-	
+   printf("[");	
    // navegar a traves de arreglo
-   for(i = 0; i < MAX; i++) {
+   for(int i = 0; i < MAX; i++) {
       printf("%d ",arr[i]);
    }
-	
    printf("]\n");
 }
 
-void bubbleSort() 
+void imprimirLineas(int count) 
+{	
+   for(int i = 0;i < count-1;i++) 
+   {
+      printf("=");
+   }	
+   printf("=\n");
+}
+
+void ordenamiento_burbuja() 
 {
    int temp;
    int i,j;
-   bool swapped = false;       
+   bool intercambio = false;       
    
    // Recorrer todos los elementos del arreglo
    for(i = 0; i < MAX-1; i++) 
    { 
-      swapped = false;
+      intercambio = false;
 		
       // Recorrer los números que se adelantan
       for(j = 0; j < MAX-1-i; j++) 
@@ -44,7 +50,7 @@ void bubbleSort()
             arr[j] = arr[j+1];
             arr[j+1] = temp;
 
-            swapped = true;
+            intercambio = true;
             printf(" => Intecarmbiado [%d, %d]\n",arr[j],arr[j+1]);
          } else {
             printf(" => No intercambiado\n");
@@ -53,13 +59,13 @@ void bubbleSort()
 
       // Si no se intercambió ningún número, eso significa
       //  Arreglo ordenado, romper el ciclo. 
-      if(!swapped) 
+      if(!intercambio) 
       {
          break;
       }
       
       printf("Iteración %d#: ",(i+1)); 
-      display();                     
+      imprimirArreglo();                     
    }    
 }
 
@@ -67,9 +73,11 @@ int main()
 {
    printf("Ordenamiento burbuja con complejidad O(n²) \n\n");
    printf("Arreglo de entrada: ");
-   display();
+   imprimirArreglo();
+   imprimirLineas(50);
    printf("\n");
-   bubbleSort();
+   ordenamiento_burbuja();
    printf("\nArreglo de salida: ");
-   display();
+   imprimirArreglo();
+   imprimirLineas(50);
 }

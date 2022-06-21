@@ -1,86 +1,80 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define MAX 7
+#define MAX 8
 
-int arr[MAX] = {4,6,3,2,1,9,7};
+int arr[MAX] = {35, 33, 42, 10, 14, 19, 27, 44};
 
-void printline(int count) 
+void imprimirLineas(int count) 
 {
-   int i;
-	
-   for(i = 0;i < count-1;i++) 
+   for(int i = 0;i < count-1;i++) 
    {
       printf("=");
    }
-	
    printf("=\n");
 }
 
-void display() 
+void imprimirArreglo() 
 {
-   int i;
-   printf("[");
-	
+   printf("[");	
    // Navegar a través del arreglo
-   for(i = 0;i < MAX;i++) {
+   for(int i = 0;i < MAX;i++) {
       printf("%d ",arr[i]);
    }
-	
    printf("]\n");
 }
 
-void swap(int num1, int num2) 
+void intercambio(int num1, int num2) 
 {
    int temp = arr[num1];
    arr[num1] = arr[num2];
    arr[num2] = temp;
 }
 
-int partition(int left, int right, int pivot) 
+int partition(int izquierdo, int derecho, int pivote) 
 {
-   int leftPointer = left -1;
-   int rightPointer = right;
+   int puntoIzquierdo = izquierdo -1;
+   int puntoDerecho = derecho;
 
    while(true) {
-      while(arr[++leftPointer] < pivot) 
+      while(arr[++puntoIzquierdo] < pivote) 
       {
          //No hacer nada
       }
 		
-      while(rightPointer > 0 && arr[--rightPointer] > pivot) 
+      while(puntoDerecho > 0 && arr[--puntoDerecho] > pivote) 
       {
          //No hacer nada
       }
 
-      if(leftPointer >= rightPointer) 
+      if(puntoIzquierdo >= puntoDerecho) 
       {
          break;
       } else 
       {
-         printf(" Elemento intercambiado :%d,%d\n", arr[leftPointer],arr[rightPointer]);
-         swap(leftPointer,rightPointer);
+         printf("Elemento intercambiado :%d,%d\n", arr[puntoIzquierdo],arr[puntoDerecho]);
+         intercambio(puntoIzquierdo,puntoDerecho);
       }
    }
 	
-   printf(" Pivote intercambiado :%d,%d\n", arr[leftPointer],arr[right]);
-   swap(leftPointer,right);
+   printf(" Pivote intercambiado :%d,%d\n", arr[puntoIzquierdo],arr[derecho]);
+   intercambio(puntoIzquierdo,derecho);
    printf("   Arreglo actualizado: "); 
-   display();
-   return leftPointer;
+   imprimirArreglo();
+   return puntoIzquierdo;
 }
 
-void quickSort(int left, int right) 
+void ordenamiento_Rapido(int izquierdo, int derecho) 
 {
-   if(right-left <= 0) 
+   if(derecho-izquierdo <= 0) 
    {
       return;   
    } else 
    {
-      int pivot = arr[right];
-      int partitionPoint = partition(left, right, pivot);
-      quickSort(left,partitionPoint-1);
-      quickSort(partitionPoint+1,right);
+      int pivote = arr[derecho];
+      int partitionPoint = partition(izquierdo, derecho, pivote);
+      ordenamiento_Rapido(izquierdo,partitionPoint-1);
+      ordenamiento_Rapido(partitionPoint+1,derecho);
    }        
 }
 
@@ -88,10 +82,10 @@ int main()
 {
    printf("Ordenamiento rápido con complejidad Ο(n log n) \n\n");
    printf("Arreglo de entrada: ");
-   display();
-   printline(50);
-   quickSort(0,MAX-1);
+   imprimirArreglo();
+   imprimirLineas(50);
+   ordenamiento_Rapido(0,MAX-1);
    printf("Arreglo de salida: ");
-   display();
-   printline(50);
+   imprimirArreglo();
+   imprimirLineas(50);
 }
