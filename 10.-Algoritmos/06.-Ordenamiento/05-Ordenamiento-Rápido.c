@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define MAX 8
+#define MAX 10
+//35, 33, 42, 10, 14, 19, 27, 44
 
-int arr[MAX] = {35, 33, 42, 10, 14, 19, 27, 44};
+int arr[MAX] = {35, 33, 42, 10, 14, 19, 27, 44, 26, 31};
 
 void imprimirLineas(int count) 
 {
@@ -31,7 +32,7 @@ void intercambio(int num1, int num2)
    arr[num2] = temp;
 }
 
-int partition(int izquierdo, int derecho, int pivote) 
+int particion(int izquierdo, int derecho, int pivote) 
 {
    int puntoIzquierdo = izquierdo -1;
    int puntoDerecho = derecho;
@@ -72,9 +73,9 @@ void ordenamiento_Rapido(int izquierdo, int derecho)
    } else 
    {
       int pivote = arr[derecho];
-      int partitionPoint = partition(izquierdo, derecho, pivote);
-      ordenamiento_Rapido(izquierdo,partitionPoint-1);
-      ordenamiento_Rapido(partitionPoint+1,derecho);
+      int punto_de_particion = particion(izquierdo, derecho, pivote);
+      ordenamiento_Rapido(izquierdo,punto_de_particion-1);
+      ordenamiento_Rapido(punto_de_particion+1,derecho);
    }        
 }
 
