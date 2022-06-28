@@ -111,7 +111,8 @@ void breadthFirstSearch() {
 int main() {
    int i, j;
 
-   for(i = 0; i<MAX; i++) // set adjacency {
+   for(i = 0; i<MAX; i++)
+	{ // set adjacency {
       for(j = 0; j<MAX; j++) // matrix to 0
          adjMatrix[i][j] = 0;
    }
@@ -132,6 +133,8 @@ int main() {
    printf("\nBreadth First Search: ");
    
    breadthFirstSearch();
+
+	printf("\n");
 
    return 0;
 }
