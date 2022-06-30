@@ -1,4 +1,4 @@
-/*	Recursive functions
+/*
 
 Las funciones recursivas tienen la propiedad de llamar a una versión reducida de ellas mismas
 
