@@ -22,7 +22,7 @@ struct nodo *superior = NULL;
 
 int main() {
 
-    int arr[]= {}; // Arreglo que contiene los elementos extraídos de la pila 
+    int arr[]= {}; // Arreglo que contiene los elementos extraídos de la pila para el ordenamiento
     int eleccion;
     int numero;
     int n;
