@@ -4,20 +4,25 @@
 
 int suma(); //prototipo de la función suma 
 
-void greeting() { //Palabra reservada void, función que no retorna un tipo de valor fijo
+//Palabra reservada void, función que no retorna un tipo de valor fijo
+void greeting() 
+{ 
 	
 	printf("hola androide #%i\n", suma());
 
 }
 
-int main() {
+int main() 
+{
 
 	greeting();
 
 	return 0;
 }
 
-int suma() {
+//Función de tipo porque retorna un valor
+int suma() 
+{
 	int num1 = 12;
 	int num2 = 4;
 	int sum = num1 + num2;
