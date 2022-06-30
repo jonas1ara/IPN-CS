@@ -2,8 +2,9 @@
 
 int sum(); //función suma
 int num3 = 5; //variable global de tipo entero
-int main() { //función principal
 
+int main() 
+{ 
 	int num1, num2;
 	
 	printf("Ingresa el primer valor: \n");
@@ -18,9 +19,9 @@ int main() { //función principal
 
 }
 
-int sum (int num1, int num2) {
-	
-	int sum = num1 + num2 + num3; //Add global variable
+int sum (int num1, int num2) 
+{	
+	int sum = num1 + num2 + num3; //Sumar variable globar
 
 	return sum;
 
