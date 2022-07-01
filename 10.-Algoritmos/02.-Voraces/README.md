@@ -13,7 +13,9 @@ _Se elige la solución más cercanda que parece solucionar el problema, posterio
 
 ### Contar monedas
 
-_Este problema es contar hasta un valor deseado eligiendo las monedas menos posibles y el enfoque codicioso obliga al algoritmo a elegir la moneda más grande posible. Si se nos proporcionan mondeas $1, $2, $3, $5 y $10 y se nos pide que contemos $18, entonces el procedimiento codicioso será:_
+_Este problema es contar hasta un valor deseado eligiendo las monedas menos posibles y el enfoque codicioso obliga al algoritmo a elegir la moneda más grande posible._
+
+##### Si se nos proporcionan mondeas $1, $2, $3, $5 y $10 y se nos pide que contemos $18, entonces el procedimiento codicioso será:
 
 - Seleccionar moneda de $10, el recuento restante es 8.
 - Luego seleccionar moneda de $5, el recuento restante es 3.
@@ -21,6 +23,8 @@ _Este problema es contar hasta un valor deseado eligiendo las monedas menos posi
 - Al final seleccionar moneda de $1, y se resuelve el problema.
 
 _Parece funcionar bien, pero si cambiamos ligeramente el problema, entonces el enfoque queda mal optmizado. Si tenemos monedas de $1, $7 y $10, y necesitamos contar al $15, puede usar más monedas de las necesarias:_
+
+##### Si se nos proporcionan monedas de $1, $7 y $10, y necesitamos contar al $15, puede usar mas monedas de las necesarias:
 
 - Seleccionar moneda de $10, el recuero restante es 5
 - Luego seleccionar moneda de $1, el recuento restante es 4.
