@@ -24,7 +24,9 @@ _[6.-Algoritmo de detección]()_
 
 _[7.-Algoritmo KMP]()_
 
-_[9.-Algoritmo Boyer-More]()_
+_[8.-Algoritmo Boyer-More]()_
+
+_[9.-Algoritmo para invertir arreglo](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/04-Invertir-Vector.c)_
 
 _Ordenamiento_
 
