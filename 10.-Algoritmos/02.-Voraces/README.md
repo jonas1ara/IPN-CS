@@ -2,7 +2,9 @@
 
 ## En el enfoque de un algoritmo codicioso las decisiones se toman desde el dominio solucion dado. 
 
-_Se elige la solución más cercanda que parece solucionar el problema, posteriormente intenta encontrar una solución optima localiza, que eventualmente puede conducir a soluciones optimas a nivel mundial. Sin embargo generalmente no proporcionan soluciones a nivel mundial._
+_En el enfoque de un algoritmo codicioso las decisiones se toman desde el dominio solucion dado. Se elige la solución más cercanda que parece solucionar el problema, posteriormente intenta encontrar una solución optima localiza, que eventualmente puede conducir a soluciones optimas a nivel mundial. Sin embargo generalmente no proporcionan soluciones a nivel mundial._
+
+![](/00.-Sources/Images/mochila.svg)
 
 ### Ventajas
 
