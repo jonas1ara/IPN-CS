@@ -12,6 +12,8 @@ _En la mayoría de los casos, se pone más atención en la complejidad del tiemp
 
 ![](/00.-Sources/Images/bigO.png)
 
+#### Complejidad del tiempo constante <i>O(1)</i>
+
 - **Complejidad del tiempo constante <i>O(1)</i>**: → Se dice que un algoritmo se ejecuta en tiempo constante si requiere la misma cantidad de tiempo, independientemente del tamaño de entrada, por ejemplo, acceder a cualquier elemento de una matriz o una función para intercambiar dos números.
 
 _**Algoritmo para intercambiar valores:**_
@@ -91,7 +93,7 @@ int busquedaLineal(int data)
 
 - **Complejidad del tiempo logarítmico lineal <i>O(n log n)</i>** →Los algoritmos de esta complejidad temporal son ligeramente más lentos que los de tiempo lineal y se mantienen escalables, las implementaciones flotan alrededor del tiempo lineal hasta que la entrada alcanza un tamaño lo suficientemente grande, por ejemplo, los algoritmos basados en la estrategia algoritmica de divide y conquista (Merge Sort, Heap Sort y Quick Sort).
 
-_Algoritmo de ordenamiento por mezcla_
+_**Algoritmo de ordenamiento por mezcla:**_
 
 ```c
 void ordenamiento_por_Mezcla(int inicio, int mitad, int final) 
