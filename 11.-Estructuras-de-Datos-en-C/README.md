@@ -1,6 +1,20 @@
-# Ipn.c
+# Estructuras de datos
 
-_Las estructuras de datos son la forma programática de almacenar datos para que los datos se puedan utilizar de manera eficiente. Casi todas las aplicaciones empresariales utilizan varios tipos de estructuras de datos de una u otra manera._
+## ¿Qué son las estructuras de datos?
+
+_Son formas de organizar la información para manipular, buscar e insertar datos de manera eficiente. Casi todas las aplicaciones empresariales utilizan varios tipos de estructuras de datos de una u otra manera._
+
+#### Tipos de estructuras de datos
+
+- **Arreglos:** Almacenan múltiples datos en una sola variable.
+- **Matrices:** Es un conjunto bidimensional de tipos de datos.
+- **Listas enlazadas:** Se componen de nodos que tienen dos atributos (dato y enlace).
+- **Pilas:** Solamente pueden eliminar o insertar en la cima de la estructura.
+- **Colas:** Permite emular el comportamiento de una fila o cola de la vida real.
+- **Tablas de Hash:** Una estructura de datos que asocia llaves con valores.
+- **Árboles:** Implica un estructura donde los datos se organizan de modo que los elementos de información estén relacionados entre sí a s través de ramas.
+
+- **Grafos:** Son estructuras de datos que representan relaciones arbitrarias entre objetos.
 
 <img src=/00.-Sources/Images/DS.png alt="#"/>
 
@@ -28,6 +42,8 @@ _El algoritmo es un procedimiento paso a paso, que define un conjunto de instruc
 - **Actualización:** Algoritmo para actualizar un elemento existente en una estructura de datos.
 - **Delete:** Algoritmo para eliminar un elemento existente de una estructura de datos.
 
+---
+Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) de [UPIIT](https://www.upiit.ipn.mx/) y estudiante de la licenciatura en matemáticas en la [UnADM](https://www.unadmexico.mx/) para quien sea que este interesado. para quien sea que este interesado.
 
 
 
