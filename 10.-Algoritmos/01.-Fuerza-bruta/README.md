@@ -9,8 +9,8 @@
 - Es más fácil de implementar.
 
 ### Desventajas
-- Este enfoque puede tomar demasiado tiempo(siglos incluso)
-- No considera eficiencia
+- Este enfoque puede tomar demasiado tiempo(siglos incluso).
+- No considera eficiencia.
 
 ### Encontrar el divisor de un número natural n
 
