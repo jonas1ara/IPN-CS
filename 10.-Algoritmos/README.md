@@ -14,7 +14,7 @@ _En la mayoría de los casos, se pone más atención en la complejidad del tiemp
 
 - **Complejidad del tiempo constante <i>O(1)</i>**: → Se dice que un algoritmo se ejecuta en tiempo constante si requiere la misma cantidad de tiempo, independientemente del tamaño de entrada, por ejemplo, acceder a cualquier elemento de una matriz o una función para intercambiar dos números.
 
-_Algoritmo para intercambiar valores:_
+_**Algoritmo para intercambiar valores:**_
 
 ```c
 void intercambio(int a, int b) 
@@ -66,7 +66,7 @@ int busquedaBinaria(int data)
 ```
 - **Complejidad del tiempo lineal <i>O(n)</i>** →  Un algoritmo se ejecuta en tiempo lineal cuando el tiempo de ejecución aumenta a lo sumo proporcionalmente con el tamaño de la entrada n, ejemplos en esta complejidad son, Shell Sort y la búsqueda lineal.
 
-_Algoritmo de búsqueda lineal_
+_**Algoritmo de búsqueda lineal:**_
 
 ```c
 int busquedaLineal(int data)
@@ -120,7 +120,7 @@ void ordenamiento_por_Mezcla(int inicio, int mitad, int final)
 
 - **Complejidad del tiempo cuadrático <i>O(n²)</i>** → Significa que hay un bucle que itera sobre un conjunto de cosas, y dentro de ese bucle hay otro bucle sobre todas las cosas, ejemplos sobre esta complejidad son BubbleSort, Selection Sort e Insertion Sort.
 
-_Algoritmo de ordenamiento burbuja_
+_**Algoritmo de ordenamiento burbuja:**_
 
 ```c
 void ordenamiento_Burbuja() 
@@ -144,7 +144,7 @@ void ordenamiento_Burbuja()
 
 - **Complejidad del tiempo exponencial <i>O(2^n)</i>** → Significa que el tiempo de ejecución se duplica con cada adición al conjunto de datos de entrada. ,el problema de la mochila o el problema de las N reinas, son ejemplos de esta complejidad. 
 
-_Algoritmo para resolver el problema de las N reinas_
+_**Algoritmo para resolver el problema de las N reinas:**_
 
 ```c
 
@@ -170,7 +170,7 @@ bool resolverNQ(int tablero[N][N], int colm)
 
 - **Complejidad del tiempo factorial <i>O(n!)</i>** → Un algoritmo se ejecuta en tiempo factorial si itera sobre la entrada n un número de veces igual a n multiplicado por todos los números enteros positivos menores que n, el algoritmo para cálcular los números de Fibonacci recursivamente y el algoritmo para calcular permutaciones de una colección, son ejemplos de la complejidad del tiempo factorial.
 
-_Algoritmo para cálcular los números de Fibonacci recursivamente_
+_**Algoritmo para cálcular los números de Fibonacci recursivamente:**_
 
 ```c
 int Fibonacci(int n)
