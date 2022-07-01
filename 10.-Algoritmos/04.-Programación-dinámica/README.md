@@ -1,6 +1,6 @@
 # Programación dinámica
 
-## A diferencia de dividir y conquistar, estos subproblemas no se resuelven de forma independiente. 
+## La programación dinámica se utiliza donde tenemos problemas, que se pueden dividir en subproblemas similares, para que sus resultados puedan ser reutilizados.
 
 _El enfoque de programación dinámica es similar a dividir y conquistar al dividir el problema en subproblemas posibles más pequeños y aún más pequeños. Pero a diferencia de dividir y conquistar, estos subproblemas no se resuelven de forma independiente. Más bien, los resultados de estos subproblemas más pequeños se recuerdan y se utilizan para subproblemas similares o superpuestos._
 
