@@ -1,34 +1,4 @@
-﻿/*
-
-
-	Escribe un programa (se recomienda que sea recursivo) que dé solución al problema de las torres de Hanoi.
-	El enunciado es el siguiente: Se dispone de una torre formada por varios discos de diferentes diámetros denominada torre O (origen),
-	donde cada disco es de diámetro inferior a todos los que están por debajo. Se dispone de otras dos torres para dejar discos, una denominada torre A (auxiliar) y otra torre D (destino).
-	El problema consiste en pasar todos los discos de la torre O a la torre D respetando dos normas muy simples:
-
-	Los discos se pasan de una torre a otra de uno en uno.
-	Nunca un disco de mayor diámetro puede estar sobre otro de menor diámetro.
-	Se preguntará al inicio del programa por el tamaño de la torre O (entendiendo que tendrá el número de discos indicados, con algún límite preestablecido).
-	Las torres A y D estarán inicialmente vacías.
-	Se debe ofrecer la solución que da el programa a este problema paso a paso, mostrando el resultado de una forma gráfica. El inicio podría ser algo así:
-
-			*
-		   ***
-		  *****
-		 *******
-		*********
-	   ===========		==========		==========
-			O				A				D
-*/
-/*
-	Formula para calcular movimientos mínimos necesarios:
-	m = 2^n -1
-
-	http://www.rodoval.com/heureka/hanoi/
-*/
-
-
-#include <stdio.h> //directiva de entradas y salidas estandar
+﻿#include <stdio.h> //directiva de entradas y salidas estandar
 #include <stdlib.h> //directiva para el uso de memoría dinámica
 #include <unistd.h>
 

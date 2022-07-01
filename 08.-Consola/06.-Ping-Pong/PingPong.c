@@ -1,12 +1,11 @@
 /*
 
------Compilar con gcc -o pong pong.c -lncurses -lpthread .
-
+-----Compilar con gcc -o pong pong.c -lncurses -lpthread .-----
 
 */
  
  
-#include <stdio.h> //Simple constumbre....
+#include <stdio.h> 
 #include <ncurses.h> //Utilizar ncurses.
 #include <math.h> //Funciones para la obtención de números aleatorios ( rand() ).
 #include <pthread.h> //Ejecución con varios hilos.
