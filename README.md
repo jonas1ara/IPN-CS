@@ -34,4 +34,4 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
 ## Expresiones de gratitud
 
 ---
-Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) de [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado.
+Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) y estudiante de la licenciatura en matemáticas en la [UnADM](https://www.unadmexico.mx/) para quien sea que este interesado.
