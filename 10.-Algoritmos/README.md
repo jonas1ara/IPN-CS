@@ -6,7 +6,7 @@ _El algoritmo es un procedimiento paso a paso, que define un conjunto de instruc
 
 _No todos los procedimientos se pueden llamar algoritmo. Un algoritmo debe tener las siguientes características:_
 
-- **Inequívoco:** El algoritmo debe ser claro e inequívoco. Cada uno de sus pasos (o fases), y sus entradas/ salidas deben ser claros y deben conducir a un solo significado.
+- **Inequívoco:** Debe ser claro e inequívoco. Cada uno de sus pasos (o fases), y sus entradas/ salidas deben ser claros y deben conducir a un solo significado.
 
 - **Entrada:** Debe tener 0 o más entradas bien definidas.
 
