@@ -1,4 +1,36 @@
-# Complejidad algoritmica
+# Algoritmos
+
+_El algoritmo es un procedimiento paso a paso, que define un conjunto de instrucciones que se ejecutarán en un cierto orden para obtener la salida deseada. Los algoritmos generalmente se crean independientemente de los lenguajes subyacentes, es decir, un algoritmo se puede implementar en más de un lenguaje de programación._
+
+### Características de un algoritmo
+
+_No todos los procedimientos se pueden llamar algoritmo. Un algoritmo debe tener las siguientes características:_
+
+- **Inequívoco:** El algoritmo debe ser claro e inequívoco. Cada uno de sus pasos (o fases), y sus entradas/ salidas deben ser claros y deben conducir a un solo significado.
+
+- **Entrada:** Debe tener 0 o más entradas bien definidas.
+
+- **Salida:** Debe tener 1 o más salidas bien definidas y debe coincidir con la salida deseada.
+
+- **Finitud:** Debe terminar después de un número finito de pasos.
+
+- **Viabilidad:** Debe ser factible con los recursos disponibles.
+
+- **Independiente:** Debe tener instrucciones paso a paso, que deben ser independientes de cualquier código de programación.
+
+## Diseño de algoritmos:
+
+_En el diseño y análisis de algoritmos, **generalmente el segundo método se utiliza para describir un algoritmo.** Hace que sea fácil para el analista analizar el algoritmo ignorando todas las definiciones no deseadas. Puede observar qué operaciones se están utilizando y cómo fluye el proceso, diseñamos un algoritmo para obtener una solución de un problema determinado. Un problema se puede resolver de más de una manera, por lo tanto, se pueden derivar muchos algoritmos de solución para un problema determinado, entonces el siguiente paso es analizar los algoritmos de solución propuestos e implementar la mejor solución adecuada._
+
+## Análisis de algoritmos 
+
+_La eficiencia de un algoritmo se puede analizar en dos etapas diferentes, antes de la implementación y después de la implementación. Son las siguientes:_
+
+- **Análisis a priori:** Este es un análisis teórico de un algoritmo. La eficiencia de un algoritmo se mide asumiendo que todos los demás factores, por ejemplo, la velocidad del procesador, son constantes y no tienen ningún efecto en la implementación.
+
+- **Análisis posterior:** Este es un análisis empírico de un algoritmo. El algoritmo seleccionado se implementa utilizando el lenguaje de programación. Esto se ejecuta en la máquina de la computadora de destino. En este análisis, se recopilan estadísticas reales como el tiempo de ejecución y el espacio requerido.
+
+## Complejidad algoritmica
 
 _La teoría de la complejidad es el estudio de la cantidad de recursos que requiere un algoritmo al ejecutarse en función del tamaño de su entrada, es fundamental conocerla para escribir código de manera eficiente, existen dos tipos de complejidad:_
 
