@@ -4,8 +4,6 @@
 
 _En el enfoque de un algoritmo codicioso las decisiones se toman desde el dominio solucion dado. Se elige la solución más cercanda que parece solucionar el problema, posteriormente intenta encontrar una solución optima localiza, que eventualmente puede conducir a soluciones optimas a nivel mundial. Sin embargo generalmente no proporcionan soluciones a nivel mundial._
 
-![](/00.-Sources/Images/mochila.svg)
-
 ### Ventajas
 
 - Son rápidos
@@ -16,6 +14,8 @@ _En el enfoque de un algoritmo codicioso las decisiones se toman desde el domini
 ### Contar monedas
 
 _Este problema es contar hasta un valor deseado eligiendo las monedas menos posibles y el enfoque codicioso obliga al algoritmo a elegir la moneda más grande posible._
+
+![](/00.-Sources/Images/Contar.png)
 
 #### Si se nos proporcionan mondeas $1, $2, $3, $5 y $10 y se nos pide que contemos $18, entonces el procedimiento codicioso será:
 
@@ -42,6 +42,8 @@ _Parece funcionar bien, pero si cambiamos ligeramente el problema, entonces el e
 - Al final seleccionar moneda de $1, y se resuelve el problema.
 
 ### El problema de la mochila
+
+![](/00.-Sources/Images/Mochila.png)
 
 #####
 
