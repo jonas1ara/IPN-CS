@@ -15,7 +15,7 @@ _Se elige la solución más cercanda que parece solucionar el problema, posterio
 
 _Este problema es contar hasta un valor deseado eligiendo las monedas menos posibles y el enfoque codicioso obliga al algoritmo a elegir la moneda más grande posible._
 
-##### Si se nos proporcionan mondeas $1, $2, $3, $5 y $10 y se nos pide que contemos $18, entonces el procedimiento codicioso será:
+#### Si se nos proporcionan mondeas $1, $2, $3, $5 y $10 y se nos pide que contemos $18, entonces el procedimiento codicioso será:
 
 - Seleccionar moneda de $10, el recuento restante es 8.
 - Luego seleccionar moneda de $5, el recuento restante es 3.
@@ -24,7 +24,7 @@ _Este problema es contar hasta un valor deseado eligiendo las monedas menos posi
 
 _Parece funcionar bien, pero si cambiamos ligeramente el problema, entonces el enfoque queda mal optmizado. Si tenemos monedas de $1, $7 y $10, y necesitamos contar al $15, puede usar más monedas de las necesarias:_
 
-##### Si se nos proporcionan monedas de $1, $7 y $10, y necesitamos contar al $15, puede usar mas monedas de las necesarias:
+#### Si se nos proporcionan monedas de $1, $7 y $10, y necesitamos contar al $15, puede usar mas monedas de las necesarias:
 
 - Seleccionar moneda de $10, el recuero restante es 5
 - Luego seleccionar moneda de $1, el recuento restante es 4.
@@ -33,7 +33,7 @@ _Parece funcionar bien, pero si cambiamos ligeramente el problema, entonces el e
 - Luego seleccionar moneda de $1, el recuento restante es 1.
 - Al final seleccionar moneda de $1, y se resuelve el problema.
 
-_Cuando la solución mas optima es:_
+#### Cuando la solución mas optima es:
 
 - Seleccionar moneda de $7, el recuero restante es 8
 - Luego seleccionar moneda de $7, el recuento restante es 1.
@@ -49,6 +49,6 @@ _Cuando la solución mas optima es:_
 
 | # | Titulo | Implementación | Complejidad |
 |---| ----- | -------- | ---------- |
-|001|El problema de la mochila| [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/10.-Algoritmos/06.-Ordenamiento/01-Ordenamiento-Burbuja.c) |Ο (n²)|
-|002|El problema del viajante | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/10.-Algoritmos/05.-Backtracking/01-N-Reinas-Geek.c)|Ο (n²)|
-|003|El problema de la programación de trabajos | [C]|Ο (n²)|
+|001|El problema de la mochila| [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/10.-Algoritmos/02.-Voraces/01-Problema-de-la-mochila.c) |Ο (n²)|
+|002|El problema del viajante | C |Ο (n²)|
+|003|El problema de la programación de trabajos | C |Ο (n²)|
