@@ -2,7 +2,7 @@
 
 _25 Algoritmos que todo matemático debería conocer 😁😁_
 
-<img src=/00.-Sources/25.jpeg alt="#"/>
+<img src=/00.-Sources/Images/25.jpeg alt="#"/>
 
 ## Algoritmos
 
