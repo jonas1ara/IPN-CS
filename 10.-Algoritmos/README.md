@@ -12,7 +12,7 @@ _En la mayoría de los casos, se pone más atención en la complejidad del tiemp
 
 ![](/00.-Sources/Images/bigO.png)
 
-#### Complejidad del tiempo constante <i>O(1)</i>
+### Complejidad del tiempo constante <i>O(1)</i>
 
 - **Complejidad del tiempo constante <i>O(1)</i>**: → Se dice que un algoritmo se ejecuta en tiempo constante si requiere la misma cantidad de tiempo, independientemente del tamaño de entrada, por ejemplo, acceder a cualquier elemento de una matriz o una función para intercambiar dos números.
 
