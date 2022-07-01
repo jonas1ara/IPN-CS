@@ -14,7 +14,7 @@ _En la mayoría de los casos, se pone más atención en la complejidad del tiemp
 
 - **Complejidad del tiempo constante <i>O(1)</i>**: → Se dice que un algoritmo se ejecuta en tiempo constante si requiere la misma cantidad de tiempo, independientemente del tamaño de entrada, por ejemplo, acceder a cualquier elemento de una matriz o una función para intercambiar dos números.
 
-_Algoritmo para intercambiar valores_
+_Algoritmo para intercambiar valores:_
 
 ```c
 void intercambio(int a, int b) 
@@ -30,7 +30,7 @@ void intercambio(int a, int b)
 
 - **Complejidad del tiempo logarítmico <i>O(log n)</i>** → Significa esencialmente que el tiempo de funcionamiento crece en proporción logaritmica a la del tamaño de entrada, es decir que la relación entre el número de operaciones N y el tamaño de la entrada n disminuye cuando aumenta el tamaño de entrada, por ejemplo el algoritmo de búsqueda binaria, con cada iteración, nuestra función va dividiendo la entrada, realizando así la operación inversa de exponenciación.
 
-_Algoritmo de búsqueda binaria_
+_**Algoritmo de búsqueda binaria:**_
 
 ```c
 int busquedaBinaria(int data) 
