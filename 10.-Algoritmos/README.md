@@ -20,7 +20,7 @@ _No todos los procedimientos se pueden llamar algoritmo. Un algoritmo debe tener
 
 ## Diseño de algoritmos:
 
-_En el diseño y análisis de algoritmos, **generalmente el segundo método se utiliza para describir un algoritmo.** Hace que sea fácil para el analista analizar el algoritmo ignorando todas las definiciones no deseadas. Puede observar qué operaciones se están utilizando y cómo fluye el proceso, diseñamos un algoritmo para obtener una solución de un problema determinado. Un problema se puede resolver de más de una manera, por lo tanto, se pueden derivar muchos algoritmos de solución para un problema determinado, entonces el siguiente paso es analizar los algoritmos de solución propuestos e implementar la mejor solución adecuada._
+_En el diseño y análisis de algoritmos, **generalmente el segundo método se utiliza para describir un algoritmo.** Hace que sea fácil para el analista analizar el algoritmo ignorando todas las definiciones no deseadas. Puede observar qué operaciones se están utilizando y cómo fluye el proceso, **diseñamos un algoritmo para obtener una solución de un problema determinado.** Un problema se puede resolver de más de una manera, por lo tanto, se pueden derivar muchos algoritmos de solución para un problema determinado, entonces el siguiente paso es analizar los algoritmos de solución propuestos e implementar la mejor solución adecuada._
 
 ## Análisis de algoritmos 
 
