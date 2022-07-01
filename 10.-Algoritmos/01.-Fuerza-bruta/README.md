@@ -12,6 +12,8 @@
 - Este enfoque puede tomar demasiado tiempo(siglos incluso).
 - No considera eficiencia.
 
+## Ejemplo
+
 ### Encontrar el divisor de un número natural n
 
 ##### Divisores de 4
