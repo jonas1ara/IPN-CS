@@ -60,7 +60,6 @@ int main(){
 		scanf("%c",&key);
 	}while(key == 'S' || key == 's');
 	
-	system("pause");
 	return 0;
 }
 
