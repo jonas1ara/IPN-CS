@@ -1,71 +1,119 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdbool.h>
 
-int MAXSIZE = 8;       
-int stack[8];     
-int top = -1;            
+#define MAX 6
 
-int isempty() {
-
-   if(top == -1)
-      return 1;
-   else
-      return 0;
-}
-   
-int isfull() {
-
-   if(top == MAXSIZE)
-      return 1;
-   else
-      return 0;
-}
+int intArray[MAX];
+int front = 0;
+int rear = -1;
+int itemCount = 0;
 
 int peek() {
-   return stack[top];
+   return intArray[front];
 }
 
-int pop() {
-   int data;
+bool isEmpty() {
+   return itemCount == 0;
+}
+
+bool isFull() {
+   return itemCount == MAX;
+}
+
+int size() {
+   return itemCount;
+}  
+
+void insert(int data) {
+
+   if(!isFull()) {
 	
-   if(!isempty()) {
-      data = stack[top];
-      top = top - 1;   
-      return data;
-   } else {
-      printf("Could not retrieve data, Stack is empty.\n");
+      if(rear == MAX-1) {
+         rear = -1;            
+      }       
+
+      intArray[++rear] = data;
+      itemCount++;
    }
 }
 
-int push(int data) {
-
-   if(!isfull()) {
-      top = top + 1;   
-      stack[top] = data;
-   } else {
-      printf("Could not insert data, Stack is full.\n");
+int removeData() {
+   int data = intArray[front++];
+	
+   if(front == MAX) {
+      front = 0;
    }
+	
+   itemCount--;
+   return data;  
 }
 
 int main() {
-   // push items on to the stack 
-   push(3);
-   push(5);
-   push(9);
-   push(1);
-   push(12);
-   push(15);
+   /* insert 5 items */
+   insert(3);
+   insert(5);
+   insert(9);
+   insert(1);
+   insert(12);
 
-   printf("Element at top of the stack: %d\n" ,peek());
-   printf("Elements: \n");
+   // front : 0
+   // rear  : 4
+   // ------------------
+   // index : 0 1 2 3 4 
+   // ------------------
+   // queue : 3 5 9 1 12
+   insert(15);
 
-   // print stack data 
-   while(!isempty()) {
-      int data = pop();
-      printf("%d\n",data);
+   // front : 0
+   // rear  : 5
+   // ---------------------
+   // index : 0 1 2 3 4  5 
+   // ---------------------
+   // queue : 3 5 9 1 12 15
+	
+   if(isFull()) {
+      printf("Queue is full!\n");   
    }
 
-   printf("Stack full: %s\n" , isfull()?"true":"false");
-   printf("Stack empty: %s\n" , isempty()?"true":"false");
-   
-   return 0;
-}
+   // remove one item 
+   int num = removeData();
+	
+   printf("Element removed: %d\n",num);
+   // front : 1
+   // rear  : 5
+   // -------------------
+   // index : 1 2 3 4  5
+   // -------------------
+   // queue : 5 9 1 12 15
+
+   // insert more items
+   insert(16);
+
+   // front : 1
+   // rear  : -1
+   // ----------------------
+   // index : 0  1 2 3 4  5
+   // ----------------------
+   // queue : 16 5 9 1 12 15
+
+   // As queue is full, elements will not be inserted. 
+   insert(17);
+   insert(18);
+
+   // ----------------------
+   // index : 0  1 2 3 4  5
+   // ----------------------
+   // queue : 16 5 9 1 12 15
+   printf("Element at front: %d\n",peek());
+
+   printf("----------------------\n");
+   printf("index : 5 4 3 2  1  0\n");
+   printf("----------------------\n");
+   printf("Queue:  ");
+	
+   while(!isEmpty()) {
+      int n = removeData();           
+      printf("%d ",n);
+   }   
