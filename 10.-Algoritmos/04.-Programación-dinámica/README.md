@@ -31,6 +31,8 @@ _A diferencia de los **algoritmos codiciosos**, donde se aborda la optimización
 
 _A diferencia de los **algoritmos de divide y vencerás**, donde las soluciones se combinan para lograr una solución general, los algoritmos dinámicos utilizan la salida de un subproblema más pequeño y luego intentan optimizar un subproblema más grande. Los algoritmos dinámicos utilizan memoización para recordar el resultado de subproblemas ya resueltos._
 
+## Ejemplos
+
 ### La serie numérica de Fibonacci
 
 ### El problema de la mochila
