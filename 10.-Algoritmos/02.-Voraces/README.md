@@ -11,6 +11,8 @@ _En el enfoque de un algoritmo codicioso las decisiones se toman desde el domini
 ### Desventajas
 - No siempre dan la mejor solución
 
+## Ejemplos
+
 ### Contar monedas
 
 _Este problema es contar hasta un valor deseado eligiendo las monedas menos posibles y el enfoque codicioso obliga al algoritmo a elegir la moneda más grande posible._
