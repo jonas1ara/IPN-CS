@@ -14,17 +14,175 @@ _En la mayoría de los casos, se pone más atención en la complejidad del tiemp
 
 - **Complejidad del tiempo constante <i>O(1)</i>**: → Se dice que un algoritmo se ejecuta en tiempo constante si requiere la misma cantidad de tiempo, independientemente del tamaño de entrada, por ejemplo, acceder a cualquier elemento de una matriz o una función para intercambiar dos números.
 
+_Algoritmo para intercambiar valores_
+
+```c
+void intercambio(int a, int b) 
+{   
+   int temp;
+   
+   temp = a; 
+   a = b; 
+   b = temp;
+}
+
+```
+
 - **Complejidad del tiempo logarítmico <i>O(log n)</i>** → Significa esencialmente que el tiempo de funcionamiento crece en proporción logaritmica a la del tamaño de entrada, es decir que la relación entre el número de operaciones N y el tamaño de la entrada n disminuye cuando aumenta el tamaño de entrada, por ejemplo el algoritmo de búsqueda binaria, con cada iteración, nuestra función va dividiendo la entrada, realizando así la operación inversa de exponenciación.
 
+_Algoritmo de búsqueda binaria_
+
+```c
+int busquedaBinaria(int data) 
+{
+   int limiteInferior = 0;
+   int limiteSuperior = MAX -1;
+   int puntoMedio = -1;
+   int comparacion = 0;      
+   int index = -1;
+	
+   while(limiteInferior <= limiteSuperior) 
+   {
+      puntoMedio = limiteInferior + (limiteSuperior - limiteInferior) / 2;	
+		
+      if(arr[puntoMedio] == data) 
+      {
+         index = puntoMedio;
+         break;
+      } else 
+      {
+         if(arr[puntoMedio] < data) 
+         {
+            limiteInferior = puntoMedio + 1;
+         }
+         else 
+         {
+            limiteSuperior = puntoMedio -1;
+         }
+      }               
+   }
+   return index;
+}
+```
 - **Complejidad del tiempo lineal <i>O(n)</i>** →  Un algoritmo se ejecuta en tiempo lineal cuando el tiempo de ejecución aumenta a lo sumo proporcionalmente con el tamaño de la entrada n, ejemplos en esta complejidad son, Shell Sort y la búsqueda lineal.
+
+_Algoritmo de búsqueda lineal_
+
+```c
+int busquedaLineal(int data)
+{
+   int comparaciones = 0;
+   int index = -1;
+   int i;
+
+   for(i = 0;i<MAX;i++) 
+   {
+      comparaciones++;
+		
+      if(data == arr[i]) 
+      {
+         index = i;
+         break;
+      }
+   }   
+   return index;
+}
+```
 
 - **Complejidad del tiempo logarítmico lineal <i>O(n log n)</i>** →Los algoritmos de esta complejidad temporal son ligeramente más lentos que los de tiempo lineal y se mantienen escalables, las implementaciones flotan alrededor del tiempo lineal hasta que la entrada alcanza un tamaño lo suficientemente grande, por ejemplo, los algoritmos basados en la estrategia algoritmica de divide y conquista (Merge Sort, Heap Sort y Quick Sort).
 
+_Algoritmo de ordenamiento por mezcla_
+
+```c
+void ordenamiento_por_Mezcla(int inicio, int mitad, int final) 
+{
+   int i1, i2, i;
+
+   for(i1 = inicio, i2 = mitad + 1, i = inicio; i1 <= mitad && i2 <= final; i++) 
+   {
+      if(a[i1] <= a[i2])
+         b[i] = a[i1++];
+      else
+         b[i] = a[i2++];
+   }
+ 
+   while(i1 <= mitad)    
+      b[i++] = a[i1++];
+
+   while(i2 <= final)   
+      b[i++] = a[i2++];
+      
+   for(i = inicio; i <= final; i++)
+      a[i] = b[i];
+}
+
+```
+
 - **Complejidad del tiempo cuadrático <i>O(n²)</i>** → Significa que hay un bucle que itera sobre un conjunto de cosas, y dentro de ese bucle hay otro bucle sobre todas las cosas, ejemplos sobre esta complejidad son BubbleSort, Selection Sort e Insertion Sort.
+
+_Algoritmo de ordenamiento burbuja_
+
+```c
+void ordenamiento_Burbuja() 
+{
+   int temp;
+   
+   for(int i = 0; i < MAX-1; i++) 
+   { 
+      for(int j = 0; j < MAX-1-i; j++) 
+      {
+         if(arr[j] > arr[j+1]) 
+         {
+            temp = arr[j];
+            arr[j] = arr[j+1];
+            arr[j+1] = temp;
+         }
+   	  }
+   }    
+}
+```
 
 - **Complejidad del tiempo exponencial <i>O(2^n)</i>** → Significa que el tiempo de ejecución se duplica con cada adición al conjunto de datos de entrada. ,el problema de la mochila o el problema de las N reinas, son ejemplos de esta complejidad. 
 
-- **Complejidad del tiempo factorial <i>O(n!)</i>** → Un algoritmo se ejecuta en tiempo factorial si itera sobre la entrada n un número de veces igual a n multiplicado por todos los números enteros positivos menores que n, el problema del viajante y el algoritmo para calcular permutaciones de una colección, son ejemplos de la complejidad del tiempo factorial.
+_Algoritmo para resolver el problema de las N reinas_
 
+```c
 
+bool resolverNQ(int tablero[N][N], int colm)
+{
+	if (colm >= N)
+		return true;
+
+	for (int i = 0; i < N; i++) 
+	{	
+		if (posicionValida(tablero, i, colm)) 
+		{
+			board[i][colm] = 1;
+
+			if (resolverNQ(tablero, colm + 1))
+				return true;
+			tablero[i][colm] = 0; 
+		}
+	}
+	return false;
+}
+```
+
+- **Complejidad del tiempo factorial <i>O(n!)</i>** → Un algoritmo se ejecuta en tiempo factorial si itera sobre la entrada n un número de veces igual a n multiplicado por todos los números enteros positivos menores que n, el algoritmo para cálcular los números de Fibonacci recursivamente y el algoritmo para calcular permutaciones de una colección, son ejemplos de la complejidad del tiempo factorial.
+
+_Algoritmo para cálcular los números de Fibonacci recursivamente_
+
+```c
+int Fibonacci(int n)
+{
+	if(n <= 1)
+	{
+		return n;
+	}
+	else
+	{
+		return Fibonacci(n - 1) + Fibonacci(n - 2);
+	}
+}
+```
 
