@@ -3,8 +3,8 @@
 #include<string.h>
 
 struct datos{
-	char *nombre;
-	int edad;
+	char *nombre_tarea;
+	int duracion_tarea;
 };
 
 //Generar el elemento nodo
@@ -17,57 +17,57 @@ struct datos_personas
 };
 
 //Prototipos
-void Add(persona **, persona **, char *, int);
-struct datos Pull(persona **, persona **);
+void Agregar(persona **, persona **, char *, int);
+struct datos Retirar(persona **, persona **);
 int vacia(persona *);
-int tamanio(persona *);
+int tam(persona *);
 
 //Función principal
 int main()
 {
   //Declaración de variables
   int eleccion;
-  char nombre[50]; //Vector de caracteres para el nombre
-  int edad;
+  char nombre_tarea[50]; //Vector de caracteres para el nombre_tarea
+  int duracion_tarea;
   
   //Crear la cola
   persona *inicio = NULL; //Puntero al inicio de la cola
   persona *final = NULL; //Puntero al final de la cola
   
   //Mensaje de inicio
-  printf("Este progama simula un gestor de tareas de un procesador\n");
+  printf("Este progama simula un gestor de tareas de un procesador, insertas tareas identificadas con un nombre y una duración determinada, posteriormente proporcionas un tiempo de ejecución que servirá para ir quitando tareas de la\n");
   
   //Menu
   while(eleccion != -1)
   {
-  	printf("\n Menu\n 1.-Insertar tareas\n 2.-Tiempo de ejecución\n -1.-Salir\n\n\tElige: ");
+  	printf("\n Menu\n 1.-Insertar tareas\n 2.-Retirar tareas\n -1.-Salir\n\n\tElige: ");
   	scanf("%d",&eleccion);
   	fflush(stdin); //Limpiar el buffer
   	switch(eleccion)
 	{
   		case 1:
   			printf("Dame el nombre de la tarea a insertar: ");
-			scanf("%s",nombre);
-  			printf("Dame el tiempo de ejecución de la tarea: ");
-  			scanf("%d",&edad);
-  			Add(&inicio,&final,nombre,edad);
+			scanf("%s",nombre_tarea);
+  			printf("Dame el tiempo(en minutos) de ejecución de la tarea: ");
+  			scanf("%d",&duracion_tarea);
+  			Agregar(&inicio,&final,nombre_tarea,duracion_tarea);
   			break;
   		case 2:
-  			printf("Retirar las tareas con tiempo de ejecuación menores a: ");
-  			scanf("%d",&edad);
+  			printf("Retirar tareas con tiempo(en minutos) de ejecución menor a: ");
+  			scanf("%d",&duracion_tarea);
   			int indice=0;
-			int size = tamanio(inicio); //Tamaño de la cola
-			struct datos datos_mostrar;
+			int size = tam(inicio); //Tamaño de la cola
+			struct datos datos_mostrar; 
   			if(size==0)
   				printf("La cola esta vacia\n");
   			while(indice < size){
-  				datos_mostrar = Pull(&inicio,&final); // Tomar elemento de la cola
-				if(datos_mostrar.edad<=edad)
-					printf("%s y ",datos_mostrar.nombre);
+  				datos_mostrar = Retirar(&inicio,&final); // Tomar el elemento de la cola
+				if(datos_mostrar.duracion_tarea<=duracion_tarea)
+					printf("Tarea retirada: %s, con duración de: %d minutos.\n",datos_mostrar.nombre_tarea,datos_mostrar.duracion_tarea);
 			    else{
-					Add(&inicio,&final,datos_mostrar.nombre,datos_mostrar.edad);
+					Agregar(&inicio,&final,datos_mostrar.nombre_tarea,datos_mostrar.duracion_tarea);
 				}
-				free(datos_mostrar.nombre); //Liberar memoria reservada para el nombre
+				free(datos_mostrar.nombre_tarea); //Liberar memoria reservada para el nombre_tarea
 				indice++;
 			}
 			printf("\n");
@@ -78,18 +78,18 @@ int main()
 }
 
 //Función que agrega un elemento a la cola
-void Add(persona **inicio, persona **final, char *cadena,int edad)
+void Agregar(persona **inicio, persona **final, char *cadena,int duracion_tarea)
 {
 	//Reservar memoria
 	persona *nuevoNodo = (persona *)malloc(sizeof(persona));
-	nuevoNodo->dato.nombre = (char *)malloc((strlen(cadena)+1)*sizeof(char));
+	nuevoNodo->dato.nombre_tarea = (char *)malloc((strlen(cadena)+1)*sizeof(char));
 	//Agregar el dato al nodo
-	strcpy(nuevoNodo->dato.nombre,cadena);
-	nuevoNodo->dato.edad = edad;
+	strcpy(nuevoNodo->dato.nombre_tarea,cadena);
+	nuevoNodo->dato.duracion_tarea = duracion_tarea;
 	//Ahora el nuevoNodo es el final de la cola y el siguiente es nulo
 	nuevoNodo->siguiente = NULL;
 	
-	if(vacia(*final)) //¿La cola está vacía?
+	if(vacia(*final)) //¿Si la cola está vacía?
 	{ 
 		(*final) = nuevoNodo;
 		(*inicio) = nuevoNodo;
@@ -100,19 +100,20 @@ void Add(persona **inicio, persona **final, char *cadena,int edad)
 }
 
 //Función que retira un elemento de la cola
-struct datos Pull(persona **inicio, persona **final)
+struct datos Retirar(persona **inicio, persona **final)
 {
 	struct datos dato_mostrar;
-	dato_mostrar.nombre = NULL;
-	dato_mostrar.edad = 0;
-	if(!(vacia(*inicio))){//Si la cola NO esta vacía
-		dato_mostrar = (*inicio)->dato;
+	dato_mostrar.nombre_tarea = NULL;
+	dato_mostrar.duracion_tarea = 0;
+	if(!(vacia(*inicio))) //Si la cola NO esta vacía
+	{
+		dato_mostrar = (*inicio)->dato; //Tomar el dato del inicio
 		//Hacemos referencia al nodo de inicio para poder liberar la memoria
 		persona *temporal = *inicio;
 		//Inicio apunta a siguiente
 		(*inicio) = temporal->siguiente;
-		if((*inicio)==NULL) //Solo había un nodo?
-			(*final)=NULL;
+		if((*inicio)==NULL) //¿Si solo hay un nodo?
+			(*final)=NULL; //Ahora, el final apunta a nulo
 		//liberar memoria
 		free(temporal);
 		//printf("Retirando %s...\n",cadena);
@@ -128,10 +129,11 @@ int vacia(persona *cola)
 }
 
 //Función para saber el tamaño de la cola
-int tamanio(persona *inicio)
+int tam(persona *inicio)
 {
 	int n_elementos = 0;
-	while(inicio!=NULL){
+	while(inicio!=NULL) //Mientras la cola no esté vacía
+	{
 		inicio = inicio->siguiente;
 		n_elementos++;
 	}
