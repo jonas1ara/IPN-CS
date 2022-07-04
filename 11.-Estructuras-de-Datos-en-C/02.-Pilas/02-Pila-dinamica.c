@@ -1,123 +1,103 @@
 /*
-Estructuras de datos en C: implementación de pila de enteros
-Recuerda que el último en entrar es el primero en salir
-LIFO: https://es.wikipedia.org/wiki/Last_in,_first_out
-Basado en las operaciones que dice la Wikipedia:
-https://es.wikipedia.org/wiki/Pila_(inform%C3%A1tica)#Operaciones
-@author parzibyte
-Visita: parzibyte.me
+  PilaDinamica.cpp
+  04/10/21
+  IIA Algoritmos y Estructuras 
+  Este programa genera una pila dinÃ¡mica
 */
-#include <stdio.h>   // printf
-#include <stdlib.h>  // malloc y free
-#include <stdbool.h> // Booleanos
+#include<stdio.h>
+#include<stdlib.h>
 
-// Un nodo tiene un dato, el cual es el número. Y otro nodo al que apunta
-struct nodo {
-  int numero;
+//Generar el elemento nodo
+struct nodo{
+  char dato;
   struct nodo *siguiente;
 };
 
-// Prototipos de funciones
-void agregar(int numero);  // push
-void eliminarUltimo(void); // pop
-void imprimir(void);
-int tamanio(void); // El tamaño de la pila
-bool vacia(void);  // Indica si la pila está vacía
-int ultimo(void);  // El último elemento. Devuelve 0 si no hay elementos
+//Prototipos
+void Push(struct nodo **, char);
+char Pop(struct nodo **);
+int vacia(struct nodo *);
+int balanceoParentesis(char *);
+void Liberar(struct nodo **);
 
-// Todo comienza con el nodo superior
-struct nodo *superior = NULL;
+//FunciÃ³n principal
+int main(void){
+  //Declaracion de variables
+  char cadena[80];
+  
+  //Mensaje de inicio
+  printf("Este programa muestra si una expresion esta bien balanceada\n");
+  
+  //Pedir la cadena
+  printf("Dame la cadena a evaluar: \n");
+  gets(cadena);
+  
+  if(balanceoParentesis(cadena))
+  	printf("Parentesis bien balanceados\n");
+  else
+  	printf("Expresion desbalanceada\n");
+  	
+  return 0;
+}
 
-int main() {
-  int eleccion;
-  int numero;
-  while (eleccion != -1) {
-    printf("\n--BIENVENIDO--\n1.- Agregar\n2.- Eliminar\n3.- Imprimir "
-           "pila\n4.- Imprimir tamaño\n5.- Comprobar si está vacía\n6.- "
-           "Mostrar último elemento\n-1.- Salir\n\n\tElige: ");
-    scanf("%d", &eleccion);
-    switch (eleccion) {
-    case 1:
-      printf("Ingresa el número que agregaremos:\n");
-      scanf("%d", &numero);
-      agregar(numero);
-      break;
-    case 2:
-      eliminarUltimo();
-      break;
-    case 3:
-      imprimir();
-      break;
-    case 4:
-      printf("La pila mide %d\n", tamanio());
-      break;
-    case 5:
-      if (vacia()) {
-        printf("La pila está vacía\n");
-      } else {
-        printf("La pila NO está vacía\n");
-      }
-      break;
-    case 6:
-      printf("El último elemento es: %d\n", ultimo());
-      break;
+int balanceoParentesis(char *S){
+    //Crear la pila
+	struct nodo *cima = NULL;
+	int n_simbolo = 0;
+	
+    // leer siguientesímbolo de S
+    while(S[n_simbolo]!='\0'){
+    	if(S[n_simbolo]=='(') //si it = (
+            Push(&cima,S[n_simbolo]);
+        else if(S[n_simbolo]==')'){ //si it =)
+        	printf("Se encontro )\n");
+            if(Pop(&cima)==NULL) //Esta vacía
+                return 0;
+        	}
+        n_simbolo++;
     }
-  }
+    if(!vacia(cima)){
+         Liberar(&cima);
+         return 0;
+    }
+    return 1;
 }
 
-int tamanio(void) {
-  int contador = 0;
-  if (superior == NULL)
-    return contador;
-  struct nodo *temporal = superior;
-  while (temporal != NULL) {
-    contador++;
-    temporal = temporal->siguiente;
-  }
-  return contador;
+void Push(struct nodo **pila, char numero){
+	printf("Agregando %c...\n",numero);
+	//Reservar memoria
+	struct nodo *nuevoNodo = (struct nodo *)malloc(sizeof(struct nodo));
+	//Agregar el dato al nodo
+	nuevoNodo->dato = numero;
+	//Ahora el nuevoNodo será la cim
+	nuevoNodo->siguiente = *pila;
+	*pila = nuevoNodo;
 }
 
-bool vacia(void) { return superior == NULL; }
-
-int ultimo() {
-  if (superior == NULL)
-    return -1;
-  return superior->numero;
+char Pop(struct nodo **pila){
+	char x;
+	if(!(vacia(*pila))){//Si la pila NO esta vacía
+		x=(*pila)->dato;
+		struct nodo *temporal = *pila;
+		*pila = temporal->siguiente;
+		//liberar memoria
+		free(temporal);
+		printf("Retirando %c...\n",x);
+		return x;
+	}
+	return NULL;
 }
 
-// Operación push
-void agregar(int numero) {
-  printf("Agregando %d\n", numero);
-  // El que se agregará; reservamos memoria
-  struct nodo *nuevoNodo = malloc(sizeof(struct nodo));
-  // Le ponemos el dato
-  nuevoNodo->numero = numero;
-  // Y ahora el nuevo nodo es el superior, y su siguiente
-  // es el que antes era superior
-  nuevoNodo->siguiente = superior;
-  superior = nuevoNodo;
+void Liberar(struct nodo **pila){
+	while(!(vacia(*pila))){//Si la pila NO esta vacía
+		struct nodo *temporal = *pila;
+		*pila = temporal->siguiente;
+		//liberar memoria
+		printf("Vaciando %c...\n",temporal->dato);
+		free(temporal);
+	}
 }
 
-void imprimir(void) {
-  printf("Imprimiendo...\n");
-  struct nodo *temporal = superior;
-  while (temporal != NULL) {
-    printf("%d\n", temporal->numero);
-    temporal = temporal->siguiente;
-  }
-}
-
-// Operación pop, eliminar el de hasta arriba
-void eliminarUltimo(void) {
-  printf("Eliminando el último\n");
-  if (superior != NULL) {
-    // Para liberar la memoria más tarde debemos
-    // tener la referencia al que vamos a eliminar
-    struct nodo *temporal = superior;
-    // Ahora superior es a lo que apuntaba su siguiente
-    superior = superior->siguiente;
-
-    // Liberar memoria que estaba ocupando el que eliminamos
-    free(temporal);
-  }
+int vacia(struct nodo *pila){
+	return pila==NULL;
 }
