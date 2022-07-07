@@ -16,8 +16,5 @@ _Ejecuta_
 
 <img src=/00.-Sources/Gifs/PP.gif alt="#"/>
 
-## Explicación 
-
-_En esta ocasión por ser un proyecto en el que aprendí mucho decidí explicarlo en el [blog]() de este repositorio_
 
 
