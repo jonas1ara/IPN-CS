@@ -66,9 +66,11 @@ _Ahora escribe en tu terminal make y la regla que quieres ejecutar, si no coloca
 ```
 make
 ```
-```
-make clean
-```
+
 ![](/00.-Sources/Gifs/Make.gif)
+
+##  Ejemplo 1, Calculadora
+
+_Ahora lo que vamos a realizar no son más que optimizaciones_
 
 
