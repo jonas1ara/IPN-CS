@@ -71,7 +71,7 @@ make
 
 ##  Ejemplo 2, Calculadora
 
-_Ahora lo que vamos a realizar no son más que optimizaciones_
+_Ahora lo que vamos a realizar no son más que optimizaciones._
 
 _**Variables:** es una forma de tener líneas de códio más flexibles, básicamente una forma de asignarle un nombre a un valor para después utilizar ese nombre para referirnos a cualquier valor._
 
@@ -87,7 +87,7 @@ CFLAGS = -g -Wall
 
 all: main
 
-# Esta regla compila el programa principal
+# Se añaden las variables en las instrucciones
 main: $(OBJS)
 	gcc -o $(BINARY) $(OBJS) $(CFLAGS)
 
@@ -137,7 +137,7 @@ clean:
 
 _**Recompilando dependencias:** make hace uso de la hora de la última modificación de un archivo para saber los cambios generados y si es buen momento para compilar algo o no._
 
-![](00.-Sources/Gifs/LSl.gif)
+![](/00.-Sources/Gifs/LSl.gif)
 
 ```Makefile
 OBJS = main.o salida.o calculadora.o 
