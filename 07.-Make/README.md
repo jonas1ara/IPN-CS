@@ -29,19 +29,22 @@ objetivo:
     instrucciones
 ```
 
-_Objetivo nos va a decir que queremos hacer, por ejemplo queremos obtener un programa, queremos un archivo .o, eliminar programas, etc._
+_**Objetivo** nos va a decir que queremos hacer, por ejemplo queremos obtener un programa, queremos un archivo .o, eliminar programas, etc._
 
-_Dependencias son esos archivos para lograr el ojetivo._
+_**Dependencias** son esos archivos para lograr el ojetivo._
 
-_Instrucciones, son las instrucciones de código que se tiene que ejecutar, por ejemplo, compila esto con gcc, enlaza aquello con ld, crear tal carpeta con mkdir, etc._
+_**Instrucciones** son las instrucciones de código que se tiene que ejecutar, por ejemplo, compila esto con gcc, enlaza aquello con ld, crear tal carpeta con mkdir, etc._
 
-_Objetivo, dependencias e instrucciones en conjunto se les llama regla._
+_Objetivo, dependencias e instrucciones en conjunto se les llama **regla**._
 
 ## Ejemplo 1, Hola Make
 
 _En la carpeta Ejemplo1-Make, se encuentra los archivos para realizar un tipico Hola mundo_
 
 ```Makefile
+# Regla principal, que se ejecutará si no ocurre nada
+all: main
+
 # Esta regla compila el programa principal
 main: hola-make.o func-hola.o 
 	gcc -o main hola-make.o func-hola.o 
@@ -58,5 +61,14 @@ func-hola.o: func-hola.c hola-make.h
 clean:
 	rm -f main *.o
 ```
+_Ahora escribe en tu terminal make y la regla que quieres ejecutar, si no colocas una regla, make ejecutará la primera regla que se encuentre._
+
+```
+make
+```
+```
+make clean
+```
+![](/00.-Sources/Gifs/Make.gif)
 
 

@@ -1,3 +1,6 @@
+# Regla principal, que se ejecutará si no ocurre nada
+all:main
+
 # Esta regla compila el programa principal
 main: hola-make.o func-hola.o 
 	gcc -o main hola-make.o func-hola.o 
