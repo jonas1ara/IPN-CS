@@ -2,6 +2,11 @@
 
 _😁😁_
 
+## Controles 
+
+_Se juega con las teclas W = Arriba, S = Abajo, D = Derecha, A = Izquierda, explicación del uso de ncurses en el código por favor leelo y tomate el tiempo de hacer apuntes_
+
+
 _Compila con gcc y -lm_
 
 ```
@@ -16,7 +21,4 @@ _Ejecuta_
 
 <img src=/00.-Sources/Gifs/Snake.gif alt="#"/>
 
-## Explicación 
-
-_Se juega con las teclas W = Arriba, S = Abajo, D = Derecha, A = Izquierda, explicación del uso de ncurses en el código por favor leelo y tomate el tiempo de hacer apuntes_
 
