@@ -14,7 +14,7 @@ _Ejecuta_
 ./Snake
 ```
 
-<img src=/00.-Sources/snake.gif alt="#"/>
+<img src=/00.-Sources/Gifs/Snake.gif alt="#"/>
 
 ## Explicación 
 

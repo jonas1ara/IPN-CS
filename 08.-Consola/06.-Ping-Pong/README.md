@@ -14,7 +14,7 @@ _Ejecuta_
 ./PingPong
 ```
 
-<img src=/00.-Sources/pp.gif alt="#"/>
+<img src=/00.-Sources/Gifs/PP.gif alt="#"/>
 
 ## Explicación 
 

@@ -11,7 +11,7 @@ clang -o TTT TTT.c
 ./TTT
 ```
 
-<img src=/00.-Sources/ttt.gif alt="#"/>
+<img src=/00.-Sources/Gifs/TTT.gif alt="#"/>
 
 ## Explicación 
 

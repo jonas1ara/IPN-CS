@@ -11,7 +11,7 @@ clang -o Hanoi Hanoi.c
 ./Hanoi
 ```
 
-<img src=/00.-Sources/Hanoi.gif alt="#"/>
+<img src=/00.-Sources/Gifs/Hanoi.gif alt="#"/>
 
 ## Explicación 
 

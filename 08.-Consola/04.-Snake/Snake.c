@@ -109,7 +109,7 @@ void eatApple(int *snakeArray, int appleX, int appleY,
     *(snakeArray + snakeLen*2+1) = lastY;
   }
 
-  mvprintw(0,0,"snakeLength: %d", *snakeLength);
+  mvprintw(0,0," Largo de la serpiente: %d", *snakeLength);
 }
 
 int main() {

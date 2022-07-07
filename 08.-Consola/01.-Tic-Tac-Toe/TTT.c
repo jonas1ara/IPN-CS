@@ -50,12 +50,12 @@ int main()
       printBoard();
       printWinner(winner);
 
-      printf("\nWould you like to play again? (Y/N): ");
+      printf("\n¿Te gustaría jugar otra vez? (S/n): ");
       scanf("%c", &response);
       response = toupper(response);
    } while (response == 'Y');
 
-   printf("Thanks for playing!");
+   printf("¡Gracias por jugar!\n");
 
    return 0;
 }
@@ -102,16 +102,16 @@ void playerMove()
 
    do
    {
-      printf("Enter row #(1-3): ");
+      printf("Ingresa la fia #(1-3): ");
       scanf("%d", &x);
       x--;
-      printf("Enter column #(1-3): ");
+      printf("Ingresa la columna #(1-3): ");
       scanf("%d", &y);
       y--;
 
       if(board[x][y] != ' ')
       {
-         printf("Invalid move!\n");
+         printf("Movimiento invalido\n");
       }
       else
       {
