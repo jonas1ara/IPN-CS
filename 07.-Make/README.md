@@ -18,7 +18,7 @@ _Después comprueba la instalación escribiendo make en la terminal, si recibes 
 
 ## Estructura básica de un Makefile
 
-´´´Makefile
+```Makefile
 objetivo: dependencias
     instrucciones
 
@@ -27,7 +27,7 @@ objetivo: dependencias
 
 objetivo:
     instrucciones
-´´´
+```
 
 _Objetivo nos va a decir que queremos hacer, por ejemplo queremos obtener un programa, queremos un archivo .o, eliminar programas, etc._
 
@@ -37,7 +37,7 @@ _Instrucciones, son las instrucciones de código que se tiene que ejecutar, por 
 
 ## Ejemplo 1, Hola Make
 
-´´´
+```Makefile
 main: hellomake.o hellofunc.o 
 	gcc -o main hellomake.o hellofunc.o 
 
@@ -49,4 +49,4 @@ hellofunc.o: hellofunc.c hellomake.h
 
 clean:
 	rm -f main *.o
-´´´
+```
