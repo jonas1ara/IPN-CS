@@ -1,8 +1,8 @@
-#include "hellomake.h"
+#include "hola-make.h"
 
 int main() {
   // call a function in another file
-  myPrintHelloMake();
+  miHolaMake();
 
   return(0);
 }

@@ -31,22 +31,32 @@ objetivo:
 
 _Objetivo nos va a decir que queremos hacer, por ejemplo queremos obtener un programa, queremos un archivo .o, eliminar programas, etc._
 
-_Dependencias son esos archivos para lograr el Objetivo._
+_Dependencias son esos archivos para lograr el ojetivo._
 
 _Instrucciones, son las instrucciones de código que se tiene que ejecutar, por ejemplo, compila esto con gcc, enlaza aquello con ld, crear tal carpeta con mkdir, etc._
 
+_Objetivo, dependencias e instrucciones en conjunto se les llama regla._
+
 ## Ejemplo 1, Hola Make
 
+_En la carpeta Ejemplo1-Make, se encuentra los archivos para realizar un tipico Hola mundo_
+
 ```Makefile
-main: hellomake.o hellofunc.o 
-	gcc -o main hellomake.o hellofunc.o 
+# Esta regla compila el programa principal
+main: hola-make.o func-hola.o 
+	gcc -o main hola-make.o func-hola.o 
 
-hellomake.o: hellomake.c hellomake.h
-	gcc -c hellomake.c
+# Esta regla obtiene en código objeto de hola-make.c, que depende de hola-make.c y hola-make.h
+hola-make.o: hola-make.c hola-make.h
+	gcc -c hola-make.c
 
-hellofunc.o: hellofunc.c hellomake.h
-	gcc -c hellofunc.c
+# Esta regla obtiene el código objeto de func-hola.c, que depende func-hola.c y hola-make.h
+func-hola.o: func-hola.c hola-make.h
+	gcc -c func-hola.c
 
+# Esta regla elimina el ejecutable y el código objeto, es una regla que no tiene dependencias
 clean:
 	rm -f main *.o
 ```
+
+

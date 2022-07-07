@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "hellomake.h"
+#include "hola-make.h"
 
-void myPrintHelloMake(void) {
+void miHolaMake(void) {
 
   printf("Hola makefiles desde Ubuntu 22.04\n");
 

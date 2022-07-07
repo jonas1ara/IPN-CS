@@ -1,12 +1,14 @@
-main: hellomake.o hellofunc.o 
-	gcc -o main hellomake.o hellofunc.o 
+# Esta regla compila el programa principal
+main: hola-make.o func-hola.o 
+	gcc -o main hola-make.o func-hola.o 
 
-hellomake.o: hellomake.c hellomake.h
-	gcc -c hellomake.c
+hola-make.o: hola-make.c hola-make.h
+	gcc -c hola-make.c
 
-hellofunc.o: hellofunc.c hellomake.h
-	gcc -c hellofunc.c
+func-hola.o: func-hola.c hola-make.h
+	gcc -c func-hola.c
 
+# Regla ficticia
 clean:
 	rm -f main *.o
 
