@@ -174,7 +174,7 @@ int main() {
 
   }
   erase();
-  mvprintw(MAXHEIGHT/2,MAXWIDTH/4,"Game Over! - Your score was: %d", snakeLength);
+  mvprintw(MAXHEIGHT/2,MAXWIDTH/4,"Game Over! - Tu puntuación fue: %d", snakeLength);
   refresh();
 	getch();			/* Wait for user input */
 	endwin();			/* End curses mode		  */
