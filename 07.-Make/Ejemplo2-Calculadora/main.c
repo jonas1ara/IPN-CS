@@ -2,7 +2,7 @@
 
 int main(int argc, char *argv[])
 {
-    int suma = sumar(3,1000);
+    int suma = sumar(3,10);
     presentar(suma);
     return 0;
 }
