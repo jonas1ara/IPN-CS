@@ -73,6 +73,142 @@ make
 
 _Ahora lo que vamos a realizar no son más que optimizaciones_
 
+_**Variables:** es una forma de tener líneas de códio más flexibles, básicamente una forma de asignarle un nombre a un valor para después utilizar ese nombre para referirnos a cualquier valor._
+
+```Makefile
+# Variable OBJS, que contiene todos los archivos .o
+OBJS = main.o salida.o calculadora.o 
+
+# Variable para el nombre del programa
+BINARY = main
+
+# Variables que utiliza el compilador
+CFLAGS = -g -Wall
+
+all: main
+
+# Esta regla compila el programa principal
+main: $(OBJS)
+	gcc -o $(BINARY) $(OBJS) $(CFLAGS)
+
+main.o: main.c funciones.h
+	gcc $(CFLAGS) -c main.c
+
+sailda.o: salida.c funciones.h
+	gcc $(CFLAGS) -c salida.c
+
+calculadora.o: calculadora.o funciones.h
+	gcc $(CFLAGS) -c calculadora.c
+
+clean:
+	rm -f main $(BINARY) $(OBJS)
+```
+
+_**Reglas implicitas:** nos evita tener que escribir muchas lineas de código, porque ya sabe como compilar algunos tipos especiales de archivo, por ejemplo como compilar un .c en un .o, enlazar archivos, etc. Soporta la compilación de C/C++, Pascal, Fortran, etc._
+
+```Makefile
+
+OBJS = main.o salida.o calculadora.o 
+BINARY = main
+
+# Como regla implicita Make usa gcc con el sinonimo CC, pero le podemos indicar que use el compilador que queramos
+CC = clang
+
+CFLAGS = -g -Wall
+
+all: main
+
+main: $(OBJS)
+	gcc -o $(BINARY) $(OBJS) $(CFLAGS)
+
+# Simplemente le espcificamos las dependencias
+main.o: main.c funciones.h
+# Se elimina la instrucción porque el make ya sabe que instrucciones seguir
+
+sailda.o: salida.c funciones.h
+# Se elimina la instrucción porque el make ya sabe que instrucciones seguir
+
+calculadora.o: calculadora.o funciones.h
+# Se elimina la instrucción porque el make ya sabe que instrucciones seguir
+
+clean:
+	rm -f main $(BINARY) $(OBJS)
+```
+
+_**Recompilando dependencias:** make hace uso de la hora de la última modificación de un archivo para saber los cambios generados y si es buen momento para compilar algo o no._
+
+![](00.-Sources/Gifs/LSl.gif)
+
+```Makefile
+OBJS = main.o salida.o calculadora.o 
+BINARY = main
+CC = clang
+CFLAGS = -g -Wall
+
+all: main
+
+main: $(OBJS)
+	gcc -o $(BINARY) $(OBJS) $(CFLAGS)
+
+main.o: main.c funciones.h
+
+sailda.o: salida.c funciones.h
+
+calculadora.o: calculadora.c funciones.h
+
+clean:
+	rm -f main $(BINARY) $(OBJS)
+```
+_**Patrones y variables automáticas:** los patrones nos permiten usar de manera más flexible las reglas, por ejemplo usar una común a cualquier archivo que  sea .o y las variables automáticas para obtener propiedades particulares sobre nuestras reglas, por ejemplo como se llama la regla, el archivo que se esta compilando, como se llama el objetivo, etc._
+
+```Makefile
+OBJS = main.o salida.o calculadora.o 
+BINARY = main
+CC = clang
+CFLAGS = -g -Wall
+
+all: main
+
+main: $(OBJS)
+	$(CC) -o $(BINARY) $(OBJS) $(CFLAGS)
+
+# El operador % un operador que se remplaza por uno o más carácteres, es decir en este caso a partir de mi archivo .c genero mi archivo .o
+%.o: %.c
+    $(CC) $(CFLAGS) -c $? -o$@ 
+# Variables auomáticas: $< para obtener el primer archivo .o , $? para obtener la lista completos y $@ para que se remplace por el nombre de la regla, salida.o --> salida
+# -c nombre del archivo .c --> -o nombre del destino .o
+
+clean:
+	rm -f main $(BINARY) $(OBJS)
+```
+
+_**Múltiples archivos:** trabajar con múltiples archivos Makefile._
+
+```Makefile
+# \ Salto de linea, cuándo tenemos muchisimos archivos
+OBJS = main.o \
+salida.o \ 
+calculadora.o
+
+# include para incluir múltiples archivos, útil para cuándo tenemos Makefiles para diferentes OS
+
+include src/Makefile windows/Makefile mac/Makefile
+
+BINARY = main
+CC = clang
+CFLAGS = -g -Wall
+
+all: main
+
+main: $(OBJS)
+	$(CC) -o $(BINARY) $(OBJS) $(CFLAGS)
+
+*%.o: %.c
+    $(CC) $(CFLAGS) -c $? -o$@
+
+clean:
+	rm -f main $(BINARY) $(OBJS)
+```
 
 ## Expresiones de gratitud
 

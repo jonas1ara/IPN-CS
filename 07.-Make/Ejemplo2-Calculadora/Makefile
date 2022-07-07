@@ -1,34 +1,15 @@
-main: hellomake.o
-	gcc -o main hellomake.o 
+OBJS = main.o salida.o calculadora.o 
+BINARY = main
+CC = clang
+CFLAGS = -g -Wall
 
-hellomake.o: hellomake.c hellofunc.c hellomake.h
-	gcc -c hellomake.c hellofunc.c
+all: main
 
-# Regla principal
-all:hellomake
+main: $(OBJS)
+	$(CC) -o $(BINARY) $(OBJS) $(CFLAGS)
 
-# Constantes
-OBJS=hellomake.o hellofunc.o
-BINARY=hellomake
-CC=gcc	
-CFLAGS=-I.
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@ 
 
-# Variable
-x = My
-
-# Variable de expansión recursiva
-y = $(x) first
-z = $(y) Makefile!!!
-
-# Esta regla compila el programa principal.
-
-hellomake: $(OBJS) 
-	$(CC) -o $(BINARY) $(OBJS) 
-	@echo $(z)
-
-# %.o: %.c Cualquier archivo .c genero un .o
-# carpeta1/%.o: carpeta1/%.c
-
-# Limpieza archivo objeto
 clean:
-	rm -f $(BINARY) $(OBJS)
+	rm -f main $(BINARY) $(OBJS)
