@@ -31,7 +31,6 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
 * [Language C](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=language+c+dennis&qid=1618383287&sr=8-1) - El lenguaje C de Dennis Ritchie
 * [UPIIT](https://www.upiit.ipn.mx/) - Unidad Profesional Interdisciplinaria de Ingeniería campus Tlaxcala
 
-## Expresiones de gratitud
+### Expresiones de gratitud
 
----
 Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) y estudiante de la licenciatura en matemáticas en la [UnADM](https://www.unadmexico.mx/), para quien sea que este interesado.
