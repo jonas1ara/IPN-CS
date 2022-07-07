@@ -16,7 +16,37 @@ _Después comprueba la instalación escribiendo make en la terminal, si recibes 
 
 ![](/00.-Sources/Images/Make.png)
 
+## Estructura básica de un Makefile
 
-´´´make
+´´´Makefile
+objetivo: dependencias
+    instrucciones
 
+objetivo: dependencias
+    instrucciones
+
+objetivo:
+    instrucciones
+´´´
+
+_Objetivo nos va a decir que queremos hacer, por ejemplo queremos obtener un programa, queremos un archivo .o, eliminar programas, etc._
+
+_Dependencias son esos archivos para lograr el Objetivo._
+
+_Instrucciones, son las instrucciones de código que se tiene que ejecutar, por ejemplo, compila esto con gcc, enlaza aquello con ld, crear tal carpeta con mkdir, etc._
+
+## Ejemplo 1, Hola Make
+
+´´´
+main: hellomake.o hellofunc.o 
+	gcc -o main hellomake.o hellofunc.o 
+
+hellomake.o: hellomake.c hellomake.h
+	gcc -c hellomake.c
+
+hellofunc.o: hellofunc.c hellomake.h
+	gcc -c hellofunc.c
+
+clean:
+	rm -f main *.o
 ´´´

@@ -1,3 +1,9 @@
+main: hellomake.o
+	gcc -o main hellomake.o 
+
+hellomake.o: hellomake.c hellofunc.c hellomake.h
+	gcc -c hellomake.c hellofunc.c
+
 # Regla principal
 all:hellomake
 
