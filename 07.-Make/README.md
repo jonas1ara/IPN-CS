@@ -69,7 +69,7 @@ make
 
 ![](/00.-Sources/Gifs/Make.gif)
 
-##  Ejemplo 1, Calculadora
+##  Ejemplo 2, Calculadora
 
 _Ahora lo que vamos a realizar no son más que optimizaciones_
 
