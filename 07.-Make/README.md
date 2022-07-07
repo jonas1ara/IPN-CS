@@ -74,3 +74,6 @@ make
 _Ahora lo que vamos a realizar no son más que optimizaciones_
 
 
+## Expresiones de gratitud
+
+Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) y estudiante de la licenciatura en matemáticas en la [UnADM](https://www.unadmexico.mx/), para quien sea que este interesado.
