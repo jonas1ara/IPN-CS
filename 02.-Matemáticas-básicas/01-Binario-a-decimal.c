@@ -2,7 +2,7 @@
 
 int main()
 {
-    int N = 101;
+    int N = 11;
     int num = N;
     int dec=0;
     int base = 1;
