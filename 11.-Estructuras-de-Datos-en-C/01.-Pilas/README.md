@@ -14,4 +14,20 @@ _Las operaciones usuales en la pila son insertar(push) que añade un elemento en
 
 ![](/00.-Sources/Images/pilas.png)
 
+## Forma de la pila
+
+_La pila es una estructura que tiene nodos, y ese nodo tiene uno o más datos y el otro elemento de la estructura nodo es un puntero, ese puntero va a señalar a la posición de abajo de la pila, en el caso del primer nodo, su puntero siguiente va a señalar a NULL, es decir a la nada._
+
+![](/00.-Sources/Images/Nodo-pila.png)
+
+```C
+struct Nodo
+{
+    int dato;
+    Nodo *siguiente;
+};
+```
+
+
+
 
