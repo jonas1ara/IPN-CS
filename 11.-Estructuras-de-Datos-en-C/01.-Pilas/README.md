@@ -1,6 +1,6 @@
 # Pilas
 
-_Una pila es una estructura de datos de entradas ordenadas tales que solo se puede introducir y eliminar por un extremo, llamado cima._
+##### Una pila es una estructura de datos de entradas ordenadas tales que solo se puede introducir y eliminar por un extremo, llamado cima.
 
 - LIFO: Last in, First out.
 - Primero en entrar es el último que sale.
