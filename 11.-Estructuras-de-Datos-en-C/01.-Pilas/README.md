@@ -12,7 +12,7 @@
 
 _Las operaciones usuales en la pila son insertar(push) que añade un elemento en la cima de la pila y la operación quitar(pop) elimina saca un elemento de la pila._
 
-![](/00.-Sources/Images/pilas.png)
+![](/00.-Sources/Images/Pilas.png)
 
 ## Forma de la pila
 
