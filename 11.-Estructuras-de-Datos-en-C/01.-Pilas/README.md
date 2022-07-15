@@ -20,6 +20,8 @@ _La pila es una estructura que tiene nodos, y ese nodo tiene uno o más datos y 
 
 ![](/00.-Sources/Images/Nodo-pila.png)
 
+_La implementación en lenguaje C es:_
+
 ```C
 struct Nodo
 {
