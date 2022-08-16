@@ -10,7 +10,7 @@ void* myturn(void * arg)
 	for(int i = 0;  i < 8; i++)
 	{
 		sleep(1);
-		printf("¡Mi turno putos! %d %d\n", i,*iptr);
+		printf("¡Mi turno! %d %d\n", i,*iptr);
         (*iptr)++;
 	}
     //¿Qué pasa si retornamos un valor?
@@ -22,7 +22,7 @@ void yourturn()
 	for(int i = 0;  i < 3; i++)
 	{
 		sleep(2);
-		printf("¡Ahora es mi turno putos! %d\n", i);
+		printf("¡Ahora es mi turno! %d\n", i);
 	}
 }
 
@@ -36,5 +36,5 @@ int main()
 	yourturn();
 	//Esperar mientras el hilo se ejecuta
 	pthread_join(newthread, (void*)&result);
-    printf("thread's done: *result=%d\n", *result);
+    printf("Hilos hechos: *result=%d\n", *result);
 }
