@@ -7,7 +7,7 @@ void myturn(void * arg)
 	for(int i = 0;  i < 8; i++)
 	{
 		sleep(1);
-		printf("¡Mi turno putos! %d\n", i);
+		printf("¡Mi turno %d\n", i);
 	}
 	return NULL;
 }
@@ -17,7 +17,7 @@ void yourturn()
 	for(int i = 0;  i < 3; i++)
 	{
 		sleep(2);
-		printf("¡Ahora es mi turno putos! %d\n", i);
+		printf("¡Ahora es mi turno %d\n", i);
 	}
 }
 
