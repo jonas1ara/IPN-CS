@@ -3,8 +3,8 @@
 #include <unistd.h>
 #include <string.h>
 #include <assert.h>
-#include "ui.h"
 #include <stdbool.h>
+#include "ui.h"
 
 #define NUM_DRIPS 250
 
