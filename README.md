@@ -164,13 +164,6 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
   - [GObject]()
 
 ### **[25.- Algoritmos que todo programador debería conocer](https://github.com/Jonas-Lara/IPN-CS/tree/master/25.-Algoritmos-a-conocer)**
-  - [Básicos]()
-  - [Arreglos]()
-  - [Ordenamiento]()
-  - [Búsqueda]()
-  - [Grafos]() 
-
-
 
 
 ## Construido con 🛠️
