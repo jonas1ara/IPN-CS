@@ -1,20 +1,19 @@
-/*Funciones son usadas para hacer una operación particular*/
+/*
+	Las funciones son usadas para hacer una operación particular	
+*/
 
-#include <stdio.h> //directiva include
+#include <stdio.h>
 
 int suma(); //prototipo de la función suma 
 
 //Palabra reservada void, función que no retorna un tipo de valor fijo
 void greeting() 
 { 
-	
 	printf("hola androide #%i\n", suma());
-
 }
 
 int main() 
 {
-
 	greeting();
 
 	return 0;
@@ -25,8 +24,8 @@ int suma()
 {
 	int num1 = 12;
 	int num2 = 4;
-	int sum = num1 + num2;
+	int suma = num1 + num2;
 
-	return sum;	//Retorna el valor de la función
+	return suma;	//Retorna el valor de la función
 
 }
