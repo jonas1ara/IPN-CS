@@ -1,6 +1,10 @@
+/*
+    Funciones de tipo void
+*/
+
 #include <stdio.h>
 
-void factorial();
+void factorial(); //Prototipo de la función factorial
 
 int main()
 {
@@ -8,7 +12,7 @@ int main()
     return 0;
 }
 
-//Función que no devuelve nada, se utilizan para no hacer nada en el int main
+//Función que no devuelve nada, se utilizan para evitar hacer una operación en la función main
 void factorial ()
 {
     printf ("¯  _(ツ)_/¯");
