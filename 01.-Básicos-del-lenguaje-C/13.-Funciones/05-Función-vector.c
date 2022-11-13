@@ -1,10 +1,13 @@
+/*
+	Usar funciones para trabajar con vectores
+*/
+
 #include <stdio.h>
 
 void ordenar ();
 void imprimir ();
 
-#define Length 10
-
+#define Length 10 //Tamaño del vector
 
 int main()
 {
@@ -24,7 +27,7 @@ void ordenar(int arr[])
 
 	for (i = 0; i < Length; i++)
 	{
-		for (j = i; j < 10; j++)
+		for (j = i; j < Length; j++)
 		{
 			if (arr[i] > arr[j])
 			{
