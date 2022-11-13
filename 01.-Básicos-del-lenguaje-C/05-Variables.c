@@ -1,7 +1,11 @@
+/*
+	Variables y tipos de datos
+*/
+
 #include <stdio.h>
 
-int main() {
-
+int main() 
+{
 	char C = 'Y'; //1 byte 0...255
 	int a = 20; //2 bytes -32768...32768
 	short e = -1; //2 bytes -128...127 "Cero es tomado en cuenta"
@@ -25,5 +29,4 @@ int main() {
 	printf("Esta es una variable de tipo Double: %.2lf\n", d);
 
 	return 0;
-
 }
