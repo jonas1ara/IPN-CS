@@ -4,8 +4,8 @@
 
 #include <stdio.h>
 
-int main() {
-
+int main() 
+{
 	int num1; //Int; define variables enteras
 	int num2;
 	int resultado;
@@ -21,5 +21,4 @@ int main() {
 	printf("El resultado de la suma es: %d\n",resultado); //%d para imprimir el valor entero, resultado es variable a imprimir.
 
 	return 0;	
-
 }
