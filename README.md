@@ -67,7 +67,7 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
   - [Matriz transpuesta](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/15-Matriz-transpuesta.c)
 
 
-**[03.-Memoría dinámica](https://github.com/Jonas-Lara/IPN-CS/tree/master/03.-Memoria-din%C3%A1mica)**
+**[03.- Memoría dinámica](https://github.com/Jonas-Lara/IPN-CS/tree/master/03.-Memoria-din%C3%A1mica)**
   - [Memoría estática](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/01-Memoria-Est%C3%A1tica.c)
   - [Memoría pseudo estática](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/02-Memoria-Pseudoest%C3%A1tica.c)
   - [Memoría dinámica](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/02-Memoria-Pseudoest%C3%A1tica.c)
@@ -79,13 +79,13 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
   - [Estucturas dinámicas](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/09-Estructuras-din%C3%A1micas.c)
 
 
-**[04.-Hilos en lenguaje C](https://github.com/Jonas-Lara/IPN-CS/tree/master/04.-Hilos-del-lenguaje-C)**
+**[04.- Hilos en lenguaje C](https://github.com/Jonas-Lara/IPN-CS/tree/master/04.-Hilos-del-lenguaje-C)**
   - [Crear y unir hilos](https://github.com/Jonas-Lara/IPN-CS/blob/master/04.-Hilos-del-lenguaje-C/01-Crear-y-unir-hilos.c)
   - [Pasar argumentos](https://github.com/Jonas-Lara/IPN-CS/blob/master/04.-Hilos-del-lenguaje-C/02-Pasar-argumentos.c)
   - [Problemas de seguridad y velocidad](https://github.com/Jonas-Lara/IPN-CS/blob/master/04.-Hilos-del-lenguaje-C/03-Problemas-de-seguridad-y-velocidad.c)
 
 
-**[05.-How To (¿Cómo?)](https://github.com/Jonas-Lara/IPN-CS/tree/master/05.-HowTo)**
+**[05.- How To (¿Cómo?)](https://github.com/Jonas-Lara/IPN-CS/tree/master/05.-HowTo)**
   - [Medir tiempo de ejecución](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/00-Medir-Tiempo.c)
   - [Generar números pseudoaleatorios](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/01-N%C3%BAmeros-Aleatorios.c)
   - [Función para intercambiar valores](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/01-N%C3%BAmeros-Aleatorios.c)
@@ -96,14 +96,36 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
   - [Imprimir pirámide](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/07-Impresi%C3%B3n-Pir%C3%A1mide.c)
   - [Imprimir círculo](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/08-Impresi%C3%B3n-C%C3%ADrculo.c)
 
-**7.- Programación con objetos** 
-  - Objetos
-  - Clases
-  - Interfaces
+**[06.- Algoritmos Dr. Esaú 1](https://github.com/Jonas-Lara/IPN-CS/tree/master/06.-Algoritmos-DrEsa%C3%BA-1)** 
+  - 
 
-**8.- Módulos**
+**[07.- Make](https://github.com/Jonas-Lara/IPN-CS/tree/master/07.-Make)**
+  - [Hola mundo con un Makefile](https://github.com/Jonas-Lara/IPN-CS/tree/master/07.-Make/Ejemplo1-HolaMake)
+  - [Cálculadora con un Makefile](https://github.com/Jonas-Lara/IPN-CS/tree/master/07.-Make/Ejemplo2-Calculadora)
 
-**9.- Programación asíncrona**
+**[08.- Aplicaciones de consola](https://github.com/Jonas-Lara/IPN-CS/tree/master/08.-Consola)**
+  - [Tic tac toe](https://github.com/Jonas-Lara/IPN-CS/tree/master/08.-Consola/01.-Tic-Tac-Toe)
+  - [Torres de Hanoi](https://github.com/Jonas-Lara/IPN-CS/tree/master/08.-Consola/02.-Hanoi)
+  - [Dona](https://github.com/Jonas-Lara/IPN-CS/tree/master/08.-Consola/03.-Dona)
+  - [Snake](https://github.com/Jonas-Lara/IPN-CS/tree/master/08.-Consola/04.-Snake)
+  - [Matrix](https://github.com/Jonas-Lara/IPN-CS/tree/master/08.-Consola/05.-Matrix)
+  - [Ping pong](https://github.com/Jonas-Lara/IPN-CS/tree/master/08.-Consola/06.-Ping-Pong)
+
+**[09.- Recursión](https://github.com/Jonas-Lara/IPN-CS/tree/master/09.-Recursi%C3%B3n)**
+  - [Factorial](https://github.com/Jonas-Lara/IPN-CS/blob/master/09.-Recursi%C3%B3n/01-Factorial.c)
+  - [Fibonacci](https://github.com/Jonas-Lara/IPN-CS/blob/master/09.-Recursi%C3%B3n/02-Fibonacci.c)
+  - [Torres de Hanoi](https://github.com/Jonas-Lara/IPN-CS/blob/master/09.-Recursi%C3%B3n/03-Torres-de-Hanoi.c)
+  - [Vectores recursivos](https://github.com/Jonas-Lara/IPN-CS/blob/master/09.-Recursi%C3%B3n/04-Vectores-Recursivos.c)
+
+
+**[10.- Algoritmos](https://github.com/Jonas-Lara/IPN-CS/tree/master/10.-Algoritmos)**
+  - [Fuerza bruta](https://github.com/Jonas-Lara/IPN-CS/tree/master/10.-Algoritmos/01.-Fuerza-bruta)
+  - [Voraces](https://github.com/Jonas-Lara/IPN-CS/tree/master/10.-Algoritmos/02.-Voraces)
+  - [Divide y conquista](https://github.com/Jonas-Lara/IPN-CS/tree/master/10.-Algoritmos/03.-Divide-y-conquista)
+  - [Programación dinámica](https://github.com/Jonas-Lara/IPN-CS/tree/master/10.-Algoritmos/04.-Programaci%C3%B3n-din%C3%A1mica)
+  - [Backtracking](https://github.com/Jonas-Lara/IPN-CS/tree/master/10.-Algoritmos/05.-Backtracking)
+  - [Ordenamiento](https://github.com/Jonas-Lara/IPN-CS/tree/master/10.-Algoritmos/06.-Ordenamiento)
+  - [Búsqueda](https://github.com/Jonas-Lara/IPN-CS/tree/master/10.-Algoritmos/07.-B%C3%BAsqueda)
 
 
 ## Construido con 🛠️
