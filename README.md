@@ -97,7 +97,7 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
   - [Imprimir círculo](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/08-Impresi%C3%B3n-C%C3%ADrculo.c)
 
 **[06.- Algoritmos Dr. Esaú 1](https://github.com/Jonas-Lara/IPN-CS/tree/master/06.-Algoritmos-DrEsa%C3%BA-1)** 
-  - 
+  - [asdfghjklñ]()
 
 **[07.- Make](https://github.com/Jonas-Lara/IPN-CS/tree/master/07.-Make)**
   - [Hola mundo con un Makefile](https://github.com/Jonas-Lara/IPN-CS/tree/master/07.-Make/Ejemplo1-HolaMake)
@@ -126,6 +126,54 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
   - [Backtracking](https://github.com/Jonas-Lara/IPN-CS/tree/master/10.-Algoritmos/05.-Backtracking)
   - [Ordenamiento](https://github.com/Jonas-Lara/IPN-CS/tree/master/10.-Algoritmos/06.-Ordenamiento)
   - [Búsqueda](https://github.com/Jonas-Lara/IPN-CS/tree/master/10.-Algoritmos/07.-B%C3%BAsqueda)
+
+**[11.- Estructuras de datos](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C)**
+  - [Pilas](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C/01.-Pilas)
+  - [Colas](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C/02.-Colas)
+  - [Listas](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C/03.-Listas-Enlazadas)
+  - [Tablas de Hash](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C/04.-Tablas-de-Hash)
+
+  - [Árboles](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C/05.-Arboles)
+
+  - [Heaps](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C/06.-Heap)
+
+  - [Grafos](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C/07.-Grafos)
+
+
+
+  **[12.- Algoritmos Dr. Esaú 2](https://github.com/Jonas-Lara/IPN-CS/tree/master/12.-Algoritmos-DrEsa%C3%BA-2)**
+  - [Tiempo de ordanamiento]()
+
+
+**[13.- Redes en lenguaje C](https://github.com/Jonas-Lara/IPN-CS/tree/master/13.-Redes-en-C)**
+  - [Cliente web en C]()
+  - [Servidor web en C]()
+  - [Dirección del cliente]()
+  - [Issues]()
+  - [Servidor multihilos en C]()
+  - [Muchos hilos escuchando socketts]()
+  - [Libcurl]()
+  - [Barra de progreso]()
+  - [Red final]()
+
+
+**[14.- Métodos numéricos](https://github.com/Jonas-Lara/IPN-CS/tree/master/14.-M%C3%A9todos-num%C3%A9ricos-en-C)**
+  - [Método de la bisección](https://github.com/Jonas-Lara/IPN-CS/tree/master/14.-M%C3%A9todos-num%C3%A9ricos-en-C/01.-M%C3%A9todo-de-bisecci%C3%B3n)
+
+
+**[15.- Librería gráfica GTK para GNOME](https://github.com/Jonas-Lara/IPN-CS/tree/master/15.-GTK)**
+  - [Fundamentos de GTK]()
+  - [GTK3 a GTK4]()
+  - [GObject]()
+
+**[16.- 25 Algoritmos que todo programador debería conocer](https://github.com/Jonas-Lara/IPN-CS/tree/master/25.-Algoritmos-a-conocer)**
+  - [Básicios]()
+  - [Arreglos]()
+  - [Ordenamiento]()
+  - [Búsqueda]()
+  - [Grafos]() 
+
+
 
 
 ## Construido con 🛠️
