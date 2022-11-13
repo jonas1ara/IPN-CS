@@ -1,6 +1,6 @@
 /*
 
-Las funciones recursivas tienen la propiedad de llamar a una versión reducida de ellas mismas
+	Las funciones recursivas tienen la propiedad de llamar a una versión reducida de ellas mismas
 
 	Ejemplo del factorial de un número
 
@@ -14,25 +14,28 @@ Las funciones recursivas tienen la propiedad de llamar a una versión reducida d
 
 #include <stdio.h>
 
-long factorial(); // Prototipo de función
-//definida como tipo long con el parametro número
+int factorial(); // Prototipo de función factorial  
 
 int main()
 {
-
 	int number;
 	printf("Ingresa un número: \n");
 	scanf("%i", &number);
 
 	for (int i = 0; i <= number; i++)
 	{
-		printf("%ld\t", factorial(i));
+		printf("%i\t", factorial(i));
 	}
+	
+	printf("\n");
 
 	return 0;
 }
-long factorial(long number)
-{ // Función factorial, definida como tipo long con el parámetro number
+
+
+// Función factorial
+int factorial(int number)
+{ 
 
 	if (number <= 1)
 	{
