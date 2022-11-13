@@ -4,14 +4,15 @@
 
 #include<stdio.h>
 
-int main() {
-
+int main() 
+{
 	int casos;
 
 	printf("Ingresa un número:\n");
 	scanf("%i",&casos);
 	
-	switch(casos){
+	switch(casos)
+	{
 		case 1:
 			printf("Elegiste el caso #1\n");
 			break;
@@ -31,8 +32,6 @@ int main() {
 			printf("No encontramos el caso que elegiste... :/\n");
 			break;
 	}
-
 	return 0;
-
 }
 
