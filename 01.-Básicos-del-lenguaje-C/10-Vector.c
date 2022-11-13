@@ -1,4 +1,7 @@
 /*
+	
+	Arreglo unidimensional
+
 	Los arreglos son un conjunto de datos que se van almacenando dentro de un variable,
 	cuándo hablamos de variables imaginalo como una cajita donde se almacenan cosas, 
 	se pueden modificar sus propiedades pero siempre de un solo tipo, los ARREGLOS
@@ -8,13 +11,10 @@
 	siempre inician en la posición 0.
 */
 
-//Arreglo unidimensional.
-
 #include <stdio.h>
 
 int main() 
 {
-		
 	int tamanioA; //Variable para el tamaño del arreglo
 	printf("Ingrese el tamaño del arreglo: \n"); 
 	scanf("%i", &tamanioA); 
@@ -25,7 +25,9 @@ int main()
 		printf("Ingresa el valor %i:\n", i+1); //i + 1 para que imprima desde el 1 y no desde el 0
 		scanf("%i", &edad[i]);
 	}
+	
 	printf("Los valores del arreglo son: \n");
+	
 	for(int i = 0; i < tamanioA; i++) 
 	{
 		printf("%i ", edad[i]); //Imprimir el valor de nuestro arreglo, empezando por la posición cero, hasta que termine. el guión es para separar por guiones.
@@ -33,5 +35,4 @@ int main()
 	printf("\n"); //Salto de línea, por mera estética.
 
 	return 0;
-	
 }
