@@ -24,7 +24,7 @@ _ADVERTENCIA: Este repositorio no esta pensado en usarse con Windows por temas e
 
 _Este repositorio esta enumerado por la jerarquía de temas que debes seguir para aprender C y un poco de su ecosistema (Linux, Gnome, Makefiles, Networking y Sistemas embebidos), todo el código esta comentado en **ESPAÑOL** así que por favor **LEE** antes de copiar y pegar, asegurate de saber que estás haciendo, si solo copias y pegas **el daño te lo haces a ti** y por último se escribieron post en su blog sobre temas más complejos de comprender, espero que te ayude para aprender y/o repasar algún tema_
 
-## Índice del curso
+## Índice del repositorio 📖
 
 **[00.- Sources;](https://github.com/Jonas-Lara/IPN-CS/tree/master/00.-Sources) en esta carpeta encontraras las fuentes de las imagenes y gifs que se usan en el repositorio** 
 
