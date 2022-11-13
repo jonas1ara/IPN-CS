@@ -26,13 +26,11 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
 
 ## Índice del curso
 
-**1.- Introducción**
-  - ¿Qué es F#? 
-  -  La vida vista desde un lenguaje funcional
+**00.- Sources**
+  - En esta carpeta encontraras las fuentes de las imagenes y gifs que se usan en el repositorio 
 
-**2.- Prework**
-  - Instalación y preparación del entorno
-  - Diferencias entre F# interpretado y compilado
+**01.- Básicos del lenguaje C[Tutorial](https://www.youtube.com/watch?v=v3ENcQpoA5A)**
+  -  Hola mundo en C
 
 **3.- Datos en F#**
   - Tipos de datos
