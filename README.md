@@ -41,11 +41,11 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
   - [Break y Continue](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/09-Band.c)
   - [Vectores](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/10-Vector.c) 
   - [Matrices](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/11-Matriz.c)
-  - [Bucles](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/11-Matriz.c)
-  - [Funciones](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/02.-Funciones)
-  - [Estructuras](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Estructuras)
-  - [Punteros](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/04.-Punteros)
-  - [Cadenas](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Cadenas)
+  - [Bucles](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/12.-Bucles)
+  - [Funciones](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/13.-Funciones)
+  - [Estructuras](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/14.-Estructuras)
+  - [Punteros](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/15.-Punteros)
+  - [Cadenas](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/16.-Cadenas)
 
 
 **3.- Datos en F#**
