@@ -13,7 +13,8 @@
 #define CUBO(a) a*a*a //Macro: Es una serie de instrucciones que se almacenan para que se puedan ejecutar secuencialmente a través de una sola llamada.
 //Las macro resultan más rapidas que las funciones en tiempo de ejecución, ya que se ahorran los detalles que implica llamar o construir una función.
 
-int main() {
+int main() 
+{
 
 	int a = 3, suma;
 	suma = PI + 3;
@@ -23,5 +24,4 @@ int main() {
 	printf("El cubo de la variable a es:  %i\n",CUBO(a));//Se agrega la marco y manda a llamar
 
 	return 0;
-
 }
