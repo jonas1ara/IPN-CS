@@ -29,8 +29,24 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
 **00.- Sources**
   - En esta carpeta encontraras las fuentes de las imagenes y gifs que se usan en el repositorio 
 
-**01.- Básicos del lenguaje C[Tutorial](https://www.youtube.com/watch?v=v3ENcQpoA5A)**
-  -  Hola mundo en C
+**01.- [Básicos del lenguaje C](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C)**
+  -  [Hola mundo en C](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01-Hola-Mundo.c)
+  - [Directivas del procesador](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/02-Directivas.c)
+  - [Suma de variables](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/03-Suma.c)
+  - [Operaciones aritméticas](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/04-Aritm%C3%A9tica.c)
+  - [Variables y tipos de datos](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/05-Variables.c)
+  - [Conversión de datos en C](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/06-Convertir.c)
+  - [Condicionales](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/07-Condicionales.c)
+  - [Uso de casos en C](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/08-Casos.c)
+  - [Break y Continue](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/09-Band.c)
+  - [Vectores](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/10-Vector.c) 
+  - [Matrices](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/11-Matriz.c)
+  - [Bucles](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/11-Matriz.c)
+  - [Funciones](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/02.-Funciones)
+  - [Estructuras](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Estructuras)
+  - [Punteros](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/04.-Punteros)
+  - [Cadenas](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Cadenas)
+
 
 **3.- Datos en F#**
   - Tipos de datos
