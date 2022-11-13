@@ -1,5 +1,5 @@
 /*
-	Hola mundo 🤣🤣
+	Hola mundo ✌✌
 */
 
 #include <stdio.h> //Directiva(Indica que el encabezado de entrada y salida estándar se incluya en el programa)
