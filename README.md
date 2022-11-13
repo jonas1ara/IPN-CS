@@ -26,7 +26,7 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
 
 ## Índice del curso
 
-**[00.- Sources:](https://github.com/Jonas-Lara/IPN-CS/tree/master/00.-Sources) en esta carpeta encontraras las fuentes de las imagenes y gifs que se usan en el repositorio** 
+**[00.- Sources;](https://github.com/Jonas-Lara/IPN-CS/tree/master/00.-Sources) en esta carpeta encontraras las fuentes de las imagenes y gifs que se usan en el repositorio** 
 
 
 **[01.- Básicos del lenguaje C](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C)**
