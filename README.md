@@ -166,7 +166,7 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
   - [GTK3 a GTK4]()
   - [GObject]()
 
-**[16.- 25 Algoritmos que todo programador debería conocer](https://github.com/Jonas-Lara/IPN-CS/tree/master/25.-Algoritmos-a-conocer)**
+**[25.- ](https://github.com/Jonas-Lara/IPN-CS/tree/master/25.-Algoritmos-a-conocer)Algoritmos que todo programador debería conocer**
   - [Básicios]()
   - [Arreglos]()
   - [Ordenamiento]()
