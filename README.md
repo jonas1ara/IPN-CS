@@ -48,20 +48,33 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
   - [Cadenas](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/16.-Cadenas)
 
 
-**3.- Datos en F#**
-  - Tipos de datos
-  - Variables no mutables y mutables
-  - Impresión de datos
-  - Uso de operadores
+**[02.- Matemáticas básicas](https://github.com/Jonas-Lara/IPN-CS/tree/master/02.-Matem%C3%A1ticas-b%C3%A1sicas)**
+  - [Fundamentos de la libería math.h](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/00-Fundamentos.c)
+  - [Binario a decimal](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/01-Binario-a-decimal.c)
+  - [Números primos](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/02-N%C3%BAmeros-Primos.c)
+  - [Números narcicistas](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/03-N%C3%BAmero-narcicista.c)
+  - [Número palindrome](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/03-N%C3%BAmero-narcicista.c)
+  - [Triángulo de Pascal](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/05-Triangulo-de-Pascal.c)
+  - [Grados a radianes](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/06-Convertir-grados-a-radianes.c)
+  - [Radio y circunferencia](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/07-Radio-y-circunferencia.c)
+  - [Distancia entre dos puntos](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/08-Distancia-entre-dos-puntos.c)
+  - [Conjetura de Collatz](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/09-Conjetura-de-Collatz.c)
+  - [Raíz cuadrada Newton](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/10-Ra%C3%ADz-cuadrada-Newton.c)
+  - [Valor absoluto](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/11-Valor-absoluto.c)
+  - [Suma de matrices](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/12-Suma-de-matrices.c)
+  - [Resta de matrices](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/13-Resta-de-matrices.c)
+  - [Multiplicación de matrices](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/14-Multiplicaci%C3%B3n-de-matrices.c)
+  - [Matriz transpuesta](https://github.com/Jonas-Lara/IPN-CS/blob/master/02.-Matem%C3%A1ticas-b%C3%A1sicas/15-Matriz-transpuesta.c)
 
-**4.- Flujo en F#**
+
+**[03.-Memoría dinámica](https://github.com/Jonas-Lara/IPN-CS/tree/master/03.-Memoria-din%C3%A1mica)**
   - If, elif y else 
   - Bucles
   
-**5.- Funciones en F#**
+**[04.-Hilos en lenguaje C](https://github.com/Jonas-Lara/IPN-CS/tree/master/04.-Hilos-del-lenguaje-C)**
   - Pipelines
 
-**6.- Estructuras de datos en F#**
+**[05.-How To (¿Cómo?)](https://github.com/Jonas-Lara/IPN-CS/tree/master/05.-HowTo)**
   - Enums
   - Structs
   - Colecciones
