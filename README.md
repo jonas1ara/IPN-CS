@@ -91,7 +91,7 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
   - [Función para intercambiar valores](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/01-N%C3%BAmeros-Aleatorios.c)
   - [Invertir números](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/01-N%C3%BAmeros-Aleatorios.c)
   - [Invertir vector](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/04-Invertir-Vector.c)
-  - [Invertir cadena]https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/05-Invertir-Cadena.c)
+  - [Invertir cadena](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/05-Invertir-Cadena.c)
   - [Obtener el largo de una cadena](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/06-Largo-de-una-cadena.c)
   - [Imprimir pirámide](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/07-Impresi%C3%B3n-Pir%C3%A1mide.c)
   - [Imprimir círculo](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/08-Impresi%C3%B3n-C%C3%ADrculo.c)
