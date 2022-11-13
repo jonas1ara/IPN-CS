@@ -132,11 +132,8 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
   - [Colas](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C/02.-Colas)
   - [Listas](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C/03.-Listas-Enlazadas)
   - [Tablas de Hash](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C/04.-Tablas-de-Hash)
-
   - [Árboles](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C/05.-Arboles)
-
   - [Heaps](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C/06.-Heap)
-
   - [Grafos](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C/07.-Grafos)
 
 
