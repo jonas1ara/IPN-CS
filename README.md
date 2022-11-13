@@ -75,7 +75,7 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
   - [Callos y Free](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/05-Calloc-y-Free.c)
   - [Strings dinámicos](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/06-Strings-din%C3%A1micos.c)
   - [Matrices dinámicas](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/07-Matrices-din%C3%A1micas.c)
-  - [Funciones dinámicas]https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/08-Funciones-din%C3%A1micas.c)
+  - [Funciones dinámicas](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/08-Funciones-din%C3%A1micas.c)
   - [Estucturas dinámicas](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/09-Estructuras-din%C3%A1micas.c)
 
 
