@@ -75,3 +75,24 @@ _Función **free** para liberar la memoria solicitada_
 ![SD](/00.-Sources/Images/SD.png)
 
 _En este ejemplo se aprecia el uso de una variable estática, es decir una variable con valor fijo que no puede sufrir cambios en tiempo de compilación_
+
+## Punteros y paso por referencia
+
+### Punteros
+
+_Un puntero es solo una variable que tiene una dirección de memoria 🎈 , un puntero doble es un puntero que guarda la dirección de otro apuntador 🎈🎈 y ambos apuntadores sirven para manipular, cambiar o realizar alguna operación_
+
+![P](/00.-Sources/Images/Ptr.png)
+
+### Parámetro de dirección
+
+_Cuándo usamos el símbolo `&` estamos indicando la dirección, la **dirección de memoria es el lugar donde se guarda el dato**, entonces cuando escribimos `&x` estamos diciendo la dirección de la variable x_
+
+![PD](/00.-Sources/Images/PD.png)
+
+### Parámetro de indirección
+
+_Cuand usamos el símbolo `*` estamos indicando el **valor que hay en la dirección**, no la dirección de memoria y este solo **señala** el valor de la dirección de memoria, usualmente usada para el paso por referencia en las funciones_
+
+![PI](/00.-Sources/Images/PI.png)
+
