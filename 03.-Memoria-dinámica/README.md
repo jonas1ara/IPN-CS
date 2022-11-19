@@ -39,7 +39,7 @@ vector = (int *) malloc(N * sizeof(int)); //Función malloc para asignar un tama
 ```
 
 ```C
-vector = (int *) calloc(N,  * sizeof(int)); //Función calloc para asignar un tamaño al vector de N enteros y asignarle un valor inicial de 0 
+vector = (int *) calloc(N,  sizeof(int)); //Función calloc para asignar un tamaño al vector de N enteros y asignarle un valor inicial de 0 
 ```
 
 ```C
