@@ -32,9 +32,9 @@ _En este segundo dibujo podemos observar que el entero `a` vale 5 y está alojad
 
 ## Referencias
 
-- [Punteros y paso por referencia en Medium por Jonas Lara](https://medium.com/@jonas_lara/punteros-y-paso-por-referencia-4e4d52370b66)
+_[Punteros y paso por referencia en Medium por Jonas Lara](https://medium.com/@jonas_lara/punteros-y-paso-por-referencia-4e4d52370b66)_
 
 
 ## Expresiones de gratitud
 
-Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado
+_Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado_

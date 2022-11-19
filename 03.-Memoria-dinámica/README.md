@@ -78,9 +78,9 @@ _En este ejemplo se aprecia el uso de una variable estática, es decir una varia
 
 ## Referencias
 
-- [Memoria dinámica en Medium por Jonas Lara](https://medium.com/@jonas_lara/memoria-din%C3%A1mica-en-c-55bdcad1fe71)
+_[Memoria dinámica en Medium por Jonas Lara](https://medium.com/@jonas_lara/memoria-din%C3%A1mica-en-c-55bdcad1fe71)_
 
 ## Expresiones de gratitud
 
-Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado
+_Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado_
 
