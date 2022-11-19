@@ -1,1 +1,32 @@
 # Punteros
+
+_Un puntero es solo una variable que tiene una dirección de memoria 🎈 , un puntero doble es un puntero que guarda la dirección de otro apuntador 🎈🎈 y ambos apuntadores sirven para manipular, cambiar o realizar alguna operación_
+
+![P](/00.-Sources/Images/Ptr.png)
+
+## Paso por referencia
+
+_En el paso por referencia se pasa la dirección de memoria de una variable, en lugar de pasar el valor de la variable, esto permite que la función pueda modificar el valor de la variable original_
+
+![PR](/00.-Sources/Images/PR.png)
+
+_En este ejemplo podemos observar que el primer valor impreso es el de la variable `num` que es igual a 5 al iniciar el programa, despues se hace un llamado a la función `ReferenciaDoble` **pasandole por referencia** la dirección de memoria de la variable `numPunteroSimple` que esta apuntando a la dirección de memoria de la variable `num`, la tarea de la función es pedir un número al usuario para asignarle ese numero a la variable `num`, al final podemos observar que se imprimio el nuevo valor de la variable `num`_
+
+## Parámetro de dirección
+
+_Cuándo usamos el símbolo `&` estamos indicando la dirección, la **dirección de memoria es el lugar donde se guarda el dato**, entonces cuando escribimos `&x` estamos diciendo la dirección de la variable x_
+
+![PD](/00.-Sources/Images/PD.png)
+
+## Parámetro de indirección
+
+_Cuand usamos el símbolo `*` estamos indicando el **valor que hay en la dirección**, no la dirección de memoria y este solo **señala** el valor de la dirección de memoria, usualmente usada para el paso por referencia en las funciones_
+
+![PI](/00.-Sources/Images/PI1.png)
+
+### Todo el rollo de los puntetos y el paso por referencia fue pensado para NO copiar objetos innecesariamente, y hacer un uso optimo de la memoria RAM 😉
+
+
+## Expresiones de gratitud
+
+Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado
