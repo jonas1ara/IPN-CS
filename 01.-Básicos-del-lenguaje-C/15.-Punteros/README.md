@@ -18,7 +18,7 @@ _Cuando usamos el símbolo `&` estamos indicando la dirección, la **dirección 
 
 ![PD](/00.-Sources/Images/PD.png)
 
-_En este primer dibujo podemos observar que el entero `a` vale 5 y está alojado en la dirección de memoria 102, al asignarle al entero `b` la dirección de memoria del entero `a`, obtenemos que el valor del entero `b` es la dirección de memoria del entero `a` en este caso 102_
+_En este primer dibujo podemos observar que el entero `a` vale 5 y está alojado en la dirección de memoria 102, al asignarle al entero `b` la dirección de memoria del entero `a`, obtenemos que el valor del entero `b` es la dirección de memoria del entero `a` que en este caso 102_
 
 ## Parámetro de indirección
 
@@ -26,7 +26,7 @@ _Cuando usamos el símbolo `*` estamos indicando el **valor que hay en la direcc
 
 ![PI](/00.-Sources/Images/PI1.png)
 
-_En este segundo dibujo podemos observar que el entero `a` vale 5 y está alojado en la dirección de memoria 102, al asignarle al entero `b` la dirección de memoria del entero `a`, obtenemos que el valor del entero `b` es la dirección de memoria del entero `a` en este caso 102, pero si además le asignamos a un nuevo entero llamado `c` el valor de lo que hay en la dirección de memoria del entero `b`, obtenemos el valor 5 que es el valor de `a`_
+_En este segundo dibujo podemos observar que el entero `a` vale 5 y está alojado en la dirección de memoria 102, al asignarle al entero `b` la dirección de memoria del entero `a`, obtenemos que el valor del entero `b` es la dirección de memoria del entero `a`  que en este caso 102, pero si además le asignamos a un nuevo entero llamado `c` el valor de lo que hay en la dirección de memoria del entero `b`, obtenemos el valor 5 que es el valor de `a`_
 
 ### Todo el rollo de los punteros y el paso por referencia fue pensado para NO copiar objetos innecesariamente, y hacer un uso optimo de la memoria RAM 😉
 
