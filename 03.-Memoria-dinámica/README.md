@@ -84,6 +84,14 @@ _Un puntero es solo una variable que tiene una dirección de memoria 🎈 , un p
 
 ![P](/00.-Sources/Images/Ptr.png)
 
+### Paso por referencia
+
+_En el paso por referencia se pasa la dirección de memoria de una variable, en lugar de pasar el valor de la variable, esto permite que la función pueda modificar el valor de la variable original_
+
+![PR](/00.-Sources/Images/PR.png)
+
+_En este ejemplo podemos observar _
+
 ### Parámetro de dirección
 
 _Cuándo usamos el símbolo `&` estamos indicando la dirección, la **dirección de memoria es el lugar donde se guarda el dato**, entonces cuando escribimos `&x` estamos diciendo la dirección de la variable x_
@@ -95,5 +103,4 @@ _Cuándo usamos el símbolo `&` estamos indicando la dirección, la **dirección
 _Cuand usamos el símbolo `*` estamos indicando el **valor que hay en la dirección**, no la dirección de memoria y este solo **señala** el valor de la dirección de memoria, usualmente usada para el paso por referencia en las funciones_
 
 ![PI](/00.-Sources/Images/PI1.png)
-![PI](/00.-Sources/Images/PI2.png)
 
