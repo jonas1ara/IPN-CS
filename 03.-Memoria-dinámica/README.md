@@ -37,22 +37,22 @@ _En este ejemplo se aprecia como el sistema operativo automáticamente crea y de
 ```C
 vector = (int *) malloc(N * sizeof(int)); 
 ```
-_Función malloc para asignar un tamaño al vector de N enteros_
+_Función **malloc** para asignar un tamaño al vector de N enteros_
 
 ```C
 vector = (int *) calloc(N,  sizeof(int)); 
 ```
-_Función calloc para asignar un tamaño al vector de N enteros y asignarle un valor inicial de 0_
+_Función **calloc** para asignar un tamaño al vector de N enteros y asignarle un valor inicial de 0_
 
 ```C
 vector = (int *) realloc(vector, N * sizeof(int)); 
 ```
-_Función realloc para redimensionar el vector conservando sus valores _
+_Función **realloc** para redimensionar el vector conservando sus valores_
 
 ```C
 free(vector);
 ```
-_Función free para liberar la memoria solicitada_
+_Función **free** para liberar la memoria solicitada_
 
 ![](/00.-Sources/Images/Free.png)
 
