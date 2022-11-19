@@ -104,3 +104,9 @@ _Cuand usamos el símbolo `*` estamos indicando el **valor que hay en la direcci
 
 ![PI](/00.-Sources/Images/PI1.png)
 
+#### Todo para NO copiar objetos innecesariamente, y hacer un uso optimo de la memoria RAM 😉
+
+
+## Expresiones de gratitud
+
+Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado.
