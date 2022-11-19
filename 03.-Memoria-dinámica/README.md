@@ -13,7 +13,7 @@ _En la memoria principal se pueden distinguir dos regiones importantes: [Stack](
 
 - **Tiempo de vida** → Temporal, almacena variables locales durante llamadas a funciones
 - **Funcionamiento** → Locación y deslocación automática de memoria más rápida que el Heap
-- **Dificultad** → Baja
+- **Ventajas** → Fácil de usar para el programador y más rápida que el Heap
 - **Tamaño** → Crece al llamar funciones anidadas
 - **Acceso** → Solo desde la función que se creó
 - **Liberación** → Al finalizar la función
@@ -28,7 +28,7 @@ _En este ejemplo se aprecia como el sistema operativo automáticamente crea y de
 
 - **Tiempo de vida** → A discreción del programador
 - **Funcionamiento** → Se reserva memoria explícitamente usando la librería `stdlib.h`
-- **Dificultad** → Alta
+- **Ventajas** → **Control directo de memoria por parte del programador** pero más lento que el Stack y menos productividad que el Stack
 - **Tamaño** → A discreción del programador
 - **Acceso** → Desde cualquier parte del programa
 - **Liberación** → A discreción del programador
@@ -50,17 +50,16 @@ vector = (int *) realloc(vector, N * sizeof(int)); //Función realloc para redim
 free(vector); //Función free para liberar la memoria
 ```
 
-
-
 ![](/00.-Sources/Images/Free.png)
 
-__
+_En este ejemplo podemos ver en la linea 16 del código que cuando inicializamos malloc con la variable `ptr` apunta a una dirección de memoria de 4 bytes por ser entero que son especificados por la función `sizeof(int)`, después en la función main hacemos uso de la función asignando el valor que retorna a la variable `ptr2`, imprimimos y al final liberamos la memoria solicitada_
+
 
 ### Static Data (Automático)
 
 - **Tiempo de vida** → Toda la duración del programa.
 - **Funcionamiento** → Se reserva memoria automáticamente al inicio del programa
-- **Dificultad** → Baja
+- **Ventajas** → Fácil de usar para el programador y sus valores se conservan entre llamadas a funciones
 - **Tamaño** → Fijo / conocido en tiempo de compilación.
 - **Acceso** → Desde cualquier parte del programa
 - **Liberación** → Al finalizar el programa
