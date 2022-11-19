@@ -2,8 +2,6 @@
 
 _La **memoria dinámica** permite al programdor solicitar memoria en **tiempo de ejecución** al sistema operativo, esto es util para problemas en los que la cantidad de datos a almacenar es desconocido o no es fijo porque no se tiene idea del número de variables de entrada cómo es el caso de las **listas enlazadas**, pero para entender su importancia debes saber que es la memoria estática y la memoria pseudoestática, la **memoria estática:** es la que esta dada explicitamente en un programa, por ejemplo en un vector de tamaño `N = 50` no importa si estas usando 17 elementos del vector, esté siempre ocupará espacio en la memoria y la **memoria pseudoestática:** es en la que el usuario da el valor de `N` para el tamaño del vector, dicho esto deberías ocupar la memoría dinámica cuando tengas grandes vectores y/o no sabes el valor real de las variables de entrada y cuando tengas vectores pequeños no tiene sentido usar la memoria dinámica_
 
-
-
 ![DM](/00.-Sources/Images/DM.png)
 
 ## Regiones de memoria
@@ -11,7 +9,7 @@ _En la memoria principal se pueden distinguir dos regiones importantes: [Stack](
 
 ![RM](/00.-Sources/Images/RM.png)
 
-### Stack (Automático)
+## Stack (Automático)
 
 - **Tiempo de vida** → Temporal, almacena variables locales durante llamadas a funciones
 - **Funcionamiento** → Locación y deslocación automática de memoria más rápida que el Heap
@@ -26,7 +24,7 @@ _En la memoria principal se pueden distinguir dos regiones importantes: [Stack](
 _En este ejemplo se aprecia como el sistema operativo automáticamente crea y destruye la variable `b` en cada una de las llamadas a la función, impidiendo imprimir una secuencia de números enteros positivos_
 
 
-### Heap (Dinámico: malloc, calloc, realloc, free)	
+## Heap (Dinámico: malloc, calloc, realloc, free)	
 
 - **Tiempo de vida** → A discreción del programador
 - **Funcionamiento** → Se reserva memoria explícitamente usando la librería `stdlib.h`
@@ -60,8 +58,7 @@ _Función **free** para liberar la memoria solicitada_
 
 _En este ejemplo podemos ver en la linea 16 del código que cuando inicializamos malloc con la variable `ptr` apunta a una dirección de memoria de 4 bytes por ser un tipo de dato entero que es especificado por la función `sizeof(int)`, después en la función main hacemos uso de la función `fl` asignando el valor que retorna a la variable `ptr2`, imprimimos y al final liberamos la memoria solicitada_
 
-
-### Static Data (Automático)
+## Static Data (Automático)
 
 - **Tiempo de vida** → Toda la duración del programa.
 - **Funcionamiento** → Se reserva memoria automáticamente al inicio del programa
