@@ -5,8 +5,12 @@ _La **memoria dinámica** permite al programdor solicitar memoria en **tiempo de
 ![DM](/00.-Sources/Images/DM.png)
 
 ## Regiones de memoria
+- [Stack](#stack-automático)
+- [Heap](#heap-dinámico)
+- [Static Data](#static-data)
 
 ![RM](/00.-Sources/Images/RM.png)
+
 
 ### Stack (Automático)
 
