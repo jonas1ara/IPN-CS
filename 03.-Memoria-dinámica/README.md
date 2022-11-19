@@ -22,9 +22,9 @@
 - Lifetime → A discreción del programador.
 - Size → A discreción del programador.
 
-![](/00.-Sources/Images/malloc.png)
+![](/00.-Sources/Images/Malloc.png)
 
-![](/00.-Sources/Images/free.png)
+![](/00.-Sources/Images/Free.png)
 
 ### Static Data (Automático)
 
