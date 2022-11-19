@@ -11,16 +11,16 @@
 
 ### Stack (Automático)
 
-- Lifetime → Temporal, almacena variables locales durante llamadas a funciones.
-- Size → Crece al llamar funciones anidadas.
+- **Lifetime** → Temporal, almacena variables locales durante llamadas a funciones.
+- **Size** → Crece al llamar funciones anidadas.
 
 ![Stack](/00.-Sources/Images/Stack.png)
 
 
 ### Heap (Dinámico: malloc, calloc, realloc, free)	
 
-- Lifetime → A discreción del programador.
-- Size → A discreción del programador.
+- **Lifetime** → A discreción del programador.
+- **Size** → A discreción del programador.
 
 ![](/00.-Sources/Images/Malloc.png)
 
@@ -28,7 +28,7 @@
 
 ### Static Data (Automático)
 
-- Lifetime → Toda la duración del programa.
-- Size → Fijo / conocido en tiempo de compilación.
+- **Lifetime** → Toda la duración del programa.
+- **Size** → Fijo / conocido en tiempo de compilación.
 
 ![SD](/00.-Sources/Images/SD.png)
