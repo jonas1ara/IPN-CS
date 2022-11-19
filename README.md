@@ -31,9 +31,9 @@ _Si quieres ver el indice del repositorio da click [acá]()_
 
 ## Construido con 🛠️
 
-* [WSL](https://learn.microsoft.com/en-us/windows/wsl/) - Windows Subsystem for Linux.
-* [VS Code](https://code.visualstudio.com/) - Visual Studio Code.
-* [UPIIT](https://www.upiit.ipn.mx/) - Unidad Profesional Interdisciplinaria de Ingeniería campus Tlaxcala.
+* _[WSL](https://learn.microsoft.com/en-us/windows/wsl/) - Windows Subsystem for Linux_
+* _[VS Code](https://code.visualstudio.com/) - Visual Studio Code_
+* _[UPIIT](https://www.upiit.ipn.mx/) - Unidad Profesional Interdisciplinaria de Ingeniería campus Tlaxcala_
 
 ## Referencias 📚
 
@@ -43,4 +43,4 @@ _Cormen, T. H., Leiserson, C. E., Rivest, R. L. & Stein, C. (2009). [Introductio
 
 ## Expresiones de gratitud
 
-Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado.
+_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado_
