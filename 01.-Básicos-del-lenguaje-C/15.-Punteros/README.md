@@ -30,6 +30,10 @@ _En este segundo dibujo podemos observar que el entero `a` vale 5 y está alojad
 
 ### Todo el rollo de los punteros y el paso por referencia fue pensado para NO copiar objetos innecesariamente, y hacer un uso optimo de la memoria RAM 😉
 
+## Referencias
+
+- [Punteros y paso por referencia en Medium por Jonas Lara](https://medium.com/@jonas_lara/punteros-y-paso-por-referencia-4e4d52370b66)
+
 
 ## Expresiones de gratitud
 
