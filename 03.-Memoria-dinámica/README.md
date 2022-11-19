@@ -90,7 +90,7 @@ _En el paso por referencia se pasa la dirección de memoria de una variable, en 
 
 ![PR](/00.-Sources/Images/PR.png)
 
-_En este ejemplo podemos observar _
+_En este ejemplo podemos observar que el primer valor impreso es el de la variable `num` que es igual a 5 al iniciar el programa, despues se hace un llamado a la función `ReferenciaDoble` **pasandole por referencia** la dirección de memoria de la variable `numPunteroSimple` que esta apuntando a la dirección de memoria de la variable `num`, la tarea de la función es pedir un número al usuario para asignarle ese numero a la variable `num`, al final podemos observar que se imprimio el nuevo valor de la variable `num`_
 
 ### Parámetro de dirección
 
