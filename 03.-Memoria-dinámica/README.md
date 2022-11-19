@@ -1,6 +1,6 @@
 # Memoría dinámica
 
-_La memoria dinámica permite solicitar memoria en **tiempo de ejecución** al sistema operativo, esto es util para problemas en los que la cantidad de datos a almacenar es desconocido o no es fijo porque no se tiene idea del número de variables de entrada cómo es el caso de las **listas enlazadas**_
+_La **memoria dinámica** permite al programdor solicitar memoria en **tiempo de ejecución** al sistema operativo, esto es util para problemas en los que la cantidad de datos a almacenar es desconocido o no es fijo porque no se tiene idea del número de variables de entrada cómo es el caso de las **listas enlazadas**_
 
 ![DM](/00.-Sources/Images/DM.png)
 
