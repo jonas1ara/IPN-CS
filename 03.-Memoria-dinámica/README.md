@@ -34,6 +34,12 @@ _En este ejemplo se aprecia como el sistema operativo automáticamente crea y de
 - **Liberación** → A discreción del programador
 - **Ejemplo** → función `malloc`
 
+![](/00.-Sources/Images/Heap.png)
+
+_En este ejemplo podemos ver en la linea 16 del código que cuando inicializamos malloc con la variable `ptr` apunta a una dirección de memoria de 4 bytes por ser un tipo de dato entero que es especificado por la función `sizeof(int)`, después en la función main hacemos uso de la función `fl` asignando el valor que retorna a la variable `ptr2`, imprimimos y al final liberamos la memoria solicitada_
+
+### Funciones de la librería `stdlib.h`
+
 ```C
 vector = (int *) malloc(N * sizeof(int)); 
 ```
@@ -54,9 +60,7 @@ free(vector);
 ```
 _Función **free** para liberar la memoria solicitada_
 
-![](/00.-Sources/Images/Heap.png)
 
-_En este ejemplo podemos ver en la linea 16 del código que cuando inicializamos malloc con la variable `ptr` apunta a una dirección de memoria de 4 bytes por ser un tipo de dato entero que es especificado por la función `sizeof(int)`, después en la función main hacemos uso de la función `fl` asignando el valor que retorna a la variable `ptr2`, imprimimos y al final liberamos la memoria solicitada_
 
 ## Static Data (Automático)
 
