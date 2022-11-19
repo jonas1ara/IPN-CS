@@ -1,6 +1,8 @@
 # Memoría dinámica
 
-_La **memoria dinámica** permite al programdor solicitar memoria en **tiempo de ejecución** al sistema operativo, esto es util para problemas en los que la cantidad de datos a almacenar es desconocido o no es fijo porque no se tiene idea del número de variables de entrada cómo es el caso de las **listas enlazadas**_
+_La **memoria dinámica** permite al programdor solicitar memoria en **tiempo de ejecución** al sistema operativo, esto es util para problemas en los que la cantidad de datos a almacenar es desconocido o no es fijo porque no se tiene idea del número de variables de entrada cómo es el caso de las **listas enlazadas**, pero para entender su importancia debes saber que es la memoria estática y la memoria pseudoestática, la **memoria estática:** es la que esta dada explicitamente en un programa, por ejemplo en un vector de tamaño `N = 50` no importa si estas usando 17 elementos del vector, esté siempre ocupará espacio en la memoria y la **memoria pseudoestática:** es en la que el usuario da el valor de `N` para el tamaño del vector, dicho esto deberías ocupar la memoría dinámica cuando tengas grandes vectores y/o no sabes el valor real de las variables de entrada y cuando tengas vectores pequeños no tiene sentido usar la memoria dinámica_
+
+
 
 ![DM](/00.-Sources/Images/DM.png)
 
