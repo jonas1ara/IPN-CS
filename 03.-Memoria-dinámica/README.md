@@ -104,7 +104,7 @@ _Cuand usamos el símbolo `*` estamos indicando el **valor que hay en la direcci
 
 ![PI](/00.-Sources/Images/PI1.png)
 
-#### Todo para NO copiar objetos innecesariamente, y hacer un uso optimo de la memoria RAM 😉
+#### Todo el rollo de los puntetos y el paso por referencia fue pensado para NO copiar objetos innecesariamente, y hacer un uso optimo de la memoria RAM 😉
 
 
 ## Expresiones de gratitud
