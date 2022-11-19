@@ -9,7 +9,7 @@ _En la memoria principal se pueden distinguir dos regiones importantes: [Stack](
 
 ![RM](/00.-Sources/Images/RM.png)
 
-## Stack (Automático)
+### Stack (Automático)
 
 - **Tiempo de vida** → Temporal, almacena variables locales durante llamadas a funciones
 - **Funcionamiento** → Locación y deslocación automática de memoria más rápida que el Heap
@@ -24,7 +24,7 @@ _En la memoria principal se pueden distinguir dos regiones importantes: [Stack](
 _En este ejemplo se aprecia como el sistema operativo automáticamente crea y destruye la variable `b` en cada una de las llamadas a la función, impidiendo imprimir una secuencia de números enteros positivos_
 
 
-## Heap (Dinámico: malloc, calloc, realloc, free)	
+### Heap (Dinámico: malloc, calloc, realloc, free)	
 
 - **Tiempo de vida** → A discreción del programador
 - **Funcionamiento** → Se reserva memoria explícitamente usando la librería `stdlib.h`
@@ -38,7 +38,7 @@ _En este ejemplo se aprecia como el sistema operativo automáticamente crea y de
 
 _En este ejemplo podemos ver en la linea 16 del código que cuando inicializamos malloc con la variable `ptr` apunta a una dirección de memoria de 4 bytes por ser un tipo de dato entero que es especificado por la función `sizeof(int)`, después en la función main hacemos uso de la función `fl` asignando el valor que retorna a la variable `ptr2`, imprimimos y al final liberamos la memoria solicitada_
 
-### Funciones de la librería `stdlib.h`
+#### Funciones de la librería `stdlib.h`
 
 ```C
 vector = (int *) malloc(N * sizeof(int)); 
@@ -62,7 +62,7 @@ _Función **free** para liberar la memoria solicitada_
 
 
 
-## Static Data (Automático)
+### Static Data (Automático)
 
 - **Tiempo de vida** → Toda la duración del programa.
 - **Funcionamiento** → Se reserva memoria automáticamente al inicio del programa
