@@ -1,6 +1,6 @@
 # Memoría dinámica
 
-_La **memoria dinámica** permite al programdor solicitar memoria en **tiempo de ejecución** al sistema operativo, esto es util para problemas en los que la cantidad de datos a almacenar es desconocido o no es fijo porque no se tiene idea del número de variables de entrada cómo es el caso de las **listas enlazadas**, pero para entender su importancia debes saber que es la memoria estática y la memoria pseudoestática, la **memoria estática:** es la que esta dada explicitamente en un programa, por ejemplo en un vector de tamaño `N = 50` no importa si estas usando 17 elementos del vector, esté siempre ocupará espacio en la memoria y la **memoria pseudoestática:** es en la que el usuario da el valor de `N` para el tamaño del vector, dicho esto deberías ocupar la memoría dinámica cuando tengas grandes vectores y/o no sabes el valor real de las variables de entrada y cuando tengas vectores pequeños no tiene sentido usar la memoria dinámica_
+_La **memoria dinámica** permite al programador solicitar memoria en **tiempo de ejecución** al sistema operativo, esto es util para problemas en los que la cantidad de datos a almacenar es desconocido o no es fijo porque no se tiene idea del número de variables de entrada cómo es el caso de las **listas enlazadas**, pero para entender su importancia debes saber que es la memoria estática y la memoria pseudoestática, la **memoria estática:** es la que esta dada explícitamente en un programa, por ejemplo en un vector de tamaño `N = 50` no importa si estas usando 17 elementos del vector, esté siempre ocupará espacio en la memoria y la **memoria pseudoestática:** es en la que el usuario da el valor de `N` para el tamaño del vector, dicho esto deberías ocupar la memoría dinámica cuando tengas grandes vectores y/o no sabes el valor real de las variables de entrada y cuando tengas vectores pequeños no tiene sentido usar la memoria dinámica_
 
 ![DM](/00.-Sources/Images/DM.png)
 
@@ -64,10 +64,10 @@ _Función **free** para liberar la memoria solicitada_
 
 ### Static Data (Automático)
 
-- **Tiempo de vida** → Toda la duración del programa.
+- **Tiempo de vida** → Toda la duración del programa
 - **Funcionamiento** → Se reserva memoria automáticamente al inicio del programa
 - **Ventajas** → Fácil de usar para el programador y sus valores se conservan entre llamadas a funciones
-- **Tamaño** → Fijo / conocido en tiempo de compilación.
+- **Tamaño** → Fijo / conocido en tiempo de compilación
 - **Acceso** → Desde cualquier parte del programa
 - **Liberación** → Al finalizar el programa
 - **Ejemplo** → Variables globales
@@ -75,37 +75,6 @@ _Función **free** para liberar la memoria solicitada_
 ![SD](/00.-Sources/Images/SD.png)
 
 _En este ejemplo se aprecia el uso de una variable estática, es decir una variable con valor fijo que no puede sufrir cambios en tiempo de compilación_
-
-## Punteros y paso por referencia
-
-### Punteros
-
-_Un puntero es solo una variable que tiene una dirección de memoria 🎈 , un puntero doble es un puntero que guarda la dirección de otro apuntador 🎈🎈 y ambos apuntadores sirven para manipular, cambiar o realizar alguna operación_
-
-![P](/00.-Sources/Images/Ptr.png)
-
-### Paso por referencia
-
-_En el paso por referencia se pasa la dirección de memoria de una variable, en lugar de pasar el valor de la variable, esto permite que la función pueda modificar el valor de la variable original_
-
-![PR](/00.-Sources/Images/PR.png)
-
-_En este ejemplo podemos observar que el primer valor impreso es el de la variable `num` que es igual a 5 al iniciar el programa, despues se hace un llamado a la función `ReferenciaDoble` **pasandole por referencia** la dirección de memoria de la variable `numPunteroSimple` que esta apuntando a la dirección de memoria de la variable `num`, la tarea de la función es pedir un número al usuario para asignarle ese numero a la variable `num`, al final podemos observar que se imprimio el nuevo valor de la variable `num`_
-
-### Parámetro de dirección
-
-_Cuándo usamos el símbolo `&` estamos indicando la dirección, la **dirección de memoria es el lugar donde se guarda el dato**, entonces cuando escribimos `&x` estamos diciendo la dirección de la variable x_
-
-![PD](/00.-Sources/Images/PD.png)
-
-### Parámetro de indirección
-
-_Cuand usamos el símbolo `*` estamos indicando el **valor que hay en la dirección**, no la dirección de memoria y este solo **señala** el valor de la dirección de memoria, usualmente usada para el paso por referencia en las funciones_
-
-![PI](/00.-Sources/Images/PI1.png)
-
-#### Todo el rollo de los puntetos y el paso por referencia fue pensado para NO copiar objetos innecesariamente, y hacer un uso optimo de la memoria RAM 😉
-
 
 ## Expresiones de gratitud
 
