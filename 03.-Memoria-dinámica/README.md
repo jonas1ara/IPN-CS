@@ -94,5 +94,6 @@ _Cuándo usamos el símbolo `&` estamos indicando la dirección, la **dirección
 
 _Cuand usamos el símbolo `*` estamos indicando el **valor que hay en la dirección**, no la dirección de memoria y este solo **señala** el valor de la dirección de memoria, usualmente usada para el paso por referencia en las funciones_
 
-![PI](/00.-Sources/Images/PI.png)
+![PI](/00.-Sources/Images/PI1.png)
+![PI](/00.-Sources/Images/PI2.png)
 
