@@ -5,7 +5,7 @@ _La **memoria dinámica** permite al programdor solicitar memoria en **tiempo de
 ![DM](/00.-Sources/Images/DM.png)
 
 ## Regiones de memoria
-_En la memoria principal se pueden distinguir dos regiones importantes: [Stack](#stack-automático) y el [Heap](#heap-dinámico)_
+_En la memoria principal se pueden distinguir dos regiones importantes: [Stack](#stack-automático) y el [Heap](#heap-dinámico:-malloc-calloc-realloc-free)_
 
 
 
