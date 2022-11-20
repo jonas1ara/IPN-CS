@@ -26,13 +26,13 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
 
 ## Indice 📖
 
-_Si quieres ver el indice del repositorio da click [acá]()_
+_Si quieres ver el indice del repositorio da click [acá](https://github.com/Jonas-Lara/IPN-CS/tree/master/00.-Sources/README)_
 
 
 ## Construido con 🛠️
 
 * _[WSL](https://learn.microsoft.com/en-us/windows/wsl/) - Windows Subsystem for Linux_
-* _[VS Code](https://code.visualstudio.com/) - Visual Studio Code_
+* _[Visual Studio Code](https://code.visualstudio.com/) - Visual Studio Code_
 * _[UPIIT](https://www.upiit.ipn.mx/) - Unidad Profesional Interdisciplinaria de Ingeniería campus Tlaxcala_
 
 ## Referencias 📚
