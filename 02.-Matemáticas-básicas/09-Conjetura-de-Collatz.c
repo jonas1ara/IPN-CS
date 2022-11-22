@@ -1,7 +1,7 @@
 #include <stdio.h>
 unsigned long long collatz(unsigned long long numero)
 {
-	// https://parzibyte.me/blog
+
 	unsigned long long iteraciones = 0;
 	while (numero != 1)
 	{
