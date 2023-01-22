@@ -112,7 +112,8 @@ void depthFirstSearch() {
 int main() {
    int i, j;
 
-   for(i = 0; i < MAX; i++)    // set adjacency {
+   for(i = 0; i < MAX; i++)    // set adjacency 
+   {
       for(j = 0; j < MAX; j++) // matrix to 0
          adjMatrix[i][j] = 0;
    }
@@ -130,7 +131,7 @@ int main() {
    addEdge(2, 4);    // B - D
    addEdge(3, 4);    // C - D
 
-   printf("Depth First Search: ")
+   printf("Depth First Search: ");
    depthFirstSearch(); 
 
    return 0;   
