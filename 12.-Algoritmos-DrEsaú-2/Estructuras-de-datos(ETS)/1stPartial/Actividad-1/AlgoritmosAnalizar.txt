@@ -1,0 +1,32 @@
+Algoritmo Transpuesta(a,n)
+{
+    for i:= 1 to n-1 do
+        for j:=i+1 to n do
+        {
+            t:=a[i,j]; a[i,j]:=a[j,i]; a[j,i]:=t;
+        }
+}
+
+Algoritmo Fibonacci(n)
+{
+    if (n <= 1) then
+        write(n);
+    else
+        write( Fibonacci(n - 1) + Fibonacci(n - 2) );
+}
+
+Algoritmo Fibonacci(n)
+{
+    if (n <= 1) then
+        write(n);
+    else
+    {
+        fnm2:=0; fnm:=1;
+        for i:=2 to n do
+        {
+            fn:=fnm1+fnm2;
+            fnm2:=fnm1; fnm1:=fn;
+        }
+        write(fn);
+    }
+}
