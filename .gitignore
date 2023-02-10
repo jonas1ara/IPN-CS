@@ -1,4 +1,4 @@
-# Ignore files with extension `.class` & `.exe`
+# Ignore files with extension `.out` & `.exe`
 *.out
 *.exe
 *.o
