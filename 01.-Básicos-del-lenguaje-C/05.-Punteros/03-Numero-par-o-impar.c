@@ -1,3 +1,6 @@
+// &n = direccion de memoria de n
+// *n = valor de la direccion de memoria de n
+
 #include <stdio.h>
 #include <stdlib.h>
     
