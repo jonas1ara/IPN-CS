@@ -135,9 +135,9 @@
   - [GTK3 a GTK4]()
   - [GObject]()
   
- ### **[16.- ](https://github.com/Jonas-Lara/IPN-CS/tree/master/16.-Llamadas-al-Sistema) Lammadas al sistema**
+ ### **[16.- ](https://github.com/Jonas-Lara/IPN-CS/tree/master/16.-Llamadas-al-Sistema) Llamadas al sistema**
   - [Libreria unistd.h]()
-  - [Shell]()
+  - [Construye tu propia shell en Linux]()
   - []()
 
 ### **[17.- 25 algoritmos que todo programador debería conocer](https://github.com/Jonas-Lara/IPN-CS/tree/master/25.-Algoritmos-a-conocer)**
