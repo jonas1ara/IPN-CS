@@ -1,12 +1,9 @@
 # Ipn.c
 
-![](/00.-Sources/Ipn.svg)
+![](/00.-Sources/Gifs/Sheldon.gif)
 
 _asdfghjklñ_
 
-## Requisitos 📋
+_Si quieres saber más sobre las propiedades del número 73 puedes ver este [video](https://www.youtube.com/watch?v=R7hTUxzbH48) del canal derivando_
 
-_Herramientas que necesita para usar este repositorio y cómo instalarlo_
-
-![alt text](/00.-Sources/vs.png)
 
