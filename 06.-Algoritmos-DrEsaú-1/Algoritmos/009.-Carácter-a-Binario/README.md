@@ -7,7 +7,7 @@ _Para convertir un carácter a su representación binaria utilizando ciclos for,
 
 _La siguiente función muestra cómo se puede hacer esto utilizando ciclos for:_
 
-```
+```C
 void car_a_binario(char c) {
     int i, j;
     for (i = 7; i >= 0; i--) {
