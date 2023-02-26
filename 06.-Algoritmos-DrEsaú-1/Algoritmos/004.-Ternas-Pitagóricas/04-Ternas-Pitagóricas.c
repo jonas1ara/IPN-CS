@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
 	
 	int i,j,k,n,sum,l1,l2,hip; //Inicializan variables
 	
@@ -30,5 +31,6 @@ int main(){
 	}	
 	printf("\nEsos son todos los triángulos rectángulos diferentes con lados enteros en los que la suma de los lados no es mayor a %d, adios humano. \n",n);	
 	printf("\n"); //Fin del programa :)
+	
 	return 0;
 }
