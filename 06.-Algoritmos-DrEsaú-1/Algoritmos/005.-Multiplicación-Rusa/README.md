@@ -22,9 +22,9 @@ Por ejemplo, para multiplicar 27 y 19 utilizando la multiplicación rusa, el pro
 6   76
 3   152
 1   304
-
-El producto de 27 y 19 es la suma de los números de la columna derecha que corresponden a los números impares de la columna izquierda: 19 + 152 + 304 = 475.
 ```
+
+_El producto de 27 y 19 es la suma de los números de la columna derecha que corresponden a los números impares de la columna izquierda: 19 + 152 + 304 = 475._
 
 _La multiplicación rusa **es un método interesante y útil para multiplicar números grandes mentalmente o en situaciones en las que la multiplicación directa es difícil o imposible.** Sin embargo, puede ser menos eficiente que otros métodos para multiplicar números grandes en papel o utilizando calculadoras._
 
