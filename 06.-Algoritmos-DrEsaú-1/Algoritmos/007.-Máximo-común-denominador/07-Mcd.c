@@ -1,12 +1,3 @@
-/*
-	Nombre del programa: mcd.c 
-	Fecha: 6/10/21
-	Autor: Adrián Jonás Lara Carvente
-	Descripción breve: Este programa cálcula el Máximo Común Divisor de dos números con el 
-					   algoritmo de Euclides.
-*/
-
-
 #include <stdio.h>
 
 int main()
