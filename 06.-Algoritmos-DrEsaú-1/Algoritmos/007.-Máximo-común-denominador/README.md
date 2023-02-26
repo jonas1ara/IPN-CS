@@ -3,10 +3,15 @@
 _El algoritmo de Euclides es un método para calcular el máximo común divisor (MCD) de dos números enteros. **El MCD es el número más grande que divide a ambos números sin dejar un resto.** Este algoritmo se basa en la observación de que si el MCD de dos números a y b existe, entonces el MCD de a y b también es igual al MCD de b y el resto de a dividido entre b. A continuación, se explica el procedimiento:_
 
 - Se toman los dos números enteros a y b para los que se desea encontrar el MCD.
+
 - Si b es igual a cero, entonces el MCD es a.
+
 - Si b no es igual a cero, entonces se realiza la división entera de a entre b para obtener el resto r. Esto se puede expresar como a = bq + r, donde q es el cociente entero de a dividido por b.
+
 - Se toma el MCD de b y r.
+
 - El resultado del MCD es el resultado final de la función.
+
 
 _En resumen, el algoritmo de Euclides se basa en la división sucesiva de a y b hasta encontrar un par de números en el que uno sea cero. El MCD es el último número diferente de cero en esta secuencia._
 
