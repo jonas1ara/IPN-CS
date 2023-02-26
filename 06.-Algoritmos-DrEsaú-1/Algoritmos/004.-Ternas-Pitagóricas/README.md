@@ -1,5 +1,7 @@
 # Tenas Pitagóricas
 
+![](/00.-Sources/Images/TP.jpeg)
+
 _Las ternas Pitagóricas son conjuntos de tres números enteros positivos que satisfacen el teorema de Pitágoras. Este teorema establece que en un triángulo rectángulo, el cuadrado de la hipotenusa (el lado más largo, opuesto al ángulo recto) es igual a la suma de los cuadrados de los otros dos lados._
 
 _Por lo tanto, una terna pitagórica consiste en tres números enteros positivos a, b y c que cumplen la ecuación:_
