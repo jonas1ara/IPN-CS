@@ -1,12 +1,3 @@
-/*
-	- Nombre del programa: Triángulo con lados enteros
-	- Fecha: 02/05/2021
-	- Autor: Adrián Jonas Lara Carvente
-	- Descripción breve: Este programa encuentra todos los triángulos rectángulos diferentes con lados enteros en los que la suma de los lados no sea mayor a n, donde n es un valor dado por el usuario.
-
-*/
-
-
 #include <stdio.h>
 
 int main(){
