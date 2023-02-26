@@ -1,11 +1,3 @@
-/*
-	Nombre del programa: mcm.c 
-	Fecha: 6/10/21
-	Autor: Adrián Jonás Lara Carvente
-	Descripción breve: Este programa cálcula el Minimo Común Múltiplo de dos números con a						yuda del Máximo Común Divisor.
-*/
-
-
 #include <stdio.h>
 
 int main()
