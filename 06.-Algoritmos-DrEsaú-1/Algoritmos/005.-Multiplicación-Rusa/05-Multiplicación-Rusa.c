@@ -1,13 +1,7 @@
-/*
-	- Nombre del programa: Multiplicación Rusa
-	- Fecha: 06/05/2021
-	- Autor: Adrián Jonas Lara Carvente
-	- Descripción breve: Este progra cálcula una multiplicación pero con el método Ruso
-*/
-
 #include <stdio.h>
-int main( ){
-	
+
+int main( )
+{	
 	int a, b, m, mc, c = 0;
 		
 	printf("Este progra cálcula una multiplicación pero con el método Ruso\n");
@@ -26,10 +20,9 @@ int main( ){
 
 	while(b>=1){ //Mientras b sea mayor o igual a 0 (condiciono asi porque, si solo pongo b > 1, no toma en cuenta el ultimo valor que es 1), hara lo siguiente:
 
-			if (b % 2 != 0){  //Si el segundo número es Impar, entonces
-				
-			c=c+a;
-
+			if (b % 2 != 0)//Si el segundo número es Impar, entonces
+			{  
+				c=c+a;
 			}			
 
 			a = a * 2;  //El primer factor va a ser igual a si mismo pero mutiplicado por dos
