@@ -1,6 +1,6 @@
 # Cadenas
 
-![](/00.-Sources/Images/Strings.png)
+![](/00.-Sources/Images/String.png)
 
 #### La librería "string.h" en C proporciona funciones para manipular y trabajar con cadenas de caracteres. Aquí hay una descripción de algunas de las funciones más importantes de esta librería y ejemplos de su uso:
 
