@@ -100,7 +100,7 @@ Donde "str1" y "str2" son las cadenas de caracteres que se compararán. Esta fun
 int main() 
 {
     char str1[] = "Hola";
-    char str2[] = "
+    char str2[] = "";
     char str3[] = "Hola mundo";
 
     int res1 = strcmp(str1, str2);
