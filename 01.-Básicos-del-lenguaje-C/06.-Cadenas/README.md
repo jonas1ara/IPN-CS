@@ -1,10 +1,12 @@
 # Cadenas
 
+![](/00.-Sources/Images/Strings.png)
+
 #### La librería "string.h" en C proporciona funciones para manipular y trabajar con cadenas de caracteres. Aquí hay una descripción de algunas de las funciones más importantes de esta librería y ejemplos de su uso:
 
 ## strlen 
 
-La función strlen se utiliza para encontrar la longitud de una cadena de caracteres. Su sintaxis es la siguiente:
+_La función strlen se utiliza para encontrar la longitud de una cadena de caracteres. Su sintaxis es la siguiente:_
 
 ```c
 size_t strlen(const char *str);
@@ -29,7 +31,7 @@ Este programa imprimirá "La longitud de la cadena es 10", que es la longitud de
 
 ## strcpy
 
-La función strcpy se utiliza para copiar una cadena de caracteres en otra. Su sintaxis es la siguiente:
+_La función strcpy se utiliza para copiar una cadena de caracteres en otra. Su sintaxis es la siguiente:_
 
 ```c
 char *strcpy(char *dest, const char *src);
@@ -55,7 +57,7 @@ Este programa imprimirá "La cadena de destino es Hola mundo", que es la cadena 
 
 ## strcat
 
-La función strcat se utiliza para concatenar una cadena de caracteres a otra. Su sintaxis es la siguiente:
+_La función strcat se utiliza para concatenar una cadena de caracteres a otra. Su sintaxis es la siguiente:_
 
 ```c
 char *strcat(char *dest, const char *src);
@@ -81,7 +83,7 @@ Este programa imprimirá "La cadena concatenada es Hola mundo", que es la cadena
 
 ## strcmp
 
-La función strcmp se utiliza para comparar dos cadenas de caracteres. Su sintaxis es la siguiente:
+_La función strcmp se utiliza para comparar dos cadenas de caracteres. Su sintaxis es la siguiente:_
 
 ```c    
 int strcmp(const char *str1, const char *str2);
@@ -128,7 +130,7 @@ Este programa imprimirá "La primera cadena es menor que la segunda" y "La prime
 
 ## strchr
 
-La función strchr se utiliza para encontrar la primera aparición de un carácter en una cadena de caracteres. Su sintaxis es la siguiente:
+_La función strchr se utiliza para encontrar la primera aparición de un carácter en una cadena de caracteres. Su sintaxis es la siguiente:_
 
 ```c
 char *strchr(const char *str, int c);
@@ -158,7 +160,7 @@ Este programa imprimirá "La subcadena se encontró en la posición 11", que es 
 
 ## memset
 
-La función memset se utiliza para rellenar una región de memoria con un carácter. Su sintaxis es la siguiente:
+_La función memset se utiliza para rellenar una región de memoria con un carácter. Su sintaxis es la siguiente:_
 
 ```c
 void *memset(void *ptr, int value, size_t n);
@@ -187,7 +189,7 @@ Este programa imprimirá "A A A A A A A A A A", que es el bloque de memoria de 1
 
 ## strchr
 
-La función strchr se utiliza para encontrar la primera aparición de un carácter en una cadena de caracteres. Su sintaxis es la siguiente:
+_La función strchr se utiliza para encontrar la primera aparición de un carácter en una cadena de caracteres. Su sintaxis es la siguiente:_
 
 ```c
 char *strchr(const char *str, int c);
@@ -216,7 +218,7 @@ Este programa imprimirá "El carácter se encontró en la posición 5", que es l
 
 ## strcmp:
 
-La función strcmp se utiliza para comparar dos cadenas de caracteres. Su sintaxis es la siguiente:
+_La función strcmp se utiliza para comparar dos cadenas de caracteres. Su sintaxis es la siguiente:_
 
 ```c
 int strcmp(const char *str1, const char *str2);
@@ -248,7 +250,7 @@ Este programa imprimirá "La cadena 'Hola' es menor que la cadena 'Mundo'", que 
 
 ## strtok
 
-La función strtok se utiliza para dividir una cadena de caracteres en tokens. Su sintaxis es la siguiente:
+_La función strtok se utiliza para dividir una cadena de caracteres en tokens. Su sintaxis es la siguiente:_
 
 ```c
 char *strtok(char *str, const char *delim);
@@ -276,7 +278,7 @@ Este programa imprimirá "Hola", "mundo" y "cruel", que son los tokens de la cad
 
 ## memcpy
 
-La función memcpy se utiliza para copiar una región de memoria a otra. Su sintaxis es la siguiente:
+_La función memcpy se utiliza para copiar una región de memoria a otra. Su sintaxis es la siguiente:_
 
 ```c
 void *memcpy(void *dest, const void *src, size_t n);
