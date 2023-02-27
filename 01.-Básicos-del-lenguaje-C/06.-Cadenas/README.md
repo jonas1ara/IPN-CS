@@ -4,6 +4,8 @@
 
 ![](/00.-Sources/Images/String.png)
 
+_Las cadenas son en realidad matrices unidimensionales de caracteres que terminan en un carácter NULL '\0'. Por lo tanto, una cadena terminada en nulo contiene los caracteres que componen la cadena seguida de un NULL_
+
 ## strlen 
 
 _La función strlen se utiliza para encontrar la longitud de una cadena de caracteres. Su sintaxis es la siguiente:_
