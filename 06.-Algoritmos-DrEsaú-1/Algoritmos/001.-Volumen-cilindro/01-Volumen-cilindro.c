@@ -1,6 +1,5 @@
-//Librería que contiene las funciones scanf y printf
 #include <stdio.h>
-//Función principal
+
 int main ()
 {
     // Este programa calcula el volumen de un cilindro conociendo su radio y su altura
