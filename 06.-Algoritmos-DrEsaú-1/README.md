@@ -1,7 +1,7 @@
 
-# Algoritmos del curso de fundamentos de programación
+# Algoritmos Dr. Esaú I
 
-## Dictados por el Dr. Esaú Escobar
+### Problemas dictados en clase por el Dr. Esaú del curso de fundamentos de programación en la Unidad Profesional Interdisciplinaria de Ingeniería Campus Tlaxcala
 
 _Busca en el indíce el problema que te interesa_
 
