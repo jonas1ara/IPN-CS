@@ -4,7 +4,7 @@
 
 ![](/00.-Sources/Images/String.png)
 
-_Las cadenas son en realidad matrices unidimensionales de caracteres que terminan en un carácter NULL '\0'. Por lo tanto, una cadena terminada en nulo contiene los caracteres que componen la cadena seguida de un NULL_
+_Las cadenas son en realidad matrices unidimensionales de caracteres que terminan en un carácter NULL '\0'. Por lo tanto, una cadena terminada en NULL contiene los caracteres que componen la cadena seguida de un NULL_
 
 ## strlen 
 
