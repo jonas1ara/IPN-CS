@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int primos_por_mostrar, n = 2, d, numero, numero_limite , resto;
     int es_primo; //Se usara como booleano
     int primo_final;
@@ -15,15 +16,18 @@ int main() {
 
         /* determinar si n es primo */
         es_primo = 1; //True
-        for (d = 2; d < n; d++) { //d contaste pa dividir; siempre y cuando d sea menor a n, aumenta el valor d
-            if (n % d == 0) { //residuo igual a cero, para saber si es número exacto
+        for (d = 2; d < n; d++) //d contaste pa dividir; siempre y cuando d sea menor a n, aumenta el valor d
+        {
+            if (n % d == 0) //residuo igual a cero, para saber si es número exacto
+            {    
                 es_primo = 0; //False
                 break;
             }
         }
 
         /* mostrar el numero y actualizar el contador */
-        if (es_primo) {
+        if (es_primo) 
+        {
             numero = n; 
             
             primos_por_mostrar--; //Reduciendo el valor de primos
