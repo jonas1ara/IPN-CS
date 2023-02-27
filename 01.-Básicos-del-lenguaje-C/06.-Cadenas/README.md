@@ -124,7 +124,6 @@ int main()
     }
 
     return 0;
-
 }
 ```
 
@@ -218,7 +217,7 @@ int main()
 
 Este programa imprimirá "El carácter se encontró en la posición 5", que es la posición del primer carácter 'm' dentro de la cadena de caracteres.
 
-## strcmp:
+## strcmp
 
 _La función strcmp se utiliza para comparar dos cadenas de caracteres. Su sintaxis es la siguiente:_
 
