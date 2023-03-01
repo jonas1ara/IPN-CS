@@ -90,17 +90,27 @@ C es un lenguaje de programación muy popular, y es usado para crear sistemas op
 10. [Vector.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/10-Vector.c)
 11. [Matriz.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/11-Matriz.c)
 
-2. [02.-Bucles](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/02.-Bucles)
+### _[Bucles](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/02.-Bucles); usados para repetir una o más instrucciones un número determinado de veces_
 
-3. [03.-Funciones](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones)
+1. [For.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/02.-Bucles/01-For.c)
+2. [While.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/02.-Bucles/02-While.c)
+3. [Do-while.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/02.-Bucles/03-DoWhile.c)
 
-4. [04.-Funciones](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/04.-Estructuras)
+### _[Funciones](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones); son fragmentos de código que se pueden reutilizar en diferentes partes de un programa_
 
-5. [05.-Punteros](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Punteros)
+1. [Funciones.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones/01-Funciones.c)
 
-6. [06.-Cadenas](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/06.-Cadenas)
+2. [Función-rand.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones/02-Funci%C3%B3nRand.c)
 
-7. [07.-Archivos]()
+3. [Retornar-función.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones/03-Retornar-funci%C3%B3n.c)
+
+### [Funciones](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/04.-Estructuras)
+
+### [Punteros](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Punteros)
+
+### [Cadenas](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/06.-Cadenas)
+
+### [Archivos]()
 
 ## Para terminar
 
