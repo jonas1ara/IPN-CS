@@ -1,6 +1,8 @@
 # Estructuras
 
-![](/00.-Sources/Images/NC.jpg00)
+Las estructuras son una forma de agrupar tipos de datos abstractos. 
+
+![](/00.-Sources/Images/NC.jpg)
 
 _Números complejos son un ejemplo de tipos de datos abstractos_
 

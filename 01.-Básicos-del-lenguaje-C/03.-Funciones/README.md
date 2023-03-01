@@ -1,8 +1,10 @@
 # Funciones
 
+Las funciones son un bloque de código que se ejecuta cuando es llamado.
+
 ![](/00.-Sources/Images/function.png)
 
-_Descripción visual de una función que F que recibe un valor X para devolver un valor F(x)_
+_Descripción visual de una función F que recibe un valor X para devolver un valor F(x)_
 
 Las funciones son un bloque de código que se ejecuta cuando es llamado. Las funciones son muy útiles para evitar repetir código. Por ejemplo, si queremos imprimir un mensaje en pantalla, podemos hacerlo de la siguiente forma:
 
@@ -82,8 +84,9 @@ C cuenta con varias funciones predefinidas. Por ejemplo, la función `printf` qu
 1. Escribir una función que reciba un número y devuelva el factorial de ese número.
 2. Escribir una función que reciba un número y devuelva si es primo o no.
 3. Escribir una función que reciba un número y devuelva si es par o no.
-4. Escribir una función que reciba un número y devuelva si es impar o no.
-5. Escribir una función que reciba un número y devuelva si es positivo o no.
+
+
+### Todo el rollo de las funciones es para evitar repetir código, pero ¿qué pasa si quiero usar una función en otro archivo? Eso se verá en la última sección 🤓
 
 ## Expresiones de gratitud
 

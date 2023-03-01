@@ -303,6 +303,8 @@ int main()
 
 Este programa imprimirá "Hola mundo", que es la cadena de caracteres copiada desde la ubicación de memoria de origen a la ubicación de memoria de destino.
 
+### En el área de la programación de sistemas que es dónde el lenguaje C tiene el trono, el manejo de strings es el pan de cada día 😉
+
 ### Referencias
 
 [Strings para gente con prisa](https://medium.com/@jonas_lara/strings-para-gente-con-prisa)
