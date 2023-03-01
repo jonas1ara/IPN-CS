@@ -1,5 +1,9 @@
 # Bucles
 
+![](/00.-Sources/Images/Bucle.png)
+
+_Ejemplo del bucle en un juego de consola, que utiliza while para repetir el juego hasta perder_
+
 ## ¿Qué son los bucles?
 
 Los bucles son una estructura de control que nos permite repetir una o varias instrucciones un número determinado de veces o hasta que se cumpla una condición.
