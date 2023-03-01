@@ -74,6 +74,31 @@ C es un lenguaje de programación muy popular, y es usado para crear sistemas op
 - [Node.js](https://nodejs.org/) es un entorno de ejecución de JavaScript, escrito en C y C++
 - [MySQL](https://www.mysql.com/) es un sistema de base de datos, escrito en C y C++
 
+## Estructura de esta sección del repositorio
+
+1. [01.-Fundamentos](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos) 
+
+_Esta sección es para que conozcas la sintaxis básica, imprimisión por terminal, guardar variables, tipos de datos, condicionales, etc._
+
+- [01-HolaMundo.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/01-Hola-Mundo.c)
+- [02-Directivas.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/02-Directivas.c)
+- [03-Suma.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/03-Suma.c)
+- [04-Aritmética.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/04-Aritm%C3%A9tica.c)
+- [05-Variables.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/05-Variables.c)
+- [06-]
+
+2. [02.-Bucles](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/02.-Bucles)
+
+3. [03.-Funciones](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones)
+
+4. [04.-Funciones](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/04.-Estructuras)
+
+5. [05.-Punteros](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Punteros)
+
+6. [06.-Cadenas](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/06.-Cadenas)
+
+7. [07.-Archivos]()
+
 ## Para terminar
 
 Quiza la razón más importante para aprender C es que es un lenguaje de programación que te obliga a pensar más y mejor, cuándo aprendes a programar con Python o Javascript es muy fácil que te olvides de los detalles de la memoria, y que te olvides de los detalles de la computación, pero cuando aprendes a programar en C, te das cuenta de que no es tan fácil, y que tienes que pensar más y mejor, y eso es bueno, porque te hace un mejor programador. Por supuesto no es necesario que aprendas C, pero si quieres aprender a programar, y quieres aprender a programar bien, entonces C es un buen lenguaje sin caer en la exageración como C++
