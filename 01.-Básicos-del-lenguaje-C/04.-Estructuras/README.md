@@ -1,6 +1,6 @@
 # Estructuras
 
-Las estructuras son una forma de agrupar tipos de datos abstractos. 
+#### Las estructuras son una forma de agrupar tipos de datos abstractos
 
 ![](/00.-Sources/Images/NC.jpg)
 

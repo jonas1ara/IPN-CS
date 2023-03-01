@@ -1,6 +1,6 @@
 # Funciones
 
-Las funciones son un bloque de código que se ejecuta cuando es llamado.
+#### Las funciones son un bloque de código que se ejecuta cuando es llamado
 
 ![](/00.-Sources/Images/function.png)
 
