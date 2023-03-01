@@ -16,7 +16,7 @@ C es un lenguaje de programación muy popular, y es el lenguaje de programación
 -  [Java](https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)) 
 -  [C#](https://es.wikipedia.org/wiki/C_Sharp) 
 -  [Go](https://es.wikipedia.org/wiki/Go_(lenguaje_de_programaci%C3%B3n)) 
--  [Rust](https://es.wikipedia.org/wiki/Rust_(lenguaje_de_programaci%C3%B3n)) y NO, no va a matar a C :smile:
+-  [Rust](https://es.wikipedia.org/wiki/Rust_(lenguaje_de_programaci%C3%B3n)) y no, no va a matar a C :smile:
 - Etc.
 
 ## ¿Cómo funciona C?
@@ -77,3 +77,7 @@ C es un lenguaje de programación muy popular, y es usado para crear sistemas op
 ## Para terminar
 
 Quiza la razón más importante para aprender C es que es un lenguaje de programación que te obliga a pensar más y mejor, cuándo aprendes a programar con Python o Javascript es muy fácil que te olvides de los detalles de la memoria, y que te olvides de los detalles de la computación, pero cuando aprendes a programar en C, te das cuenta de que no es tan fácil, y que tienes que pensar más y mejor, y eso es bueno, porque te hace un mejor programador. Por supuesto no es necesario que aprendas C, pero si quieres aprender a programar, y quieres aprender a programar bien, entonces C es un buen lenguaje sin caer en la exageración como C++
+
+## Expresiones de gratitud
+
+_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado_
