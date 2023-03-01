@@ -137,6 +137,12 @@ C es un lenguaje de programación muy popular, y es usado para crear sistemas op
 
 ### _[Cadenas](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/06.-Cadenas); son arreglos de caracteres_
 
+1. [Cadena.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/06.-Cadenas/01-Cadena.c)
+
+2. [Acceder-a-caracter.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/06.-Cadenas/02-Acceder-a-caracter.c)
+
+3. En el README.md de la carpeta de cadenas se encuentran ejemplos de como usar las funciones más importantes de la librería `string.h`
+
 ### _[Archivos](); en esta sección se verá la forma de trabajar con archivos_
 
 ## Para terminar
