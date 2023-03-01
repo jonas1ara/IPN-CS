@@ -10,7 +10,13 @@ C es un lenguaje de programación de propósito general, desarrollado en 1972 po
 
 ## ¿Por qué C?
 
-C es un lenguaje de programación muy popular, y es el lenguaje de programación más utilizado en la actualidad. Es un lenguaje de programación muy potente, y es usado para crear sistemas operativos, compiladores, editores de texto, etc. C es un lenguaje de programación muy rápido, y es usado para crear programas que requieren un alto rendimiento, además es el lenguaje que se enseña en la mayoría de las universidades incluido el [plan de estudios del IPN](https://www.escom.ipn.mx/docs/oferta/uaLCD2020/fundamentosProgramacion_LCD2020.pdf).
+C es un lenguaje de programación muy popular, y es el lenguaje de programación más utilizado en la actualidad. Es un lenguaje de programación muy potente, y es usado para crear sistemas operativos, compiladores, editores de texto, etc. C es un lenguaje de programación muy rápido, y es usado para crear programas que requieren un alto rendimiento, además es el lenguaje que se enseña en la mayoría de las universidades incluido el [plan de estudios del IPN](https://www.escom.ipn.mx/docs/oferta/uaLCD2020/fundamentosProgramacion_LCD2020.pdf), quiza la razón o una de las razones sea porque todos los lenguajes actuales son derivados de C, por ejemplo:
+
+-  [C++](https://es.wikipedia.org/wiki/C%2B%2B) es un lenguaje de programación derivado de C
+-  [Java](https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)) es un lenguaje de programación derivado de C
+-  [C#](https://es.wikipedia.org/wiki/C_Sharp) es un lenguaje de programación derivado de C
+-  [Go](https://es.wikipedia.org/wiki/Go_(lenguaje_de_programaci%C3%B3n)) es un lenguaje de programación derivado de C
+-  [Rust](https://es.wikipedia.org/wiki/Rust_(lenguaje_de_programaci%C3%B3n)) es un lenguaje de programación derivado de C, y NO, no va a matar a C :smile:
 
 ## ¿Cómo se usa C?
 
