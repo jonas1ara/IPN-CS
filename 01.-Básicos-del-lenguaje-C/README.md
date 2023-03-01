@@ -85,7 +85,12 @@ _Esta sección es para que conozcas la sintaxis básica, imprimisión por termin
 - [03-Suma.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/03-Suma.c)
 - [04-Aritmética.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/04-Aritm%C3%A9tica.c)
 - [05-Variables.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/05-Variables.c)
-- [06-]
+- [06-Conversión.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/06-Conversi%C3%B3n.c)
+- [07-Condicionales.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/07-Condicionales.c)
+- [08-Casos.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/08-Casos.c)
+- [09-Band.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/09-Band.c)
+- [10-Vector.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/10-Vector.c)
+- [11-Matriz.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/11-Matriz.c)
 
 2. [02.-Bucles](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/02.-Bucles)
 
