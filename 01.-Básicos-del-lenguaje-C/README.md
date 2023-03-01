@@ -1,6 +1,8 @@
 # Fundamentos del lenguaje C
 
-Esta es una serie de ejemplos básicos del lenguaje C, para que puedas entenderlo mejor.
+![](/00.-Sources/Images/IC.jpg)
+
+_Dennis Ritchie, creador del lenguaje C_
 
 ## ¿Qué es C?
 
@@ -61,4 +63,4 @@ C es un lenguaje de programación muy popular, y es usado para crear sistemas op
 
 ## Para terminar
 
-Quiza la razón más importante para aprender C es un lenguaje de programación que te obliga a pensar más y mejor, cuándo aprendes a programar con Python o Javascript es muy fácil que te olvides de los detalles de la memoria, y que te olvides de los detalles de la computación, pero cuando aprendes a programar en C, te das cuenta de que no es tan fácil, y que tienes que pensar más y mejor, y eso es bueno, porque te hace un mejor programador. Por supuesto no es necesario que aprendas C, pero si quieres aprender a programar, y quieres aprender a programar bien, entonces C es un buen lenguaje sin caer en la exageración como C++
+Quiza la razón más importante para aprender C es que es un lenguaje de programación que te obliga a pensar más y mejor, cuándo aprendes a programar con Python o Javascript es muy fácil que te olvides de los detalles de la memoria, y que te olvides de los detalles de la computación, pero cuando aprendes a programar en C, te das cuenta de que no es tan fácil, y que tienes que pensar más y mejor, y eso es bueno, porque te hace un mejor programador. Por supuesto no es necesario que aprendas C, pero si quieres aprender a programar, y quieres aprender a programar bien, entonces C es un buen lenguaje sin caer en la exageración como C++
