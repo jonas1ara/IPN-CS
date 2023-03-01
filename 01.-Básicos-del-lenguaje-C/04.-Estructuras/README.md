@@ -1,5 +1,9 @@
 # Estructuras
 
+![](/00.-Sources/Images/NC.jpg00)
+
+_Números complejos son un ejemplo de tipos de datos abstractos_
+
 Las estructuras son una forma de agrupar tipos de datos abstractos. Por ejemplo, si queremos guardar información de una persona, podemos hacerlo de la siguiente forma:
 
 ```c
@@ -84,7 +88,7 @@ Ahora, para guardar la información de una persona, podemos declarar una variabl
 struct persona juan;
 ```
 
-Y podemos acceder a los campos de la estructura con el operador `->`:
+Y podemos acceder a los campos de la estructura con el operador `.`:
 
 ```c
 juan.nombre = "Juan";
@@ -127,6 +131,8 @@ juan.direccion->numero = 123;
 juan.saludar = saludar;
 ```
 
+La principal diferencia entre el operador "->" y el "." es que el primero se utiliza para acceder a los miembros de un objeto a través de un puntero a ese objeto, mientras que el segundo se utiliza para acceder a los miembros de un objeto directamente.
+
 ## Typedef
 
 El tipo de una estructura se puede guardar en una variable de tipo `typedef`, para poder usarla más fácilmente, renombrando el tipo de la estructura. Por ejemplo, si queremos guardar información de una persona, podemos hacerlo de la siguiente forma:
@@ -144,9 +150,11 @@ Ahora, para declarar una variable de tipo `persona_t`, podemos hacerlo de la sig
 persona_t juan;
 ```
 
+Es útil para renombrar tipos de datos, por ejemplo, para renombrar `struct persona` a `persona_t`, pero puede ser peligroso, ya que ensucias el espacio de nombres global.
+
 ## Uniones
 
-Las uniones son una forma de agrupar tipos de datos abstractos. Por ejemplo, si queremos guardar información de una persona, podemos hacerlo de la siguiente forma:
+Las uniones son una forma de agrupar tipos de datos abstractos, semejantes a las estructuras, pero con la diferencia de que todos los campos comparten una unidad de memoria. Por ejemplo, si queremos guardar información de una persona, podemos hacerlo de la siguiente forma:
 
 ```c
 char nombre[20];
@@ -175,40 +183,35 @@ juan.nombre = "Juan";
 juan.edad = 20;
 ```
 
-
+Las uniones son útiles para sistemas embebidos, donde se necesita ahorrar memoria y también para construir números complejos.
 
 ## Enumeraciones
 
-Las enumeraciones son una forma de agrupar tipos de datos abstractos. Por ejemplo, si queremos guardar información de una persona, podemos hacerlo de la siguiente forma:
+Las enumeraciones son una forma de agrupar tipos de datos abstractos, nos permiten asignar constantes a lo bestia, por ejemplo, podemos construir un enum para simular los días de la semana:
 
 ```c
-char nombre[20];
-int edad;
-```
-
-Pero si queremos guardar información de varias personas, tendremos que escribir el código varias veces. Para evitar esto, podemos crear una enumeración que guarde la información de una persona:
-
-```c
-enum persona {
-    NOMBRE,
-    EDAD
+enum diasemana{
+    LUNES,
+    MARTES,
+    MIERCOLES,
+    JUEVES,
+    VIERNES,
+    SABADO,
+    DOMINGO
 };
 ```
 
-Ahora, para guardar la información de una persona, podemos declarar una variable de tipo `enum persona`:
+y podemos usarlo de la siguiente forma:
 
 ```c
-enum persona juan;
+int main{
+    enum diasemana dia = LUNES;
+    printf("El día es: %d", dia);
+    return 0;
+}
 ```
 
-Y podemos acceder a los campos de la enumeración con el operador  apuntador `.`:
-
-```c
-juan.NOMBRE = "Juan";
-juan.EDAD = 20;
-```
-
-enum es util para guardar valores de un tipo de dato, por ejemplo, guardar los días de la semana.
+A tener en cuenta que los enum son variables constantes declaradas de una forma bonita, ya que si se busca imprimir el valor de LUNES, se imprimirá 0, ya que es el valor que se le asigna a la primera variable del enum. 
 
 
 ## Ejercicios
@@ -217,6 +220,9 @@ enum es util para guardar valores de un tipo de dato, por ejemplo, guardar los d
 2. Crea una estructura que guarde la información de una persona y su dirección.
 3. Crea una estructura que guarde la información de una persona y su dirección, usando punteros.
 4. Crea una estructura que guarde la información de una persona y su dirección, usando punteros a funciones.
+
+
+### Todo el rollo de las estructuras es para poder agrupar tipos de datos abstractos a convenencia, para poder hacer programas más legibles y ordenados, ya que si no se agrupan los tipos de datos, se tendría que escribir el código varias veces, lo que haría el programa más difícil de leer y de mantener 😉
 
 ## Expresiones de gratitud
 

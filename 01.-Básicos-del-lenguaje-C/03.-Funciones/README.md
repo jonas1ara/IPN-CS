@@ -1,5 +1,9 @@
 # Funciones
 
+![](/00.-Sources/Images/function.png)
+
+_Descripción visual de una función que F que recibe un valor X para devolver un valor F(x)_
+
 Las funciones son un bloque de código que se ejecuta cuando es llamado. Las funciones son muy útiles para evitar repetir código. Por ejemplo, si queremos imprimir un mensaje en pantalla, podemos hacerlo de la siguiente forma:
 
 ```c
