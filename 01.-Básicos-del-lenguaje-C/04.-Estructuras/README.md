@@ -22,7 +22,7 @@ Ahora, para guardar la información de una persona, podemos declarar una variabl
 struct persona juan;
 ```
 
-Y podemos acceder a los campos de la estructura con el operador `.`:
+Y podemos acceder a los campos de la estructura con el operador  apuntador `.`:
 
 ```c
 juan.nombre = "Juan";
@@ -144,5 +144,82 @@ Ahora, para declarar una variable de tipo `persona_t`, podemos hacerlo de la sig
 persona_t juan;
 ```
 
+## Uniones
+
+Las uniones son una forma de agrupar tipos de datos abstractos. Por ejemplo, si queremos guardar información de una persona, podemos hacerlo de la siguiente forma:
+
+```c
+char nombre[20];
+int edad;
+```
+
+Pero si queremos guardar información de varias personas, tendremos que escribir el código varias veces. Para evitar esto, podemos crear una unión que guarde la información de una persona:
+
+```c
+union persona {
+    char nombre[20];
+    int edad;
+};
+```
+
+Ahora, para guardar la información de una persona, podemos declarar una variable de tipo `union persona`:
+
+```c
+union persona juan;
+```
+
+Y podemos acceder a los campos de la unión con el operador  apuntador `.`:
+
+```c
+juan.nombre = "Juan";
+juan.edad = 20;
+```
+
+
+
+## Enumeraciones
+
+Las enumeraciones son una forma de agrupar tipos de datos abstractos. Por ejemplo, si queremos guardar información de una persona, podemos hacerlo de la siguiente forma:
+
+```c
+char nombre[20];
+int edad;
+```
+
+Pero si queremos guardar información de varias personas, tendremos que escribir el código varias veces. Para evitar esto, podemos crear una enumeración que guarde la información de una persona:
+
+```c
+enum persona {
+    NOMBRE,
+    EDAD
+};
+```
+
+Ahora, para guardar la información de una persona, podemos declarar una variable de tipo `enum persona`:
+
+```c
+enum persona juan;
+```
+
+Y podemos acceder a los campos de la enumeración con el operador  apuntador `.`:
+
+```c
+juan.NOMBRE = "Juan";
+juan.EDAD = 20;
+```
+
+enum es util para guardar valores de un tipo de dato, por ejemplo, guardar los días de la semana.
+
+
+## Ejercicios
+
+1. Crea una estructura que guarde la información de una persona.
+2. Crea una estructura que guarde la información de una persona y su dirección.
+3. Crea una estructura que guarde la información de una persona y su dirección, usando punteros.
+4. Crea una estructura que guarde la información de una persona y su dirección, usando punteros a funciones.
+
+## Expresiones de gratitud
+
+_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado_
 
 
