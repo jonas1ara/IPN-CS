@@ -16,12 +16,18 @@ C es un lenguaje de programación muy popular, y es el lenguaje de programación
 -  [Java](https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)) 
 -  [C#](https://es.wikipedia.org/wiki/C_Sharp) 
 -  [Go](https://es.wikipedia.org/wiki/Go_(lenguaje_de_programaci%C3%B3n)) 
--  [Rust](https://es.wikipedia.org/wiki/Rust_(lenguaje_de_programaci%C3%B3n)) es un lenguaje de programación derivado de C, y NO, no va a matar a C :smile:
+-  [Rust](https://es.wikipedia.org/wiki/Rust_(lenguaje_de_programaci%C3%B3n)) y NO, no va a matar a C :smile:
 - Etc.
 
-## ¿Cómo se usa C?
+## ¿Cómo funciona C?
 
-C es un lenguaje de programación compilado, es decir, que primero se escribe el código fuente, y después se compila para generar el código objeto, que es el que se ejecuta en el computador. C es un lenguaje de programación imperativo, es decir, que se escribe el código de forma secuencial, y se ejecuta de forma secuencial. C es un lenguaje de programación estructurado, es decir, que se estructura en funciones, y se ejecuta de forma secuencial. C es un lenguaje de programación de tipado estático, es decir, que se declara el tipo de dato de las variables, y no se puede cambiar el tipo de dato de las variables.
+- C es un lenguaje de programación compilado, es decir, que primero se escribe el código fuente, y después se compila para generar el código objeto, que es el que se ejecuta en el computador. 
+
+- C es un lenguaje de programación imperativo, es decir, que se escribe el código de forma secuencial, y se ejecuta de forma secuencial. 
+
+- C es un lenguaje de programación estructurado, es decir, que se estructuran tipos de datos, y se estructuran las operaciones que se pueden realizar con esos tipos de datos. 
+
+- C es un lenguaje de programación de tipado estático, es decir, que se declara el tipo de dato de las variables en tiempo de compilación y no se puede cambiar el tipo de dato de las variables en tiempo de ejecución.
 
 ## ¿Cómo se compila C?
 
