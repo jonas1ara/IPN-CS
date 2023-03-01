@@ -1,53 +1,38 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-#define PUNTOS_X (6)
-#define PUNTOS_H (4)
-#define PUNTOS_Y ((PUNTOS_X) + (PUNTOS_H) - 1)
+#define ROWS 3
+#define COLS 3
 
-/* Los metodos tienen la misma interfaz:
-    x, h ---> son las señales de entrada
-       y ---> es la señal de salida        */
-void input_side_conv(int *x, int *h, int *y)
-{
-    int i,j;
-    for(i=0;i<PUNTOS_X; i++)
-        for(j=0;j<PUNTOS_H;j++)
-            y[i+j]=y[i+j]+x[i]*h[j];
-}
-
-void output_side_conv(int *x, int *h, int *y)
-{
-    int i,j;
-
-    for(i=0;i<PUNTOS_Y; i++) {
-        y[i]=0;
-        for(j=0;j<PUNTOS_H;j++) {
-            if(i-j<0 || i-j>=PUNTOS_X) continue;
-            y[i] = y[i]+h[j]*x[i-j];
+void convolution(int matrix1[][COLS], int matrix2[][COLS], int result[][COLS]) {
+    int i, j, k, l;
+    int sum;
+    for (i = 0; i < ROWS; i++) {
+        for (j = 0; j < COLS; j++) {
+            sum = 0;
+            for (k = 0; k < ROWS; k++) {
+                for (l = 0; l < COLS; l++) {
+                    sum += matrix1[i-k+1][j-l+1] * matrix2[k][l];
+                }
+            }
+            result[i][j] = sum;
         }
     }
 }
 
-int main()
-{
-    int x[PUNTOS_X] = {0,-1,-1,2,1,1};
-    int h[PUNTOS_H] = {1,0,-1,1};
-    int y1[PUNTOS_Y] = {0,0,0,0,0,0,0,0,0};
-    int y2[PUNTOS_Y] = {0,0,0,0,0,0,0,0,0};
+int main() {
+    int matrix1[ROWS][COLS] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    int matrix2[ROWS][COLS] = {{9, 8, 7}, {6, 5, 4}, {3, 2, 1}};
+    int result[ROWS][COLS];
+    int i, j;
+    
+    convolution(matrix1, matrix2, result);
 
-    int i;
-
-    //calculamos la convolucion por el primer metodo
-    input_side_conv(x, h, y1);
-    //calculamos la convolucion por el otro metodo
-    output_side_conv(x, h, y2);
-
-    //mostramos las dos respuestas
-    printf("Input Side        Output Side\n");
-    for(i=0;i<PUNTOS_Y;i++)
-        printf("[%2d]              [%d]\n", y1[i], y2[i]);
+    for (i = 0; i < ROWS; i++) {
+        for (j = 0; j < COLS; j++) {
+            printf("%d ", result[i][j]);
+        }
+        printf("\n");
+    }
 
     return 0;
 }
-
