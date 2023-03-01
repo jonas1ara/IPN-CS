@@ -145,11 +145,11 @@ C es un lenguaje de programación muy popular, y es usado para crear sistemas op
 
 ### _[Archivos](); en esta sección se verá la forma de trabajar con archivos_
 
-1. [Lectura-de-ficheros.c]()
+1. [Lectura-de-archivos.c]()
 
 2. [Leer-y-meter-datos-en-un-struct.c]()
 
-3. [Escribir-en-un-fichero.c]()
+3. [Escribir-en-un-archivo.c]()
 
 ## Para terminar
 
