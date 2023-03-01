@@ -1,6 +1,6 @@
 # Fundamentos del lenguaje C
 
-![](/00.-Sources/Images/IC.jpg)
+![](/00.-Sources/Images/C.png)
 
 _Dennis Ritchie, creador del lenguaje C_
 
