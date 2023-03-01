@@ -76,9 +76,7 @@ C es un lenguaje de programación muy popular, y es usado para crear sistemas op
 
 ## Estructura de esta sección del repositorio
 
-1. [01.-Fundamentos](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos) 
-
-_Esta sección es para que conozcas la sintaxis básica, imprimisión por terminal, guardar variables, tipos de datos, condicionales, etc._
+1. _[Fundamentos](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos) ; esta sección es para que conozcas la sintaxis básica, imprimisión por terminal, guardar variables, tipos de datos, condicionales, etc._
 
 - [01-HolaMundo.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/01-Hola-Mundo.c)
 - [02-Directivas.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/01.-Fundamentos/02-Directivas.c)
