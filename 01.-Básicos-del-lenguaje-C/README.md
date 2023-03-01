@@ -94,23 +94,50 @@ C es un lenguaje de programación muy popular, y es usado para crear sistemas op
 
 1. [For.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/02.-Bucles/01-For.c)
 2. [While.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/02.-Bucles/02-While.c)
-3. [Do-while.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/02.-Bucles/03-DoWhile.c)
+3. [Do-while.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/02.-Bucles/03-Do-while.c)
 
 ### _[Funciones](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones); son fragmentos de código que se pueden reutilizar en diferentes partes de un programa_
 
 1. [Funciones.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones/01-Funciones.c)
 
-2. [Función-rand.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones/02-Funci%C3%B3nRand.c)
+2. [Función-rand.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones/02-Funci%C3%B3n-rand.c)
 
 3. [Retornar-función.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones/03-Retornar-funci%C3%B3n.c)
 
-### [Funciones](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/04.-Estructuras)
+4. [Funciones-tipo-void.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones/04-Funciones-de-tipo-void.c)
 
-### [Punteros](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Punteros)
+5. [Función-vector.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones/05-Funci%C3%B3n-vector.c)
 
-### [Cadenas](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/06.-Cadenas)
+6. [Función-recursiva.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/03.-Funciones/06-Funci%C3%B3n-recursiva.c)
 
-### [Archivos]()
+### _[Estructuras](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/04.-Estructuras); son tipos de datos que permiten agrupar datos de diferentes tipos en una sola variable_
+
+1. [Typedef-struct.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/04.-Estructuras/01-Typedef-struct.c)
+
+2. [Formulario-typedef-struct.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/04.-Estructuras/02-Formulario-typedef-struct.c)
+
+3. [Vectores-a-structs.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/04.-Estructuras/03-Vectores-a-structs.c)
+
+4. [Structs-de-structs.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/04.-Estructuras/04-Struct-de-structs.c)
+
+5. [Punteros-a-structs.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/04.-Estructuras/05-Punteros-a-structs.c)
+
+### _[Punteros](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Punteros); son variables que almacenan direcciones de memoria_
+
+1. [Punteros.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Punteros/01-Punteros.c)
+
+2. [Sizeof.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Punteros/02-Sizeof.c)
+
+3. [Numero-par-o-impar.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Punteros/03-Numero-par-o-impar.c)
+
+4. [Arreglos-y-punteros.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Punteros/04-Arreglos-y-punteros.c)
+
+5. [Numeros-pares-de-un-arreglo.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Punteros/05-Numeros-pares-de-un-arreglo.c)
+
+
+### _[Cadenas](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/06.-Cadenas); son arreglos de caracteres_
+
+### _[Archivos](); en esta sección se verá la forma de trabajar con archivos_
 
 ## Para terminar
 
