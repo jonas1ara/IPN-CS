@@ -200,9 +200,9 @@ Operadores de igualdad:
 
 Operadores relacionales:
 - < (menor que)
-- > (mayor que)
+-  (mayor que) > 
 - <= (menor o igual que)
-- >= (mayor o igual que)
+-  (mayor o igual que) >=
 
 ### switch
 
