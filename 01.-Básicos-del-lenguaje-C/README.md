@@ -145,11 +145,11 @@ C es un lenguaje de programación muy popular, y es usado para crear sistemas op
 
 ### _[Archivos](); en esta sección se verá la forma de trabajar con archivos_
 
-1. [Lectura-de-archivos.c]()
+1. [Lectura-de-archivos.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/07.-Archivos/01-Lectura-de-archivos.c)
 
-2. [Leer-y-meter-datos-en-un-struct.c]()
+2. [Leer-y-meter-datos-en-un-struct.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/07.-Archivos/02-Leer-y-meter-datos-en-struct.c)
 
-3. [Escribir-en-un-archivo.c]()
+3. [Escribir-en-un-archivo.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/07.-Archivos/03-Escribir-archivo-con-fprintf.c)
 
 ## Para terminar
 
