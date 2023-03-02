@@ -215,15 +215,6 @@ int main{
 
 A tener en cuenta que los enum son variables constantes declaradas de una forma bonita, ya que si se busca imprimir el valor de LUNES, se imprimirá 0, ya que es el valor que se le asigna a la primera variable del enum. 
 
-
-## Ejercicios
-
-1. Crea una estructura que guarde la información de una persona.
-2. Crea una estructura que guarde la información de una persona y su dirección.
-3. Crea una estructura que guarde la información de una persona y su dirección, usando punteros.
-4. Crea una estructura que guarde la información de una persona y su dirección, usando punteros a funciones.
-
-
 ### Todo el rollo de las estructuras es para poder agrupar tipos de datos abstractos a convenencia, para poder hacer programas más legibles y ordenados, ya que si no se agrupan los tipos de datos, se tendría que escribir el código varias veces, lo que haría el programa más difícil de leer y de mantener 😉
 
 ## Expresiones de gratitud
