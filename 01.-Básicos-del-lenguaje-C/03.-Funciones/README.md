@@ -74,18 +74,6 @@ C cuenta con varias funciones predefinidas. Por ejemplo, la función `printf` qu
 - `time`: Obtiene la hora actual.
 - `exit`: Finaliza el programa.
 
-## Ejercicios
-
-1. Escribir una función que reciba un número y devuelva el doble de ese número.
-2. Escribir una función que reciba un número y devuelva el cuadrado de ese número.
-
-## Ejercicios avanzados
-
-1. Escribir una función que reciba un número y devuelva el factorial de ese número.
-2. Escribir una función que reciba un número y devuelva si es primo o no.
-3. Escribir una función que reciba un número y devuelva si es par o no.
-
-
 ### Todo el rollo de las funciones es para evitar repetir código, pero ¿qué pasa si quiero usar una función en otro archivo? Eso se verá en la última sección 🤓
 
 ## Expresiones de gratitud
