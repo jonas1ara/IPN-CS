@@ -134,6 +134,8 @@ C es un lenguaje de programación muy popular, y es usado para crear sistemas op
 
 5. [Numeros-pares-de-un-arreglo.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Punteros/05-Numeros-pares-de-un-arreglo.c)
 
+6. [Ordenar-arreglo-con-punteros.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/05.-Punteros/06-Ordenar-arreglo-con-punteros.c)
+
 
 ### _[Cadenas](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/06.-Cadenas); son arreglos de caracteres_
 
