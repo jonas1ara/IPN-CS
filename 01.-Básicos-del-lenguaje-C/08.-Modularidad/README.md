@@ -106,7 +106,7 @@ Con esto vemos que una función privada solo puede ser usada desde otras funcion
 
 ## ¿Cómo compilar un proyecto en multiples archivos?
 
-Para compilar un proyecto en multiples archivos, vamos a necesitar un archivo llamado `Makefile`, que es un archivo de texto que contiene las instrucciones para compilar nuestro programa. En este archivo vamos a definir las reglas para compilar nuestro programa, en este caso, si quieres aprender más sobre `Makefile`, puedes leer el capítulo [Makefile](../07.-Makefile/README.md)
+Para compilar un proyecto en multiples archivos, vamos a necesitar un archivo llamado `Makefile`, que es un archivo de texto que contiene las instrucciones para compilar nuestro programa. En este archivo vamos a definir las reglas para compilar nuestro programa, en este caso, si quieres aprender más sobre `Makefile`, puedes leer el capítulo [Makefile](https://github.com/Jonas-Lara/IPN-CS/tree/master/07.-Make)
 
 ```makefile
 # Regla principal, que se ejecutará si no ocurre nada
