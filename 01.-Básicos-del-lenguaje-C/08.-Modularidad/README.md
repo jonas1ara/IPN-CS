@@ -1,5 +1,9 @@
 # Modularidad
 
+![](/00.-Sources/Images/Modularidad.png)
+
+_Proyecto dividido en modulos_
+
 En este capítulo vamos a ver cómo podemos dividir nuestro programa en módulos, para que sea más fácil de entender y de mantener.
 
 ## ¿Cómo estructurar un proyecto en multiples archivos?
