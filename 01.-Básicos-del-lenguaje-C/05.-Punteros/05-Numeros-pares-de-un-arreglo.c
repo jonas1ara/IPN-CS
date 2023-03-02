@@ -6,24 +6,29 @@
 int main(int argc, char **argv)
 {
     
-    int elements;
-    printf("Cantidad de números: ");
-    scanf("%d",&elements);
+    int numeros[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int *dir_numeros;
 
-    int numeros[elements];
-    for(int i=0; i<elements; i++) {
-        printf("Número: %d", i+1);
-        numeros[i];
-    }
+    dir_numeros = numeros;
 
-    int *dir_numeros = numeros;
-    int menor = numeros[0];
-    for(int i=0; i<elements; i++) {
-        if(*dir_numeros < menor) menor = *dir_numeros;
+    for (int i = 0; i < 10; i++)
+    {
+        if(*dir_numeros % 2 == 0)
+        {
+            printf("El número %d es par y su ", *dir_numeros);
+            printf("dirección de memoria es: %p\n", dir_numeros);
+        }
+        else
+        {
+            printf("El número %d es impar y su ", *dir_numeros);
+            printf("dirección de memoria es: %p\n", dir_numeros);
+        }
         dir_numeros++;
-    }
 
-    printf("Número menor: %d\n", menor);
+        printf("\n ");          
+
+    }
+    
     
     return 0;
 }
