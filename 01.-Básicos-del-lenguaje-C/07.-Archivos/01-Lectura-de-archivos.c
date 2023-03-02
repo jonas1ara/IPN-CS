@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 
     FILE * archivo;
 
-    archivo = fopen("Ejemplo.txt", "r"); // Abrimos el archivo en modo lectura
+    archivo = fopen("Ejemplo1.txt", "r"); // Abrimos el archivo en modo lectura
 
     if (archivo == NULL) // Si no se pudo abrir el archivo
     {
@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 
     fclose(archivo); // Cerramos el archivo para liberar memoria
 
-    archivo = fopen("Ejemplo.txt", "r"); 
+    archivo = fopen("Ejemplo1.txt", "r"); 
 
     if (archivo == NULL) // Si no se pudo abrir el archivo
     {
