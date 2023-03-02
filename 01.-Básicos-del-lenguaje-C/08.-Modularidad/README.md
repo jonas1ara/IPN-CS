@@ -1,6 +1,6 @@
 # Modularidad
 
-![](/00.-Sources/Images/Modularidad.png)
+![](/00.-Sources/Images/Mod.png)
 
 _Proyecto dividido en modulos_
 
