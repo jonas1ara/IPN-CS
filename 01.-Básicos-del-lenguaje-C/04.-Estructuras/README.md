@@ -215,7 +215,16 @@ int main{
 
 A tener en cuenta que los enum son variables constantes declaradas de una forma bonita, ya que si se busca imprimir el valor de LUNES, se imprimirá 0, ya que es el valor que se le asigna a la primera variable del enum. 
 
-### Todo el rollo de las estructuras es para poder agrupar tipos de datos abstractos a convenencia, para poder hacer programas más legibles y ordenados, ya que si no se agrupan los tipos de datos, se tendría que escribir el código varias veces, lo que haría el programa más difícil de leer y de mantener 😉
+## Algoritmos de ejemplo con este enfoque:
+
+| # | Titulo | Implementación |
+|---| ----- | -------- |
+|001|Números racionales| [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/06.-Algoritmos-DrEsa%C3%BA-1/Algoritmos/015.-Numeros-Racionales/15-Numeros-Racionales.c) |
+|002| Pilas dinámica | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/11.-Estructuras-de-Datos-en-C/01.-Pilas/02-Pila-dinamica.c) |
+|003|  Colas dinámica | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/11.-Estructuras-de-Datos-en-C/02.-Colas/02-Cola-dinamica.c) |
+|004| Lista enlazada simple | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/11.-Estructuras-de-Datos-en-C/03.-Listas-Enlazadas/01-Lista-enlazada-simple.c) |
+
+# Todo el rollo de las estructuras es para poder agrupar tipos de datos abstractos a convenencia, para poder hacer programas más legibles y ordenados, ya que si no se agrupan los tipos de datos, se tendría que escribir el código varias veces, lo que haría el programa más difícil de leer y de mantener 😉
 
 ## Expresiones de gratitud
 
