@@ -78,10 +78,10 @@ C cuenta con varias funciones predefinidas. Por ejemplo, la función `printf` qu
 
 | # | Titulo | Implementación |
 |---| ----- | -------- |
-|001|Ordenamiento burbuja| [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/10.-Algoritmos/06.-Ordenamiento/01-Ordenamiento-Burbuja.c) |
-|002|Problema de las N reinas | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/10.-Algoritmos/05.-Backtracking/01-N-Reinas-Geek.c) |
+|001|Función para intercambiar valores| [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/Algoritmos/02-Intercambio-de-valores.c) |
+|002| Invertir número | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/Algoritmos/03-Invertir-Numero.c) |
 
-# | Todo el rollo de las funciones es para evitar repetir código, pero ¿qué pasa si quiero usar una función en otro archivo? Eso se verá en la última sección 🤓
+# Todo el rollo de las funciones es para evitar repetir código, pero ¿qué pasa si quiero usar una función en otro archivo? Eso se verá en la última sección 🤓
 
 ## Expresiones de gratitud
 
