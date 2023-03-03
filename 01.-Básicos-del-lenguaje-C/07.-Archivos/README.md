@@ -1,4 +1,4 @@
-# archivos
+# Archivos
 
 ![](/00.-Sources/Images/Archivos.png)
 
