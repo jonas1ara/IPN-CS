@@ -28,13 +28,11 @@ _Cuando usamos el símbolo `*` estamos indicando el **valor que hay en la direcc
 
 _En este segundo dibujo podemos observar que el entero `a` vale 5 y está alojado en la dirección de memoria 102, al asignarle al entero `b` la dirección de memoria del entero `a`, obtenemos que el valor del entero `b` es la dirección de memoria del entero `a`  que en este caso 102, pero si además le asignamos a un nuevo entero llamado `c` el valor de lo que hay en la dirección de memoria del entero `b`, obtenemos el valor 5 que es el valor de `a`_
 
-## Ejercicios
+## Algoritmos de ejemplo con este enfoque:
 
-1. Crea una función que reciba un entero por referencia y lo incremente en 1.
-2. Crea una función que reciba un entero por referencia y lo incremente en 1, pero esta vez usa un puntero doble.
-3. Crea una función que reciba un entero por referencia y lo incremente en 1, pero esta vez usa un puntero triple.
+Hablar del lenguaje C practicamente es hablar de punteros, en cualquier programa serio y/o cualquier estructura de datos estarán ...
 
-### Todo el rollo de los punteros y el paso por referencia fue pensado para NO copiar objetos innecesariamente, y hacer un uso optimo de la memoria RAM 😉
+# Todo el rollo de los punteros y el paso por referencia fue pensado para NO copiar objetos innecesariamente, y hacer un uso optimo de la memoria RAM 😉
 
 ## Referencias
 
