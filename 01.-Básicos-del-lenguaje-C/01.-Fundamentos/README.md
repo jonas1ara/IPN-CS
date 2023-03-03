@@ -22,6 +22,7 @@ Donde `#include <stdio.h>` es una directiva de preprocesador que indica que se i
 
 `int main()` es la función principal del programa. En ella se escribe el código que se quiere ejecutar. En este caso, se escribe en la pantalla el texto "Hola mundo" y se devuelve el valor 0.
 
+
 ## Directivas de preprocesador
 
 En este apartado se explica como se utilizan las directivas de preprocesador en C.
@@ -45,16 +46,85 @@ Las directicas de preprocesador se utilizan para incluir archivos en el programa
 #define PI 3.14159265
 ```
 
-Para definir el valor de la constante `PI` como `3.14159265`.
+Para definir el valor de la constante `PI` como `3.14159265`
 
 ## Macros, sirven para definir constantes y funciones
+
+#### #define
+
+#define sirve para definir constantes y funciones, por ejemplo:
 
 ```c
 #define PI 3.14159265
 #define AREA_CIRCULO(r) (PI * r * r)
 ```
 
-Para definir el valor de la constante `PI` como `3.14159265` y la macro `AREA_CIRCULO` que calcula el área de un círculo.
+Para definir el valor de la constante `PI` como `3.14159265` y la macro `AREA_CIRCULO` que calcula el área de un círculo
+
+#### #ifdef
+
+#ifdef sirve para verificar si una constante está definida, por ejemplo:
+
+```c
+#ifdef PI
+    printf("PI está definido\n");
+#endif
+```
+
+Para verificar si la constante `PI` está definida
+
+#### #ifndef
+
+#ifndef sirve para verificar si una constante no está definida, por ejemplo:
+
+```c
+#ifndef PI
+    printf("PI no está definido\n");
+#endif
+```
+
+Para verificar si la constante `PI` no está definida
+
+#### #if
+
+#if sirve para verificar si una condición es verdadera, por ejemplo:
+
+```c
+#if PI > 3
+    printf("PI es mayor a 3\n");
+#endif
+```
+
+Para verificar si la constante `PI` es mayor a 3
+
+#### #else
+
+#else sirve para ejecutar un código si la condición del `#if` no se cumple, por ejemplo:
+
+```c   
+#if PI > 3
+    printf("PI es mayor a 3\n");
+#else
+    printf("PI es menor a 3\n");
+#endif
+```
+
+Para verificar si la constante `PI` es mayor a 3, si no, se ejecuta el código que está dentro de `#else`
+
+#### #endif
+
+#endif sirve para terminar la definición de una macro, por ejemplo:
+
+```c
+#if PI > 3
+    printf("PI es mayor a 3\n");
+#else
+    printf("PI es menor a 3\n");
+#endif
+```
+
+Es bastante obvio para que sirven las funciones del preprocesador, pero esto puedo ser peligroso para el programador, ya que el programador puede definir funciones propias de cualquier librería estandar de C , por cualquier otra cosa que el quiera,  y así romper el programa, por eso es importante saber que estas funciones son del preprocesador y no del lenguaje C y que te quede claro que estas cosas no las puedes cambiar en tiempo de ejecución.
+
 
 ## Aritmética básica
 
