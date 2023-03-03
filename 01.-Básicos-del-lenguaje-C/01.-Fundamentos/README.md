@@ -50,7 +50,7 @@ Para definir el valor de la constante `PI` como `3.14159265`
 
 ## Macros, sirven para definir constantes y funciones
 
-#### #define
+### #define
 
 #define sirve para definir constantes y funciones, por ejemplo:
 
@@ -61,7 +61,7 @@ Para definir el valor de la constante `PI` como `3.14159265`
 
 Para definir el valor de la constante `PI` como `3.14159265` y la macro `AREA_CIRCULO` que calcula el área de un círculo
 
-#### #ifdef
+### #ifdef
 
 #ifdef sirve para verificar si una constante está definida, por ejemplo:
 
@@ -73,7 +73,7 @@ Para definir el valor de la constante `PI` como `3.14159265` y la macro `AREA_CI
 
 Para verificar si la constante `PI` está definida
 
-#### #ifndef
+### #ifndef
 
 #ifndef sirve para verificar si una constante no está definida, por ejemplo:
 
@@ -85,7 +85,7 @@ Para verificar si la constante `PI` está definida
 
 Para verificar si la constante `PI` no está definida
 
-#### #if
+### #if
 
 #if sirve para verificar si una condición es verdadera, por ejemplo:
 
@@ -97,7 +97,7 @@ Para verificar si la constante `PI` no está definida
 
 Para verificar si la constante `PI` es mayor a 3
 
-#### #else
+### #else
 
 #else sirve para ejecutar un código si la condición del `#if` no se cumple, por ejemplo:
 
@@ -111,7 +111,7 @@ Para verificar si la constante `PI` es mayor a 3
 
 Para verificar si la constante `PI` es mayor a 3, si no, se ejecuta el código que está dentro de `#else`
 
-#### #endif
+### #endif
 
 #endif sirve para terminar la definición de una macro, por ejemplo:
 
