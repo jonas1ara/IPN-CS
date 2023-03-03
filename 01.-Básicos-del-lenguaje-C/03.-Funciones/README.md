@@ -81,7 +81,7 @@ C cuenta con varias funciones predefinidas. Por ejemplo, la función `printf` qu
 |001|Ordenamiento burbuja| [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/10.-Algoritmos/06.-Ordenamiento/01-Ordenamiento-Burbuja.c) |
 |002|Problema de las N reinas | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/10.-Algoritmos/05.-Backtracking/01-N-Reinas-Geek.c) |
 
-### Todo el rollo de las funciones es para evitar repetir código, pero ¿qué pasa si quiero usar una función en otro archivo? Eso se verá en la última sección 🤓
+# | Todo el rollo de las funciones es para evitar repetir código, pero ¿qué pasa si quiero usar una función en otro archivo? Eso se verá en la última sección 🤓
 
 ## Expresiones de gratitud
 
