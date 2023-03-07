@@ -78,6 +78,8 @@ _En este ejemplo se aprecia el uso de una variable estática, es decir una varia
 
 ## Estructura de esta sección del repositorio
 
+_Dentro de la carpeta algoritmos encontrarás:_
+
 ### _[Algoritmos](https://github.com/Jonas-Lara/IPN-CS/tree/master/03.-Memoria-din%C3%A1mica/Algoritmos)_
 
 1. [Memoria-Estática.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/Algoritmos/01-Memoria-Est%C3%A1tica.c)
