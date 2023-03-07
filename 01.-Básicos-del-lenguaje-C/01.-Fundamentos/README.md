@@ -6,7 +6,7 @@ En este apartado se explican los fundamentos del lenguaje C, como son las variab
 
 ## Hola mundo
 
-El primer programa que se suele escribir en cualquier lenguaje de programación es el famoso "Hola mundo". En este apartado se explica como se escribe este programa en C.
+El primer programa que se suele escribir en cualquier lenguaje de programación es el famoso "Hola mundo". En este apartado se explica comjavascript DOMo se escribe este programa en C.
 
 ```c
 #include <stdio.h>

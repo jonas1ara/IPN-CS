@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include <unistd.h>
-#include <pthread.h>
+#include <pthread.h> //libreria para hilos
 
-void myturn(void * arg)
+void miTurno(void * arg)
 {
 	for(int i = 0;  i < 8; i++)
 	{
@@ -12,7 +11,7 @@ void myturn(void * arg)
 	return NULL;
 }
 
-void yourturn()
+void tuTurno()
 {
 	for(int i = 0;  i < 3; i++)
 	{
@@ -26,9 +25,9 @@ int main()
 
 	pthread_t newthread;
 
-	pthread_create(&newthread, NULL, myturn, NULL);
+	pthread_create(&newthread, NULL, miTurno, NULL);
 	//myturn();
-	yourturn();
+	tuTurno();
 	//esperar mientras el hilo se ejecuta
 	pthread_join(newthread, NULL);
 }

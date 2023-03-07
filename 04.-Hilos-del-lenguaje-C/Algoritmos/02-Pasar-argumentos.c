@@ -14,7 +14,7 @@ void* myturn(void * arg)
         (*iptr)++;
 	}
     //¿Qué pasa si retornamos un valor?
-	return NULL;
+	return iptr;
 }
 
 void yourturn()
