@@ -76,6 +76,13 @@ _Función **free** para liberar la memoria solicitada_
 
 _En este ejemplo se aprecia el uso de una variable estática, es decir una variable con valor fijo que no puede sufrir cambios en tiempo de compilación_
 
+## Algoritmos de ejemplo con este enfoque:
+
+| # | Titulo | Implementación |
+|---| ----- | -------- |
+|001| Matrices dinámicas | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/Algoritmos/07-Matrices-din%C3%A1micas.c) |
+|002| Estructuras de datos | [C](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C) |
+
 ## Referencias
 
 _[Memoria dinámica en Medium por Jonas Lara](https://medium.com/@jonas_lara/memoria-din%C3%A1mica-en-c-55bdcad1fe71)_
