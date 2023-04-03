@@ -16,17 +16,15 @@ Un sistema de ecuaciones lineales es un conjunto de ecuaciones lineales que tien
 
 _Sistema de ecuaciones lineales en álgebra lineal_
 
-Sistema de ecuaciones lineales en C, es un conjunto de ecuaciones lineales que tienen la misma variable. Por ejemplo, el sistema de ecuaciones lineales:
-
 ## Vector; el corazón del álgebra lineal
 
-Un vector es una magnitud que tiene una dirección y un sentido. En el álgebra lineal, un vector es una lista de números, llamados sus componentes. Los vectores se representan con letras mayúsculas, como `A`, `B`, `C`, etc. Los vectores se pueden representar gráficamente como flechas, donde la longitud de la flecha es la magnitud del vector y la dirección de la flecha es la dirección del vector.
+Un vector es una magnitud que tiene una dirección y un sentido. En el álgebra lineal, un vector es una lista de números, llamados sus componentes. Los vectores se representan con letras mayúsculas, como `A`, `V`, etc. Los vectores se pueden representar gráficamente como flechas, donde la longitud de la flecha es la magnitud del vector y la dirección de la flecha es la dirección del vector.
 
 ![](/00.-Sources/Images/Vector.png)
 
 _Vector en álgebra lineal_
 
-Vector en C, es un arreglo de números, donde cada número es una componente del vector. Por ejemplo, el vector `A = (1, 2, 3)` se puede representar como un arreglo de tres números:
+Vector en C, es un arreglo de números, donde cada número es una componente del vector. Por ejemplo, el vector V se puede implementar en C de la siguiente manera; `vector[] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)` se puede representar como un arreglo de 10 números:
 
 ![](/00.-Sources/Images/VectorC.png)
 
@@ -34,13 +32,13 @@ _Vector implementado en el lenguaje C_
 
 ## Matriz; la esencia del álgebra lineal
 
-Una matriz es una tabla rectangular de números, llamados sus elementos. Las matrices se representan con letras mayúsculas, como `A`, `B`, `C`, etc. Las matrices se pueden representar gráficamente como tablas de números, donde cada número es un elemento de la matriz.
+Una matriz es una tabla rectangular de números, llamados sus elementos. Las matrices se representan con letras mayúsculas, como `A`, `B`, `C`, etc. Y con la minuscula n para indicar el número de filas y m para indicar el número de columnas. Por ejemplo, la matriz `A = (1, 2, 3), (4, 5, 6), (7, 8, 9)` se puede representar como una tabla de tres filas y tres columnas:
 
 ![](/00.-Sources/Images/Matriz.png)
 
 _Matriz en álgebra lineal_
 
-Matriz en C, es un arreglo de vectores, donde cada vector es una fila de la matriz. Por ejemplo, la matriz `A = (1, 2, 3), (4, 5, 6), (7, 8, 9)` se puede representar como un arreglo de tres vectores:
+Matriz en C, es un arreglo de vectores, donde cada vector es una fila de la matriz. Por ejemplo, la matriz  A se puede implementar en C de la siguiente manera `matriz[3][3] = {1, 2, 3}, {4, 5, 6}, {7, 8, 9}};` como un arreglo de tres vectores:
 
 ![](/00.-Sources/Images/MatrizC.png)
 
