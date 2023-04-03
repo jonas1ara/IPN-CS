@@ -18,8 +18,6 @@ _Sistema de ecuaciones lineales en álgebra lineal_
 
 Sistema de ecuaciones lineales en C, es un conjunto de ecuaciones lineales que tienen la misma variable. Por ejemplo, el sistema de ecuaciones lineales:
 
-![](/00.-Sources/Images/SELC.png)
-
 ## Vector; el corazón del álgebra lineal
 
 Un vector es una magnitud que tiene una dirección y un sentido. En el álgebra lineal, un vector es una lista de números, llamados sus componentes. Los vectores se representan con letras mayúsculas, como `A`, `B`, `C`, etc. Los vectores se pueden representar gráficamente como flechas, donde la longitud de la flecha es la magnitud del vector y la dirección de la flecha es la dirección del vector.
