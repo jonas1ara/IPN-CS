@@ -104,13 +104,13 @@ _Multiplicación de matrices implementada en el lenguaje C_
 
 La multiplicación de una matriz `A` por un escalar `k` se denota como `k * A` y se define como:
 
-![](./Sources/Images/MultiplicacionEscalar.png)
+![](/00.-Sources/Images/MultiplicacionEscalar.png)
 
 _Multiplicación de una matriz por un escalar en álgebra lineal_
 
 Multiplicación de una matriz por un escalar en C, es la multiplicación de una matriz `A` por un escalar `k` se denota como `k * A` y se define como:
 
-![](./Sources/Images/MultiplicacionEscalarC.png)
+![](/00.-Sources/Images/MultiplicacionEscalarC.png)
 
 
 ### Tipos de matrices
