@@ -52,13 +52,13 @@ _Matriz implementada en el lenguaje C_
 
 Un escalar es un número real. En el álgebra lineal, un escalar es un número real que se multiplica por un vector o una matriz. Los escalares se representan con letras minúsculas, como `a`, `b`, `c`, etc.
 
-![](./00.-Sources/Images/Escalar.jpg)
+![](/00.-Sources/Images/Escalar.jpg)
 
 _Escalar en álgebra lineal_
 
 Escalar en C, es un número real que se multiplica por un vector o una matriz. Los escalares se representan con letras minúsculas, como `a`, `b`, `c`, etc.
 
-![](./Sources/Images/EscalarC.png)
+![](/00.-Sources/Images/EscalarC.png)
 
 ### Operaciones con matrices
 
