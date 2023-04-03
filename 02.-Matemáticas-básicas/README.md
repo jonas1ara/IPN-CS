@@ -62,13 +62,13 @@ Escalar en C, es un número real que se multiplica por un vector o una matriz. L
 
 La suma de dos matrices `A` y `B` se denota como `A + B` y se define como:
 
-![](./Sources/Images/Suma.png)
+![](/00.-Sources/Images/SumaM.png)
 
 _Suma de matrices en álgebra lineal_
 
 Suma de matrices en C, es la suma de dos matrices `A` y `B` se denota como `A + B` y se define como:
 
-![](./Sources/Images/SumaC.png)
+![](/00.-Sources/Images/SumaMC.png)
 
 _Suma de matrices implementada en el lenguaje C_
 
@@ -76,13 +76,13 @@ _Suma de matrices implementada en el lenguaje C_
 
 La resta de dos matrices `A` y `B` se denota como `A - B` y se define como:
 
-![](./Sources/Images/Resta.png)
+![](/00.-Sources/Images/RestaM.png)
 
 _Resta de matrices en álgebra lineal_
 
 Resta de matrices en C, es la resta de dos matrices `A` y `B` se denota como `A - B` y se define como:
 
-![](./Sources/Images/RestaC.png)
+![](/00.-Sources/Images/RestaMC.png)
 
 _Resta de matrices implementada en el lenguaje C_
 
@@ -90,13 +90,13 @@ _Resta de matrices implementada en el lenguaje C_
 
 La multiplicación de dos matrices `A` y `B` se denota como `A * B` y se define como:
 
-![](./Sources/Images/Multiplicacion.png)
+![](/00.-Sources/Images/MultiplicacionM.png)
 
 _Multiplicación de matrices en álgebra lineal_
 
 Multiplicación de matrices en C, es la multiplicación de dos matrices `A` y `B` se denota como `A * B` y se define como:
 
-![](./Sources/Images/MultiplicacionC.png)
+![](/00.-Sources/Images/MultiplicacionMC.png)
 
 _Multiplicación de matrices implementada en el lenguaje C_
 
