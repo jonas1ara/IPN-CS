@@ -12,25 +12,25 @@ El álgebra lineal es una rama de las matemáticas que se enfoca en el estudio d
 
 Un sistema de ecuaciones lineales es un conjunto de ecuaciones lineales que tienen la misma variable. Por ejemplo, el sistema de ecuaciones lineales:
 
-![](/Sources/Images/SEL.jpg)
+![](/00.-Sources/Images/SEL.jpg)
 
 _Sistema de ecuaciones lineales en álgebra lineal_
 
 Sistema de ecuaciones lineales en C, es un conjunto de ecuaciones lineales que tienen la misma variable. Por ejemplo, el sistema de ecuaciones lineales:
 
-![](/Sources/Images/SistemaEcuacionesC.png)
+![](/00.-Sources/Images/SistemaEcuacionesC.png)
 
 ## Vector; el corazón del álgebra lineal
 
 Un vector es una magnitud que tiene una dirección y un sentido. En el álgebra lineal, un vector es una lista de números, llamados sus componentes. Los vectores se representan con letras mayúsculas, como `A`, `B`, `C`, etc. Los vectores se pueden representar gráficamente como flechas, donde la longitud de la flecha es la magnitud del vector y la dirección de la flecha es la dirección del vector.
 
-![](/Sources/Images/V.jpg)
+![](/00.-Sources/Images/V.jpg)
 
 _Vector en álgebra lineal_
 
 Vector en C, es un arreglo de números, donde cada número es una componente del vector. Por ejemplo, el vector `A = (1, 2, 3)` se puede representar como un arreglo de tres números:
 
-![](/Sources/Images/VectorC.png)
+![](/00.-Sources/Images/VectorC.png)
 
 _Vector implementado en el lenguaje C_
 
@@ -38,13 +38,13 @@ _Vector implementado en el lenguaje C_
 
 Una matriz es una tabla rectangular de números, llamados sus elementos. Las matrices se representan con letras mayúsculas, como `A`, `B`, `C`, etc. Las matrices se pueden representar gráficamente como tablas de números, donde cada número es un elemento de la matriz.
 
-![](/Sources/Images/Matriz.png)
+![](/00.-Sources/Images/Matriz.png)
 
 _Matriz en álgebra lineal_
 
 Matriz en C, es un arreglo de vectores, donde cada vector es una fila de la matriz. Por ejemplo, la matriz `A = (1, 2, 3), (4, 5, 6), (7, 8, 9)` se puede representar como un arreglo de tres vectores:
 
-![](/Sources/Images/MatrizC.png)
+![](/00.-Sources/Images/MatrizC.png)
 
 _Matriz implementada en el lenguaje C_
 
@@ -52,7 +52,7 @@ _Matriz implementada en el lenguaje C_
 
 Un escalar es un número real. En el álgebra lineal, un escalar es un número real que se multiplica por un vector o una matriz. Los escalares se representan con letras minúsculas, como `a`, `b`, `c`, etc.
 
-![](./Sources/Images/Escalar.png)
+![](./00.-Sources/Images/Escalar.png)
 
 _Escalar en álgebra lineal_
 
