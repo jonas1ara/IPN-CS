@@ -119,13 +119,13 @@ Multiplicación de una matriz por un escalar en C, es la multiplicación de una 
 
 Una matriz identidad es una matriz cuadrada que tiene unos en la diagonal principal y ceros en todas las demás entradas. La matriz identidad se representa con la letra `I` y tiene el mismo número de filas y columnas. Por ejemplo, la matriz identidad de 3 × 3 se representa como `I3` y se define como:
 
-![](./Sources/Images/Identidad.png)
+![](/00.-Sources/Images/MatrizI.png)
 
 _Matriz identidad en álgebra lineal_
 
 Matriz identidad en C, es una matriz cuadrada que tiene unos en la diagonal principal y ceros en todas las demás entradas. La matriz identidad se representa con la letra `I` y tiene el mismo número de filas y columnas. Por ejemplo, la matriz identidad de 3 × 3 se representa como `I3` y se define como:
 
-![](./Sources/Images/IdentidadC.png)
+![](/00.-Sources/Images/MatrizIC.png)
 
 _Matriz identidad implementada en el lenguaje C_
 
@@ -133,25 +133,25 @@ _Matriz identidad implementada en el lenguaje C_
 
 Una matriz transpuesta es una matriz que se obtiene de otra matriz cambiando sus filas por columnas. La matriz transpuesta de una matriz `A` se denota como `A^T` y se define como:
 
-![](./Sources/Images/Transpuesta.png)
+![](/00.-Sources/Images/MatrizT.png)
 
 _Matriz transpuesta en álgebra lineal_
 
 Matriz transpuesta en C, es una matriz que se obtiene de otra matriz cambiando sus filas por columnas. La matriz transpuesta de una matriz `A` se denota como `A^T` y se define como:
 
-![](./Sources/Images/TranspuestaC.png)
+![](./Sources/Images/MatrizTC.png)
 
 #### Matriz inversa
 
 Una matriz inversa es una matriz que, cuando se multiplica por otra matriz, produce la matriz identidad. La matriz inversa de una matriz `A` se denota como `A^-1` y se define como:
 
-![](./Sources/Images/Inversa.png)
+![](/00.-Sources/Images/MatrizInversa.jpg)
 
 _Matriz inversa en álgebra lineal_
 
 Matriz inversa en C, es una matriz que, cuando se multiplica por otra matriz, produce la matriz identidad. La matriz inversa de una matriz `A` se denota como `A^-1` y se define como:
 
-![](./Sources/Images/InversaC.png)
+![](/00.-Sources/Images/MatrizInversaC.png)
 
 
 
