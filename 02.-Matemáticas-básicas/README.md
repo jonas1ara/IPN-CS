@@ -149,9 +149,12 @@ Una matriz inversa es una matriz que, cuando se multiplica por otra matriz, prod
 
 _Matriz inversa en álgebra lineal_
 
-Matriz inversa en C, es una matriz que, cuando se multiplica por otra matriz, produce la matriz identidad. La matriz inversa de una matriz `A` se denota como `A^-1` y se define como:
+# En resumen es muy importante para el desarrollo de la inteligencia artificial, y para el desarrollo de la inteligencia artificial es necesario el uso de matrices, por lo que es importante conocer las operaciones con matrices, los tipos de matrices y las operaciones con escalares  🤓
 
-![](/00.-Sources/Images/MatrizInversaC.png)
+## Expresiones de gratitud
+
+_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado_
+
 
 
 
