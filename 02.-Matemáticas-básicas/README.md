@@ -1,10 +1,12 @@
 # Matemáticas básicas
 
-![](/00.-Sources/Images/MB.jpeg)
+![](/00.-Sources/Images/M.jpg)
 
 _Implementaciones básicas de matemáticas en C, son las bases que te servirán y te harán avanzar para usarla con análisis numérico o algoritmos más avanzados, **en este README voy a explicar el álgebra lineal y su implementación básica en C**_
 
 ## Álgebra lineal
+
+![](/00.-Sources/Images/AL.jpg)
 
 El álgebra lineal es una rama de las matemáticas que se enfoca en el estudio de los espacios vectoriales, las transformaciones lineales, y los sistemas de ecuaciones lineales. Esta rama de las matemáticas utiliza herramientas matemáticas para describir y analizar objetos y fenómenos que pueden ser representados mediante vectores y matrices
 
