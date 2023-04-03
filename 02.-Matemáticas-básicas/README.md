@@ -90,7 +90,7 @@ _Resta de matrices implementada en el lenguaje C_
 
 La multiplicación de dos matrices `A` y `B` se denota como `A * B` y se define como:
 
-![](/00.-Sources/Images/MultiplicacionM.png)
+![](/00.-Sources/Images/MultiplicacionM.jpg)
 
 _Multiplicación de matrices en álgebra lineal_
 
