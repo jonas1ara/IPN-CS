@@ -1,6 +1,6 @@
 # Matemáticas básicas
 
-![](./00.-Sources/Images/MB.jpeg)
+![](/00.-Sources/Images/MB.jpeg)
 
 _Implementaciones básicas de matemáticas en C, son las bases que te servirán y te harán avanzar para usarla con análisis numérico o algoritmos más avanzados, **en este README voy a explicar el álgebra lineal y su implementación básica en C**_
 
