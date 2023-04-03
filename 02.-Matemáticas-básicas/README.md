@@ -8,7 +8,7 @@ _Implementaciones básicas de matemáticas en C, son las bases que te servirán 
 
 El álgebra lineal es una rama de las matemáticas que se enfoca en el estudio de los espacios vectoriales, las transformaciones lineales, y los sistemas de ecuaciones lineales. Esta rama de las matemáticas utiliza herramientas matemáticas para describir y analizar objetos y fenómenos que pueden ser representados mediante vectores y matrices
 
-## ¿Qué es un sistema de ecuaciones lineales?
+## Sistema de ecuaciones lineales; la base del álgebra lineal
 
 Un sistema de ecuaciones lineales es un conjunto de ecuaciones lineales que tienen la misma variable. Por ejemplo, el sistema de ecuaciones lineales:
 
@@ -20,7 +20,7 @@ Sistema de ecuaciones lineales en C, es un conjunto de ecuaciones lineales que t
 
 ![](./Sources/Images/SistemaEcuacionesC.png)
 
-## ¿Qué es una vector?
+## Vector; el corazón del álgebra lineal
 
 Un vector es una magnitud que tiene una dirección y un sentido. En el álgebra lineal, un vector es una lista de números, llamados sus componentes. Los vectores se representan con letras mayúsculas, como `A`, `B`, `C`, etc. Los vectores se pueden representar gráficamente como flechas, donde la longitud de la flecha es la magnitud del vector y la dirección de la flecha es la dirección del vector.
 
@@ -34,7 +34,7 @@ Vector en C, es un arreglo de números, donde cada número es una componente del
 
 _Vector implementado en el lenguaje C_
 
-## ¿Qué es una matriz?
+## Matriz; la esencia del álgebra lineal
 
 Una matriz es una tabla rectangular de números, llamados sus elementos. Las matrices se representan con letras mayúsculas, como `A`, `B`, `C`, etc. Las matrices se pueden representar gráficamente como tablas de números, donde cada número es un elemento de la matriz.
 
@@ -48,7 +48,7 @@ Matriz en C, es un arreglo de vectores, donde cada vector es una fila de la matr
 
 _Matriz implementada en el lenguaje C_
 
-## ¿Qué es un escalar?
+## Escalar; la unidad del álgebra lineal
 
 Un escalar es un número real. En el álgebra lineal, un escalar es un número real que se multiplica por un vector o una matriz. Los escalares se representan con letras minúsculas, como `a`, `b`, `c`, etc.
 
@@ -119,7 +119,7 @@ Multiplicación de una matriz por un escalar en C, es la multiplicación de una 
 
 ### Tipos de matrices
 
-#### ¿Qué es una matriz identidad?
+#### Matriz identidad
 
 Una matriz identidad es una matriz cuadrada que tiene unos en la diagonal principal y ceros en todas las demás entradas. La matriz identidad se representa con la letra `I` y tiene el mismo número de filas y columnas. Por ejemplo, la matriz identidad de 3 × 3 se representa como `I3` y se define como:
 
@@ -133,7 +133,7 @@ Matriz identidad en C, es una matriz cuadrada que tiene unos en la diagonal prin
 
 _Matriz identidad implementada en el lenguaje C_
 
-#### ¿Qué es una matriz transpuesta?
+#### Matriz transpuesta
 
 Una matriz transpuesta es una matriz que se obtiene de otra matriz cambiando sus filas por columnas. La matriz transpuesta de una matriz `A` se denota como `A^T` y se define como:
 
@@ -145,7 +145,7 @@ Matriz transpuesta en C, es una matriz que se obtiene de otra matriz cambiando s
 
 ![](./Sources/Images/TranspuestaC.png)
 
-#### ¿Qué es una matriz inversa?
+#### Matriz inversa
 
 Una matriz inversa es una matriz que, cuando se multiplica por otra matriz, produce la matriz identidad. La matriz inversa de una matriz `A` se denota como `A^-1` y se define como:
 
