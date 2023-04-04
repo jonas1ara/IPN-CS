@@ -52,10 +52,6 @@ Un escalar es un número real. En el álgebra lineal, un escalar es un número r
 
 _Escalar en álgebra lineal_
 
-Escalar en C, es un número real que se multiplica por un vector o una matriz. Los escalares se representan con letras minúsculas, como `a`, `b`, `c`, etc.
-
-![](/00.-Sources/Images/EscalarC.png)
-
 ### Operaciones con matrices
 
 #### Suma de matrices
@@ -152,6 +148,10 @@ _Matriz inversa en álgebra lineal_
 Existen varios métodos para calcular la matriz inversa de una matriz. **El método más común es el método de Gauss-Jordan.** El método de Gauss-Jordan se basa en la eliminación de Gauss y la eliminación de Gauss-Jordan. El método de Gauss-Jordan se puede utilizar para calcular la matriz inversa de una matriz cuadrada de cualquier tamaño, pero es un programa muy largo y no es el propocito de este post
 
 # En resumen es muy importante para el desarrollo de la inteligencia artificial conocer los tipos de matrices, las operaciones con matrices y las operaciones con escalares  🤓
+
+### Referencias
+
+[Álgebra lineal con C](https://medium.com/@jonas_lara/strings-para-gente-con-prisa)
 
 ## Expresiones de gratitud
 
