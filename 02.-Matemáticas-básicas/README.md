@@ -108,6 +108,8 @@ Multiplicación de una matriz por un escalar en C, es la multiplicación de una 
 
 ![](/00.-Sources/Images/MultiplicacionEscalarC.png)
 
+_Multiplicación de una matriz por un escalar en C_
+
 
 ### Tipos de matrices
 
