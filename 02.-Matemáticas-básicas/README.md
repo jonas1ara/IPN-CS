@@ -139,7 +139,7 @@ _Matriz transpuesta en álgebra lineal_
 
 Matriz transpuesta en C, es una matriz que se obtiene de otra matriz cambiando sus filas por columnas. La matriz transpuesta de una matriz `A` se denota como `A^T` y se define como:
 
-![](./Sources/Images/MatrizTC.png)
+![](/00.-Sources/Images/MatrizTC.png)
 
 #### Matriz inversa
 
