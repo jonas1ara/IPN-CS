@@ -153,7 +153,7 @@ Existen varios métodos para calcular la matriz inversa de una matriz. **El mét
 
 ### Referencias
 
-[Álgebra lineal con C](https://medium.com/@jonas_lara/strings-para-gente-con-prisa)
+[Álgebra lineal con C](https://medium.com/@jonas_lara/%C3%A1lgebra-lineal-con-c-f243cf540875)
 
 ## Expresiones de gratitud
 
