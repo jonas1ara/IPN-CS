@@ -233,7 +233,7 @@ int Fibonacci(int n)
 
 ---
 
-## En resumen si estas empezando en las ciencias de la computación es muy importante que comprendas las diferentes estrategías algoritmicas y su análisis asintótico, no solo para entrevistas técnicas sino para desarrollar un proceso de pensamiento que puedes llevar a cualquier lado 🧠
+## En resumen si estas empezando en las ciencias de la computación es muy importante que comprendas las diferentes estrategias algorítmicas y su análisis asintótico, no solo para entrevistas técnicas sino para desarrollar un proceso de pensamiento que puedes llevar a cualquier lado 🧠
 
 ## Referencias 📚
 
