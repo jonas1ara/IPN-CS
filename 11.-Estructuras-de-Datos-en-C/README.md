@@ -43,7 +43,8 @@ _El algoritmo es un procedimiento paso a paso, que define un conjunto de instruc
 - **Delete:** Algoritmo para eliminar un elemento existente de una estructura de datos.
 
 ---
-Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/)
+Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado
+
 
 
 
