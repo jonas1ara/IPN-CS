@@ -27,31 +27,3 @@ size_t getsize(float *ptr)
 	return sizeof(*ptr);// Retornamos sizeof el tamaño de todo el arreglo
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
