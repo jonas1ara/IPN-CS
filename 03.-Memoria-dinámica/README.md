@@ -105,5 +105,5 @@ _[Memoria dinámica en Medium por Jonas Lara](https://medium.com/@jonas_lara/mem
 
 ## Expresiones de gratitud
 
-_Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado_
+_Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado_
 
