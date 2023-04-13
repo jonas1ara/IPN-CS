@@ -1,6 +1,6 @@
 # Memoría dinámica
 
-_La **memoria dinámica** permite al programador solicitar memoria en **tiempo de ejecución** al sistema operativo, esto es util para problemas en los que la cantidad de datos a almacenar es desconocido o no es fijo porque no se tiene idea del número de variables de entrada cómo es el caso de las **listas enlazadas**, pero para entender su importancia debes saber que es la memoria estática y la memoria pseudoestática, la **memoria estática:** es la que esta dada explícitamente en un programa, por ejemplo en un vector de tamaño `N = 50` no importa si estas usando 17 elementos del vector, esté siempre ocupará espacio en la memoria y la **memoria pseudoestática:** es en la que el usuario da el valor de `N` para el tamaño del vector, dicho esto deberías ocupar la memoría dinámica cuando tengas grandes vectores y/o no sabes el valor real de las variables de entrada y cuando tengas vectores pequeños no tiene sentido usar la memoria dinámica_
+_La **[memoria dinámica](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/03-Memoria-Din%C3%A1mica.c)** permite al programador solicitar memoria en **tiempo de ejecución** al sistema operativo, esto es util para problemas en los que la cantidad de datos a almacenar es desconocido o no es fijo porque no se tiene idea del número de variables de entrada cómo es el caso de las **listas enlazadas**, pero para entender su importancia debes saber que es la memoria estática y la memoria pseudoestática, la **[memoria estática:](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/01-Memoria-Est%C3%A1tica.c)** es la que esta dada explícitamente en un programa, por ejemplo en un vector de tamaño `N = 50` no importa si estas usando 17 elementos del vector, esté siempre ocupará espacio en la memoria y la **[memoria pseudoestática:](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/02-Memoria-Pseudoest%C3%A1tica.c)** es en la que el usuario da el valor de `N` para el tamaño del vector, dicho esto deberías ocupar la memoría dinámica cuando tengas grandes vectores y/o no sabes el valor real de las variables de entrada y cuando tengas vectores pequeños no tiene sentido usar la memoria dinámica_
 
 ![DM](/00.-Sources/Images/DM.png)
 
@@ -24,7 +24,7 @@ _En la memoria principal se pueden distinguir dos regiones importantes: [Stack](
 _En este ejemplo se aprecia como el sistema operativo automáticamente crea y destruye la variable `b` en cada una de las llamadas a la función, impidiendo imprimir una secuencia de números enteros positivos_
 
 
-### Heap (Dinámico: malloc, calloc, realloc, free)	
+### Heap (Dinámico: [malloc](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/04-Malloc-y-Realloc.c), [calloc](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/05-Calloc-y-Free.c), [realloc](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/04-Malloc-y-Realloc.c), [free](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/05-Calloc-y-Free.c))	
 
 - **Tiempo de vida** → A discreción del programador
 - **Funcionamiento** → Se reserva memoria explícitamente usando la librería `stdlib.h`
@@ -82,6 +82,7 @@ _En este ejemplo se aprecia el uso de una variable estática, es decir una varia
 |---| ----- | -------- |
 |001| Matrices dinámicas | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/Algoritmos/07-Matrices-din%C3%A1micas.c) |
 |002| Estructuras de datos | [C](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C) |
+|003| Matrices dinámicas | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/07-Matrices-din%C3%A1micas.c) |
 
 ## Referencias
 
