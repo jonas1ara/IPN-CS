@@ -149,7 +149,7 @@ _Matriz inversa en álgebra lineal_
 
 Existen varios métodos para calcular la matriz inversa de una matriz. **El método más común es el método de Gauss-Jordan.** El método de Gauss-Jordan se basa en la eliminación de Gauss y la eliminación de Gauss-Jordan. El método de Gauss-Jordan se puede utilizar para calcular la matriz inversa de una matriz cuadrada de cualquier tamaño, pero es un programa muy largo y no es el propocito de este post
 
-# En resumen si estas empezando en las ciencias de la computación es muy importante para el desarrollo de la inteligencia artificial conocer los tipos de matrices, las operaciones con matrices y las operaciones con escalares, deberías ponerle atención desde el inicio de tú carrera 😉
+## En resumen si estas empezando en las ciencias de la computación es muy importante para el desarrollo de la inteligencia artificial conocer los tipos de matrices, las operaciones con matrices y las operaciones con escalares, deberías ponerle atención desde el inicio de tú carrera 😉
 
 ### Referencias
 
