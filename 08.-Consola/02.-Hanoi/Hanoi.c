@@ -1,5 +1,5 @@
-﻿#include <stdio.h> //directiva de entradas y salidas estandar
-#include <stdlib.h> //directiva para el uso de memoría dinámica
+﻿#include <stdio.h> 
+#include <stdlib.h> 
 #include <unistd.h>
 
 void imprime( int *tab, int fil, int col, int ultNum )

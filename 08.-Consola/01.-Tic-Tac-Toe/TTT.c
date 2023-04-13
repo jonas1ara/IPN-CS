@@ -6,54 +6,55 @@
 #include <time.h>
 
 char board[3][3];
-const char PLAYER = 'X';
-const char COMPUTER = 'O';
+const char JUGADOR = 'X';
+const char PC = 'O';
 
+//Prototipado de funciones
 void resetBoard();
 void printBoard();
-int checkFreeSpaces();
-void playerMove();
-void computerMove();
-char checkWinner();
-void printWinner(char);
+int espacioVacio();
+void jugadorMove();
+void pcMove();
+char checkarGanador();
+void printGanador(char);
 
 int main()
 {
-   char winner = ' ';
-   char response = ' ';
+   char ganador = ' ';
+   char respuesta = ' ';
 
    do
    {
-      winner = ' ';
-      response = ' ';
+      ganador = ' ';
+      respuesta = ' ';
       resetBoard();
 
-      while(winner == ' ' && checkFreeSpaces() != 0)
+      while(ganador == ' ' && espacioVacio() != 0)
       {
          printBoard();
 
-         playerMove();
-         winner = checkWinner();
-         if(winner != ' ' || checkFreeSpaces() == 0)
+         jugadorMove();
+         ganador = checkarGanador();
+         if(ganador != ' ' || espacioVacio() == 0)
          {
             break;
          }
 
-         computerMove();
-         winner = checkWinner();
-         if(winner != ' ' || checkFreeSpaces() == 0)
+         pcMove();
+         ganador = checkarGanador();
+         if(ganador != ' ' || espacioVacio() == 0)
          {
             break;
          }
       }
 
       printBoard();
-      printWinner(winner);
+      printGanador(ganador);
 
       printf("\n¿Te gustaría jugar otra vez? (S/n): ");
-      scanf("%c", &response);
-      response = toupper(response);
-   } while (response == 'Y');
+      scanf("%c", &respuesta);
+      respuesta = toupper(respuesta);
+   } while (respuesta == 'Y');
 
    printf("¡Gracias por jugar!\n");
 
@@ -79,7 +80,7 @@ void printBoard()
    printf(" %c | %c | %c ", board[2][0], board[2][1], board[2][2]);
    printf("\n");
 }
-int checkFreeSpaces()
+int espacioVacio()
 {
    int freeSpaces = 9;
 
@@ -95,7 +96,7 @@ int checkFreeSpaces()
    }
    return freeSpaces;
 }
-void playerMove()
+void jugadorMove()
 {
    int x;
    int y;
@@ -115,20 +116,20 @@ void playerMove()
       }
       else
       {
-         board[x][y] = PLAYER;
+         board[x][y] = JUGADOR;
          break;
       }
    } while (board[x][y] != ' ');
    
 }
-void computerMove()
+void pcMove()
 {
    //Crea una semilla basada en la hora actual
    srand(time(0));
    int x;
    int y;
 
-   if(checkFreeSpaces() > 0)
+   if(espacioVacio() > 0)
    {
       do
       {
@@ -136,14 +137,14 @@ void computerMove()
          y = rand() % 3;
       } while (board[x][y] != ' ');
       
-      board[x][y] = COMPUTER;
+      board[x][y] = PC;
    }
    else
    {
-      printWinner(' ');
+      printGanador(' ');
    }
 }
-char checkWinner()
+char checkarGanador()
 {
    //Checar filas
    for(int i = 0; i < 3; i++)
@@ -173,13 +174,13 @@ char checkWinner()
 
    return ' ';
 }
-void printWinner(char winner)
+void printGanador(char ganador)
 {
-   if(winner == PLAYER)
+   if(ganador == JUGADOR)
    {
       printf("¡Ganaste!");
    }
-   else if(winner == COMPUTER)
+   else if(ganador == PC)
    {
       printf("¡Perdiste :( !");
    }
