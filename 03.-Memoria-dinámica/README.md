@@ -76,22 +76,6 @@ _Función **free** para liberar la memoria solicitada_
 
 _En este ejemplo se aprecia el uso de una variable estática, es decir una variable con valor fijo que no puede sufrir cambios en tiempo de compilación_
 
-## Estructura de esta sección del repositorio
-
-_Dentro de la carpeta algoritmos encontrarás:_
-
-### _[Algoritmos](https://github.com/Jonas-Lara/IPN-CS/tree/master/03.-Memoria-din%C3%A1mica/Algoritmos)_
-
-1. [Memoria-Estática.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/Algoritmos/01-Memoria-Est%C3%A1tica.c)
-2. [Memoria-Pseudoestática.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/Algoritmos/02-Memoria-Pseudoest%C3%A1tica.c)
-3. [Memoria-Dinámica.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/Algoritmos/03-Memoria-Din%C3%A1mica.c)
-4. [Malloc-Realloc.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/Algoritmos/04-Malloc-y-Realloc.c)
-5. [Calloc-Free.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/Algoritmos/05-Calloc-y-Free.c)
-6. [Strings-dinámicos.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/Algoritmos/06-Strings-din%C3%A1micos.c)
-7. [Matrices-dinámicas.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/Algoritmos/07-Matrices-din%C3%A1micas.c)
-8. [Funciones-dinámicas.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/Algoritmos/08-Funciones-din%C3%A1micas.c)
-9. [Estructuras-dinámicas.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/Algoritmos/09-Estructuras-din%C3%A1micas.c)
-
 ## Algoritmos de ejemplo con este enfoque:
 
 | # | Titulo | Implementación |
