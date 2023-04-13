@@ -233,6 +233,12 @@ int Fibonacci(int n)
 
 ---
 
+## En resumen si estas empezando en las ciencias de la computación es muy importante que comprendas las diferentes estrategías algoritmicas y su análisis asintótico, no solo para entrevistas técnicas sino para desarrollar un proceso de pensamiento que puedes llevar a cualquier lado 🧠
+
+## Referencias 📚
+
+_Cormen, T. H., Leiserson, C. E., Rivest, R. L. & Stein, C. (2009). [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844) (3rd ed.). MIT Press._
+
 ## Expresiones de gratitud
 
 Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado
