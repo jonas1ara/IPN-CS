@@ -145,7 +145,7 @@ C es un lenguaje de programación muy popular, y es usado para crear sistemas op
 
 3. En el README.md de la carpeta de cadenas se encuentran ejemplos de como usar las funciones más importantes de la librería `string.h`
 
-### _[Archivos](); en esta sección se verá la forma de trabajar con archivos_
+### _[Archivos](https://github.com/Jonas-Lara/IPN-CS/tree/master/01.-B%C3%A1sicos-del-lenguaje-C/07.-Archivos); en esta sección se verá la forma de trabajar con archivos_
 
 1. [Lectura-de-archivos.c](https://github.com/Jonas-Lara/IPN-CS/blob/master/01.-B%C3%A1sicos-del-lenguaje-C/07.-Archivos/01-Lectura-de-archivos.c)
 
