@@ -127,6 +127,8 @@ clean:
 	rm -f main *.o
 ```
 
+## Algoritmos de ejemplo con este enfoque:
+
 | # | Titulo | Implementación |
 |---| ----- | -------- |
 |001| Make | [C](https://github.com/Jonas-Lara/IPN-CS/tree/master/07.-Make) |
