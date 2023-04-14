@@ -19,7 +19,7 @@ _Para instalar ejemplos(opcional)_
 sudo apt install gtk-4-examples
 ```
 
-![GTK-PreWork](/00.-Sources/gtkprework.gif)
+![GTK-PreWork](/00.-Sources/Gifs/preworkGTK.gif)
 
 ## Usando GTK4 en Ubuntu 21.10
 
@@ -91,4 +91,4 @@ _Todo esto nos crea un ejecutable llamado Hola-mundo, ejecutalo de la siguiente 
 ```
 ./Hola-mundo
 ```
-![GTK-PreWork](/00.-Sources/ejecutable.gif)
+![GTK-PreWork](/00.-Sources/Gifs/demoGTK.gif)
