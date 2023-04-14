@@ -1,6 +1,6 @@
 # Recursión
 
-_**La recursión es una técnica que consiste en resolver un problema haciendo uso de una versión más sencilla del mismo**_
+_La recursión es una técnica que consiste en resolver un problema haciendo uso de una versión más sencilla del mismo_
 
 ## ¿Qué es la recursión?
 
@@ -12,6 +12,9 @@ La recursión es un concepto importante en la programación y se refiere a la ca
 
 - **Caso recursivo:** Es el caso en el que se llama a la función recursiva para resolver un problema más sencillo
 
+Supongamos que tenemos que obtener el inventario de un almacen, que tiene varios estantes y cada estante tiene varias cajas, para resolver este problema podemos hacer uso de la recursión:
+
+![CByCR](/00.-Sources/Images/Recursion1.png)
 
 
 ## ¿Cómo funciona?
