@@ -23,7 +23,7 @@ int main(void)
 {
     initscr();
 
-    addstr("-----------------\n| Ipn.c |\n| Ncurses Demo  |\n-----------------\n\n");
+    addstr("-----------------\n| IIPN-CS |\n| Ncurses Demo  |\n-----------------\n\n");
     refresh();
 
     addstr("\npresiona cualquier tecla para salir...");
