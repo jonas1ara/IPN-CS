@@ -8,7 +8,7 @@ _Para instalar la librería_
 sudo apt-get install libncurses5-dev libncursesw5-dev
 ```
 
-![Ncurses-PreWork](/00.-Sources/preworkNcurses.gif)
+![Ncurses-PreWork](/00.-Sources/Gifs/preworkNcurses.gif)
 
 ## Usando Ncurses en Ubuntu 
 
@@ -23,7 +23,7 @@ int main(void)
 {
     initscr();
 
-    addstr("-----------------\n| IIPN-CS |\n| Ncurses Demo  |\n-----------------\n\n");
+    addstr("-----------------\n| IPN-CS |\n| Ncurses Demo  |\n-----------------\n\n");
     refresh();
 
     addstr("\npresiona cualquier tecla para salir...");
@@ -49,4 +49,4 @@ _Todo esto nos crea un ejecutable llamado Ncurses, ejecutalo de la siguiente man
 ```
 ./Ncurses
 ```
-![GTK-PreWork](/00.-Sources/demoNcurses.gif)
+![GTK-PreWork](/00.-Sources/Gifs/demoNcurses.gif)
