@@ -14,7 +14,7 @@ La recursión es un concepto importante en la programación y se refiere a la ca
 
 **Supongamos que tenemos que obtener el inventario de un almacen, que tiene varios estantes y cada estante tiene varias cajas, para resolver este problema podemos hacer uso de la recursión:**
 
-![CByCR](/00.-Sources/Images/Recursion1B.png)
+![CByCR](/00.-Sources/Images/Recursion1.png)
 
 
 ## ¿Cómo funciona?
