@@ -67,7 +67,7 @@ _Ahora escribe en tu terminal make y la regla que quieres ejecutar, si no coloca
 make
 ```
 
-![](/00.-Sources/Gifs/Make.gif)
+![](/00.-Sources/Gifs/Make1.gif)
 
 ##  Ejemplo 2, Calculadora
 
@@ -137,7 +137,7 @@ clean:
 
 _**Recompilando dependencias:** make hace uso de la hora de la última modificación de un archivo para saber los cambios generados y si es buen momento para compilar algo o no._
 
-![](/00.-Sources/Gifs/LSl.gif)
+![](/00.-Sources/Gifs/Make2.gif)
 
 ```Makefile
 OBJS = main.o salida.o calculadora.o 
