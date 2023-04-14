@@ -4,7 +4,7 @@ static void
 print_hello (GtkWidget *widget,
              gpointer   data)
 {
-  g_print ("Hola mundo en GTK4 desde WSLg Preview\n");
+  g_print ("Hola mundo desde GTK4\n");
 }
 
 static void
