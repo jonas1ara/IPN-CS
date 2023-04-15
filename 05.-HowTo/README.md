@@ -398,7 +398,7 @@ int main()
 
 En el programa anterior, creamos una constante `N` que es de tipo `int` y le asignamos el valor de 10. En el ciclo `for()` mientras `j` sea menor o igual que `N * 2`, se ejecutará el código que está dentro del ciclo. En el ciclo `for()` mientras `i` sea menor o igual que `N * 2`, se ejecutará el código que está dentro del ciclo. Si la potencia de `i - N` más la potencia de `j - N` es menor o igual que la potencia de `N`, se ejecutará el código que está dentro del `if`, de lo contrario, se ejecutará el código que está dentro del `else`. Imprimimos en pantalla un carácter especial y al final, imprimimos en pantalla un salto de línea
 
-![](00.-Sources/Gifs/PiMonteCarlo.gif)
+![](/00.-Sources/Gifs/PiMonteCarlo.gif)
 
 _**Simulación del calculo de Pi usando el método de Monte Carlo**, ¿podrías ser capaz de intuir que programas se necesitan para realizar esta tarea?_
 
