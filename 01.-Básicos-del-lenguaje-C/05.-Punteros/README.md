@@ -32,7 +32,7 @@ _En este segundo dibujo podemos observar que el entero `a` vale 5 y está alojad
 
 Hablar del lenguaje C practicamente es hablar de punteros, en cualquier programa serio y/o cualquier estructura de datos estarán ...
 
-# Todo el rollo de los punteros y el paso por referencia fue pensado para NO copiar objetos innecesariamente, y hacer un uso optimo de la memoria RAM 😉
+### Todo el rollo de los punteros y el paso por referencia fue pensado para NO copiar objetos innecesariamente, y hacer un uso optimo de la memoria RAM 😉
 
 ## Referencias
 
@@ -41,4 +41,4 @@ _[Punteros y paso por referencia en Medium por Jonas Lara](https://medium.com/@j
 
 ## Expresiones de gratitud
 
-_Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado_
+_Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/),para quien sea que este interesado_
