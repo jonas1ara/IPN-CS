@@ -1,6 +1,6 @@
 # Memoria dinámica
 
-#### La memoria dinámica permite al programador solicitar memoria en _tiempo de ejecución_ al sistema operativo
+#### La memoria dinámica permite al programador solicitar memoria en _tiempo de ejecución_ al sistema operativo 🤯
 
 ![DM](/00.-Sources/Images/DM.png)
 
