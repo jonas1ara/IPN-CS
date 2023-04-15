@@ -83,7 +83,9 @@ C cuenta con varias funciones predefinidas. Por ejemplo, la función `printf` qu
 |003| Invertir cadena | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/05.-HowTo/Algoritmos/05-Invertir-Cadena.c) |
 |004| Algoritmo de Sheldon | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/06.-Algoritmos-DrEsa%C3%BA-1/Algoritmos/010.-Sheldon-Cooper/10-Sheldon-Cooper.c) |
 
+---
 ### Todo el rollo de las funciones es para evitar repetir código, pero ¿qué pasa si quiero usar una función en otro archivo? Eso se verá en la última sección 🤓
+---
 
 ## Expresiones de gratitud
 
