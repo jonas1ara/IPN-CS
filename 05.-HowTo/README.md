@@ -63,8 +63,7 @@ _Programa para generar números aleatorios_
 int main() 
 {
 
-	int numeros[NUMS_TO_GENERATE] = { 0 }, N ;
-	//Declara arreglo vacio del tamaño que tome NUMS_TO_GENERATE 
+	int numeros[NUMS_TO_GENERATE] = { 0 }, N ; //Declara arreglo vacio del tamaño que tome NUMS_TO_GENERATE 
  
     srand(time(NULL)); 
     for (int i = 0; i < NUMS_TO_GENERATE; i++){
