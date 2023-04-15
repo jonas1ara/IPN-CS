@@ -1,6 +1,6 @@
 # How To
 
-_Impletaciones de sofware para hacer tareas especificas_
+#### Impletaciones de sofware para hacer tareas especificas
 
 ![](/00.-Sources/Images/HowTo.jpeg)
 
