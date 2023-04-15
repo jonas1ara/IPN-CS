@@ -4,6 +4,8 @@
 
 ![](/00.-Sources/Images/HowTo.jpeg)
 
+_"How To" en español quiere decir "como"_
+
 Supon que quieres medir el tiempo que tarda en ejecutarse el algoritmo de `ordenamiento por inserción` en un array de 1000000 elementos. Para ello, tendrías que hacer lo siguiente:
 
 - Crear un array de 1000000 elementos
@@ -402,7 +404,8 @@ En el programa anterior, creamos una constante `N` que es de tipo `int` y le asi
 
 _**Simulación del calculo de Pi usando el método de Monte Carlo**, ¿podrías ser capaz de intuir que programas se necesitan para realizar esta tarea?_
 
+### La programación es saber cómo unir piezas de código para realizar una tarea específica 😌
 
-## La programación es saber cómo unir piezas de código para realizar una tarea específica 😌
+## Expresiones de gratitud
 
 _Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado_
