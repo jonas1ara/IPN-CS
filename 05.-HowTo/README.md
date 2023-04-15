@@ -404,6 +404,8 @@ En el programa anterior, creamos una constante `N` que es de tipo `int` y le asi
 
 _**Simulación del calculo de Pi usando el método de Monte Carlo**, ¿podrías ser capaz de intuir que programas se necesitan para realizar esta tarea?_
 
+---
+
 ### La programación es saber cómo unir piezas de código para realizar una tarea específica 😌
 
 ## Expresiones de gratitud
