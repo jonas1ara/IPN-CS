@@ -210,6 +210,10 @@ clean:
 	rm -f main $(BINARY) $(OBJS)
 ```
 
+---
+#### En resumen make es una herramienta de gestión de dependencias usada en entornos UNIX. Cuando tu código se compone de varios ficheros de código fuente, es una utilidad muy práctica para compilar de una forma automatizada todo lo que necesitas y pasarle a gcc las opciones necesarias 🤖
+---
+
 ## Referencias 📚
 
 _GNU make. (s. f.). https://www.gnu.org/software/make/manual/make.html_
