@@ -89,7 +89,11 @@ _En este ejemplo se aprecia el uso de una variable estática, es decir una varia
 |002| Estructuras de datos | [C](https://github.com/Jonas-Lara/IPN-CS/tree/master/11.-Estructuras-de-Datos-en-C) |
 |003| Matrices dinámicas | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/07-Matrices-din%C3%A1micas.c) |
 
+---
+
 ### Quizá al principio te cueste y no entiendas para que es útil el manejo de memoria, pero conforme avances en tú carrera lo entenderás y regresarás a este repositorio 🫢
+
+---
 
 ## Referencias
 
