@@ -310,8 +310,9 @@ Este programa imprimirá "Hola mundo", que es la cadena de caracteres copiada de
 |001| Shell | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/16.-Llamadas-al-Sistema/ConstruyeUnShell/main.c) |
 |002| Gestor de tareas | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/12.-Algoritmos-DrEsa%C3%BA-2/Algoritmos/17-ETS-gestor-de-tareas.c) |
 
-
+---
 ### En el área de la programación de sistemas que es dónde el lenguaje C tiene el trono, el manejo de strings es el pan de cada día 😉
+---
 
 ### Referencias
 
