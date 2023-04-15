@@ -408,6 +408,8 @@ _**Simulación del calculo de Pi usando el método de Monte Carlo**, ¿podrías 
 
 ### La programación es saber cómo unir piezas de código para realizar una tarea específica 😌
 
+---
+
 ## Expresiones de gratitud
 
 _Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado_
