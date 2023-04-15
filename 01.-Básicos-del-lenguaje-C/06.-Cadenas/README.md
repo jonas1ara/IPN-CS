@@ -311,7 +311,7 @@ Este programa imprimirá "Hola mundo", que es la cadena de caracteres copiada de
 |002| Gestor de tareas | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/12.-Algoritmos-DrEsa%C3%BA-2/Algoritmos/17-ETS-gestor-de-tareas.c) |
 
 
-# En el área de la programación de sistemas que es dónde el lenguaje C tiene el trono, el manejo de strings es el pan de cada día 😉
+### En el área de la programación de sistemas que es dónde el lenguaje C tiene el trono, el manejo de strings es el pan de cada día 😉
 
 ### Referencias
 
@@ -320,4 +320,4 @@ Este programa imprimirá "Hola mundo", que es la cadena de caracteres copiada de
 
 ### Expresiones de gratitud
 
-_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado_
+_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado_
