@@ -32,7 +32,9 @@ _En este segundo dibujo podemos observar que el entero `a` vale 5 y está alojad
 
 Hablar del lenguaje C practicamente es hablar de punteros, en cualquier programa serio y/o cualquier estructura de datos estarán ...
 
+---
 ### Todo el rollo de los punteros y el paso por referencia fue pensado para NO copiar objetos innecesariamente, y hacer un uso optimo de la memoria RAM 😉
+---
 
 ## Referencias
 
