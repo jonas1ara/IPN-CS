@@ -2,7 +2,7 @@
 #### Un archivo es un conjunto de datos almacenados en un dispositivo de almacenamiento secundario
 
 
-![](/00.-Sources/Images/Archivos.png)
+![](/00.-Sources/Images/Archivos1.png)
 
 _Editando un archivo en Linux usando Gedit_
 
