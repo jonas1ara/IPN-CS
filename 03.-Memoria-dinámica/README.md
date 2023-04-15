@@ -1,6 +1,6 @@
 # Memoría dinámica
 
-#### La **[memoria dinámica](https://github.com/Jonas-Lara/IPN-CS/blob/master/03.-Memoria-din%C3%A1mica/03-Memoria-Din%C3%A1mica.c)** permite al programador solicitar memoria en **tiempo de ejecución** al sistema operativo
+#### La memoria dinámica permite al programador solicitar memoria en _tiempo de ejecución_ al sistema operativo
 
 ![DM](/00.-Sources/Images/DM.png)
 
