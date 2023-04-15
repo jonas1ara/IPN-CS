@@ -1,8 +1,6 @@
 # Fundamentos 
 
-#### Los fundamentos del lenguaje C
-
-En este apartado se explican los fundamentos del lenguaje C, como son las variables, los tipos de datos, las constantes, las estructuras de control, etc.
+#### En esta sección se explican los fundamentos del lenguaje C, como son las variables, los tipos de datos, las constantes, las estructuras de control, etc.
 
 ## Hola mundo
 
