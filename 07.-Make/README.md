@@ -210,6 +210,11 @@ clean:
 	rm -f main $(BINARY) $(OBJS)
 ```
 
+## Referencias 📚
+
+_GNU make. (s. f.). https://www.gnu.org/software/make/manual/make.html_
+
+
 ## Expresiones de gratitud
 
 Escrito con ❤️ por [Jonas Lara](https://www.linkedin.com/in/jonas1ara/) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado.
