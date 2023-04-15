@@ -135,11 +135,11 @@ clean:
 |002| Matriz | [C](https://github.com/Jonas-Lara/IPN-CS/tree/master/08.-Consola/05.-Matrix) |
 
 
-# En resumen la modularidad nos ayuda a compartir las declaraciones de funciones y variables entre archivos, y a separar el código en módulos, para que sea más fácil de entender y de mantener nuestro proyecto  🤓
+#### En resumen la modularidad nos ayuda a compartir las declaraciones de funciones y variables entre archivos, y a separar el código en módulos, para que sea más fácil de entender y de mantener nuestro proyecto  🤓
 
 ## Expresiones de gratitud
 
-_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado_
+_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado_
 
 
 
