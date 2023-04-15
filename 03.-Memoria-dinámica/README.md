@@ -1,4 +1,4 @@
-# Memoría dinámica
+# Memoria dinámica
 
 #### La memoria dinámica permite al programador solicitar memoria en _tiempo de ejecución_ al sistema operativo
 
