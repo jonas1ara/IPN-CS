@@ -404,9 +404,13 @@ int main()
 }
 ```
 
-¿Te diste cuenta que incomodo es acceder o recorrer un vector o una matriz? Pues no te preocupes, en el siguiente apartado se explica como se recorren los vectores y las matrices en C.
+¿Te diste cuenta que incomodo es acceder o recorrer un vector o una matriz? Pues no te preocupes, en el siguiente apartado se explica como se recorren los vectores y las matrices en C
+
+---
 
 ### Ahora tienes lo necesario para comenzar a programar en C
+
+---
 
 ## Expresiones de gratitud
 
