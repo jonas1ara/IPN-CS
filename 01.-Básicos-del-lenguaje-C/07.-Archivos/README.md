@@ -1,4 +1,6 @@
 # Archivos
+#### Un archivo es un conjunto de datos almacenados en un dispositivo de almacenamiento secundario
+
 
 ![](/00.-Sources/Images/Archivos.png)
 
@@ -6,7 +8,7 @@ _Editando un archivo en Linux usando Gedit_
 
 ## ¿Qué son los archivos?
 
-Un archivo es un conjunto de datos almacenados en un dispositivo de almacenamiento secundario. Los archivos de texto son archivos que contienen caracteres que pueden ser leídos por un ser humano. 
+Un archivo es un conjunto de datos almacenados en un dispositivo de almacenamiento secundario. Los archivos de texto son archivos que contienen caracteres que pueden ser leídos por un ser humano.
 
 ## ¿Cómo se crean los archivos?
 
