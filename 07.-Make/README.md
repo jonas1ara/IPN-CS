@@ -9,7 +9,7 @@ _Y antes de que algún inteligente diga pues te creas un shell script, si tuvies
 _Para instalarlo en una distribución basada en Debian, tipea:_
 
 ```
-sudo apt install build-essential 
+sudo apt install make
 ```
 
 _Después comprueba la instalación escribiendo make en la terminal, si recibes una salida como la siguiente, todo bien_
