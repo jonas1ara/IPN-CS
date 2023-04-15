@@ -1,16 +1,18 @@
 # Bucles
 
+#### Los bucles son una estructura de control que nos permite repetir una o varias instrucciones un número determinado de veces o hasta que se cumpla una condición
+
 ![](/00.-Sources/Images/Bucle.png)
 
 _Ejemplo del bucle en un juego de consola, que utiliza while para repetir el juego hasta perder_
 
 ## ¿Qué son los bucles?
 
-Los bucles son una estructura de control que nos permite repetir una o varias instrucciones un número determinado de veces o hasta que se cumpla una condición.
+Los bucles son una estructura de control que nos permite repetir una o varias instrucciones un número determinado de veces o hasta que se cumpla una condición
 
 ## For
 
-El bucle for es el más utilizado en la programación, ya que nos permite realizar una tarea un número determinado de veces, comunmente se utiliza para recorrer arreglos.
+El bucle for es el más utilizado en la programación, ya que nos permite realizar una tarea un número determinado de veces, comunmente se utiliza para recorrer arreglos
 
 ```c
 #include <stdio.h>
@@ -30,7 +32,7 @@ int main()
 
 ## While
 
-El ciclo while es muy similar al ciclo for, pero no se utiliza para recorrer arreglos, sino para realizar una tarea hasta que se cumpla una condición.
+El ciclo while es muy similar al ciclo for, pero no se utiliza para recorrer arreglos, sino para realizar una tarea hasta que se cumpla una condición
 
 ```c
 #include <stdio.h>
@@ -51,7 +53,7 @@ int main()
 
 ## Do While
 
-El ciclo do while es muy similar al ciclo while, pero la diferencia es que este ciclo se ejecuta al menos una vez, ya que primero se ejecuta el bloque de código y después se evalúa la condición.
+El ciclo do while es muy similar al ciclo while, pero la diferencia es que este ciclo se ejecuta al menos una vez, ya que primero se ejecuta el bloque de código y después se evalúa la condición
 
 ```c
 #include <stdio.h>
@@ -69,9 +71,9 @@ int main()
     return 0;
 }
 ```
-
+---
 ### Nada del otro mundo
-
+---
 
 ## Expresiones de gratitud
 
