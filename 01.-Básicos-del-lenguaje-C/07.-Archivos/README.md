@@ -128,12 +128,12 @@ const char *fgetmode(FILE *stream);
 |001| Método de bisección| [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/14.-M%C3%A9todos-num%C3%A9ricos-en-C/01.-M%C3%A9todo-de-bisecci%C3%B3n/M%C3%A9todo-de-bisecci%C3%B3n.c) |
 |002| Encontrar palabras en un diccionario | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/06.-Algoritmos-DrEsa%C3%BA-1/Algoritmos/016.-Encontrando-Palabras/16-Encontrando-Palabras.c) |
 
-# Saber trabajar es importante cuándo vas a trabajar en la programación de sistemas, realmente en el mundo web se prefiere trabajar con bases de datos 😉
+### Saber trabajar es importante cuándo vas a trabajar en la programación de sistemas, realmente en el mundo web se prefiere trabajar con bases de datos 😉
 
-### Referencias
+## Referencias
 
 [Archivos en C, preambulo para construir un shell 🐚](https://medium.com/@jonas_lara/strings-para-gente-con-prisa)
 
-### Expresiones de gratitud
+## Expresiones de gratitud
 
-_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado_
+_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado_
