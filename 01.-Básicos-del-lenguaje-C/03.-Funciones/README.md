@@ -87,4 +87,4 @@ C cuenta con varias funciones predefinidas. Por ejemplo, la función `printf` qu
 
 ## Expresiones de gratitud
 
-_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado_
+_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/),para quien sea que este interesado_
