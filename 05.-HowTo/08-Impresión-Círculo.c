@@ -1,16 +1,18 @@
 #include <stdio.h>
+#include <math.h>
+
+#define N 10
 
 int main()
 {
-    int n = 10;
 
-    for(int j = 0; j <= n*2; j++) //y
+    for(int j = 0; j <= N*2; j++) //y
 	{
-		for(int i = 0; i<= n*2; i++) //x
+		for(int i = 0; i<= N*2; i++) //x
 		{
-			if (pow(i-n,2) + pow(j-n,2) <= pow(n,2))
+			if (pow(i-N,2) + pow(j-N,2) <= pow(N,2))
 			{
-				printf("%c",176);
+				printf("#");
 			}
 			else
 			{

@@ -1,25 +1,28 @@
 #include <stdio.h>
 
+void invertir (int numero);
+
 int main()
 {
-    int numero, resto , invertir = 0;
-    
+    int numero;    
     printf("Dame un número:\n");
-    scanf("%d", &numero); //721
+    scanf("%d", &numero); 
     
-    while(numero!=0) //721 != 0
+    invertir(numero);
+
+    return 0;
+}
+
+void invertir (int numero)
+{
+    int resto , invertir = 0;
+    while(numero!=0) 
     {
-        resto = numero%10; //.1 , .2, .7
-        numero = numero/10; //72.1, 7.2, 0 << se termina la condición del while
+        resto = numero%10; 
+        numero = numero/10; 
         
         invertir = invertir*10+resto;
-        //1ra pasada: 0 * 10 = 0 + 1 = 1
-        //2da pasada: 1 * 10 = 10 + 2 = 12
-        //3ra pasada: 12 * 10 = 120 + 7 = 127
     }
     
     printf("El numero invertido es: %d\n",invertir);
-
-    return 0;
-
 }
