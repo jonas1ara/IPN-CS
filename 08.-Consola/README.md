@@ -50,3 +50,11 @@ _Todo esto nos crea un ejecutable llamado Ncurses, ejecutalo de la siguiente man
 ./Ncurses
 ```
 ![GTK-PreWork](/00.-Sources/Gifs/demoNcurses.gif)
+
+## Referencias 📚
+
+_Writing Programs with NCURSES. (s. f.). https://invisible-island.net/ncurses/ncurses-intro.html_
+
+## Expresiones de gratitud
+
+_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado_
