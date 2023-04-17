@@ -17,7 +17,7 @@ La recursión es un concepto importante en la programación y se refiere a la ca
 ![CByCR](/00.-Sources/Images/Recursion1.png)
 
 
-## ¿Cómo funciona?
+## Ejemplo del factorial de un número
 
 
 
