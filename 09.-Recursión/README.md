@@ -17,6 +17,27 @@ La recursión es un concepto importante en la programación y se refiere a la ca
 ![CByCR](/00.-Sources/Images/Recursion1.png)
 
 
+## ¿Para entender la recursión es necesario entender la recursión?
+
+_Esto se dice mucho pero personalmento creo que esto es falso_
+
+Para entender y diferenciar debes entender o por lo menos conocer el concepto de **stack** pero no solo como stack en el campo de las estructuras de datos, sino como el Stack en la asignación de memoria, las llamadas al Stack en el Stack Frame, y por último la recursión y el Stack Overflow(No el página web) que es lo que sucede cuando se llega al límite de memoria del stack y se produce un error
+
+4 conceptos que se relacionan entre si y que son fundamentales para entender la recursión:
+
+- Stack (Estructura de datos)
+- Stack Allocation (Asignación de memoria)
+- Stack Frame (Llamadas al Stack)
+- Stack Overflow (Error)
+
+### Stack (Estructura de datos)
+
+El **Stack o Pila** es una estructura de datos que se caracteriza por ser un tipo de lista en la que el acceso a los elementos se realiza por un solo extremo, el cual se conoce como tope. Este tipo de estructura se utiliza para almacenar datos de forma temporal, de manera que el último elemento en entrar es el primero en salir, es decir, el último que entra es el primero que sale también conocido cómo last in first out (LIFO)
+
+![Stack](/00.-Sources/Images/Pila.png)
+
+
+
 ## Ejemplo del factorial de un número
 
 
