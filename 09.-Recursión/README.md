@@ -32,9 +32,32 @@ Para comprender la recursión debes entender o por lo menos conocer el concepto 
 
 ### Stack (Estructura de datos)
 
-El **Stack o Pila** es una estructura de datos que se caracteriza por ser un tipo de lista en la que el acceso a los elementos se realiza por un solo extremo, el cual se conoce como tope. Este tipo de estructura se utiliza para almacenar datos de forma temporal, de manera que el último elemento en entrar es el primero en salir, también conocido cómo **last in first out (LIFO)**, cuando se añade un nuevo elemento a la pila, se le conoce como **push** y cuando se elimina un elemento se le conoce como **pop**
+El **Stack o Pila** es una estructura de datos que se caracteriza por ser un tipo de lista en la que el acceso a los elementos se realiza por un solo extremo, el cual se conoce como tope.
 
 ![Stack](/00.-Sources/Images/Pila.png)
+
+_Ilustración del funcionamiento de una pila_
+
+El **Stack o Pila** es una estructura de datos que se caracteriza por ser un tipo de lista en la que el acceso a los elementos se realiza por un solo extremo, el cual se conoce como tope. Este tipo de estructura se utiliza para almacenar datos de forma temporal, de manera que el último elemento en entrar es el primero en salir, también conocido cómo **last in first out (LIFO)**, cuando se añade un nuevo elemento a la pila, se le conoce como **push** y cuando se elimina un elemento se le conoce como **pop**
+
+```c
+struct Nodo {
+    int dato;
+    struct Nodo *next;
+};
+```
+_Nodo de una pila en C_
+
+### Stack Allocation (Asignación de memoria)
+
+
+
+
+
+
+
+
+
 
 
 
