@@ -82,13 +82,13 @@ El **stack frame**, o marco de pila, es un registro en el "call stack" que conti
 
 ### El factorial de un número
 
-**EL FACTORIAL DE UN ENTERO POSITIVO** es el producto de todos los enteros positivos hasta ese
+Para ilustrar lo anterior vamos a ver un ejemplo de la recursión en el que se calcula el factorial de un número
 
 ![Factorial](/00.-Sources/Images/Factorial.png)
 
 _Ejemplo matemático de la función factorial_
 
-Para ilustrar lo anterior vamos a ver un ejemplo de la recursión en el que se calcula el factorial de un número
+**EL FACTORIAL DE UN ENTERO POSITIVO** es el producto de todos los enteros positivos hasta ese
 
 ```c
 #include <stdio.h>
@@ -111,7 +111,10 @@ int main()
 }
 ```
 
+_Ejemplo de la función factorial en C_
+
 ![Factorial](/00.-Sources/Images/CallStack-StackFrame.png)
 
+_Llamadas al Stack de la función factorial paso a paso en el Stack Frame_
 
 
