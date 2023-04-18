@@ -80,7 +80,7 @@ El **call stack** es una estructura de datos utilizada por la mayoría de los le
 
 El **stack frame**, o marco de pila, es un registro en el "call stack" que contiene información sobre la función actual que se está ejecutando, como por ejemplo la dirección de retorno, los argumentos de la función y las variables locales.
 
-#### El factorial de un número
+### El factorial de un número
 
 **EL FACTORIAL DE UN ENTERO POSITIVO** es el producto de todos los enteros positivos hasta ese
 
@@ -91,6 +91,27 @@ _Ejemplo matemático de la función factorial_
 Para ilustrar lo anterior vamos a ver un ejemplo de la recursión en el que se calcula el factorial de un número
 
 ```c
+#include <stdio.h>
+
+int fact(int n)
+{
+	if( n < 2 )
+		return 1;
+	else
+		return n * fact(n-1);
+}
+
+int main()
+{
+	int result = fact(5);
+
+	printf("Result: %d\n", result);
+
+	return 0;
+}
+```
+
+![Factorial](/00.-Sources/Images/CallStack-StackFrame.png)
 
 
 
