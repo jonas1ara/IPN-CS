@@ -50,7 +50,25 @@ _Nodo de una pila en C_
 
 ### Stack Allocation (Asignación de memoria)
 
+_En la **asignación de memoria** se refiere a la forma en la que se asigna la memoria a las variables_
 
+![StackAllocation](/00.-Sources/Images/StackAllocation.png)
+
+En la **asignación de memoria** se refiere a la forma en la que se asigna la memoria a las variables, en C hay dos formas de asignar memoria a las variables; **Heap Allocation** en el Heap se administra memoria a discreción del programador y **Stack Allocation** en el que la asignación de memoria es manejada por el compilador
+
+#### Stack (Automático)
+
+- **Tiempo de vida** → Temporal, almacena variables locales durante llamadas a funciones
+- **Funcionamiento** → Locación y deslocación automática de memoria más rápida que el Heap
+- **Ventajas** → Fácil de usar para el programador y más rápida que el Heap
+- **Tamaño** → Crece al llamar funciones anidadas
+- **Acceso** → Solo desde la función que se creó
+- **Liberación** → Al finalizar la función
+- **Ejemplo** → Variables locales
+
+![Stack](/00.-Sources/Images/Stack.png)
+
+_En este ejemplo se aprecia como el sistema operativo automáticamente crea y destruye la variable `b` en cada una de las llamadas a la función, impidiendo imprimir una secuencia de números enteros positivos_
 
 
 
