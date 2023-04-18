@@ -30,6 +30,39 @@ struct Nodo
 };
 ```
 
+```c
+struct Nodo {
+    int dato;
+    struct Nodo *next;
+};
+```
+_Nodo de una pila_
 
+```c
+struct Nodo *top = NULL;
+```
+
+```c
+void push(int dato) {
+    struct Nodo *nuevo = (struct Nodo *) malloc(sizeof(struct Nodo));
+    nuevo->dato = dato;
+    nuevo->next = top;
+    top = nuevo;
+}
+```
+
+```c
+int pop() {
+    if (top == NULL) {
+        printf("La pila esta vacia");
+        return -1;
+    }
+    struct Nodo *aux = top;
+    int dato = aux->dato;
+    top = top->next;
+    free(aux);
+    return dato;
+}
+```
 
 
