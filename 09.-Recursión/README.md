@@ -50,11 +50,11 @@ _Nodo de una pila en C_
 
 ### Stack Allocation (Asignación de memoria)
 
-_En la **asignación de memoria** se refiere a la forma en la que se asigna la memoria a las variables_
+_La **asignación de memoria** se refiere a la forma en la que se asigna la memoria a las variables_
 
 ![StackAllocation](/00.-Sources/Images/StackAllocation.png)
 
-En la **asignación de memoria** se refiere a la forma en la que se asigna la memoria a las variables, en C hay dos formas de asignar memoria a las variables; **Heap Allocation** en el Heap se administra memoria a discreción del programador y **Stack Allocation** en el que la asignación de memoria es manejada por el compilador
+En C hay dos formas de asignar memoria a las variables; **Heap Allocation** en el Heap se administra memoria a discreción del programador y **Stack Allocation** en el que la asignación de memoria es manejada por el compilador
 
 #### Stack (Automático)
 
@@ -70,16 +70,27 @@ En la **asignación de memoria** se refiere a la forma en la que se asigna la me
 
 _En este ejemplo se aprecia como el sistema operativo automáticamente crea y destruye la variable `b` en cada una de las llamadas a la función, impidiendo imprimir una secuencia de números enteros positivos_
 
+### Stack Frame (Call Stack)
 
+_Las **Call Stack** son las llamadas que se hacen a las funciones en el Stack y estas a su vez van formando el **Stack Frame**_
 
+![StackFrame](/00.-Sources/Images/StackFrame.png)
 
+El **call stack** es una estructura de datos utilizada por la mayoría de los lenguajes de programación para realizar un seguimiento de las funciones que se han llamado y de dónde se encuentran en la ejecución del programa. En otras palabras, es una pila de funciones que se han llamado y que se están ejecutando actualmente.
 
+El **stack frame**, o marco de pila, es un registro en el "call stack" que contiene información sobre la función actual que se está ejecutando, como por ejemplo la dirección de retorno, los argumentos de la función y las variables locales.
 
+#### El factorial de un número
 
+**EL FACTORIAL DE UN ENTERO POSITIVO** es el producto de todos los enteros positivos hasta ese
 
+![Factorial](/00.-Sources/Images/Factorial.png)
 
+_Ejemplo matemático de la función factorial_
 
-## Ejemplo del factorial de un número
+Para ilustrar lo anterior vamos a ver un ejemplo de la recursión en el que se calcula el factorial de un número
+
+```c
 
 
 
