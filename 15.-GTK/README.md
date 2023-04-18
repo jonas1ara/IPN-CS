@@ -1,4 +1,4 @@
-# Puedes amar 🐧 sin odiar a Microsoft
+# GTK - The GIMP Toolkit
 
 ## Instalar GTK4 en una distribución basada en Debian
 
