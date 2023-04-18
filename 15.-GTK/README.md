@@ -21,7 +21,7 @@ sudo apt install gtk-4-examples
 
 ![GTK-PreWork](/00.-Sources/Gifs/preworkGTK.gif)
 
-## Usando GTK4 en Ubuntu 21.10
+## Usando GTK4 en Ubuntu 22.04
 
 _Una vez instalado necesitas probar que los paquetes funcionan, copia y pega en un archivo llamado Hola-mundo.c el código de un tradicional "Hola mundo" en GTK4_
 
