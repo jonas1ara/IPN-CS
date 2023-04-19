@@ -1,4 +1,4 @@
-# Recursión
+# Recursión 🏃🏽🚶🏽🧑🏽‍🦯
 
 _La recursión es una técnica que consiste en resolver un problema haciendo uso de una versión más sencilla del mismo_
 
@@ -10,16 +10,16 @@ La recursión es un concepto importante en la programación y se refiere a la ca
 
 - **Caso recursivo:** Es el caso en el que se llama a la función recursiva para resolver un problema más sencillo
 
-**Supongamos que tenemos que obtener el inventario de un almacen, que tiene varios estantes y cada estante tiene varias cajas, para resolver este problema podemos hacer uso de la recursión:**
+**Supongamos que tenemos que obtener el inventario de un almacén, que tiene varios estantes y cada estante tiene varias cajas, para resolver este problema podemos hacer uso de la recursión:**
 
 ![CByCR](/00.-Sources/Images/Recursion1.png)
 
 
 ## ¿Para entender la recursión es necesario entender la recursión?
 
-_Esto se dice mucho pero personalmento creo que es una broma de mal gusto_
+_Esto se dice mucho pero personalmente creo que es una broma de mal gusto_
 
-Para comprender la recursión debes entender o por lo menos conocer el concepto de **stack** pero no solo como stack en el campo de las **estructuras de datos**, sino como el Stack en la **asignación de memoria**, las **llamadas al Stack** en el Stack Frame, y por último la recursión y el **Stack Overflow**(No el página web) que es lo que sucede cuando se llega al límite de memoria del stack y se produce un error
+Para comprender la recursión debes entender o por lo menos conocer el concepto de **stack** pero no solo como stack en el campo de las **estructuras de datos**, sino como el Stack en la **asignación de memoria**, las **llamadas al Stack** en el Stack Frame, y por último la recursión y el **Stack Overflow**(no el sitio web) que es lo que sucede cuando se llega al límite de memoria del stack y se produce un error
 
 4 conceptos que se relacionan entre si y que son fundamentales para entender la recursión:
 
@@ -84,7 +84,7 @@ Para ilustrar lo anterior vamos a ver un ejemplo de la recursión en el que se c
 
 ![Factorial](/00.-Sources/Images/Factorial.png)
 
-_Ejemplo matemático de la función factorial_
+_Definición y ejemplo matemático de la función factorial_
 
 **EL FACTORIAL DE UN ENTERO POSITIVO** es el producto de todos los enteros positivos hasta ese
 
@@ -123,15 +123,15 @@ Podemos observar que la función `factorial` se llama a si misma hasta que se ll
 
 
 
-### Stack Overflow (Error)
+### Stack overflow (Error)
 
-**Stack Overflow** o **desbordamiento de pila** ocurre cuando la cantidad de memoria asignada al "call stack" de un programa se llena y no hay suficiente espacio para almacenar nuevos "stack frames"
+**Stack overflow** o **desbordamiento de pila** ocurre cuando la cantidad de memoria asignada al "call stack" de un programa se llena y no hay suficiente espacio para almacenar nuevos "stack frames"
 
 ![StackOverflow](/00.-Sources/Images/StackOverflow.png)
 
-_Sitio web Stack Overflow(no confundir)_
+_Sitio web Stack overflow_
 
-**Stack Overflow** o **desbordamiento de pila** ocurre cuando la cantidad de memoria asignada al "call stack" de un programa se llena y no hay suficiente espacio para almacenar nuevos `stack frames`. Esto  sucede cuando se anida una gran cantidad de llamadas a funciones recursivas, lo que causa que el "call stack" crezca hasta que se agote la memoria disponible
+**Stack overflow** o **desbordamiento de pila** ocurre cuando la cantidad de memoria asignada al "call stack" de un programa se llena y no hay suficiente espacio para almacenar nuevos `stack frames`. Esto  sucede cuando se anida una gran cantidad de llamadas a funciones recursivas, lo que causa que el "call stack" crezca hasta que se agote la memoria disponible
 
 Un ejemplo común de esto es el **conteo regresivo** en el que se llama a la función recursivamente hasta llegar a cero:
 
@@ -162,7 +162,7 @@ _Conteo regresivo con recursión_
 
 ![ConteoRecursion](/00.-Sources/Images/crr.png)
 
-_Captura de pantalla del programa dónde se corrompe memoria al llenar el Stack_
+_Captura de pantalla del programa dónde se corrompe memoria al llenar el stack_
 
 #### ¿El desbordamiento de pila se puede solucionar?
 
