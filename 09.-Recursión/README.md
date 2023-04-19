@@ -30,7 +30,7 @@ Para comprender la recursión debes entender o por lo menos conocer el concepto 
 - Stack Frame (Llamadas al Stack)
 - Stack Overflow (Error)
 
-### Stack (Estructura de datos)
+## Stack (Estructura de datos)
 
 El **Stack o Pila** es una estructura de datos que se caracteriza por ser un tipo de lista en la que el acceso a los elementos se realiza por un solo extremo, el cual se conoce como tope.
 
@@ -48,7 +48,7 @@ struct Nodo {
 ```
 _Nodo de una pila en C_
 
-### Stack Allocation (Asignación de memoria)
+## Stack Allocation (Asignación de memoria)
 
 _La **asignación de memoria** se refiere a la forma en la que se pide y devuelve la memoria al ordenador_
 
@@ -56,7 +56,7 @@ _La **asignación de memoria** se refiere a la forma en la que se pide y devuelv
 
 En C hay dos formas de asignar memoria a las variables; **Heap Allocation** en el Heap se administra memoria a discreción del programador y **Stack Allocation** en el que la asignación de memoria es manejada por el compilador
 
-### Stack (Automático)
+## Stack (Automático)
 
 - **Tiempo de vida** → Temporal, almacena variables locales durante llamadas a funciones
 - **Funcionamiento** → Locación y deslocación automática de memoria más rápida que el Heap
@@ -70,7 +70,7 @@ En C hay dos formas de asignar memoria a las variables; **Heap Allocation** en e
 
 _En este ejemplo se aprecia como el sistema operativo automáticamente crea y destruye la variable `b` en cada una de las llamadas a la función, impidiendo imprimir una secuencia de números enteros positivos_
 
-### Stack Frame (Call Stack)
+## Stack Frame (Call Stack)
 
 _Las **Call Stack** son las llamadas que se hacen a las funciones en el Stack y estas a su vez van formando el **Stack Frame**_
 
@@ -133,7 +133,7 @@ _En cada llamada vamos a evaluar que **T(n)** va a estar dado por las operacione
 
 ![](/00.-Sources/Images/3.png)
 
-_En **T(n-1)** + **O(1)**, sdonde se invierten los términos por comodidad_
+_En **T(n-1)** + **O(1)**, donde se invierten los términos por comodidad_
 
 ![](/00.-Sources/Images/4.png)
 
@@ -151,7 +151,7 @@ _Y así sucesivamente hasta llegar al caso base, donde se devuelve el valor `1` 
 
 _En el caso base se tiene que **T(1)** = **O(1)**, por lo que se puede decir que **T(n)** = **O(n)** o de complejidad lineal, es decir, el número de operaciones que se realizan en la función factorial es proporcional al tamaño de la entrada_
 
-### Stack overflow (Error)
+## Stack overflow (Error)
 
 **Stack overflow** o **desbordamiento de pila** ocurre cuando la cantidad de memoria asignada al "call stack" de un programa se llena y no hay suficiente espacio para almacenar nuevos "stack frames"
 
@@ -192,7 +192,7 @@ _Conteo regresivo con recursión_
 
 _Captura de pantalla del programa dónde se corrompe memoria al llenar el stack_
 
-#### ¿El desbordamiento de pila se puede solucionar?
+### ¿El desbordamiento de pila se puede solucionar?
 
 Si, si hacemos la implementación de manera iterativa, no se genera el desbordamiento de pila:
 
