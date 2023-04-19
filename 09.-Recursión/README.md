@@ -119,8 +119,102 @@ _Ejemplo de la función factorial en C_
 
 _De izquierda a derecha ejecución de la función factorial paso a paso_
 
-Podemos observar que la función `factorial` se llama a si misma hasta que se llega al caso base, en el que se devuelve el valor `1` y se empieza a devolver los valores de las llamadas recursivas, puesto que la función `factorial` es una función que devuelve un valor, cada vez que se llama a la función se crea un nuevo **Stack Frame** donde estamos invocando otra función diferente del mismo código que vive aparte de las otras ejecuciones en cada stack frame se almacena el valor de retorno de la función, en este caso el valor de `n * factorial(n-1)`, 
+Podemos observar que la función `factorial` se llama a si misma hasta que se llega al caso base, en el que se devuelve el valor `1` y se empieza a devolver los valores de las llamadas recursivas, puesto que la función `factorial` es una función que devuelve un valor, cada vez que se llama a la función se crea un nuevo **Stack Frame** donde estamos invocando otra función diferente del mismo código que vive aparte de las otras ejecuciones donde se almacena el valor de retorno de la función, en este caso el valor de `n * factorial(n-1)` y así hasta resolver el caso recursivo
+
+### Analizar operaciones de la recursión
+
+
 
 ### Stack Overflow (Error)
+
+**Stack Overflow** o **desbordamiento de pila** ocurre cuando la cantidad de memoria asignada al "call stack" de un programa se llena y no hay suficiente espacio para almacenar nuevos "stack frames"
+
+![StackOverflow](/00.-Sources/Images/StackOverflow.png)
+
+_Sitio web Stack Overflow_
+
+**Stack Overflow** o **desbordamiento de pila** ocurre cuando la cantidad de memoria asignada al "call stack" de un programa se llena y no hay suficiente espacio para almacenar nuevos `stack frames`. Esto puede suceder cuando se anida una gran cantidad de llamadas a funciones recursivas, lo que causa que el "call stack" crezca hasta que se agote la memoria disponible.
+
+Un ejemplo común para ilustrar el `Stack Overflow` es el algoritmo del factorial que acabamos de ver, ¿Qué sucede si se llama a la función factorial con un número muy grande cómo 1000?
+
+_Conteo regresivo con recursión_
+
+```c
+#include <stdio.h>
+
+static int n = 1000000;
+
+void ConteoRegresivo(int n)
+{
+    if (0 > n--) return;
+
+    printf("%d\n", n);
+    
+    ConteoRegresivo(n);
+}
+
+int main()
+{
+    ConteoRegresivo(n);
+
+	return 0;
+}
+```
+
+![ConteoRecursion](/00.-Sources/Gifs/crr.gif)
+
+_Ejecución del programa dónde se corrompe memoria al llenar el Stack_
+
+#### ¿El desboda de pila se puede solucionar?
+
+Si hacemos la implementación de manera iterativa, no se genera el desbordamiento de pila
+
+_Conteo regresivo con iteración_
+
+```c
+#include <stdio.h>
+#include <stdbool.h>
+
+static int n = 1000000;
+
+void ConteoRegresivo(int n)
+{
+    while(true)
+    {
+        switch(n)
+        {
+            case 0:
+                return;
+            default:
+                printf("%d\n", n);
+                n--;
+        }
+    }
+}
+
+int main()
+{
+    ConteoRegresivo(n);
+    printf("Terminado\n");
+
+	return 0;
+}
+```
+
+![ConteoIteracion](/00.-Sources/Gifs/cri.gif)
+
+_Ejecución del programa dónde no se corrompe memoria al no llenar el Stack_
+
+
+---
+
+### Con esto puedes darte una idea de como funciona la recursión en C e inferir que este es el tema más importante porque es usada en los procesos algorítmicos más eficientes y en las estructuras de datos no lineales como los árboles y grafos 😌
+
+---
+
+## Expresiones de gratitud
+
+_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado_
+
 
 
