@@ -74,7 +74,7 @@ _En este ejemplo se aprecia como el sistema operativo automáticamente crea y de
 
 _Las **Call Stack** son las llamadas que se hacen a las funciones en el Stack y estas a su vez van formando el **Stack Frame**_
 
-![StackFrame](/00.-Sources/Images/StackFrame.png)
+![StackFrame](/00.-Sources/Images/CallStack.jpg)
 
 El **call stack** es una estructura de datos utilizada por la mayoría de los lenguajes de programación para realizar un seguimiento de las funciones que se han llamado y de dónde se encuentran en la ejecución del programa. En otras palabras, es una pila de funciones que se han llamado y que se están ejecutando actualmente.
 
