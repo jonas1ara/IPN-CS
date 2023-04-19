@@ -133,11 +133,10 @@ Podemos observar que la función `factorial` se llama a si misma hasta que se ll
 
 _Sitio web Stack Overflow_
 
-**Stack Overflow** o **desbordamiento de pila** ocurre cuando la cantidad de memoria asignada al "call stack" de un programa se llena y no hay suficiente espacio para almacenar nuevos `stack frames`. Esto puede suceder cuando se anida una gran cantidad de llamadas a funciones recursivas, lo que causa que el "call stack" crezca hasta que se agote la memoria disponible.
+**Stack Overflow** o **desbordamiento de pila** ocurre cuando la cantidad de memoria asignada al "call stack" de un programa se llena y no hay suficiente espacio para almacenar nuevos `stack frames`. Esto  sucede cuando se anida una gran cantidad de llamadas a funciones recursivas, lo que causa que el "call stack" crezca hasta que se agote la memoria disponible
 
-Un ejemplo común para ilustrar el `Stack Overflow` es el algoritmo del factorial que acabamos de ver, ¿Qué sucede si se llama a la función factorial con un número muy grande cómo 1000?
+Un ejemplo común de esto es el **conteo regresivo** en el que se llama a la función recursivamente hasta llegar a cero:
 
-_Conteo regresivo con recursión_
 
 ```c
 #include <stdio.h>
@@ -161,15 +160,15 @@ int main()
 }
 ```
 
-![ConteoRecursion](/00.-Sources/Gifs/crr.gif)
+_Conteo regresivo con recursión_
 
-_Ejecución del programa dónde se corrompe memoria al llenar el Stack_
+![ConteoRecursion](/00.-Sources/Images/crr.png)
+
+_Captura de pantalla del programa dónde se corrompe memoria al llenar el Stack_
 
 #### ¿El desboda de pila se puede solucionar?
 
-Si hacemos la implementación de manera iterativa, no se genera el desbordamiento de pila
-
-_Conteo regresivo con iteración_
+Si, si hacemos la implementación de manera iterativa, no se genera el desbordamiento de pila:
 
 ```c
 #include <stdio.h>
@@ -200,6 +199,9 @@ int main()
 	return 0;
 }
 ```
+
+_Conteo regresivo con iteración_
+
 
 ![ConteoIteracion](/00.-Sources/Gifs/cri.gif)
 
