@@ -107,8 +107,6 @@ int main()
 
 	printf("Result: %d\n", result);
 
-    //Result: 120
-
 	return 0;
 }
 ```
@@ -123,7 +121,35 @@ Podemos observar que la función `factorial` se llama a si misma hasta que se ll
 
 ### Análisis asintótico de la función del factorial
 
+Para analizar la complejidad de la función `factorial` vamos a utilizar el método de **Big O Notation** que nos permite analizar la complejidad de un algoritmo en función de su entrada, este principio de llegar al caso base tiene su fundamento en el principio de inducción matemática
 
+![](/00.-Sources/Images/1.png)
+
+_**T(n)** nos indica el número operaciones que se realizan en la **n** factorial_ 
+
+![](/00.-Sources/Images/2.png)
+
+_En cada llamada vamos a evaluar que **T(n)** va a estar dado por las operaciones constantes **O(1)** de la función factorial `if n < 2` y `return n * ` , decimos que son constantes porque no dependen de la entrada, es decir, no importa el tamaño de la entrada, siempre se van a realizar las mismas operaciones, mas **T(n-1)** que es `factorial(n-1)` que es la llamada recursiva_
+
+![](/00.-Sources/Images/3.png)
+
+_En **T(n-1)** + **O(1)**, sdonde se invierten los términos por comodidad_
+
+![](/00.-Sources/Images/4.png)
+
+_La siguiente llamada recursiva sería **T(n-2)** + **O(1)** + **O(1)**, porque se toma en cuenta la primera entrada de **T(n-1)** y la primera entrada de **O(1)**_
+
+![](/00.-Sources/Images/5.png)
+
+_En la siguiente llamada recursiva sería **T(n-3)** + **O(1)** + **O(1)** + **O(1)**, porque se toma en cuenta las entradas anteriores de **T(n-1)** y las dos primeras entradas de **O(1)**_
+
+![](/00.-Sources/Images/6.png)
+
+_Y así sucesivamente hasta llegar al caso base, donde se devuelve el valor `1` mas un número de operaciones constantes **O(1)** igual al número de llamadas recursivas_
+
+![](/00.-Sources/Images/7.png)
+
+_En el caso base se tiene que **T(1)** = **O(1)**, por lo que se puede decir que **T(n)** = **O(n)** o de complejidad lineal, es decir, el número de operaciones que se realizan en la función factorial es proporcional al tamaño de la entrada_
 
 ### Stack overflow (Error)
 
@@ -155,8 +181,8 @@ void ConteoRegresivo(int n)
 int main()
 {
     ConteoRegresivo(n);
-
-	return 0;
+    
+    return 0;
 }
 ```
 
@@ -210,7 +236,7 @@ _Ejecución del programa dónde **NO** se corrompe memoria al no llenar el Stack
 
 ---
 
-### Con esto puedes darte una idea de como funciona la recursión en C e inferir que este es el tema más importante porque es usada en los procesos algorítmicos más eficientes y en las estructuras de datos no lineales como los árboles y grafos 😌
+### Con esto puedes darte una idea de como funciona la recursión en C e inferir que este es el tema más importante porque es usada en los procesos algorítmicos más eficientes y en las estructuras de datos no lineales como los árboles y grafos 😌, es importante darte cuenta que no necesariamente un algoritmo recursivo es más eficiente que uno iterativo, es decir,  es más sencillo entender para el programador y las iterativas tienen un mejor rendimiento en términos de tiempo de ejecución, pero en términos de espacio de memoria ocupado, las recursivas son más eficientes, por lo que es importante saber cuando usar cada una de ellas pues no hay solución perfecta
 
 ---
 
