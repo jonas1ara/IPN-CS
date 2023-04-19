@@ -2,8 +2,6 @@
 
 _La recursión es una técnica que consiste en resolver un problema haciendo uso de una versión más sencilla del mismo_
 
-## ¿Qué es la recursión?
-
 ![Recursión](/00.-Sources/Images/Recursion.png)
 
 La recursión es un concepto importante en la programación y se refiere a la capacidad de una función o procedimiento de llamarse a sí mismo dentro de su propia definición. Es decir, en lugar de resolver un problema mediante un enfoque lineal, se utiliza la técnica de "dividir y conquistar", en la que un problema se divide en subproblemas más pequeños que se resuelven mediante la misma función recursiva, hasta que se alcanza un caso base que se puede resolver de forma trivial, de manera concreta podemos decir que consta de dos partes fundamentales:
@@ -56,7 +54,7 @@ _La **asignación de memoria** se refiere a la forma en la que se asigna la memo
 
 En C hay dos formas de asignar memoria a las variables; **Heap Allocation** en el Heap se administra memoria a discreción del programador y **Stack Allocation** en el que la asignación de memoria es manejada por el compilador
 
-#### Stack (Automático)
+### Stack (Automático)
 
 - **Tiempo de vida** → Temporal, almacena variables locales durante llamadas a funciones
 - **Funcionamiento** → Locación y deslocación automática de memoria más rápida que el Heap
@@ -121,7 +119,7 @@ _De izquierda a derecha ejecución de la función factorial paso a paso_
 
 Podemos observar que la función `factorial` se llama a si misma hasta que se llega al caso base, en el que se devuelve el valor `1` y se empieza a devolver los valores de las llamadas recursivas, puesto que la función `factorial` es una función que devuelve un valor, cada vez que se llama a la función se crea un nuevo **Stack Frame** donde estamos invocando otra función diferente del mismo código que vive aparte de las otras ejecuciones donde se almacena el valor de retorno de la función, en este caso el valor de `n * factorial(n-1)` y así hasta resolver el caso recursivo
 
-### Analizar operaciones de la recursión
+### Análisis asintótico de la función del factorial
 
 
 
@@ -166,7 +164,7 @@ _Conteo regresivo con recursión_
 
 _Captura de pantalla del programa dónde se corrompe memoria al llenar el Stack_
 
-#### ¿El desboda de pila se puede solucionar?
+#### ¿El desbordamiento de pila se puede solucionar?
 
 Si, si hacemos la implementación de manera iterativa, no se genera el desbordamiento de pila:
 
