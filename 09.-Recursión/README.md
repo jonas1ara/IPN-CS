@@ -93,19 +93,21 @@ _Ejemplo matemático de la función factorial_
 ```c
 #include <stdio.h>
 
-int fact(int n)
+int factorial(int n)
 {
 	if( n < 2 )
 		return 1;
 	else
-		return n * fact(n-1);
+		return n * factorial(n-1);
 }
 
 int main()
 {
-	int result = fact(5);
+	int result = factorial(5);
 
 	printf("Result: %d\n", result);
+
+    //Result: 120
 
 	return 0;
 }
@@ -115,6 +117,10 @@ _Ejemplo de la función factorial en C_
 
 ![Factorial](/00.-Sources/Images/CallStack-StackFrame.png)
 
-_Llamadas al Stack de la función factorial paso a paso en el Stack Frame_
+_De izquierda a derecha ejecución de la función factorial paso a paso_
+
+Podemos observar que la función `factorial` se llama a si misma hasta que se llega al caso base, en el que se devuelve el valor `1` y se empieza a devolver los valores de las llamadas recursivas, puesto que la función `factorial` es una función que devuelve un valor, cada vez que se llama a la función se crea un nuevo **Stack Frame** donde estamos invocando otra función diferente del mismo código que vive aparte de las otras ejecuciones en cada stack frame se almacena el valor de retorno de la función, en este caso el valor de `n * factorial(n-1)`, 
+
+### Stack Overflow (Error)
 
 
