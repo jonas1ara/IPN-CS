@@ -4,15 +4,10 @@ int fibonacci(int n)
 {
     //Caso base
     if (n <= 1)
-    {
         return n;
-    }
     //Caso recursivo
     else
-    {
         return fibonacci(n -1) + fibonacci(n - 2);
-    }
-    
 }
 
 int main()

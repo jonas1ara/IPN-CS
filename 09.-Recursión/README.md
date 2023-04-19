@@ -103,9 +103,9 @@ int factorial(int n)
 
 int main()
 {
-	int result = factorial(5);
+	int resultado = factorial(5);
 
-	printf("Result: %d\n", result);
+	printf("Resultado: %d\n", resultado);
 
 	return 0;
 }
@@ -233,11 +233,8 @@ _Conteo regresivo con iteración_
 
 _Ejecución del programa dónde **NO** se corrompe memoria al no llenar el Stack_
 
-
 ---
-
 ### Con esto puedes darte una idea de como funciona la recursión en C e inferir que este es el tema más importante porque es usada en los procesos algorítmicos más eficientes y en las estructuras de datos no lineales como los árboles y grafos 😌, es importante darte cuenta que no necesariamente un algoritmo recursivo es más eficiente que uno iterativo, es decir,  es más sencillo entender para el programador y las iterativas tienen un mejor rendimiento en términos de tiempo de ejecución, pero en términos de espacio de memoria ocupado, las recursivas son más eficientes, por lo que es importante saber cuando usar cada una de ellas pues no hay solución perfecta
-
 ---
 
 ## Expresiones de gratitud
