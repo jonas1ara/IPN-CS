@@ -87,8 +87,6 @@
   - [Factorial](https://github.com/Jonas-Lara/IPN-CS/blob/master/09.-Recursi%C3%B3n/01-Factorial.c)
   - [Fibonacci](https://github.com/Jonas-Lara/IPN-CS/blob/master/09.-Recursi%C3%B3n/02-Fibonacci.c)
   - [Torres de Hanoi](https://github.com/Jonas-Lara/IPN-CS/blob/master/09.-Recursi%C3%B3n/03-Torres-de-Hanoi.c)
-  - [Vectores recursivos](https://github.com/Jonas-Lara/IPN-CS/blob/master/09.-Recursi%C3%B3n/04-Vectores-Recursivos.c)
-
 
 ### **[10.- ](https://github.com/Jonas-Lara/IPN-CS/tree/master/10.-Algoritmos)Algoritmos**
   - [Fuerza bruta](https://github.com/Jonas-Lara/IPN-CS/tree/master/10.-Algoritmos/01.-Fuerza-bruta)
