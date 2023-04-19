@@ -1,6 +1,6 @@
 # Recursión 🏃🏽🚶🏽🧑🏽‍🦯
 
-_La recursión es una técnica que consiste en resolver un problema haciendo uso de una versión más sencilla del mismo_
+_La **recursión** es una técnica que consiste en resolver un problema haciendo uso de una versión más sencilla del mismo_
 
 ![Recursión](/00.-Sources/Images/Recursion.png)
 
@@ -21,7 +21,7 @@ La recursión es un concepto importante en la programación y se refiere a la ca
 
 _Esto se dice mucho pero personalmente creo que es una broma de mal gusto_
 
-Para comprender la recursión debes entender o por lo menos conocer el concepto de **stack** pero no solo como stack en el campo de las **estructuras de datos**, sino como el Stack en la **asignación de memoria**, las **llamadas al Stack** en el Stack Frame, y por último la recursión y el **Stack Overflow**(no el sitio web) que es lo que sucede cuando se llega al límite de memoria del stack y se produce un error
+Para comprender la recursión debes entender o por lo menos conocer el concepto de **stack** pero no solo como stack en el campo de las **estructuras de datos**, sino como el Stack en la **asignación de memoria**, las **llamadas al Stack** en el Stack Frame, y por último la recursión y el **Stack Overflow**(No el sitio web) que es lo que sucede cuando se llega al límite de memoria del stack y se produce un error
 
 4 conceptos que se relacionan entre si y que son fundamentales para entender la recursión:
 
@@ -50,7 +50,7 @@ _Nodo de una pila en C_
 
 ### Stack Allocation (Asignación de memoria)
 
-_La **asignación de memoria** se refiere a la forma en la que se asigna la memoria a las variables_
+_La **asignación de memoria** se refiere a la forma en la que se pide y devuelve la memoria al ordenador_
 
 ![StackAllocation](/00.-Sources/Images/StackAllocation.png)
 
@@ -205,7 +205,7 @@ _Conteo regresivo con iteración_
 
 ![ConteoIteracion](/00.-Sources/Gifs/cri.gif)
 
-_Ejecución del programa dónde NO se corrompe memoria al no llenar el Stack_
+_Ejecución del programa dónde **NO** se corrompe memoria al no llenar el Stack_
 
 
 ---
