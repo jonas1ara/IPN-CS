@@ -205,7 +205,7 @@ _Conteo regresivo con iteración_
 
 ![ConteoIteracion](/00.-Sources/Gifs/cri.gif)
 
-_Ejecución del programa dónde no se corrompe memoria al no llenar el Stack_
+_Ejecución del programa dónde NO se corrompe memoria al no llenar el Stack_
 
 
 ---
