@@ -131,7 +131,7 @@ Podemos observar que la función `factorial` se llama a si misma hasta que se ll
 
 ![StackOverflow](/00.-Sources/Images/StackOverflow.png)
 
-_Sitio web Stack Overflow_
+_Sitio web Stack Overflow(no confundir)_
 
 **Stack Overflow** o **desbordamiento de pila** ocurre cuando la cantidad de memoria asignada al "call stack" de un programa se llena y no hay suficiente espacio para almacenar nuevos `stack frames`. Esto  sucede cuando se anida una gran cantidad de llamadas a funciones recursivas, lo que causa que el "call stack" crezca hasta que se agote la memoria disponible
 
