@@ -1,8 +1,8 @@
 # Tic tac toe 
 
-_El famoso juego del "gato" 😁😁_
+## El famoso juego del "gato" 😁😁
 
-_Compila con gcc o clang y ejecuta_
+_Compila y ejecuta_
 
 ```
 gcc -o TTT TTT.c 
