@@ -2,7 +2,7 @@
 
 ## Representación de una dona en 3D en la terminal
 
-_Aclaro que este no es mi código pero es interesante estudiarlo, se puso de moda en internet por allá del 2020 y es estudiarlo_
+Aclaro que este no es mi código pero es interesante estudiarlo, se puso de moda en internet por allá del 2020 y es estudiarlo
 
 _Compila y ejecuta_
 
