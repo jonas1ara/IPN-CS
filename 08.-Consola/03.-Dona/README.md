@@ -20,3 +20,7 @@ Puedes leer el código y tratar de entenderlo, pero tambien puedes ver estos vid
 
 - Contexto con [Joma Tech](https://www.youtube.com/watch?v=sW9npZVpiMI)
 
+## Expresiones de gratitud
+
+_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado_
+
