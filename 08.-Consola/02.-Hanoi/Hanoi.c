@@ -2,21 +2,17 @@
 #include <stdlib.h> 
 #include <unistd.h>
 
+//fil:	entero que indica el numero de filas de la matriz.
+//col:	entero que indica el numero de columnas de la matriz.
+//disc:	parámetro de tipo entero que indica el numero de discos usados.
+//ultNum: entero que indica el numero que esta usando el disco mas grande.
+//filOrig: entero que indica el numero de fila de la matriz en la cual hay que coger el numero/disco
+//filDest:	entero que indica el numero de fila de la matriz en la cual hay que dejar el numero/disco.
+
 void imprime( int *tab, int fil, int col, int ultNum )
 {
-	/*
-	Precondición:
-					*tab	Puntero a una matriz de tipo entero.
-					fil		Entero que indica el numero de filas de la matriz.
-					col		Entero que indica el numero de columnas de la matriz.
-					disc	Parámetro de tipo entero que indica el numero de discos usados.
-					ultNum	Entero que indica el numero que esta usando el disco mas grande.
-*/
-
-
 	int f, c;
 	int i, esp;
-
 
 	for( c=col-1; c >= 0; c-- )
 	{
@@ -28,7 +24,7 @@ void imprime( int *tab, int fil, int col, int ultNum )
 			for( i=0; i < esp; i++ )
 				printf( " " );
 
-			// Imprime los comodines
+			// Imprime los asteriscos
 			for( i=0; i < tab[col*f+c]; i++ )
 				printf( "*" );
 
@@ -41,29 +37,16 @@ void imprime( int *tab, int fil, int col, int ultNum )
 
 		printf( "\n" );
 	};
-
-
 };
 
 
 void mueveDisco( int *tab, int fil, int col, int ultNum, int filOrig, int filDest )
 {
-	/*
-	Precondición:
-					*tab	Puntero a una matriz de tipo entero.
-					fil		Entero que indica el numero de filas de la matriz.
-					col		Entero que indica el numero de columnas de la matriz.
-					disc	Parámetro de tipo entero que indica el numero de discos usados.
-					ultNum	Entero que indica el numero que esta usando el disco mas grande.
-					filOrig	Entero que indica el numero de fila de la matriz en la cual hay que coger el numero/disco
-					filDest	Entero que indica el numero de fila de la matriz en la cual hay que dejar el numero/disco.
-	Poscondición:
-					Se mueve el disco y se llama a la función que imprime el tablero.
-	*/
 
+	//cO = columna de origen 
+	//cD = columna de destino
 
 	int cO=col-1, cD=col-1;
-
 
 	// Se busca el disco que se encuentre mas arriba y por lo tanto el mas pequeño de la fila de origen.
 	while( cO >= 0  &&  tab[col*filOrig+cO] == 0 )
@@ -90,18 +73,7 @@ void mueveDisco( int *tab, int fil, int col, int ultNum, int filOrig, int filDes
 
 void hanoi( int *tab, int fil, int col, int disc, int ultNum, int O, int A, int D )
 {
-/*
-Precondición:
-				*tab	Puntero a una matriz de tipo entero.
-				fil		Entero que indica el numero de filas de la matriz.
-				col		Entero que indica el numero de columnas de la matriz.
-				disc	Parámetro de tipo entero que indica el numero de discos usados.
-				ultNum	Entero que indica el numero que esta usando el disco mas grande.
-				O,A,D	Tres enteros que indican la fila desde donde se ha de coger el disco y a donde se ha de traspasar. La primera vez que se llama a hanoi tienen los valores de: 0 ,1 y 2 respectivamente.
-Poscondición:
-				Se llama recursivamente a hanoi hasta resolver el tablero.
-*/
-
+	// O,A,D Tres enteros que indican la fila desde donde se ha de coger el disco y a donde se ha de traspasar. La primera vez que se llama a hanoi tienen los valores de: 0 ,1 y 2 respectivamente.
 
 	if( disc==1 )
 	{
