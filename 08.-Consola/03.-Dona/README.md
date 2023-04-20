@@ -1,24 +1,22 @@
 # Dona
 
-_No es mi código pero es interesante estudiarlo  😁😁_
+## Representación de una dona en 3D en la terminal
 
-_Compila con gcc y -lm_
+_Aclaro que este no es mi código pero es interesante estudiarlo, se puso de moda en internet por allá del 2020 y es estudiarlo_
 
-```
-gcc -o Dona Dona.c -lm
-```
-
-_Ejecuta_
+_Compila y ejecuta_
 
 ```
-./Dona
+gcc -o Dona Dona.c -lm && ./Dona
 ```
 
 <img src=/00.-Sources/Gifs/Donut.gif alt="#"/>
 
 ## Explicación y contexto 
 
-_Explicación con [Lex Friedman](https://www.youtube.com/watch?v=DEqXNfs_HhY&t=44s)_
+Puedes leer el código y tratar de entenderlo, pero tambien puedes ver estos videos que lo explican
 
-_Contexto con [Joma Tech](https://www.youtube.com/watch?v=sW9npZVpiMI)_
+- Explicación con [Lex Friedman](https://www.youtube.com/watch?v=DEqXNfs_HhY&t=44s)
+
+- Contexto con [Joma Tech](https://www.youtube.com/watch?v=sW9npZVpiMI)
 
