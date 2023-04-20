@@ -1,9 +1,5 @@
 # Matrix
 
-_En este proyecto se trata entender el uso de ncurses, la modularización y el uso de Make_
-
-# Matrix
-
 ## La clásica matrix de las películas de hackers
 
 Aclaro que este no es mi código pero es interesante estudiarlo, este código pertenece a Jacob Sorber y tambien la [explicación](https://www.youtube.com/watch?v=K8dCh3ZMLN8) de como funciona
