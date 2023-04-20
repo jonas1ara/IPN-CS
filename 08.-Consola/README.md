@@ -2,7 +2,7 @@
 
 ## Instalar Ncurses en una distribución basada en Debian
 
-_Para instalar la librería_
+_Instalación de la librería_
 
 ```
 sudo apt-get install libncurses5-dev libncursesw5-dev
@@ -37,12 +37,13 @@ int main(void)
 }
 ```
 
-_Compila usando el siguiente comando_
+la función `initscr()` inicializa la pantalla, la función `addstr()` agrega una cadena de caracteres a la pantalla, la función `refresh()` actualiza la pantalla, la función `getch()` espera a que el usuario presione una tecla, la función `endwin()` termina la pantalla y la función `EXIT_SUCCESS` termina el programa
+
+_La librería Ncurses no esta definida en el estandar del compilador gcc, así que debes linkearla con -lncurses._
+
 ```
 gcc Ncurses.c -o Ncurses -lncurses
 ```
-
-_La librería Ncurses no esta definida en el estandar del compilador gcc, así que debes linkearla con -lncurses._
 
 _Todo esto nos crea un ejecutable llamado Ncurses, ejecutalo de la siguiente manera_
 

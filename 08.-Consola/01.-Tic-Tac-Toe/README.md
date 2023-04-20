@@ -1,11 +1,11 @@
-# Tic tac toe en nuestra lengua "gato"
+# Tic tac toe 
 
-_😁😁_
+_El famoso juego del "gato" 😁😁_
 
 _Compila con gcc o clang y ejecuta_
 
 ```
-clang -o TTT TTT.c 
+gcc -o TTT TTT.c 
 ```
 ```
 ./TTT

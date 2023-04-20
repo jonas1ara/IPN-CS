@@ -1,15 +1,15 @@
-//Este es el juego de Tic-Tac-Toe diseñado para principiantes.
-//Este juego no contiene punteros o un uso avanzado de C
+// Este es el juego de Tic-Tac-Toe diseñado para principiantes.
+// Este juego no contiene punteros o un uso avanzado de C
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+#include <ctype.h> //Para la función toupper()
 #include <time.h>
 
 char board[3][3];
 const char JUGADOR = 'X';
 const char PC = 'O';
 
-//Prototipado de funciones
+// Prototipado de funciones
 void resetBoard();
 void printBoard();
 int espacioVacio();
@@ -29,20 +29,20 @@ int main()
       respuesta = ' ';
       resetBoard();
 
-      while(ganador == ' ' && espacioVacio() != 0)
+      while (ganador == ' ' && espacioVacio() != 0)
       {
          printBoard();
 
          jugadorMove();
          ganador = checkarGanador();
-         if(ganador != ' ' || espacioVacio() == 0)
+         if (ganador != ' ' || espacioVacio() == 0)
          {
             break;
          }
 
          pcMove();
          ganador = checkarGanador();
-         if(ganador != ' ' || espacioVacio() == 0)
+         if (ganador != ' ' || espacioVacio() == 0)
          {
             break;
          }
@@ -63,9 +63,9 @@ int main()
 
 void resetBoard()
 {
-   for(int i = 0; i < 3; i++)
+   for (int i = 0; i < 3; i++)
    {
-      for(int j = 0; j < 3; j++)
+      for (int j = 0; j < 3; j++)
       {
          board[i][j] = ' ';
       }
@@ -84,11 +84,11 @@ int espacioVacio()
 {
    int freeSpaces = 9;
 
-   for(int i = 0; i < 3; i++)
+   for (int i = 0; i < 3; i++)
    {
-      for(int j = 0; j < 3; j++)
+      for (int j = 0; j < 3; j++)
       {
-         if(board[i][j] != ' ')
+         if (board[i][j] != ' ')
          {
             freeSpaces--;
          }
@@ -110,7 +110,7 @@ void jugadorMove()
       scanf("%d", &y);
       y--;
 
-      if(board[x][y] != ' ')
+      if (board[x][y] != ' ')
       {
          printf("Movimiento invalido\n");
       }
@@ -120,23 +120,22 @@ void jugadorMove()
          break;
       }
    } while (board[x][y] != ' ');
-   
 }
 void pcMove()
 {
-   //Crea una semilla basada en la hora actual
+   // Crea una semilla basada en la hora actual
    srand(time(0));
    int x;
    int y;
 
-   if(espacioVacio() > 0)
+   if (espacioVacio() > 0)
    {
       do
       {
          x = rand() % 3;
          y = rand() % 3;
       } while (board[x][y] != ' ');
-      
+
       board[x][y] = PC;
    }
    else
@@ -146,28 +145,28 @@ void pcMove()
 }
 char checkarGanador()
 {
-   //Checar filas
-   for(int i = 0; i < 3; i++)
+   // Checar filas
+   for (int i = 0; i < 3; i++)
    {
-      if(board[i][0] == board[i][1] && board[i][0] == board[i][2])
+      if (board[i][0] == board[i][1] && board[i][0] == board[i][2])
       {
          return board[i][0];
       }
    }
-   //Checar columnas
-   for(int i = 0; i < 3; i++)
+   // Checar columnas
+   for (int i = 0; i < 3; i++)
    {
-      if(board[0][i] == board[1][i] && board[0][i] == board[2][i])
+      if (board[0][i] == board[1][i] && board[0][i] == board[2][i])
       {
          return board[0][i];
       }
    }
-   //Checar diagonales
-   if(board[0][0] == board[1][1] && board[0][0] == board[2][2])
+   // Checar diagonales
+   if (board[0][0] == board[1][1] && board[0][0] == board[2][2])
    {
       return board[0][0];
    }
-   if(board[0][2] == board[1][1] && board[0][2] == board[2][0])
+   if (board[0][2] == board[1][1] && board[0][2] == board[2][0])
    {
       return board[0][2];
    }
@@ -176,15 +175,16 @@ char checkarGanador()
 }
 void printGanador(char ganador)
 {
-   if(ganador == JUGADOR)
+   if (ganador == JUGADOR)
    {
       printf("¡Ganaste!");
    }
-   else if(ganador == PC)
+   else if (ganador == PC)
    {
       printf("¡Perdiste :( !");
    }
-   else{
+   else
+   {
       printf("¡Empate !");
    }
 }
