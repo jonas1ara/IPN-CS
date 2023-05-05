@@ -31,7 +31,7 @@ _Si quieres ver el indice del repositorio da click [acá](https://github.com/Jon
 
 ## Construido con 🛠️
 
-* _[WSL](https://learn.microsoft.com/en-us/windows/wsl/) - Windows Subsystem for Linux_
+* _[Ubuntu](https://ubuntu.com/) - Ubuntu_
 * _[Visual Studio Code](https://code.visualstudio.com/) - Visual Studio Code_
 * _[UPIIT](https://www.upiit.ipn.mx/) - Unidad Profesional Interdisciplinaria de Ingeniería campus Tlaxcala_
 
