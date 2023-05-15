@@ -31,6 +31,7 @@ _Si quieres ver el indice del repositorio da click [acá](https://github.com/Jon
 
 ## Construido con 🛠️
 
+* _[WSL](https://learn.microsoft.com/en-us/windows/wsl/install) - WSL_
 * _[Ubuntu](https://ubuntu.com/) - Ubuntu_
 * _[Visual Studio Code](https://code.visualstudio.com/) - Visual Studio Code_
 
