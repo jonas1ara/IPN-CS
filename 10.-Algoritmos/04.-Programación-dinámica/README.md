@@ -21,8 +21,12 @@ Hay dos enfoques comunes en programación dinámica: la **tabulación** y la **m
 - Reducción del espacio de búsqueda: Mediante el almacenamiento de los resultados intermedios, los algoritmos de programación dinámica reducen el espacio de búsqueda, evitando la necesidad de recalcular los mismos subproblemas una y otra vez
 
 ### Desventajas
-- Este enfoque puede tomar demasiado tiempo(siglos incluso).
-- No considera eficiencia.
+- Complejidad de implementación: La implementación correcta de los algoritmos de programación dinámica puede ser compleja y requiere un enfoque cuidadoso. Es necesario identificar correctamente los subproblemas, definir la relación de recursividad y diseñar la estructura de almacenamiento adecuada para los resultados intermedios
+
+- Espacio adicional requerido: Los algoritmos de programación dinámica pueden requerir un espacio adicional para almacenar los resultados intermedios
+
+- Limitaciones en problemas con dependencias secuenciales: Algunos problemas con dependencias secuenciales, como problemas de planificación o problemas con restricciones temporales, pueden ser más difíciles de modelar y resolver utilizando algoritmos de programación dinámica. En estos casos, pueden requerirse enfoques alternativos
+
 
 ## Ejemplos
 
