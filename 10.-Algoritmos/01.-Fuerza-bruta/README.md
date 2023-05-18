@@ -23,7 +23,7 @@ La idea principal detrás de la fuerza bruta es generar todas las combinaciones 
 
 ## Ejemplos
 
-### Encontrar todos los números primos en un rango dado
+### Números primos: encontrar todos los números primos en un rango dado
 
 ```c
 // rangoInicial = dado por el usuario

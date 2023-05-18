@@ -10,6 +10,13 @@ Los algoritmos voraces, también conocidos como algoritmos ávidos o greedy en i
 
 Los algoritmos voraces son útiles cuando se trata de problemas de optimización, donde se busca encontrar la solución más eficiente o efectiva. Sin embargo, no siempre garantizan la solución óptima global, ya que pueden quedarse atrapados en una solución local que no es la mejor a largo plazo.
 
+La estrategia algorítmica de los algoritmos voraces se puede dividir en los siguientes pasos generales:
+
+- Definir el conjunto de posibles soluciones
+- Seleccionar la mejor solución local
+- Combinar la solución seleccionada con la solución parcial
+- Repetir los pasos 2 y 3 hasta que se encuentre la solución global
+
 ### Ventajas
 
 - Eficiencia: Suelen ser eficientes en términos de tiempo de ejecución, porque no requieren probar todas las soluciones posibles
@@ -23,7 +30,8 @@ Los algoritmos voraces son útiles cuando se trata de problemas de optimización
 
 ## Ejemplos
 
-### Encontrar todos los números primos en un rango dado
+### Conjunto de monedas: dado un conjunto de monedas, encontrar la cantidad mínima de monedas necesarias para formar una cantidad dada.
+
 
 ```c
 // rangoInicial = dado por el usuario
