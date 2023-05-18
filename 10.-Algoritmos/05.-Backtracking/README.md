@@ -1,58 +1,108 @@
-# Algoritmos voraces
+# Algoritmos de fuerza bruta
 
-## En el enfoque de un algoritmo codicioso las decisiones se toman desde el dominio solucion dado. 
+![FuerzaBruta](/01.-Sources/Images/FuerzaBruta.png)
 
-_En el enfoque de un algoritmo codicioso las decisiones se toman desde el dominio solucion dado. Se elige la solución más cercanda que parece solucionar el problema, posteriormente intenta encontrar una solución optima localiza, que eventualmente puede conducir a soluciones optimas a nivel mundial. Sin embargo generalmente no proporcionan soluciones a nivel mundial._
+_Representación de la estrategia de fuerza bruta_
+
+## Es un enfoque algoritmico de prueba y error, cuándo se implementa se prueban todas las posibles soluciones
+
+La estrategia algorítmica de fuerza bruta consiste en probar exhaustivamente todas las posibles soluciones para un problema, sin aplicar ningún tipo de optimización o heurística. Este enfoque es útil cuando el tamaño del problema es pequeño o cuando no existen algoritmos más eficientes para resolverlo.
+
+La idea principal detrás de la fuerza bruta es generar todas las combinaciones posibles y evaluar cada una de ellas hasta encontrar la solución correcta. Aunque puede ser efectiva en algunos casos, esta estrategia puede volverse ineficiente rápidamente a medida que el tamaño del problema aumenta, ya que implica probar todas las combinaciones, lo que puede llevar a un alto consumo de tiempo y recursos.
 
 ### Ventajas
 
-- Son rápidos
+- Optienes la mejor solución de todas.
+- Siempre encuentra una solución, si se logra implementar.
+- Es más fácil de implementar.
 
 ### Desventajas
-- No siempre dan la mejor solución
+- Este enfoque puede tomar demasiado tiempo(siglos incluso).
+- No considera eficiencia.
 
-### Contar monedas
+## Ejemplos
 
-_Este problema es contar hasta un valor deseado eligiendo las monedas menos posibles y el enfoque codicioso obliga al algoritmo a elegir la moneda más grande posible._
+### Encontrar todos los números primos en un rango dado
 
-![](/00.-Sources/Images/Contar.png)
+```c
+// rangoInicial = dado por el usuario
+// rangoFinal = dado por el usuario
 
-#### Si se nos proporcionan mondeas $1, $2, $3, $5 y $10 y se nos pide que contemos $18, entonces el procedimiento codicioso será:
+void encontrarPrimos(int rangoInicial, int rangoFinal) 
+{
+    printf("Números primos en el rango [%d, %d]:\n", rangoInicial, rangoFinal);
+    
+    for (int num = rangoInicial; num <= rangoFinal; num++) 
+    {
+        if (esPrimo(num)) 
+        {
+            printf("%d ", num);
+        }
+    }
+    
+    printf("\n");
+}
 
-- Seleccionar moneda de $10, el recuento restante es 8.
-- Luego seleccionar moneda de $5, el recuento restante es 3.
-- Luego seleccionar moneda de $2, el recuento restante es 1.
-- Al final seleccionar moneda de $1, y se resuelve el problema.
+int esPrimo(int num) 
+{
+    if (num <= 1) 
+    {
+        return 0;
+    }
+    
+    for (int i = 2; i * i <= num; i++) 
+    {
+        if (num % i == 0) 
+        {
+            return 0;
+        }
+    }
+    
+    return 1;
+}
+```
 
-_Parece funcionar bien, pero si cambiamos ligeramente el problema, entonces el enfoque queda mal optmizado. Si tenemos monedas de $1, $7 y $10, y necesitamos contar al $15, puede usar más monedas de las necesarias:_
+En este ejemplo, hemos creado una función llamada `esPrimo` que determina si un número dado es primo o no. Esta función realiza una verificación exhaustiva dividiendo el número entre todos los enteros desde 2 hasta la raíz cuadrada del número.
 
-#### Si se nos proporcionan monedas de $1, $7 y $10, y necesitamos contar al $15, puede usar mas monedas de las necesarias:
+La función `encontrarPrimos` toma un rango inicial y final, y busca todos los números primos dentro de ese rango. Utiliza un bucle `for` para iterar sobre todos los números dentro del rango y llama a la función `esPrimo` para verificar si cada número es primo o no. Si un número es primo, se imprime en la pantalla.
 
-- Seleccionar moneda de $10, el recuero restante es 5
-- Luego seleccionar moneda de $1, el recuento restante es 4.
-- Luego seleccionar moneda de $1, el recuento restante es 3.
-- Luego seleccionar moneda de $1, el recuento restante es 2.
-- Luego seleccionar moneda de $1, el recuento restante es 1.
-- Al final seleccionar moneda de $1, y se resuelve el problema.
+Esta implementación utiliza la **estrategia de fuerza bruta** porque prueba exhaustivamente todos los números en el rango dado para determinar si son primos o no. Si el rango es grande, la ejecución puede llevar mucho tiempo, ya que no se aplican optimizaciones adicionales para reducir el número de pruebas.
 
-#### Cuando la solución mas optima es:
 
-- Seleccionar moneda de $7, el recuero restante es 8
-- Luego seleccionar moneda de $7, el recuento restante es 1.
-- Al final seleccionar moneda de $1, y se resuelve el problema.
+### Two Sum: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
 
-### El problema de la mochila
+```c
+// int nums[] = {2, 7, 11, 15};
+// int target = 9;
+// int result[2];
 
-![](/00.-Sources/Images/Mochila.png)
+void twoSum(int nums[], int numsSize, int target, int* result) 
+{
+    for (int i = 0; i < numsSize; i++) 
+    {
+        for (int j = i + 1; j < numsSize; j++) 
+        {
+            if (nums[i] + nums[j] == target) 
+            {
+                result[0] = i;
+                result[1] = j;
+                return;
+            }
+        }
+    }
+}
+```
 
-#####
+En este ejemplo, la función `twoSum` recibe el array de números `nums`, su tamaño `numsSize`, el objetivo `target` y un array `result` donde almacenaremos los índices de los dos números que suman el objetivo.
 
-#####
+La función utiliza dos bucles `for` anidados para probar todas las combinaciones posibles de números en el array. Comienza con el primer número en el índice `i` y busca el segundo número en el índice`j` (siempre mayor que `i`). Si la suma de estos dos números es igual al objetivo, almacenamos los índices `i` y `j` en el array `result` y salimos de la función.
 
-### Algoritmos basados en este enfoque:
+Es importante destacar que esta solución tiene una complejidad temporal de **O(n²)** debido a los bucles anidados, donde n es el tamaño del array `nums`. Si el tamaño del array es muy grande, esta solución puede volverse ineficiente.
 
-| # | Titulo | Implementación | Complejidad |
-|---| ----- | -------- | ---------- |
-|001|El problema de la mochila| [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/10.-Algoritmos/02.-Voraces/01-Problema-de-la-mochila.c) |Ο (n²)|
-|002|El problema del viajante | C |Ο (n²)|
-|003|El problema de la programación de trabajos | C |Ο (n²)|
+## Conclusión
+
+_Usa este enfoque cuando el tamaño de la entrada sea pequeño o tengamos que obtener la mejor solución posible y ninguna otra estrategia sea más eficiente_
+
+## Expresiones de gratitud
+
+_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado_
