@@ -116,9 +116,6 @@ La función utiliza dos bucles `for` anidados para probar todas las combinacione
 
 Es importante destacar que esta solución tiene una complejidad temporal de **O(n²)** debido a los bucles anidados, donde n es el tamaño del array `nums`. Si el tamaño del array es muy grande, esta solución puede volverse ineficiente.
 
-## Algoritmos basados en este enfoque:
+## Expresiones de gratitud
 
-| # | Titulo | Implementación | Complejidad |
-|---| ----- | -------- | ---------- |
-|001|Ordenamiento burbuja| [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/10.-Algoritmos/06.-Ordenamiento/01-Ordenamiento-Burbuja.c) |Ο (n²)|
-|002|Problema de las N reinas | [C](https://github.com/Jonas-Lara/IPN-CS/blob/master/10.-Algoritmos/05.-Backtracking/01-N-Reinas-Geek.c)|Ο (2^n)|
+_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado_
