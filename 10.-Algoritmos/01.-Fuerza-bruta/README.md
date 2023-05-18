@@ -25,7 +25,25 @@ La idea principal detrás de la fuerza bruta es generar todas las combinaciones 
 ### Encontrar todos los números primos en un rango dado
 
 ```c
+//rangoInicial = dado por el usuario
+//rangoFinal = dado por el usuario
+
 #include <stdio.h>
+
+void encontrarPrimos(int rangoInicial, int rangoFinal) 
+{
+    printf("Números primos en el rango [%d, %d]:\n", rangoInicial, rangoFinal);
+    
+    for (int num = rangoInicial; num <= rangoFinal; num++) 
+    {
+        if (esPrimo(num)) 
+        {
+            printf("%d ", num);
+        }
+    }
+    
+    printf("\n");
+}
 
 int esPrimo(int num) 
 {
@@ -44,36 +62,6 @@ int esPrimo(int num)
     
     return 1;
 }
-
-void encontrarPrimos(int rangoInicial, int rangoFinal) 
-{
-    printf("Números primos en el rango [%d, %d]:\n", rangoInicial, rangoFinal);
-    
-    for (int num = rangoInicial; num <= rangoFinal; num++) 
-    {
-        if (esPrimo(num)) 
-        {
-            printf("%d ", num);
-        }
-    }
-    
-    printf("\n");
-}
-
-int main() 
-{
-    int rangoInicial, rangoFinal;
-    
-    printf("Ingrese el rango inicial: ");
-    scanf("%d", &rangoInicial);
-    
-    printf("Ingrese el rango final: ");
-    scanf("%d", &rangoFinal);
-    
-    encontrarPrimos(rangoInicial, rangoFinal);
-    
-    return 0;
-}
 ```
 
 En este ejemplo, hemos creado una función llamada `esPrimo` que determina si un número dado es primo o no. Esta función realiza una verificación exhaustiva dividiendo el número entre todos los enteros desde 2 hasta la raíz cuadrada del número.
@@ -86,6 +74,10 @@ Esta implementación utiliza la **estrategia de fuerza bruta** porque prueba exh
 ### Two Sum: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
 
 ```c
+//int nums[] = {2, 7, 11, 15};
+// int target = 9;
+// int result[2];
+
 #include <stdio.h>
 
 void twoSum(int nums[], int numsSize, int target, int* result) 
@@ -103,19 +95,6 @@ void twoSum(int nums[], int numsSize, int target, int* result)
         }
     }
 }
-
-int main() 
-{
-    int nums[] = {2, 7, 11, 15};
-    int target = 9;
-    int result[2];
-
-    twoSum(nums, sizeof(nums) / sizeof(nums[0]), target, result);
-
-    printf("Indices de los numeros que suman el objetivo: [%d, %d]\n", result[0], result[1]);
-
-    return 0;
-}
 ```
 
 En este ejemplo, la función `twoSum` recibe el array de números `nums`, su tamaño `numsSize`, el objetivo `target` y un array `result` donde almacenaremos los índices de los dos números que suman el objetivo.
@@ -126,7 +105,7 @@ Es importante destacar que esta solución tiene una complejidad temporal de **O(
 
 ## Conclusión
 
-Usar este enfoque cuando el tamaño de la entrada sea pequeño o tengamos que obtener la mejor solución posible y ninguna otra estrategia sea más eficiente
+_Usar este enfoque cuando el tamaño de la entrada sea pequeño o tengamos que obtener la mejor solución posible y ninguna otra estrategia sea más eficiente_
 
 ## Expresiones de gratitud
 
