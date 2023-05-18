@@ -34,48 +34,30 @@ La estrategia algorítmica de los algoritmos voraces se puede dividir en los sig
 
 
 ```c
-// rangoInicial = dado por el usuario
-// rangoFinal = dado por el usuario
+//  int monedas[] = {1, 5, 10, 25};
+//  int n = sizeof(monedas) / sizeof(monedas[0]);
+//  int cantidad = 47;
 
-void encontrarPrimos(int rangoInicial, int rangoFinal) 
+void cambioMoneda(int monedas[], int n, int cantidad) 
 {
-    printf("Números primos en el rango [%d, %d]:\n", rangoInicial, rangoFinal);
-    
-    for (int num = rangoInicial; num <= rangoFinal; num++) 
-    {
-        if (esPrimo(num)) 
+   int i, contador = 0;
+
+   for (i = n - 1; i >= 0; i--) 
+   {
+        while (cantidad >= monedas[i  ]) 
         {
-            printf("%d ", num);
+            cantidad -= monedas[i];
+            printf("%d ", monedas[i]);
+            contador++;
         }
     }
-    
-    printf("\n");
-}
-
-int esPrimo(int num) 
-{
-    if (num <= 1) 
-    {
-        return 0;
-    }
-    
-    for (int i = 2; i * i <= num; i++) 
-    {
-        if (num % i == 0) 
-        {
-            return 0;
-        }
-    }
-    
-    return 1;
+   printf("\nMonedas totales: %d\n", contador);
 }
 ```
 
-En este ejemplo, hemos creado una función llamada `esPrimo` que determina si un número dado es primo o no. Esta función realiza una verificación exhaustiva dividiendo el número entre todos los enteros desde 2 hasta la raíz cuadrada del número.
+En este ejemplo, la función `cambioMoneda` toma un arreglo de monedas `monedas`, el número de monedas `n` y la cantidad a cambiar `cantidad`. El objetivo es encontrar la combinación más pequeña de monedas que sume la cantidad dada.
 
-La función `encontrarPrimos` toma un rango inicial y final, y busca todos los números primos dentro de ese rango. Utiliza un bucle `for` para iterar sobre todos los números dentro del rango y llama a la función `esPrimo` para verificar si cada número es primo o no. Si un número es primo, se imprime en la pantalla.
-
-Esta implementación utiliza la **estrategia de fuerza bruta** porque prueba exhaustivamente todos los números en el rango dado para determinar si son primos o no. Si el rango es grande, la ejecución puede llevar mucho tiempo, ya que no se aplican optimizaciones adicionales para reducir el número de pruebas.
+El algoritmo voraz utilizado aquí es simple: elegir la moneda más grande posible en cada paso, comenzando con la más grande y avanzando hacia la más pequeña. Esto se logra mediante un bucle while que resta la moneda más grande posible de la cantidad y la imprime en la pantalla.
 
 
 ### Two Sum: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.

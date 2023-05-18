@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-void twoSum(int nums[], int numsSize, int target, int* result) 
+void twoSum(int nums[], int n, int target, int* resultado) 
 {
-    for (int i = 0; i < numsSize; i++) 
+    for (int i = 0; i < n; i++) 
     {
-        for (int j = i + 1; j < numsSize; j++) 
+        for (int j = i + 1; j < n; j++) 
         {
             if (nums[i] + nums[j] == target) 
             {
-                result[0] = i;
-                result[1] = j;
+                resultado[0] = i;
+                resultado[1] = j;
                 return;
             }
         }
@@ -20,11 +20,11 @@ int main()
 {
     int nums[] = {2, 7, 11, 15};
     int target = 9;
-    int result[2];
+    int resultado[2];
 
-    twoSum(nums, sizeof(nums) / sizeof(nums[0]), target, result);
+    twoSum(nums, sizeof(nums) / sizeof(nums[0]), target, resultado);
 
-    printf("Indices de los numeros que suman el objetivo: [%d, %d]\n", result[0], result[1]);
+    printf("Indices de los numeros que suman el objetivo: [%d, %d]\n", resultado[0], resultado[1]);
 
     return 0;
 }

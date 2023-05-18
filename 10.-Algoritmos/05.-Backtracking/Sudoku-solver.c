@@ -130,5 +130,4 @@ int main()
 		printf("No solution exists");
 
 	return 0;
-	// This is code is contributed by Pradeep Mondal P
 }
