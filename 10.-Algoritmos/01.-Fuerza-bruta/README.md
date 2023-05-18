@@ -28,8 +28,6 @@ La idea principal detrás de la fuerza bruta es generar todas las combinaciones 
 //rangoInicial = dado por el usuario
 //rangoFinal = dado por el usuario
 
-#include <stdio.h>
-
 void encontrarPrimos(int rangoInicial, int rangoFinal) 
 {
     printf("Números primos en el rango [%d, %d]:\n", rangoInicial, rangoFinal);
@@ -74,11 +72,9 @@ Esta implementación utiliza la **estrategia de fuerza bruta** porque prueba exh
 ### Two Sum: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
 
 ```c
-//int nums[] = {2, 7, 11, 15};
+// int nums[] = {2, 7, 11, 15};
 // int target = 9;
 // int result[2];
-
-#include <stdio.h>
 
 void twoSum(int nums[], int numsSize, int target, int* result) 
 {
