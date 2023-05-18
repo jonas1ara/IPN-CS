@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Función auxiliar para calcular el máximo de dos números
+// Función para calcular el máximo de dos números
 int max(int a, int b) {
     return (a > b) ? a : b;
 }

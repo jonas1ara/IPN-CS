@@ -1,20 +1,24 @@
 # Algoritmos de fuerza bruta
 
-![FuerzaBruta](/01.-Sources/Images/FuerzaBruta.png)
+![PD](/01.-Sources/Images/PD.png)
 
-_Representación de la estrategia de fuerza bruta_
+_Representación de la estrategia de programación dinámica_
 
-## Es un enfoque algoritmico de prueba y error, cuándo se implementa se prueban todas las posibles soluciones
+## Es un enfoque algorítmico para resolver problemas complejos dividiéndolos en subproblemas más pequeños y resolviéndolos de manera recursiva.
 
-La estrategia algorítmica de fuerza bruta consiste en probar exhaustivamente todas las posibles soluciones para un problema, sin aplicar ningún tipo de optimización o heurística. Este enfoque es útil cuando el tamaño del problema es pequeño o cuando no existen algoritmos más eficientes para resolverlo.
+Es un enfoque algorítmico para resolver problemas complejos dividiéndolos en subproblemas más pequeños y resolviéndolos de manera recursiva. La estrategia básica de programación dinámica consiste en almacenar los resultados de los subproblemas en una estructura de datos, como una tabla o un arreglo, para evitar recalcularlos varias veces.
 
-La idea principal detrás de la fuerza bruta es generar todas las combinaciones posibles y evaluar cada una de ellas hasta encontrar la solución correcta. Aunque puede ser efectiva en algunos casos, esta estrategia puede volverse ineficiente rápidamente a medida que el tamaño del problema aumenta, ya que implica probar todas las combinaciones, lo que puede llevar a un alto consumo de tiempo y recursos.
+Hay dos enfoques comunes en programación dinámica: la **tabulación** y la **memoización**.
+
+
 
 ### Ventajas
 
-- Optienes la mejor solución de todas.
-- Siempre encuentra una solución, si se logra implementar.
-- Es más fácil de implementar.
+- Eficiencia: Los algoritmos de programación dinámica suelen ser eficientes en términos de tiempo de ejecución. Al evitar recalcular subproblemas ya resueltos y aprovechar los resultados almacenados
+
+- Optimalidad: Los algoritmos de programación dinámica garantizan la obtención de la solución óptima al problema. Al resolver y combinar subproblemas de manera óptima, se construye la solución global óptima
+
+- Reducción del espacio de búsqueda: Mediante el almacenamiento de los resultados intermedios, los algoritmos de programación dinámica reducen el espacio de búsqueda, evitando la necesidad de recalcular los mismos subproblemas una y otra vez
 
 ### Desventajas
 - Este enfoque puede tomar demasiado tiempo(siglos incluso).
