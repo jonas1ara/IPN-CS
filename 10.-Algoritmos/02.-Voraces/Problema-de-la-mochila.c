@@ -36,7 +36,7 @@ int mochilaVoraz(int capacidad, int pesos[], int valores[], int n)
         valores[i] = tempValor;
     }
 
-    // Realizar el llenado de la mochila
+    // Llenar la mochila
     int valorMaximo = 0;
     int pesoActual = 0;
     i = 0;
