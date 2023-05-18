@@ -139,7 +139,7 @@ Es importante tener en cuenta que este enfoque voraz no garantiza obtener la sol
 
 ## Conclusión
 
-_El enfoque voraz ofrece soluciones aproximadas eficientes pero no garantiza la optimidad en todos los casos. Por lo tanto, es posible que los resultados obtenidos difieran en ciertos escenarios y en diferentes estrategías algoritmicas_
+_El enfoque voraz ofrece soluciones aproximadas eficientes pero no garantiza la optimidad en todos los casos. Por lo tanto, es posible que los resultados obtenidos difieran en ciertos escenarios y en diferentes estrategías algorítmicas_
 
 ## Expresiones de gratitud
 
