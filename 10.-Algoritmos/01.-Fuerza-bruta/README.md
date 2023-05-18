@@ -28,7 +28,7 @@ La idea principal detrás de la fuerza bruta es generar todas las combinaciones 
 
 ## Ejemplos
 
-### Two Sum: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
+### Two Sum: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo
 
 ```c
 // int nums[] = {2, 7, 11, 15};
@@ -58,7 +58,7 @@ La función utiliza dos bucles `for` anidados para probar todas las combinacione
 
 Es importante destacar que esta solución tiene una complejidad temporal de **O(n²)** debido a los bucles anidados, donde n es el tamaño del array `nums`. Si el tamaño del array es muy grande, esta solución puede volverse ineficiente.
 
-### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite.
+### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite
 
 ```c
 //  int capacidad = 50;

@@ -26,6 +26,7 @@ La estrategia algorítmica de los algoritmos voraces se puede dividir en los sig
 - Soluciones aproximadas: En muchos casos, los algoritmos voraces proporcionan soluciones aproximadas aceptables en un tiempo razonable
 
 ### Desventajas
+
 - No garantizan la optimalidad global: La principal desventaja de los algoritmos voraces es que pueden quedarse atrapados en soluciones subóptimas
 
 - Falta de retroceso: Los algoritmos voraces no suelen realizar cambios en las decisiones tomadas en pasos anteriores. Esto significa que una elección temprana puede comprometer la solución final
@@ -34,7 +35,7 @@ La estrategia algorítmica de los algoritmos voraces se puede dividir en los sig
 
 ## Ejemplos
 
-### Conjunto de monedas: dado un conjunto de monedas, encontrar la cantidad mínima de monedas necesarias para formar una cantidad dada.
+### Conjunto de monedas: dado un conjunto de monedas, encontrar la cantidad mínima de monedas necesarias para formar una cantidad dada
 
 
 ```c
@@ -64,7 +65,7 @@ En este ejemplo, la función `cambioMoneda` toma un arreglo de monedas `monedas`
 El algoritmo voraz utilizado aquí es simple: elegir la moneda más grande posible en cada paso, comenzando con la más grande y avanzando hacia la más pequeña. Esto se logra mediante un bucle while que resta la moneda más grande posible de la cantidad y la imprime en la pantalla.
 
 
-### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite.
+### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite
 
 ```c
 //  int capacidad = 50;
