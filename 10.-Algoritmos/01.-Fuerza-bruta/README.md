@@ -13,12 +13,17 @@ La idea principal detrás de la fuerza bruta es generar todas las combinaciones 
 ### Ventajas
 
 - Garantía de encontrar la solución óptima: Los algoritmos de fuerza bruta prueban todas las posibles soluciones en busca de la óptima. Esto significa que, si existe una solución, el algoritmo la encontrará, lo que ofrece una garantía de optimalidad
+
 - Simplicidad conceptual: Estos algoritmos suelen ser relativamente fáciles de entender e implementar, ya que no requieren de estrategias complicadas ni heurísticas sofisticadas
+
 - No dependencia de estructuras de datos complejas: Los algoritmos de fuerza bruta no necesitan utilizar estructuras de datos especializadas o algoritmos complicados para su implementación
 
 ### Desventajas
+
 - Ineficiencia en tiempo de ejecución: Debido a que prueban todas las combinaciones posibles, los algoritmos de fuerza bruta pueden ser extremadamente ineficientes en términos de tiempo de ejecución
+
 - Consumo de recursos: Los algoritmos de fuerza bruta requieren de una gran cantidad de recursos computacionales, como memoria y capacidad de procesamiento, especialmente cuando el espacio de búsqueda es grande
+
 - No escalabilidad: La eficiencia de los algoritmos de fuerza bruta disminuye rápidamente a medida que aumenta el tamaño del problema. 
 
 ## Ejemplos

@@ -20,12 +20,16 @@ La estrategia algorítmica de los algoritmos voraces se puede dividir en los sig
 ### Ventajas
 
 - Eficiencia: Suelen ser eficientes en términos de tiempo de ejecución, porque no requieren probar todas las soluciones posibles
+
 - Fácil implementación: Los algoritmos voraces suelen ser relativamente fáciles de entender e implementar en comparación con otros algoritmos más complejos
+
 - Soluciones aproximadas: En muchos casos, los algoritmos voraces proporcionan soluciones aproximadas aceptables en un tiempo razonable
 
 ### Desventajas
-- No garantizan la optimalidad global: La principal desventaja de los algoritmos voraces es que pueden quedarse atrapados en soluciones subóptimas.
+- No garantizan la optimalidad global: La principal desventaja de los algoritmos voraces es que pueden quedarse atrapados en soluciones subóptimas
+
 - Falta de retroceso: Los algoritmos voraces no suelen realizar cambios en las decisiones tomadas en pasos anteriores. Esto significa que una elección temprana puede comprometer la solución final
+
 - Sensibilidad a cambios en los datos: Los algoritmos voraces pueden ser sensibles a cambios en los datos de entrada
 
 ## Ejemplos
