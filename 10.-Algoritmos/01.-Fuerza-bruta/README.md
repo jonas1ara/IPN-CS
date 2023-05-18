@@ -27,13 +27,17 @@ La idea principal detrás de la fuerza bruta es generar todas las combinaciones 
 ```c
 #include <stdio.h>
 
-int esPrimo(int num) {
-    if (num <= 1) {
+int esPrimo(int num) 
+{
+    if (num <= 1) 
+    {
         return 0;
     }
     
-    for (int i = 2; i * i <= num; i++) {
-        if (num % i == 0) {
+    for (int i = 2; i * i <= num; i++) 
+    {
+        if (num % i == 0) 
+        {
             return 0;
         }
     }
@@ -41,11 +45,14 @@ int esPrimo(int num) {
     return 1;
 }
 
-void encontrarPrimos(int rangoInicial, int rangoFinal) {
+void encontrarPrimos(int rangoInicial, int rangoFinal) 
+{
     printf("Números primos en el rango [%d, %d]:\n", rangoInicial, rangoFinal);
     
-    for (int num = rangoInicial; num <= rangoFinal; num++) {
-        if (esPrimo(num)) {
+    for (int num = rangoInicial; num <= rangoFinal; num++) 
+    {
+        if (esPrimo(num)) 
+        {
             printf("%d ", num);
         }
     }
@@ -53,7 +60,8 @@ void encontrarPrimos(int rangoInicial, int rangoFinal) {
     printf("\n");
 }
 
-int main() {
+int main() 
+{
     int rangoInicial, rangoFinal;
     
     printf("Ingrese el rango inicial: ");
@@ -115,6 +123,10 @@ En este ejemplo, la función `twoSum` recibe el array de números `nums`, su tam
 La función utiliza dos bucles `for` anidados para probar todas las combinaciones posibles de números en el array. Comienza con el primer número en el índice `i` y busca el segundo número en el índice`j` (siempre mayor que `i`). Si la suma de estos dos números es igual al objetivo, almacenamos los índices `i` y `j` en el array `result` y salimos de la función.
 
 Es importante destacar que esta solución tiene una complejidad temporal de **O(n²)** debido a los bucles anidados, donde n es el tamaño del array `nums`. Si el tamaño del array es muy grande, esta solución puede volverse ineficiente.
+
+## Conclusión
+
+Usar este enfoque cuando el tamaño de la entrada sea pequeño o tengamos que obtener la mejor solución posible y ninguna otra estrategia sea más eficiente
 
 ## Expresiones de gratitud
 
