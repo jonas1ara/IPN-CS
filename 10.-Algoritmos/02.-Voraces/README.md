@@ -60,35 +60,82 @@ En este ejemplo, la función `cambioMoneda` toma un arreglo de monedas `monedas`
 El algoritmo voraz utilizado aquí es simple: elegir la moneda más grande posible en cada paso, comenzando con la más grande y avanzando hacia la más pequeña. Esto se logra mediante un bucle while que resta la moneda más grande posible de la cantidad y la imprime en la pantalla.
 
 
-### Two Sum: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
+### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite.
 
 ```c
-// int nums[] = {2, 7, 11, 15};
-// int target = 9;
-// int result[2];
+//  int capacidad = 50;
+//  int pesos[] = {10, 20, 30};
+//  int valores[] = {60, 100, 120};
+//  int n = sizeof(valores) / sizeof(valores[0]);
 
-void twoSum(int nums[], int numsSize, int target, int* result) 
+int mochilaVoraz(int capacidad, int pesos[], int valores[], int n)
 {
-    for (int i = 0; i < numsSize; i++) 
+    // Cálculo del valor por unidad de peso de cada objeto
+    int valoresPorPeso[n];
+    int i;
+    for (i = 0; i < n; i++)
     {
-        for (int j = i + 1; j < numsSize; j++) 
+        valoresPorPeso[i] = valores[i] / pesos[i];
+    }
+
+    // Ordenar los objetos en orden descendente según su valor por unidad de peso
+    for (i = 0; i < n - 1; i++)
+    {
+        int maxIndex = i;
+        int j;
+        for (j = i + 1; j < n; j++)
         {
-            if (nums[i] + nums[j] == target) 
+            if (valoresPorPeso[j] > valoresPorPeso[maxIndex])
             {
-                result[0] = i;
-                result[1] = j;
-                return;
+                maxIndex = j;
             }
         }
+        
+        // Intercambiar los valores por unidad de peso y los arreglos correspondientes
+        int tempValorPorPeso = valoresPorPeso[maxIndex];
+        valoresPorPeso[maxIndex] = valoresPorPeso[i];
+        valoresPorPeso[i] = tempValorPorPeso;
+
+        int tempPeso = pesos[maxIndex];
+        pesos[maxIndex] = pesos[i];
+        pesos[i] = tempPeso;
+
+        int tempValor = valores[maxIndex];
+        valores[maxIndex] = valores[i];
+        valores[i] = tempValor;
     }
+
+    // Llenar la mochila
+    int valorMaximo = 0;
+    int pesoActual = 0;
+    i = 0;
+    while (pesoActual < capacidad && i < n)
+    {
+        if (pesoActual + pesos[i] <= capacidad)
+        {
+            pesoActual += pesos[i];
+            valorMaximo += valores[i];
+        }
+        else
+        {
+            int pesoRestante = capacidad - pesoActual;
+            valorMaximo += valoresPorPeso[i] * pesoRestante;
+            pesoActual = capacidad;
+        }
+        i++;
+    }
+
+    return valorMaximo;
 }
 ```
 
-En este ejemplo, la función `twoSum` recibe el array de números `nums`, su tamaño `numsSize`, el objetivo `target` y un array `result` donde almacenaremos los índices de los dos números que suman el objetivo.
+En este ejemplo, la función `mochilaVoraz` implementa el enfoque voraz para resolver el problema de la mochila. Primero, se calcula el valor por unidad de peso de cada objeto y se almacena en el arreglo `valoresPorPeso`. Luego, se ordenan los objetos en orden descendente según su valor por unidad de peso.
 
-La función utiliza dos bucles `for` anidados para probar todas las combinaciones posibles de números en el array. Comienza con el primer número en el índice `i` y busca el segundo número en el índice`j` (siempre mayor que `i`). Si la suma de estos dos números es igual al objetivo, almacenamos los índices `i` y `j` en el array `result` y salimos de la función.
+A continuación, se realiza el llenado de la mochila seleccionando los objetos en orden de su valor por unidad de peso, siempre que no exceda la capacidad de la mochila. Si el objeto no puede ser completamente incluido, se calcula la fracción correspondiente al peso restante y se agrega al valor máximo.
 
-Es importante destacar que esta solución tiene una complejidad temporal de **O(n²)** debido a los bucles anidados, donde n es el tamaño del array `nums`. Si el tamaño del array es muy grande, esta solución puede volverse ineficiente.
+En la función `main`, se definen los datos de ejemplo, incluyendo la capacidad de la mochila, los pesos y valores de los objetos. Se llama a la función `mochilaVoraz` y se imprime el valor máximo obtenido.
+
+Es importante tener en cuenta que este enfoque voraz no garantiza obtener la solución óptima en todos los casos, pero en muchos casos proporciona soluciones aproximadas eficientes. 
 
 ## Conclusión
 
