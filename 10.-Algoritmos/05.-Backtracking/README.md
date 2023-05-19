@@ -157,7 +157,7 @@ void mochilaBacktracking(int capacidad, int pesos[], int valores[], int n, int i
 }
 ```
 
-La función `mochilaBacktracking`, que utiliza el enfoque de backtracking para resolver el problema de la mochila. Toma varios argumentos: la `capacidad` de la mochila, los `pesos[]` y `valores[]` de los objetos, el número total de objetos como `n`, el índice actual = `indice`, el peso acumulado actual = `pesoActual`, el valor acumulado actual = `valorActual`y un puntero a la dirección de memoria de `valorMaximo`
+La función `mochilaBacktracking`, que utiliza el enfoque de backtracking para resolver el problema de la mochila. Toma varios argumentos: la `capacidad` de la mochila, los `pesos[]` y `valores[]` de los objetos, el número total de objetos como `n`, el `indice` actual, el `pesoActual`, el `valorActual`y un puntero a la dirección de memoria de `valorMaximo`
 
 Dentro de la función, se verifica el caso base: si se alcanza el final de los objetos `(indice == n)` o si el peso acumulado alcanza la capacidad máxima de la mochila. En ese caso, se actualiza el valor máximo si el valor acumulado actual es mayor.
 
