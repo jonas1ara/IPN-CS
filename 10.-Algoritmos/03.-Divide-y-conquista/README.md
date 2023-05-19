@@ -1,34 +1,34 @@
-# Divide y vencerás 
+# Divide y conquista 
 
-![DyV](/01.-Sources/Images/DyV.png)
+![DyC](/01.-Sources/Images/DyC.png)
 
-_Representación de la estrategia de fuerza bruta_
+_Representación de la estrategia divide y conquista_
 
-## La estrategia algorítmica de "divide y vencerás" es una técnica de resolución de problemas que se basa en dividir un problema en subproblemas más pequeños, resolverlos de forma independiente y luego combinar las soluciones para obtener la solución final
+## La estrategia algorítmica de "divide y conquista" es una técnica de resolución de problemas que se basa en dividir un problema en subproblemas más pequeños, resolverlos de forma independiente y luego combinar las soluciones para obtener la solución final
 
-La idea central detrás de la estrategia de divide y vencerás es descomponer el problema en subproblemas más pequeños y más manejables, resolverlos por separado y luego combinar las soluciones para obtener la solución general del problema original. Esto hace típicamente a través de un enfoque recursivo, donde cada llamada recursiva se aplica a una instancia más pequeña del problema, todo esto hace que esta estrategia sea altamente eficiente en complejidad temporal pero altamente ineficiente en complejidad espacial porque la descomposición del problema en subproblemas más pequeños y la combinación de las soluciones pueden introducir un overhead adicional en términos de memoria
+La idea central detrás de la estrategia de divide y conquista es descomponer el problema en subproblemas más pequeños y más manejables, resolverlos por separado y luego combinar las soluciones para obtener la solución general del problema original. Esto hace típicamente a través de un enfoque recursivo, donde cada llamada recursiva se aplica a una instancia más pequeña del problema, todo esto hace que esta estrategia sea altamente eficiente en complejidad temporal pero altamente ineficiente en complejidad espacial porque la descomposición del problema en subproblemas más pequeños y la combinación de las soluciones pueden introducir un overhead adicional en términos de memoria
 
 ### Ventajas
 
-- Paralelismo: Debido a su naturaleza divisiva, los algoritmos de "Divide y vencerás" son adecuados para ser paralelizados. Los subproblemas independientes pueden resolverse en paralelo, aprovechando el poder de procesamiento de sistemas multicore o distribuidos, lo que puede acelerar significativamente la ejecución
+- Paralelismo: Debido a su naturaleza divisiva, los algoritmos de "Divide y conquista" son adecuados para ser paralelizados. Los subproblemas independientes pueden resolverse en paralelo, aprovechando el poder de procesamiento de sistemas multicore o distribuidos, lo que puede acelerar significativamente la ejecución
 
-- Modularidad: Los algoritmos de "Divide y vencerás" se basan en la modularidad y la descomposición del problema en partes más pequeñas. Esto facilita la comprensión, la implementación y el mantenimiento del algoritmo, ya que cada subproblema se puede abordar por separado.
+- Modularidad: Los algoritmos de "Divide y conquista" se basan en la modularidad y la descomposición del problema en partes más pequeñas. Esto facilita la comprensión, la implementación y el mantenimiento del algoritmo, ya que cada subproblema se puede abordar por separado.
 
 ### Desventajas
 
-- Necesidad de un caso base: Los algoritmos de "Divide y vencerás" requieren un caso base para detener la recursión y resolver los subproblemas más pequeños directamente. La definición y selección adecuada del caso base puede ser un desafío y, si se elige incorrectamente, puede llevar a resultados incorrectos o ineficientes
+- Necesidad de un caso base: Los algoritmos de "Divide y conquista" requieren un caso base para detener la recursión y resolver los subproblemas más pequeños directamente. La definición y selección adecuada del caso base puede ser un desafío y, si se elige incorrectamente, puede llevar a resultados incorrectos o ineficientes
 
-- Complejidad de implementación: La implementación de algoritmos de "Divide y vencerás" puede ser compleja debido a la necesidad de dividir el problema de manera adecuada, combinar las soluciones y gestionar la recursión. Se requiere un diseño cuidadoso y una comprensión sólida del problema para lograr una implementación correcta y eficiente
+- Complejidad de implementación: La implementación de algoritmos de "Divide y conquista" puede ser compleja debido a la necesidad de dividir el problema de manera adecuada, combinar las soluciones y gestionar la recursión. Se requiere un diseño cuidadoso y una comprensión sólida del problema para lograr una implementación correcta y eficiente
 
-- Dependencia de la estructura del problema: La eficacia de los algoritmos de "Divide y vencerás" depende en gran medida de la estructura del problema. Si no existe una división clara en subproblemas más pequeños o si la combinación de las soluciones es compleja, la aplicación de esta técnica puede ser difícil, ineficiente o imposible
+- Dependencia de la estructura del problema: La eficacia de los algoritmos de "Divide y conquista" depende en gran medida de la estructura del problema. Si no existe una división clara en subproblemas más pequeños o si la combinación de las soluciones es compleja, la aplicación de esta técnica puede ser difícil, ineficiente o imposible
 
 ## Ejemplos
 
-### Merge sort: es un algoritmo de ordenamiento eficiente que utiliza la estrategia de divide y vencerás para ordenar una lista de elementos
+### Merge sort: es un algoritmo de ordenamiento eficiente que utiliza la estrategia de divide y conquista para ordenar una lista de elementos
 
 a) Dividir: La lista se divide en dos mitades de tamaño aproximadamente igual
 
-b) Vencer: Cada mitad se ordena de forma recursiva utilizando Merge Sort
+b) Conquista: Cada mitad se ordena de forma recursiva utilizando Merge Sort
 
 c) Combinar: Las dos mitades ordenadas se combinan para formar una lista única y ordenada
 
