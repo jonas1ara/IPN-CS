@@ -1,4 +1,4 @@
-# Algoritmos de fuerza bruta
+# Programación dinámica
 
 ![PD](/01.-Sources/Images/PD.png)
 

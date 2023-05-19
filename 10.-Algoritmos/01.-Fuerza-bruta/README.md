@@ -1,4 +1,4 @@
-# Algoritmos de fuerza bruta
+# Fuerza bruta
 
 ![FuerzaBruta](/01.-Sources/Images/FuerzaBruta.png)
 

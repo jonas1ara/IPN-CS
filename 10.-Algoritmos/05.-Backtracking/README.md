@@ -1,4 +1,4 @@
-# Algoritmos de backtracking
+# Backtracking
 
 ![BT](/01.-Sources/Images/BT.png)
 

@@ -1,73 +1,105 @@
-# Algoritmos de fuerza bruta
+# Divide y vencerás 
 
-![FuerzaBruta](/01.-Sources/Images/FuerzaBruta.png)
+![DyV](/01.-Sources/Images/DyV.png)
 
 _Representación de la estrategia de fuerza bruta_
 
-## Es un enfoque algoritmico de prueba y error, cuándo se implementa se prueban todas las posibles soluciones
+## La estrategia algorítmica de "divide y vencerás" es una técnica de resolución de problemas que se basa en dividir un problema en subproblemas más pequeños, resolverlos de forma independiente y luego combinar las soluciones para obtener la solución final
 
-La estrategia algorítmica de fuerza bruta consiste en probar exhaustivamente todas las posibles soluciones para un problema, sin aplicar ningún tipo de optimización o heurística. Este enfoque es útil cuando el tamaño del problema es pequeño o cuando no existen algoritmos más eficientes para resolverlo.
-
-La idea principal detrás de la fuerza bruta es generar todas las combinaciones posibles y evaluar cada una de ellas hasta encontrar la solución correcta. Aunque puede ser efectiva en algunos casos, esta estrategia puede volverse ineficiente rápidamente a medida que el tamaño del problema aumenta, ya que implica probar todas las combinaciones, lo que puede llevar a un alto consumo de tiempo y recursos.
+La idea central detrás de la estrategia de divide y vencerás es descomponer el problema en subproblemas más pequeños y más manejables, resolverlos por separado y luego combinar las soluciones para obtener la solución general del problema original. Esto hace típicamente a través de un enfoque recursivo, donde cada llamada recursiva se aplica a una instancia más pequeña del problema, todo esto hace que esta estrategia sea altamente eficiente en complejidad temporal pero altamente ineficiente en complejidad espacial porque la descomposición del problema en subproblemas más pequeños y la combinación de las soluciones pueden introducir un overhead adicional en términos de memoria
 
 ### Ventajas
 
-- Optienes la mejor solución de todas.
-- Siempre encuentra una solución, si se logra implementar.
-- Es más fácil de implementar.
+- Paralelismo: Debido a su naturaleza divisiva, los algoritmos de "Divide y vencerás" son adecuados para ser paralelizados. Los subproblemas independientes pueden resolverse en paralelo, aprovechando el poder de procesamiento de sistemas multicore o distribuidos, lo que puede acelerar significativamente la ejecución
+
+- Modularidad: Los algoritmos de "Divide y vencerás" se basan en la modularidad y la descomposición del problema en partes más pequeñas. Esto facilita la comprensión, la implementación y el mantenimiento del algoritmo, ya que cada subproblema se puede abordar por separado.
 
 ### Desventajas
-- Este enfoque puede tomar demasiado tiempo(siglos incluso).
-- No considera eficiencia.
+
+- Necesidad de un caso base: Los algoritmos de "Divide y vencerás" requieren un caso base para detener la recursión y resolver los subproblemas más pequeños directamente. La definición y selección adecuada del caso base puede ser un desafío y, si se elige incorrectamente, puede llevar a resultados incorrectos o ineficientes
+
+- Complejidad de implementación: La implementación de algoritmos de "Divide y vencerás" puede ser compleja debido a la necesidad de dividir el problema de manera adecuada, combinar las soluciones y gestionar la recursión. Se requiere un diseño cuidadoso y una comprensión sólida del problema para lograr una implementación correcta y eficiente
+
+- Dependencia de la estructura del problema: La eficacia de los algoritmos de "Divide y vencerás" depende en gran medida de la estructura del problema. Si no existe una división clara en subproblemas más pequeños o si la combinación de las soluciones es compleja, la aplicación de esta técnica puede ser difícil, ineficiente o imposible
 
 ## Ejemplos
 
-### Encontrar todos los números primos en un rango dado
+### Merge sort: es un algoritmo de ordenamiento eficiente que utiliza la estrategia de divide y vencerás para ordenar una lista de elementos
+
+a) Dividir: La lista se divide en dos mitades de tamaño aproximadamente igual
+
+b) Vencer: Cada mitad se ordena de forma recursiva utilizando Merge Sort
+
+c) Combinar: Las dos mitades ordenadas se combinan para formar una lista única y ordenada
 
 ```c
-// rangoInicial = dado por el usuario
-// rangoFinal = dado por el usuario
+// int arr[] = { 12, 11, 13, 5, 6, 7 };
+// int n = sizeof(arr) / sizeof(arr[0]);
 
-void encontrarPrimos(int rangoInicial, int rangoFinal) 
+// Función para combinar dos subarreglos ordenados en uno solo
+void merge(int arr[], int izq[], int tamanioIzq, int der[], int tamanioDer)
 {
-    printf("Números primos en el rango [%d, %d]:\n", rangoInicial, rangoFinal);
-    
-    for (int num = rangoInicial; num <= rangoFinal; num++) 
+    int i = 0, j = 0, k = 0;
+
+    while (i < tamanioIzq && j < tamanioDer)
     {
-        if (esPrimo(num)) 
+        if (izq[i] <= der[j])
         {
-            printf("%d ", num);
+            arr[k] = izq[i];
+            i++;
         }
+        else
+        {
+            arr[k] = der[j];
+            j++;
+        }
+        k++;
     }
-    
-    printf("\n");
+
+    while (i < tamanioIzq)
+    {
+        arr[k] = izq[i];
+        i++;
+        k++;
+    }
+
+    while (j < tamanioDer)
+    {
+        arr[k] = der[j];
+        j++;
+        k++;
+    }
 }
 
-int esPrimo(int num) 
+// Función principal de Merge Sort
+void mergeSort(int arr[], int n)
 {
-    if (num <= 1) 
+    if (n < 2)
     {
-        return 0;
+        return;
     }
-    
-    for (int i = 2; i * i <= num; i++) 
+
+    int mid = n / 2;
+    int izq[mid];
+    int der[n - mid];
+
+    for (int i = 0; i < mid; i++)
     {
-        if (num % i == 0) 
-        {
-            return 0;
-        }
+        izq[i] = arr[i];
     }
-    
-    return 1;
+
+    for (int i = mid; i < n; i++)
+    {
+        der[i - mid] = arr[i];
+    }
+
+    mergeSort(izq, mid);
+    mergeSort(der, n - mid);
+    merge(arr, izq, mid, der, n - mid);
 }
 ```
 
-En este ejemplo, hemos creado una función llamada `esPrimo` que determina si un número dado es primo o no. Esta función realiza una verificación exhaustiva dividiendo el número entre todos los enteros desde 2 hasta la raíz cuadrada del número.
-
-La función `encontrarPrimos` toma un rango inicial y final, y busca todos los números primos dentro de ese rango. Utiliza un bucle `for` para iterar sobre todos los números dentro del rango y llama a la función `esPrimo` para verificar si cada número es primo o no. Si un número es primo, se imprime en la pantalla.
-
-Esta implementación utiliza la **estrategia de fuerza bruta** porque prueba exhaustivamente todos los números en el rango dado para determinar si son primos o no. Si el rango es grande, la ejecución puede llevar mucho tiempo, ya que no se aplican optimizaciones adicionales para reducir el número de pruebas.
-
+En el ejemplo anterior, la función `mergeSort` se llama recursivamente para las dos mitades del arreglo `arr`. Después de que las dos mitades se ordenan de forma recursiva, la función `merge` se utiliza para combinar las mitades ordenadas en un único arreglo ordenado.
 
 ### Two Sum: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
 
@@ -101,7 +133,7 @@ Es importante destacar que esta solución tiene una complejidad temporal de **O(
 
 ## Conclusión
 
-_Usa este enfoque cuando el tamaño de la entrada sea pequeño o tengamos que obtener la mejor solución posible y ninguna otra estrategia sea más eficiente_
+_Los algoritmos de "Divide y vencerás" ofrecen ventajas en términos de eficiencia, paralelismo, modularidad y reutilización. Sin embargo, presentan desventajas en términos de memoria y la complejidad de su implementación dependerá de la estructura del problema_
 
 ## Expresiones de gratitud
 
