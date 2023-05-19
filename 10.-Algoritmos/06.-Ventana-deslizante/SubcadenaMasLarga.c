@@ -1,35 +1,41 @@
 #include <stdio.h>
 #include <string.h>
 
-int longestSubstringLength(char* str) {
+int subcadenaMasLarga(char *str)
+{
     int n = strlen(str);
-    int maxLength = 0;
-    int start = 0;
-    int end = 0;
+    int longitudMax = 0;
+    int inicio = 0;
+    int final = 0;
 
-    int charCount[256] = {0};  // Inicializar el contador de caracteres
+    int contadorCaracteres[256] = {0}; // Inicializar el contador de caracteres
 
-    while (end < n) {
-        char currentChar = str[end];
+    while (final < n)
+    {
+        char caracterActual = str[final];
 
-        if (charCount[currentChar] == 0) {
-            charCount[currentChar]++;
-            end++;
-            int currentLength = end - start;
-            if (currentLength > maxLength)
-                maxLength = currentLength;
-        } else {
-            charCount[str[start]]--;
-            start++;
+        if (contadorCaracteres[caracterActual] == 0)
+        {
+            contadorCaracteres[caracterActual]++;
+            final++;
+            int currentLength = final - inicio;
+            if (currentLength > longitudMax)
+                longitudMax = currentLength;
+        }
+        else
+        {
+            contadorCaracteres[str[inicio]]--;
+            inicio++;
         }
     }
 
-    return maxLength;
+    return longitudMax;
 }
 
-int main() {
+int main()
+{
     char str[] = "abcabcbb";
-    int length = longestSubstringLength(str);
+    int length = subcadenaMasLarga(str);
     printf("La longitud de la subcadena más larga sin caracteres repetidos es: %d\n", length);
 
     return 0;

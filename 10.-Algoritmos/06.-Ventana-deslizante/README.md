@@ -30,81 +30,83 @@ El concepto básico del sliding window implica mantener dos índices, uno para e
 
 ## Ejemplos
 
-### Suma máxima de una subcadena: dado un array de números enteros, encontrar la suma máxima de una subcadena contigua de números en el array.
+### Suma máxima de un subarreglo: dado un arreglo de enteros, encontrar la suma máxima de un subarreglo de tamaño k - O(n)
 
 ```c
-// rangoInicial = dado por el usuario
-// rangoFinal = dado por el usuario
+// int arr[] = {4, 2, 1, 7, 8, 1, 2, 8, 1, 0};
+//  int n = sizeof(arr) / sizeof(arr[0]);
+//  int k = 3;
 
-void encontrarPrimos(int rangoInicial, int rangoFinal) 
+int sumaMaxSubarreglo(int arr[], int n, int k)
 {
-    printf("Números primos en el rango [%d, %d]:\n", rangoInicial, rangoFinal);
-    
-    for (int num = rangoInicial; num <= rangoFinal; num++) 
-    {
-        if (esPrimo(num)) 
-        {
-            printf("%d ", num);
-        }
-    }
-    
-    printf("\n");
-}
+    int sumaMax = 0;
+    int sumaActual = 0;
 
-int esPrimo(int num) 
-{
-    if (num <= 1) 
+    // Calcular la suma de los primeros k elementos
+    for (int i = 0; i < k; i++)
+        sumaActual += arr[i];
+
+    sumaMax = sumaActual;
+
+    // Calcular la suma de las subcadenas restantes deslizando la ventana
+    for (int i = k; i < n; i++)
     {
-        return 0;
+        sumaActual += arr[i] - arr[i - k]; // Agregar el elemento más reciente y restar el elemento más antiguo
+        if (sumaActual > sumaMax)
+            sumaMax = sumaActual;
     }
-    
-    for (int i = 2; i * i <= num; i++) 
-    {
-        if (num % i == 0) 
-        {
-            return 0;
-        }
-    }
-    
-    return 1;
+
+    return sumaMax;
 }
 ```
 
+En este ejemplo, se encuentra la suma máxima de una subcadena de longitud fija `k` en un arreglo dado. La ventana se desliza de izquierda a derecha a medida que se actualiza la suma actual `sumaActual` sumando el elemento más reciente y restando el elemento más antiguo. El algoritmo mantiene el rastro de la suma máxima encontrada `sumaMax` y lo actualiza si se encuentra una suma mayor. El algoritmo devuelve la suma máxima encontrada después de que la ventana se deslice a través de la matriz.
 
 
-### 
+### Subcadena más larga sin caracteres repetidos: dado un string, encontrar la longitud de la subcadena más larga sin caracteres repetidos - O(n)
 
 ```c
-// int nums[] = {2, 7, 11, 15};
-// int target = 9;
-// int result[2];
+// char str[] = "abcabcbb";
 
-void twoSum(int nums[], int numsSize, int target, int* result) 
+int subcadenaMasLarga(char *str)
 {
-    for (int i = 0; i < numsSize; i++) 
+    int n = strlen(str);
+    int longitudMax = 0;
+    int inicio = 0;
+    int final = 0;
+
+    int contadorCaracteres[256] = {0}; // Inicializar el contador de caracteres
+
+    while (final < n)
     {
-        for (int j = i + 1; j < numsSize; j++) 
+        char caracterActual = str[final];
+
+        if (contadorCaracteres[caracterActual] == 0)
         {
-            if (nums[i] + nums[j] == target) 
-            {
-                result[0] = i;
-                result[1] = j;
-                return;
-            }
+            contadorCaracteres[caracterActual]++;
+            final++;
+            int currentLength = final - inicio;
+            if (currentLength > longitudMax)
+                longitudMax = currentLength;
+        }
+        else
+        {
+            contadorCaracteres[str[inicio]]--;
+            inicio++;
         }
     }
+
+    return longitudMax;
 }
 ```
 
-En este ejemplo, la función `twoSum` recibe el array de números `nums`, su tamaño `numsSize`, el objetivo `target` y un array `result` donde almacenaremos los índices de los dos números que suman el objetivo.
+En este ejemplo, se busca encontrar la longitud de la subcadena más larga en una cadena de caracteres sin caracteres repetidos. El algoritmo utiliza una ventana deslizante para rastrear el `inicio` y el `final` de la subcadena actual sin caracteres repetidos. El arreglo `contadorCaracteres` se utiliza para mantener un registro del recuento de cada carácter en la ventana actual. Si se encuentra un carácter repetido, se mueve el inicio de la ventana hacia adelante y se actualiza el recuento de caracteres. El algoritmo mantiene un registro de la longitud máxima de la subcadena sin caracteres repetidos encontrada hasta ahora y la actualiza si se encuentra una subcadena más larga.
 
-La función utiliza dos bucles `for` anidados para probar todas las combinaciones posibles de números en el array. Comienza con el primer número en el índice `i` y busca el segundo número en el índice`j` (siempre mayor que `i`). Si la suma de estos dos números es igual al objetivo, almacenamos los índices `i` y `j` en el array `result` y salimos de la función.
 
-Es importante destacar que esta solución tiene una complejidad temporal de **O(n²)** debido a los bucles anidados, donde n es el tamaño del array `nums`. Si el tamaño del array es muy grande, esta solución puede volverse ineficiente.
 
 ## Conclusión
 
-_Usa este enfoque cuando el tamaño de la entrada sea pequeño o tengamos que obtener la mejor solución posible y ninguna otra estrategia sea más eficiente_
+_La clave es identificar cómo ajustar los índices de inicio y fin de la ventana, así como realizar un seguimiento de la información relevante dentro de la ventana para llegar a la solución deseada_
 
 ## Expresiones de gratitud
 

@@ -42,7 +42,7 @@ El algoritmo de backtracking generalmente sigue estos pasos:
 
 ## Ejemplos
 
-### N Queens: dado un tablero de ajedrez de tamaño n, encontrar una configuración de N reinas en el tablero NxN donde ninguna reina pueda atacar a otra
+### N Queens: dado un tablero de ajedrez de tamaño n, encontrar una configuración de N reinas en el tablero NxN donde ninguna reina pueda atacar a otra 
 
 ```c
 #define N 8
@@ -121,7 +121,8 @@ Dentro de la función `resolverNQueens`, se realizan las siguientes acciones:
 7) Si no se encuentra ninguna solución válida después de explorar todas las filas, se retorna 0 para indicar que no se ha encontrado ninguna solución válida
 
 
-### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite
+### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite 
+
 
 ```c
 //  int capacidad = 50;
