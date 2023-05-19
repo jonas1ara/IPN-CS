@@ -101,39 +101,48 @@ void mergeSort(int arr[], int n)
 
 En el ejemplo anterior, la función `mergeSort` se llama recursivamente para las dos mitades del arreglo `arr`. Después de que las dos mitades se ordenan de forma recursiva, la función `merge` se utiliza para combinar las mitades ordenadas en un único arreglo ordenado.
 
-### Two Sum: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
+### Búsqueda binaria: es un algoritmo eficiente para encontrar un elemento en una lista ordenada
+
+a) Dividir: La lista se divide en dos mitades 
+
+b) Conquista: Se determina en qué mitad puede estar el elemento
+
+c) Combinar: Se repite el proceso en la mitad seleccionada hasta que se encuentra el elemento o determinar que no existe
 
 ```c
-// int nums[] = {2, 7, 11, 15};
-// int target = 9;
-// int result[2];
+// int arr[] = { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 };
+// int n = sizeof(arr) / sizeof(arr[0]);
+// int target = 12;
 
-void twoSum(int nums[], int numsSize, int target, int* result) 
+// Función de búsqueda binaria
+int busquedaBinaria(int arr[], int izq, int der, int target)
 {
-    for (int i = 0; i < numsSize; i++) 
+    if (der >= izq)
     {
-        for (int j = i + 1; j < numsSize; j++) 
+        int mitad = izq + (der - izq) / 2;
+
+        if (arr[mitad] == target)
         {
-            if (nums[i] + nums[j] == target) 
-            {
-                result[0] = i;
-                result[1] = j;
-                return;
-            }
+            return mitad;
         }
+
+        if (arr[mitad] > target)
+        {
+            return busquedaBinaria(arr, izq, mitad - 1, target);
+        }
+
+        return busquedaBinaria(arr, mitad + 1, der, target);
     }
+
+    return -1; // Elemento no encontrado
 }
 ```
 
-En este ejemplo, la función `twoSum` recibe el array de números `nums`, su tamaño `numsSize`, el objetivo `target` y un array `result` donde almacenaremos los índices de los dos números que suman el objetivo.
-
-La función utiliza dos bucles `for` anidados para probar todas las combinaciones posibles de números en el array. Comienza con el primer número en el índice `i` y busca el segundo número en el índice`j` (siempre mayor que `i`). Si la suma de estos dos números es igual al objetivo, almacenamos los índices `i` y `j` en el array `result` y salimos de la función.
-
-Es importante destacar que esta solución tiene una complejidad temporal de **O(n²)** debido a los bucles anidados, donde n es el tamaño del array `nums`. Si el tamaño del array es muy grande, esta solución puede volverse ineficiente.
+La función `busquedaBinaria` se llama recursivamente para buscar el elemento `target` en una porción del arreglo `arr` definida por los índices  `izq` y `der`. La función divide la porción en dos mitades y decide en qué mitad continuar la búsqueda hasta encontrar el elemento o determinar que no existe.
 
 ## Conclusión
 
-_Los algoritmos de "Divide y vencerás" ofrecen ventajas en términos de eficiencia, paralelismo, modularidad y reutilización. Sin embargo, presentan desventajas en términos de memoria y la complejidad de su implementación dependerá de la estructura del problema_
+_Los algoritmos de "Divide y conquista" ofrecen ventajas en términos de eficiencia, paralelismo, modularidad y reutilización. Sin embargo, presentan desventajas en términos de memoria y la complejidad de su implementación dependerá de la estructura del problema_
 
 ## Expresiones de gratitud
 

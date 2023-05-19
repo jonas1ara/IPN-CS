@@ -13,63 +13,63 @@ void print(int arr[N][N])
 	}
 }
 
-int isSafe(int grid[N][N], int row,
+int esSeguro(int red[N][N], int fila,
 		   int col, int num)
 {
 
 	for (int x = 0; x <= 8; x++)
-		if (grid[row][x] == num)
+		if (red[fila][x] == num)
 			return 0;
 
 	for (int x = 0; x <= 8; x++)
-		if (grid[x][col] == num)
+		if (red[x][col] == num)
 			return 0;
 
-	int startRow = row - row % 3,
-		startCol = col - col % 3;
+	int iniciarFila = fila - fila % 3,
+		iniciarCol = col - col % 3;
 
 	for (int i = 0; i < 3; i++)
 		for (int j = 0; j < 3; j++)
-			if (grid[i + startRow][j +
-								   startCol] == num)
+			if (red[i + iniciarFila][j +
+								   iniciarCol] == num)
 				return 0;
 
 	return 1;
 }
 
-int solveSudoku(int grid[N][N], int row, int col)
+int resolverSudoku(int red[N][N], int fila, int col)
 {
-	if (row == N - 1 && col == N)
+	if (fila == N - 1 && col == N)
 		return 1;
 
 	if (col == N)
 	{
-		row++;
+		fila++;
 		col = 0;
 	}
 
-	if (grid[row][col] > 0)
-		return solveSudoku(grid, row, col + 1);
+	if (red[fila][col] > 0)
+		return resolverSudoku(red, fila, col + 1);
 
 	for (int num = 1; num <= N; num++)
 	{
 
-		if (isSafe(grid, row, col, num) == 1)
+		if (esSeguro(red, fila, col, num) == 1)
 		{
-			grid[row][col] = num;
+			red[fila][col] = num;
 
-			if (solveSudoku(grid, row, col + 1) == 1)
+			if (resolverSudoku(red, fila, col + 1) == 1)
 				return 1;
 		}
 
-		grid[row][col] = 0;
+		red[fila][col] = 0;
 	}
 	return 0;
 }
 
 int main()
 {
-	int grid[N][N] = {{3, 0, 6, 5, 0, 8, 4, 0, 0},
+	int red[N][N] = {{3, 0, 6, 5, 0, 8, 4, 0, 0},
 					  {5, 2, 0, 0, 0, 0, 0, 0, 0},
 					  {0, 8, 7, 0, 0, 0, 0, 3, 1},
 					  {0, 0, 3, 0, 1, 0, 0, 8, 0},
@@ -79,10 +79,10 @@ int main()
 					  {0, 0, 0, 0, 0, 0, 0, 7, 4},
 					  {0, 0, 5, 2, 0, 6, 3, 0, 0}};
 
-	if (solveSudoku(grid, 0, 0) == 1)
-		print(grid);
+	if (resolverSudoku(red, 0, 0) == 1)
+		print(red);
 	else
-		printf("No solution exists");
+		printf("No existe solución\n");
 
 	return 0;
 }
