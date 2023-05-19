@@ -2,7 +2,7 @@
 
 ![FuerzaBruta](/01.-Sources/Images/FuerzaBruta.png)
 
-_Representación de la estrategia de fuerza bruta_
+_Representación de la estrategia fuerza bruta_
 
 ## Es un enfoque algoritmico de prueba y error, cuándo se implementa se prueban todas las posibles soluciones
 

@@ -2,7 +2,7 @@
 
 ![Voraces](/01.-Sources/Images/Voraces.png)
 
-_Representación de la estrategia de algoritmos voraces_
+_Representación de la estrategia voraces_
 
 ## Es un enfoque algoritmico que consiste en elegir siempre la opción óptima local en cada paso con la esperanza de obtener una solución óptima global
 

@@ -1,28 +1,36 @@
-# Algoritmos de fuerza bruta
+# Ventana deslizante
 
-![FuerzaBruta](/01.-Sources/Images/FuerzaBruta.png)
+![VD](/01.-Sources/Images/VD.png)
 
-_Representación de la estrategia de fuerza bruta_
+_Representación de la estrategia ventana deslizante_
 
-## Es un enfoque algoritmico de prueba y error, cuándo se implementa se prueban todas las posibles soluciones
+## La estrategia del ventana deslizante (sliding window) es un enfoque algorítmico utilizado en la programación para resolver problemas que involucran subarreglos o subcadenas de una estructura de datos, como un arreglo o una cadena de caracteres
 
-La estrategia algorítmica de fuerza bruta consiste en probar exhaustivamente todas las posibles soluciones para un problema, sin aplicar ningún tipo de optimización o heurística. Este enfoque es útil cuando el tamaño del problema es pequeño o cuando no existen algoritmos más eficientes para resolverlo.
+La estrategia del ventana deslizante (sliding window) es un enfoque algorítmico utilizado en la programación para resolver problemas que involucran subarreglos o subcadenas de una estructura de datos, como un arreglo o una cadena de caracteres.
 
-La idea principal detrás de la fuerza bruta es generar todas las combinaciones posibles y evaluar cada una de ellas hasta encontrar la solución correcta. Aunque puede ser efectiva en algunos casos, esta estrategia puede volverse ineficiente rápidamente a medida que el tamaño del problema aumenta, ya que implica probar todas las combinaciones, lo que puede llevar a un alto consumo de tiempo y recursos.
+Consiste en mantener una "ventana" de elementos mientras se avanza a través de la estructura de datos, actualizando y ajustando la ventana en cada iteración. Esto permite encontrar soluciones óptimas o realizar cálculos eficientes sin tener que recorrer la estructura de datos completa repetidamente.
+
+El concepto básico del sliding window implica mantener dos índices, uno para el inicio de la ventana y otro para el final de la ventana. A medida que avanzas a través de la estructura de datos, ajustas estos índices para expandir o reducir el tamaño de la ventana según sea necesario. Dependiendo del problema que estés resolviendo, los índices se pueden actualizar de diferentes maneras.
 
 ### Ventajas
 
-- Optienes la mejor solución de todas.
-- Siempre encuentra una solución, si se logra implementar.
-- Es más fácil de implementar.
+- Eficiencia: Los algoritmos de ventana deslizante pueden ser muy eficientes, ya que evitan realizar cálculos repetitivos al aprovechar la información previamente calculada. La ventana deslizante permite mantener un estado actualizado y realizar operaciones en tiempo constante, lo que mejora el rendimiento general del algoritmo
+
+- Reducción de la complejidad temporal: Al dividir el problema en subproblemas más pequeños que se solucionan a medida que la ventana se desliza, estos algoritmos pueden reducir la complejidad temporal 
+
+- Espacio adicional limitado: Los algoritmos de ventana deslizante suelen requerir un espacio adicional constante o lineal, dependiendo del tamaño de la ventana deslizante y de las variables auxiliares utilizadas. **Esto los hace adecuados para problemas en los que el espacio adicional es un factor importante a considerar** como podría ser el algoritmo de [Kadane](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)
 
 ### Desventajas
-- Este enfoque puede tomar demasiado tiempo(siglos incluso).
-- No considera eficiencia.
+
+- Requisito de una ventana fija: Los algoritmos de ventana deslizante asumen una ventana fija de tamaño predeterminado. No son adecuados para problemas en los que el tamaño de la ventana no es constante o debe ajustarse dinámicamente
+
+- Dificultad en algunos escenarios: Algunos problemas pueden presentar desafíos adicionales al aplicar la técnica de la ventana deslizante. Por ejemplo, si el problema involucra cambios en el tamaño o forma de la ventana, o si requiere restricciones adicionales en la solución, puede ser necesario considerar enfoques alternativos
+
+- Dependencia del orden de los elementos: Los algoritmos de ventana deslizante pueden depender del orden en que se procesan los elementos dentro de la ventana. Esto significa que el orden incorrecto puede llevar a resultados incorrectos o subóptimos
 
 ## Ejemplos
 
-### Encontrar todos los números primos en un rango dado
+### Suma máxima de una subcadena: dado un array de números enteros, encontrar la suma máxima de una subcadena contigua de números en el array.
 
 ```c
 // rangoInicial = dado por el usuario
@@ -62,14 +70,9 @@ int esPrimo(int num)
 }
 ```
 
-En este ejemplo, hemos creado una función llamada `esPrimo` que determina si un número dado es primo o no. Esta función realiza una verificación exhaustiva dividiendo el número entre todos los enteros desde 2 hasta la raíz cuadrada del número.
-
-La función `encontrarPrimos` toma un rango inicial y final, y busca todos los números primos dentro de ese rango. Utiliza un bucle `for` para iterar sobre todos los números dentro del rango y llama a la función `esPrimo` para verificar si cada número es primo o no. Si un número es primo, se imprime en la pantalla.
-
-Esta implementación utiliza la **estrategia de fuerza bruta** porque prueba exhaustivamente todos los números en el rango dado para determinar si son primos o no. Si el rango es grande, la ejecución puede llevar mucho tiempo, ya que no se aplican optimizaciones adicionales para reducir el número de pruebas.
 
 
-### Two Sum: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
+### 
 
 ```c
 // int nums[] = {2, 7, 11, 15};

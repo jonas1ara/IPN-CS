@@ -2,7 +2,7 @@
 
 ![PD](/01.-Sources/Images/PD.png)
 
-_Representación de la estrategia de programación dinámica_
+_Representación de la estrategia programación dinámica_
 
 ## Es un enfoque algorítmico para resolver problemas complejos dividiéndolos en subproblemas más pequeños y resolviéndolos de manera recursiva.
 
