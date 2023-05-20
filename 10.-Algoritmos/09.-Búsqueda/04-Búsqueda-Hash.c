@@ -1,135 +1,62 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
-#define SIZE 20
+#define SIZE 10
 
-struct DataItem {
-   int data;   
-   int key;
+struct Nodo {
+    int clave;
+    int valor;
+    struct Nodo* siguiente;
 };
 
-struct DataItem* hashArray[SIZE]; 
-struct DataItem* dummyItem;
-struct DataItem* item;
-
-int hashCode(int key) {
-   return key % SIZE;
+void inicializarTabla(struct Nodo* tabla[]) {
+    for (int i = 0; i < SIZE; i++) {
+        tabla[i] = NULL;
+    }
 }
 
-struct DataItem *search(int key) {
-   //Consigue el hash 
-   int hashIndex = hashCode(key);  
-	
-   //Mover en matriz until una vacía 
-   while(hashArray[hashIndex] != NULL) {
-	
-      if(hashArray[hashIndex]->key == key)
-         return hashArray[hashIndex]; 
-			
-      //Ve a la siguiente celda
-      ++hashIndex;
-		
-      //Wrap alrededor de la tabla
-      hashIndex %= SIZE;
-   }        
-	
-   return NULL;        
+int funcionHash(int clave) {
+    return clave % SIZE;
 }
 
-void insert(int key,int data) {
+void insertar(struct Nodo* tabla[], int clave, int valor) {
+    int indice = funcionHash(clave);
 
-   struct DataItem *item = (struct DataItem*) malloc(sizeof(struct DataItem));
-   item->data = data;  
-   item->key = key;
-
-   //Consigue el Hash 
-   int hashIndex = hashCode(key);
-
-   //Mover en matriz until una vacía o borrar celda
-   while(hashArray[hashIndex] != NULL && hashArray[hashIndex]->key != -1) {
-      //Ve a la siguiente celda
-      ++hashIndex;
-		
-      //Envolver alrededor de la tabla
-      hashIndex %= SIZE;
-   }
-	
-   hashArray[hashIndex] = item;
+    struct Nodo* nuevoNodo = (struct Nodo*)malloc(sizeof(struct Nodo));
+    nuevoNodo->clave = clave;
+    nuevoNodo->valor = valor;
+    nuevoNodo->siguiente = tabla[indice];
+    tabla[indice] = nuevoNodo;
 }
 
-struct DataItem* delete(struct DataItem* item) {
-   int key = item->key;
+int buscar(struct Nodo* tabla[], int clave) {
+    int indice = funcionHash(clave);
 
-   //Consigue el Hash
-   int hashIndex = hashCode(key);
+    struct Nodo* actual = tabla[indice];
+    while (actual != NULL) {
+        if (actual->clave == clave) {
+            return actual->valor;
+        }
+        actual = actual->siguiente;
+    }
 
-   //Mover en matriz hasta una vacía
-   while(hashArray[hashIndex] != NULL) {
-	
-      if(hashArray[hashIndex]->key == key) {
-         struct DataItem* temp = hashArray[hashIndex]; 
-			
-         //Asignar un elemento dummy en la posición eliminada
-         hashArray[hashIndex] = dummyItem; 
-         return temp;
-      }
-		
-      //Ve a la siguiente celda
-      ++hashIndex;
-		
-      //Envolver alrededor de la tabla
-      hashIndex %= SIZE;
-   }      
-	
-   return NULL;        
-}
-
-void display() {
-   int i = 0;
-	
-   for(i = 0; i<SIZE; i++) {
-	
-      if(hashArray[i] != NULL)
-         printf(" (%d,%d)",hashArray[i]->key,hashArray[i]->data);
-      else
-         printf(" ~~ ");
-   }
-	
-   printf("\n");
+    return -1;
 }
 
 int main() {
-   dummyItem = (struct DataItem*) malloc(sizeof(struct DataItem));
-   dummyItem->data = -1;  
-   dummyItem->key = -1; 
+    struct Nodo* tabla[SIZE];
+    inicializarTabla(tabla);
 
-   insert(1, 20);
-   insert(2, 70);
-   insert(42, 80);
-   insert(4, 25);
-   insert(12, 44);
-   insert(14, 32);
-   insert(17, 11);
-   insert(13, 78);
-   insert(37, 97);
+    insertar(tabla, 10, 100);
+    insertar(tabla, 20, 200);
+    insertar(tabla, 30, 300);
 
-   display();
-   item = search(37);
+    int resultado = buscar(tabla, 20);
+    if (resultado == -1) {
+        printf("El elemento no se encuentra en la tabla hash.\n");
+    } else {
+        printf("El valor asociado a la clave es %d.\n", resultado);
+    }
 
-   if(item != NULL) {
-      printf("Elemento encontrado: %d\n", item->data);
-   } else {
-      printf("Elemento no encontrado\n");
-   }
-
-   delete(item);
-   item = search(37);
-
-   if(item != NULL) {
-      printf("Elemento encontrado: %d\n", item->data);
-   } else {
-      printf("Elemento no encontrado\n");
-   }
+    return 0;
 }
