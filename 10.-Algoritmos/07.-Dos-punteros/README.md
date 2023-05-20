@@ -34,82 +34,64 @@ La complejidad asintótica de la estrategia "Dos punteros" depende del problema 
 
 ## Ejemplos
 
-### Encontrar todos los números primos en un rango dado
+### Find Pair: Buscar un par de elementos en una lista ordenada que suman un número específico
 
 ```c
-// rangoInicial = dado por el usuario
-// rangoFinal = dado por el usuario
+// int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+// int n = sizeof(arr) / sizeof(arr[0]);
+// int target = 11; 
 
-void encontrarPrimos(int rangoInicial, int rangoFinal) 
+void encontrarPar(int arr[], int n, int target)
 {
-    printf("Números primos en el rango [%d, %d]:\n", rangoInicial, rangoFinal);
-    
-    for (int num = rangoInicial; num <= rangoFinal; num++) 
+    int i = 0, j = n - 1;
+    while (i < j)
     {
-        if (esPrimo(num)) 
+        if (arr[i] + arr[j] == target)
         {
-            printf("%d ", num);
+            printf("Par encontrado: (%d, %d)\n", arr[i], arr[j]);
+            return;
         }
+        else if (arr[i] + arr[j] < target)
+            i++;
+        else
+            j--;
     }
-    
-    printf("\n");
-}
-
-int esPrimo(int num) 
-{
-    if (num <= 1) 
-    {
-        return 0;
-    }
-    
-    for (int i = 2; i * i <= num; i++) 
-    {
-        if (num % i == 0) 
-        {
-            return 0;
-        }
-    }
-    
-    return 1;
+    printf("No se encontró ningún par\n");
 }
 ```
 
-En este ejemplo, hemos creado una función llamada `esPrimo` que determina si un número dado es primo o no. Esta función realiza una verificación exhaustiva dividiendo el número entre todos los enteros desde 2 hasta la raíz cuadrada del número.
-
-La función `encontrarPrimos` toma un rango inicial y final, y busca todos los números primos dentro de ese rango. Utiliza un bucle `for` para iterar sobre todos los números dentro del rango y llama a la función `esPrimo` para verificar si cada número es primo o no. Si un número es primo, se imprime en la pantalla.
-
-Esta implementación utiliza la **estrategia de fuerza bruta** porque prueba exhaustivamente todos los números en el rango dado para determinar si son primos o no. Si el rango es grande, la ejecución puede llevar mucho tiempo, ya que no se aplican optimizaciones adicionales para reducir el número de pruebas.
+En este ejemplo, la función `encontrarPar` recibe el arreglo `arr`, su tamaño `n` y la suma objetivo `target`. La función busca un par de elementos en el arreglo que sumen `target`. Si se encuentra un par, se muestra en la consola. Si no se encuentra ningún par, se muestra un mensaje indicando que no se encontró ningún par.
 
 
-### Two Sum: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
+### Find Longest Subsequence: Encontrar la subsecuencia más larga de números consecutivos que suman una cantidad específica de una lista desordenada
+
 
 ```c
-// int nums[] = {2, 7, 11, 15};
-// int target = 9;
-// int result[2];
+// int arr[] = {2, 1, 5, 1, 3, 2};
+// int n = sizeof(arr) / sizeof(arr[0]);
+// int target = 8; 
 
-void twoSum(int nums[], int numsSize, int target, int* result) 
+int encontrarSubsecuencia(int arr[], int n, int target)
 {
-    for (int i = 0; i < numsSize; i++) 
+    int i = 0, j = 0, suma = 0, longitud_max = 0;
+    while (j < n)
     {
-        for (int j = i + 1; j < numsSize; j++) 
+        suma += arr[j];
+        while (suma > target)
         {
-            if (nums[i] + nums[j] == target) 
-            {
-                result[0] = i;
-                result[1] = j;
-                return;
-            }
+            suma -= arr[i];
+            i++;
         }
+        if (suma == target && (j - i + 1) > longitud_max)
+        {
+            longitud_max = j - i + 1;
+        }
+        j++;
     }
+    return longitud_max;
 }
 ```
-
-En este ejemplo, la función `twoSum` recibe el array de números `nums`, su tamaño `numsSize`, el objetivo `target` y un array `result` donde almacenaremos los índices de los dos números que suman el objetivo.
-
-La función utiliza dos bucles `for` anidados para probar todas las combinaciones posibles de números en el array. Comienza con el primer número en el índice `i` y busca el segundo número en el índice`j` (siempre mayor que `i`). Si la suma de estos dos números es igual al objetivo, almacenamos los índices `i` y `j` en el array `result` y salimos de la función.
-
-Es importante destacar que esta solución tiene una complejidad temporal de **O(n²)** debido a los bucles anidados, donde n es el tamaño del array `nums`. Si el tamaño del array es muy grande, esta solución puede volverse ineficiente.
+En este ejemplo, la función `encontrarSubsecuencia` recibe el arreglo `arr`, su tamaño `n` y la suma objetivo `target`. La función encuentra la subsecuencia más larga de números consecutivos en el arreglo que suman `target` y devuelve su longitud. Si no se encuentra ninguna subsecuencia, devuelve 0.
 
 ## Conclusión
 
