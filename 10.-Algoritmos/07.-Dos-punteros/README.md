@@ -1,24 +1,36 @@
-# Algoritmos de fuerza bruta
+# Dos punteros
 
-![FuerzaBruta](/01.-Sources/Images/FuerzaBruta.png)
+![DP](/01.-Sources/Images/DP.png)
 
-_Representación de la estrategia de fuerza bruta_
+_Representación de la estrategia de dos punteros_
 
-## Es un enfoque algoritmico de prueba y error, cuándo se implementa se prueban todas las posibles soluciones
+## Esta estrategia utiliza dos punteros que se mueven a través de la lista o array para encontrar una solución en tiempo lineal
 
-La estrategia algorítmica de fuerza bruta consiste en probar exhaustivamente todas las posibles soluciones para un problema, sin aplicar ningún tipo de optimización o heurística. Este enfoque es útil cuando el tamaño del problema es pequeño o cuando no existen algoritmos más eficientes para resolverlo.
+La estrategia algorítmica de "Dos punteros" (Two pointers) es una técnica utilizada en algoritmos para resolver problemas que involucran listas o arrays ordenados. Esta estrategia utiliza dos punteros que se mueven a través de la lista o array para encontrar una **solución en tiempo lineal**. Los dos punteros se mueven simultáneamente a través de la lista o array con diferentes velocidades o en diferentes direcciones, y se utilizan para encontrar un patrón o propiedad en la lista o array.
 
-La idea principal detrás de la fuerza bruta es generar todas las combinaciones posibles y evaluar cada una de ellas hasta encontrar la solución correcta. Aunque puede ser efectiva en algunos casos, esta estrategia puede volverse ineficiente rápidamente a medida que el tamaño del problema aumenta, ya que implica probar todas las combinaciones, lo que puede llevar a un alto consumo de tiempo y recursos.
+Los algoritmos de "Dos punteros" se pueden aplicar a una amplia variedad de problemas, como encontrar pares que sumen un objetivo, determinar la existencia de una secuencia o patrón en un arreglo, eliminar duplicados en una lista, entre otros. Esta flexibilidad los hace útiles en diferentes dominios y escenarios.
+
+Para implementar esta estrategia en C, generalmente se usan dos índices (enteros) que apuntan a diferentes elementos de la lista o array. Estos índices se incrementan o disminuyen en función de las condiciones del problema que se está resolviendo.
+
+La complejidad asintótica de la estrategia "Dos punteros" depende del problema que se está resolviendo, pero generalmente se encuentra entre O(N) y O(N log N), donde N es el tamaño de la lista o array.
 
 ### Ventajas
 
-- Optienes la mejor solución de todas.
-- Siempre encuentra una solución, si se logra implementar.
-- Es más fácil de implementar.
+- Eficiencia: Los algoritmos de Two Pointers pueden ser muy eficientes, ya que evitan la necesidad de realizar múltiples pasadas sobre los datos
+
+- Espacio adicional limitado: Los algoritmos de Two Pointers suelen requerir un espacio adicional constante o lineal, dependiendo de la cantidad de punteros utilizados y las variables auxiliares requeridas. **Esto los hace adecuados para problemas en los que el espacio adicional es un factor importante a considerar** como el algoritmo de [ordenamiento de burbuja](www.geeksforgeeks.org/bubble-sort/)
+
+
+- Simplicidad de implementación: En comparación con otros enfoques más complejos, los algoritmos de Two Pointers suelen tener una implementación más simple y comprensible. La idea de utilizar dos punteros que avanzan a través de los datos es intuitiva y fácil de seguir, lo que facilita su implementación y depuración
+
 
 ### Desventajas
-- Este enfoque puede tomar demasiado tiempo(siglos incluso).
-- No considera eficiencia.
+
+- Limitaciones en problemas complejos: Aunque los algoritmos de "Dos punteros" son eficientes en muchos casos, pueden tener limitaciones en **problemas más complejos**
+
+- Dependencia de la estructura de datos: La efectividad de los algoritmos de "Dos punteros" depende en gran medida de la estructura de datos subyacente y de cómo se pueden recorrer o comparar los elementos. En algunos casos, puede ser necesario adaptar o ajustar el enfoque para adaptarse a la estructura de datos específica
+
+- No aplicable a todos los problemas: Aunque los algoritmos de "Dos punteros" son versátiles, no son aplicables a todos los problemas
 
 ## Ejemplos
 
@@ -101,7 +113,7 @@ Es importante destacar que esta solución tiene una complejidad temporal de **O(
 
 ## Conclusión
 
-_Usa este enfoque cuando el tamaño de la entrada sea pequeño o tengamos que obtener la mejor solución posible y ninguna otra estrategia sea más eficiente_
+_Esta estrategia nos ofrece ventajas en términos de eficiencia, uso limitado de espacio adicional, flexibilidad y simplicidad de implementación. Sin embargo, pueden tener limitaciones en problemas complejos, depender de la estructura de datos y no ser aplicables a todos los problemas. Es importante evaluar cuidadosamente el problema en cuestión y considerar si esta estrategia es la mejor opción para abordarlo_
 
 ## Expresiones de gratitud
 
