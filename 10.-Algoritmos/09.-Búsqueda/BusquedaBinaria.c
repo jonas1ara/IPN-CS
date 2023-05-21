@@ -36,7 +36,7 @@ int main()
 {
    int arr[] = {2, 5, 7, 10, 14, 18, 20};
    int n = sizeof(arr) / sizeof(arr[0]);
-   int target = 12;
+   int target = 10;
 
    printf("Arreglo: ");
    printArray(arr, n);
