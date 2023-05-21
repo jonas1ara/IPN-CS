@@ -2,7 +2,7 @@
 
 ![Ab](/01.-Sources/Images/Ab.png)
 
-_Representación de la estrategia divide y conquista_
+_Representación de algoritmos de búsqueda_
 
 ## La estrategia algorítmica de "divide y conquista" es una técnica de resolución de problemas que se basa en dividir un problema en subproblemas más pequeños, resolverlos de forma independiente y luego combinar las soluciones para obtener la solución final
 
