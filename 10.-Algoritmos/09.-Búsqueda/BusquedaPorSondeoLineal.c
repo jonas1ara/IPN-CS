@@ -72,6 +72,8 @@ int main()
     insertar(tabla, 20, 200);
     insertar(tabla, 30, 300);
 
+    printf("Búsqueda hash (hash search) - O(1)\n\n");
+
     int resultado = buscar(tabla, 20);
     if (resultado == -1)
     {

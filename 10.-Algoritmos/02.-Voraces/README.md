@@ -35,7 +35,7 @@ La estrategia algorítmica de los algoritmos voraces se puede dividir en los sig
 
 ## Ejemplos
 
-### Conjunto de monedas: dado un conjunto de monedas, encontrar la cantidad mínima de monedas necesarias para formar una cantidad dada
+### Conjunto de monedas: dado un conjunto de monedas, encontrar la cantidad mínima de monedas necesarias para formar una cantidad dada - O(n)
 
 
 ```c
@@ -65,7 +65,11 @@ En este ejemplo, la función `cambioMoneda` toma un arreglo de monedas `monedas`
 El algoritmo voraz utilizado aquí es simple: elegir la moneda más grande posible en cada paso, comenzando con la más grande y avanzando hacia la más pequeña. Esto se logra mediante un bucle while que resta la moneda más grande posible de la cantidad y la imprime en la pantalla.
 
 
-### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite
+### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite - O(n log n)
+
+![KP](/01.-Sources/Images/Knapsack.png)
+
+_Representación del problema de la mochila_
 
 ```c
 //  int capacidad = 50;

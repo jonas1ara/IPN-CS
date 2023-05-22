@@ -24,7 +24,11 @@ La idea central detrás de la estrategia de divide y conquista es descomponer el
 
 ## Ejemplos
 
-### Merge sort: es un algoritmo de ordenamiento eficiente que utiliza la estrategia de divide y conquista para ordenar una lista de elementos
+### Merge sort: es un algoritmo de ordenamiento eficiente que utiliza la estrategia de divide y conquista para ordenar una lista de elementos - O(n log n)
+
+![MS](/01.-Sources/Images/MS.png)
+
+_Representación del algoritmo de ordenamiento por mezcla_
 
 a) Dividir: La lista se divide en dos mitades de tamaño aproximadamente igual
 
@@ -36,8 +40,8 @@ c) Combinar: Las dos mitades ordenadas se combinan para formar una lista única 
 // int arr[] = { 12, 11, 13, 5, 6, 7 };
 // int n = sizeof(arr) / sizeof(arr[0]);
 
-// Función para combinar dos subarreglos ordenados en uno solo
-void merge(int arr[], int izq[], int tamanioIzq, int der[], int tamanioDer)
+// Función para unir dos subarreglos ordenados en uno solo
+void unir(int arr[], int izq[], int tamanioIzq, int der[], int tamanioDer)
 {
     int i = 0, j = 0, k = 0;
 
@@ -71,37 +75,41 @@ void merge(int arr[], int izq[], int tamanioIzq, int der[], int tamanioDer)
     }
 }
 
-// Función principal de Merge Sort
-void mergeSort(int arr[], int n)
+// Función principal del ordenamiento por mezcla
+void ordenamientoPorMezcla(int arr[], int n)
 {
     if (n < 2)
     {
         return;
     }
 
-    int mid = n / 2;
-    int izq[mid];
-    int der[n - mid];
+    int medio = n / 2;
+    int izq[medio];
+    int der[n - medio];
 
-    for (int i = 0; i < mid; i++)
+    for (int i = 0; i < medio; i++)
     {
         izq[i] = arr[i];
     }
 
-    for (int i = mid; i < n; i++)
+    for (int i = medio; i < n; i++)
     {
-        der[i - mid] = arr[i];
+        der[i - medio] = arr[i];
     }
 
-    mergeSort(izq, mid);
-    mergeSort(der, n - mid);
-    merge(arr, izq, mid, der, n - mid);
+    ordenamientoPorMezcla(izq, medio);
+    ordenamientoPorMezcla(der, n - medio);
+    unir(arr, izq, medio, der, n - medio);
 }
 ```
 
-En el ejemplo anterior, la función `mergeSort` se llama recursivamente para las dos mitades del arreglo `arr`. Después de que las dos mitades se ordenan de forma recursiva, la función `merge` se utiliza para combinar las mitades ordenadas en un único arreglo ordenado.
+En el ejemplo anterior, la función `ordenamientoPorMezcla` se llama recursivamente para las dos mitades del arreglo `arr`. Después de que las dos mitades se ordenan de forma recursiva, la función `unir` se utiliza para combinar las mitades ordenadas en un único arreglo ordenado.
 
-### Búsqueda binaria: es un algoritmo eficiente para encontrar un elemento en una lista ordenada
+### Búsqueda binaria: es un algoritmo eficiente para encontrar un elemento en una lista ordenada - O(log n)
+
+![BS](/01.-Sources/Images/BS.png)
+
+_Representación del algoritmo de búsqueda binaria_
 
 a) Dividir: La lista se divide en dos mitades 
 

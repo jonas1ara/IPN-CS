@@ -34,7 +34,7 @@ La complejidad asintótica de la estrategia "Dos punteros" depende del problema 
 
 ## Ejemplos
 
-### Find Pair: Buscar un par de elementos en una lista ordenada que suman un número específico
+### Encontrar Par: Buscar un par de elementos en una lista ordenada que suman un número específico - O(n)
 
 ```c
 // int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -63,8 +63,7 @@ void encontrarPar(int arr[], int n, int target)
 En este ejemplo, la función `encontrarPar` recibe el arreglo `arr`, su tamaño `n` y la suma objetivo `target`. La función busca un par de elementos en el arreglo que sumen `target`. Si se encuentra un par, se muestra en la consola. Si no se encuentra ningún par, se muestra un mensaje indicando que no se encontró ningún par.
 
 
-### Find Longest Subsequence: Encontrar la subsecuencia más larga de números consecutivos que suman una cantidad específica de una lista desordenada
-
+### Encontrar la subsecuencia más larga: Encontrar la subsecuencia más larga de números consecutivos que suman una cantidad específica de una lista desordenada - O(n)
 
 ```c
 // int arr[] = {2, 1, 5, 1, 3, 2};

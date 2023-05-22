@@ -37,7 +37,7 @@ int busquedaInterpolacion(int arr[], int n, int target)
    return -1;
 }
 
-void printArray(int arr[], int n)
+void imprimirArreglo(int arr[], int n)
 {
    for (int i = 0; i < n; i++)
    {
@@ -52,8 +52,10 @@ int main()
    int n = sizeof(arr) / sizeof(arr[0]);
    int target = 10;
 
+   printf("Búsqueda por interpolación (interpolation search) - O(log(log n))\n\n");
+
    printf("Arreglo: ");
-   printArray(arr, n);
+   imprimirArreglo(arr, n);
    printf("Elemento a buscar: %d\n", target);
 
    int resultado = busquedaInterpolacion(arr, n, target);

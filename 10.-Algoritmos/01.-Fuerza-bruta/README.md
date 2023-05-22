@@ -28,14 +28,14 @@ La idea principal detrás de la fuerza bruta es generar todas las combinaciones 
 
 ## Ejemplos
 
-### Two Sum: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo
+### Dos Sumas: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo - O(n²)
 
 ```c
 // int nums[] = {2, 7, 11, 15};
 // int target = 9;
 // int resultado[2];
 
-void twoSum(int nums[], int n, int target, int* resultado) 
+void dosSumas(int nums[], int n, int target, int* resultado) 
 {
     for (int i = 0; i < n; i++) 
     {
@@ -52,13 +52,17 @@ void twoSum(int nums[], int n, int target, int* resultado)
 }
 ```
 
-En este ejemplo, la función `twoSum` recibe el array de números `nums`, su tamaño `n`, el objetivo `target` y un array `resultado` donde almacenaremos los índices de los dos números que suman el objetivo.
+En este ejemplo, la función `dosSumas` recibe el array de números `nums`, su tamaño `n`, el objetivo `target` y un array `resultado` donde almacenaremos los índices de los dos números que suman el objetivo.
 
 La función utiliza dos bucles `for` anidados para probar todas las combinaciones posibles de números en el array. Comienza con el primer número en el índice `i` y busca el segundo número en el índice`j` (siempre mayor que `i`). Si la suma de estos dos números es igual al objetivo, almacenamos los índices `i` y `j` en el array `resultado` y salimos de la función.
 
 Es importante destacar que esta solución tiene una complejidad temporal de **O(n²)** debido a los bucles anidados, donde n es el tamaño del array `nums`. Si el tamaño del array es muy grande, esta solución puede volverse ineficiente.
 
-### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite
+### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite - O(2ⁿ)
+
+![KP](/01.-Sources/Images/Knapsack.png)
+
+_Representación del problema de la mochila_
 
 ```c
 //  int capacidad = 50;

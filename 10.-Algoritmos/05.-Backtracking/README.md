@@ -21,8 +21,6 @@ El algoritmo de backtracking generalmente sigue estos pasos:
  5) Almacenar las soluciones encontradas:
  Durante la exploración, se deben almacenar las soluciones válidas encontradas. Esto puede hacerse mediante una estructura de datos, como una lista o un arreglo, donde se van agregando las soluciones encontradas
 
-
-
 ### Ventajas
 
 - Exploración exhaustiva: Los algoritmos de backtracking prueban sistemáticamente todas las posibles soluciones, lo que garantiza que se encuentre una solución óptima si existe. **Esto los hace útiles en problemas de búsqueda exhaustiva y optimización**
@@ -42,7 +40,11 @@ El algoritmo de backtracking generalmente sigue estos pasos:
 
 ## Ejemplos
 
-### N Queens: dado un tablero de ajedrez de tamaño n, encontrar una configuración de N reinas en el tablero NxN donde ninguna reina pueda atacar a otra 
+### N Queens: dado un tablero de ajedrez de tamaño n, encontrar una configuración de N reinas en el tablero NxN donde ninguna reina pueda atacar a otra - O(n!)
+
+![NQ](/01.-Sources/Images/NQueens.png)
+
+_Representación del problema de las N Reinas_
 
 ```c
 #define N 8
@@ -121,8 +123,11 @@ Dentro de la función `resolverNQueens`, se realizan las siguientes acciones:
 7) Si no se encuentra ninguna solución válida después de explorar todas las filas, se retorna 0 para indicar que no se ha encontrado ninguna solución válida
 
 
-### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite 
+### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite - O(2ⁿ)
 
+![KP](/01.-Sources/Images/Knapsack.png)
+
+_Representación del problema de la mochila_
 
 ```c
 //  int capacidad = 50;

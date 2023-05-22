@@ -12,7 +12,7 @@ int busquedaLineal(int arr[], int n, int target)
    return -1; // Devuelve -1 si el elemento no se encuentra
 }
 
-void printArray(int arr[], int n)
+void imprimirArreglo(int arr[], int n)
 {
    for (int i = 0; i < n; i++)
    {
@@ -27,8 +27,10 @@ int main()
    int n = sizeof(arr) / sizeof(arr[0]);
    int target = 10;
 
+   printf("Búsqueda lineal (linear search) - O(n)\n\n");
+
    printf("Arreglo: ");
-   printArray(arr, n);
+   imprimirArreglo(arr, n);
 
    printf("Elemento a buscar: %d\n", target);
 

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void twoSum(int nums[], int n, int target, int* resultado) 
+void dosSumas(int nums[], int n, int target, int* resultado) 
 {
     for (int i = 0; i < n; i++) 
     {
@@ -22,7 +22,7 @@ int main()
     int target = 9;
     int resultado[2];
 
-    twoSum(nums, sizeof(nums) / sizeof(nums[0]), target, resultado);
+    dosSumas(nums, sizeof(nums) / sizeof(nums[0]), target, resultado);
 
     printf("Indices de los numeros que suman el objetivo: [%d, %d]\n", resultado[0], resultado[1]);
 

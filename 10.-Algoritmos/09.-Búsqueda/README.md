@@ -10,10 +10,10 @@ Los algoritmos de búsqueda son métodos o procedimientos utilizados para encont
 
 Existen diferentes tipos de algoritmos de búsqueda, cada uno con sus propias características y eficiencia en términos de tiempo de ejecución y uso de recursos. Algunos de los algoritmos de búsqueda más comunes son:
 
-- Búsqueda lineal
-- Búsqueda binaria
-- Búsqueda por interpolación
-- Búsqueda por tabla hash
+- Búsqueda lineal (lineal search) - O(n)
+- Búsqueda binaria (binary search) - O(log n)
+- Búsqueda por interpolación (interpolation search) - O(log(log n))
+- Búsqueda hash (hash search) - O(1)
 
 
 ### Ventajas
@@ -34,7 +34,11 @@ Existen diferentes tipos de algoritmos de búsqueda, cada uno con sus propias ca
 
 ## Ejemplos
 
-### Búsqueda lineal: Es un algoritmo simple que recorre secuencialmente una lista o arreglo de elementos hasta encontrar el elemento buscado. Es adecuado para listas no ordenadas, pero puede ser ineficiente para listas grandes
+### Búsqueda lineal: Es un algoritmo simple que recorre secuencialmente una lista o arreglo de elementos hasta encontrar el elemento buscado. Es adecuado para listas no ordenadas, pero puede ser ineficiente para listas grandes - O(n)
+
+![LS](/01.-Sources/Images/LS.png)
+
+_Representación de la búsqueda lineal_
 
 ```c
 // int arr[] = {2, 5, 7, 10, 14, 18, 20};
@@ -57,8 +61,11 @@ int busquedaLineal(int arr[], int n, int target)
 La función `busquedaLineal` recibe un arreglo `arr` de tamaño `n` y un elemento `target` a buscar. La función recorre el arreglo secuencialmente y compara cada elemento con el elemento buscado. Si el elemento buscado se encuentra en el arreglo, la función devuelve el índice donde se encontró. Si el elemento no se encuentra, la función devuelve -1.
 
 
-### Búsqueda binaria: es un algoritmo eficiente para encontrar un elemento en una lista ordenada. La idea básica detrás de la búsqueda binaria es dividir repetidamente a la mitad la lista de búsqueda y descartar la mitad en la que sabemos que el elemento buscado no puede estar
+### Búsqueda binaria: es un algoritmo eficiente para encontrar un elemento en una lista ordenada. La idea básica detrás de la búsqueda binaria es dividir repetidamente a la mitad la lista de búsqueda y descartar la mitad en la que sabemos que el elemento buscado no puede estar - O(log n)
 
+![BB](/01.-Sources/Images/BB.png)
+
+_Representación de la búsqueda binaria_
 
 ```c
 // int arr[] = {2, 5, 7, 10, 14, 18, 20};
@@ -90,7 +97,11 @@ int busquedaBinaria(int arr[], int izq, int der, int target)
 
 La función `busquedaBinaria` se llama recursivamente para buscar el elemento `target` en una porción del arreglo `arr` definida por los índices  `izq` y `der`. La función divide la porción en dos mitades y decide en qué mitad continuar la búsqueda hasta encontrar el elemento o determinar que no existe.
 
-### Búsqueda por interpolación: es un algoritmo de búsqueda que utiliza interpolación para encontrar un elemento en una lista ordenada. La interpolación es una técnica de estimación que se utiliza para aproximar valores intermedios entre dos puntos de datos. La búsqueda por interpolación es similar a la búsqueda binaria, pero utiliza una fórmula diferente para calcular el punto medio de la lista de búsqueda
+### Búsqueda por interpolación: es un algoritmo de búsqueda que utiliza interpolación para encontrar un elemento en una lista ordenada. La interpolación es una técnica de estimación que se utiliza para aproximar valores intermedios entre dos puntos de datos. La búsqueda por interpolación es similar a la búsqueda binaria, pero utiliza una fórmula diferente para calcular el punto medio de la lista de búsqueda - O(log(log n))
+
+![BpI](/01.-Sources/Images/BpI.png)
+
+_Representación de la búsqueda por interpolación_
  
 ```c
 // int arr[] = {2, 5, 7, 10, 14, 18, 20};
@@ -138,7 +149,11 @@ int busquedaInterpolacion(int arr[], int n, int target)
 La función `busquedaInterpolacion` recibe un arreglo `arr` de tamaño `n` y un elemento `target` a buscar. La función inicializa los índices `inicio` y `fin` al principio y al final del arreglo, respectivamente. **Luego, la función calcula la posición estimada del elemento `target` utilizando la fórmula de interpolación.** Si el elemento buscado se encuentra en la posición estimada, la función devuelve el índice donde se encontró. Si el elemento no se encuentra, la función devuelve -1.
 
 
-### Búsqueda Hash: La búsqueda hash utiliza una función hash para mapear claves a direcciones en una tabla hash
+### Búsqueda Hash: La búsqueda hash utiliza una función hash para mapear claves a direcciones en una tabla hash - O(1)
+
+![BH](/01.-Sources/Images/BH.png)
+
+_Representación de la búsqueda hash_
 
 La búsqueda hash utiliza una función hash para mapear claves a direcciones en una tabla hash. La tabla hash es una estructura de datos que almacena claves y valores en una matriz asociativa. La función hash toma una clave como entrada y devuelve una dirección en la tabla hash donde se puede encontrar el valor asociado a esa clave. La búsqueda hash es una forma eficiente de buscar elementos en una tabla hash, pero requiere que la tabla hash se construya de antemano. Hay dos tipos de búsqueda hash: 
 
@@ -245,7 +260,11 @@ La elección entre el sondeo lineal y el sondeo cuadrático depende de varios fa
 
 En resumen, tanto el sondeo lineal como el sondeo cuadrático tienen ventajas y desventajas. La elección entre ellos dependerá del contexto y las características del problema en particular. En algunos casos, el sondeo lineal puede ser más rápido y eficiente, mientras que en otros casos, el sondeo cuadrático puede ofrecer una mejor distribución de las colisiones. En general, es recomendable realizar pruebas y análisis empíricos para determinar cuál método es más adecuado para una situación específica.
 
-#### Sondeo lineal: En el sondeo lineal, cuando se produce una colisión, se busca la siguiente posición disponible en la tabla hash de forma lineal, es decir, de uno en uno
+#### Sondeo lineal: En el sondeo lineal, cuando se produce una colisión, se busca la siguiente posición disponible en la tabla hash de forma lineal, es decir, de uno en uno - O(n)
+
+![SL](/01.-Sources/Images/SL.png)
+
+_Representación del sondeo lineal_
 
 ```c
 posicion = (posicion + 1) % tamaño_tabla
@@ -304,7 +323,11 @@ int buscar(struct Nodo *tabla[], int clave)
 La función `insertar` utiliza el sondeo lineal para insertar un elemento en la tabla hash. Si la posición determinada por la función hash está ocupada, la función busca la siguiente posición disponible en la tabla hash de forma lineal hasta encontrar una posición vacía. La función `buscar` utiliza el sondeo lineal para buscar un elemento en la tabla hash. Si la posición determinada por la función hash está ocupada, la función busca la siguiente posición disponible en la tabla hash de forma lineal hasta encontrar el elemento buscado o determinar que no existe.
 
 
-#### Sondeo cuadrático: En el sondeo cuadrático, cuando se produce una colisión, se busca la siguiente posición disponible en la tabla hash de forma cuadrática, es decir, aumentando el índice en 1, 4, 9, 16, etc. 
+#### Sondeo cuadrático: En el sondeo cuadrático, cuando se produce una colisión, se busca la siguiente posición disponible en la tabla hash de forma cuadrática, es decir, aumentando el índice en 1, 4, 9, 16, etc. - O(n)
+
+![SC](/01.-Sources/Images/SC.png)
+
+_Representación del sondeo cuadrático_
 
 ```c
 posicion = (posicion + i²) % tamaño_tabla

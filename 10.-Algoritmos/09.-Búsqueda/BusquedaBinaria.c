@@ -23,7 +23,7 @@ int busquedaBinaria(int arr[], int izq, int der, int target)
    return -1; // Elemento no encontrado
 }
 
-void printArray(int arr[], int n)
+void imprimirArreglo(int arr[], int n)
 {
    for (int i = 0; i < n; i++)
    {
@@ -38,8 +38,10 @@ int main()
    int n = sizeof(arr) / sizeof(arr[0]);
    int target = 10;
 
+   printf("Búsqueda binaria (binary search) - O(log n)\n\n");
+
    printf("Arreglo: ");
-   printArray(arr, n);
+   imprimirArreglo(arr, n);
 
    printf("Elemento a buscar: %d\n", target);
 

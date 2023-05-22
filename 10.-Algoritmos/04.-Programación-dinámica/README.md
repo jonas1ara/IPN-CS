@@ -11,7 +11,6 @@ Es un enfoque algorítmico para resolver problemas complejos dividiéndolos en s
 Hay dos enfoques comunes en programación dinámica: la **tabulación** y la **memoización**.
 
 
-
 ### Ventajas
 
 - Eficiencia: Los algoritmos de programación dinámica suelen ser eficientes en términos de tiempo de ejecución. Al evitar recalcular subproblemas ya resueltos y aprovechar los resultados almacenados
@@ -31,11 +30,16 @@ Hay dos enfoques comunes en programación dinámica: la **tabulación** y la **m
 
 ## Ejemplos
 
-### Fibonacci por tabulación
+### Fibonacci por tabulación - O(n)
 
 El problema de Fibonacci es un clásico ejemplo para ilustrar programación dinámica. La serie de Fibonacci se define de la siguiente manera: el valor de un número en la serie es igual a la suma de los dos números anteriores. Por ejemplo, los primeros números de Fibonacci son: 0, 1, 1, 2, 3, 5, 8, ...
 
+
 **Para resolver el problema de Fibonacci por tabulación, se utiliza una tabla para almacenar los valores de Fibonacci ya calculados**
+
+![Tz](/01.-Sources/Images/Tabulacion.png)
+
+_Representación del tabulación_
 
 ```c
 // n = 10
@@ -57,11 +61,15 @@ int fibT(int n)
 
 En este código, se utiliza un arreglo `fibT` para almacenar los valores de Fibonacci ya calculados. Se comienza con los casos base  `fib[0] = 0` y `fib[1] = 1`. Luego, se itera desde `i = 2` hasta `n`, calculando el valor de `fib[i]` sumando los dos números anteriores. Al final, se devuelve `fib[n]`, que es el término de Fibonacci deseado.
 
-### Fibonacci por memoización
+### Fibonacci por memoización - O(n)
 
 El problema de Fibonacci es un clásico ejemplo para ilustrar programación dinámica. La serie de Fibonacci se define de la siguiente manera: el valor de un número en la serie es igual a la suma de los dos números anteriores. Por ejemplo, los primeros números de Fibonacci son: 0, 1, 1, 2, 3, 5, 8, ...
 
 **En la memoización, se utiliza una tabla para almacenar los resultados de los subproblemas ya resueltos, evitando así recalcularlos en llamadas posteriores**
+
+![MMz](/01.-Sources/Images/Memoizacion.png)
+
+_Representación del memoización_
 
 ```c
 // n = 10
@@ -91,8 +99,11 @@ int fibM(int n)
 
 En este código, se utiliza un arreglo `fib` para almacenar los valores de Fibonacci ya calculados. Al inicio, se inicializa todo el arreglo con el valor -1 para indicar que los valores aún no han sido calculados. La función `fibM` verifica si `fib[n]` ya ha sido calculado, en cuyo caso lo devuelve. Si no ha sido calculado, se verifica si `n` es un caso base (0 o 1) y se almacena directamente. Si no es un caso base, se calcula recursivamente sumando los dos números anteriores y se almacena en `fib[n]`.
 
-### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite
+### Problema de la mochila: dado un conjunto de elementos, cada uno con un peso y un valor, determinar la combinación de elementos que maximice el valor total mientras se mantiene el peso total dentro de un límite - O(nW) 
 
+![KP](/01.-Sources/Images/Knapsack.png)
+
+_Representación del problema de la mochila_
 
 ```c
 //  int capacidad = 50;
