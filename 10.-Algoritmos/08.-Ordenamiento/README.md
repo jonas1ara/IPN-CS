@@ -37,57 +37,51 @@ Existen diferentes tipos de algoritmos de ordenamiento, cada uno con sus propias
 
 ## Ejemplos
 
-### Ordenamiento burbuja: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
+### Ordenamiento burbuja: Este algoritmo compara repetidamente pares adyacentes de elementos y los intercambia si están en el orden incorrecto
 
 ```c
-// int nums[] = {2, 7, 11, 15};
-// int target = 9;
-// int result[2];
+// int arr[] = {35, 33, 42, 10, 14, 19, 27, 44};
+// int n = sizeof(arr) / sizeof(arr[0]);
 
 ```
 
-### Ordenamiento por insercción: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
+### Ordenamiento por insercción: Este algoritmo construye una lista ordenada tomando un elemento a la vez y colocándolo en la posición correcta dentro de la lista ordenada. Comienza con una lista de un solo elemento y se va expandiendo, insertando cada nuevo elemento en su posición adecuada
 
 ```c
-// int nums[] = {2, 7, 11, 15};
-// int target = 9;
-// int result[2];
+// int arr[] = {35, 33, 42, 10, 14, 19, 27, 44};
+// int n = sizeof(arr) / sizeof(arr[0]);
 
 ```
 
-### Ordenamiento rápido: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
+### Ordenamiento rápido: Este algoritmo utiliza el enfoque "divide y vencerás" para ordenar la lista. Selecciona un elemento como pivote y divide la lista en dos sublistas: una con elementos menores que el pivote y otra con elementos mayores que el pivote. Luego, se aplica recursivamente el mismo proceso a las sublistas hasta que la lista esté completamente ordenada
 
 ```c
-// int nums[] = {2, 7, 11, 15};
-// int target = 9;
-// int result[2];
+// int arr[] = {35, 33, 42, 10, 14, 19, 27, 44};
+// int n = sizeof(arr) / sizeof(arr[0]);
 
 ```
 
-### Ordenamiento por montículos: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
+### Ordenamiento por montículos: Este algoritmo utiliza una estructura de datos llamada "montículo" o "heap" para ordenar la lista. Primero, se construye un montículo a partir de los elementos de la lista. Luego, se extrae repetidamente el elemento máximo (en un montículo máximo) y se coloca al final de la lista ordenada. El proceso de extracción del elemento máximo y reconstrucción del montículo se repite hasta que el montículo esté vacío
 
 ```c
-// int nums[] = {2, 7, 11, 15};
-// int target = 9;
-// int result[2];
+// int arr[] = {35, 33, 42, 10, 14, 19, 27, 44};
+// int n = sizeof(arr) / sizeof(arr[0]);
 
 ```
 
-### Ordenamiento por conteo: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
+### Ordenamiento por conteo: Este algoritmo de Counting Sort se utiliza cuando se conocen los valores posibles de los elementos a ordenar y estos son enteros no negativos. Funciona mediante la creación de un arreglo auxiliar de tamaño igual al valor máximo más uno de los elementos a ordenar. Luego, cuenta la frecuencia de cada elemento y utiliza esta información para construir la lista ordenada
 
 ```c
-// int nums[] = {2, 7, 11, 15};
-// int target = 9;
-// int result[2];
+// int arr[] = {35, 33, 42, 10, 14, 19, 27, 44};
+// int n = sizeof(arr) / sizeof(arr[0]);
 
 ```
 
-### Ordenamiento por casillas: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
+### Ordenamiento por casillas: Este algoritmo divide la lista en un número finito de "casillas" o "buckets". Luego, distribuye los elementos en cada casilla en función de un criterio específico. Cada casilla se ordena individualmente, ya sea utilizando otro algoritmo de ordenamiento o recursivamente. Finalmente, los elementos se concatenan para obtener la lista ordenada
 
 ```c
-// int nums[] = {2, 7, 11, 15};
-// int target = 9;
-// int result[2];
+// int arr[] = {35, 33, 42, 10, 14, 19, 27, 44};
+// int n = sizeof(arr) / sizeof(arr[0]);
 
 ```
 
