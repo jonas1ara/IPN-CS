@@ -145,9 +145,6 @@ La función `busquedaInterpolacion` recibe un arreglo `arr` de tamaño `n` y un 
 
 La búsqueda hash utiliza una función hash para mapear claves a direcciones en una tabla hash. La tabla hash es una estructura de datos que almacena claves y valores en una matriz asociativa. La función hash toma una clave como entrada y devuelve una dirección en la tabla hash donde se puede encontrar el valor asociado a esa clave. La búsqueda hash es una forma eficiente de buscar elementos en una tabla hash, pero requiere que la tabla hash se construya de antemano. Hay dos tipos de búsqueda hash: 
 
-1) 
-
-
 ```c
 #include <stdio.h>
 
@@ -261,6 +258,10 @@ Donde `posicion` es la posición actual y `tamaño_tabla` es el tamaño total de
 
 
 ```c
+// insertar(tabla, 10, 100);
+// insertar(tabla, 20, 200);
+// insertar(tabla, 30, 300);
+
 void insertar(struct Nodo *tabla[], int clave, int valor)
 {
     int indice = funcionHash(clave);
@@ -315,6 +316,10 @@ posicion = (posicion + i²) % tamaño_tabla
 Donde `posicion` es la posición actual, `i` es un contador que aumenta en cada iteración y `tamaño_tabla` es el tamaño total de la tabla de hash:
 
 ```c
+// insertar(tabla, 10, 100);
+// insertar(tabla, 20, 200);
+// insertar(tabla, 30, 300);
+
 void insertar(struct Nodo *tabla[], int clave, int valor)
 {
     int indice = funcionHash(clave);
