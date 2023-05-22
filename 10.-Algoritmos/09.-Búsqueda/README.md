@@ -11,11 +11,8 @@ Los algoritmos de búsqueda son métodos o procedimientos utilizados para encont
 Existen diferentes tipos de algoritmos de búsqueda, cada uno con sus propias características y eficiencia en términos de tiempo de ejecución y uso de recursos. Algunos de los algoritmos de búsqueda más comunes son:
 
 - Búsqueda lineal
-
 - Búsqueda binaria
-
 - Búsqueda por interpolación
-
 - Búsqueda por tabla hash
 
 
