@@ -37,16 +37,6 @@ Existen diferentes tipos de algoritmos de ordenamiento, cada uno con sus propias
 
 ## Ejemplos
 
-
-### Two Sum: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
-
-```c
-// int nums[] = {2, 7, 11, 15};
-// int target = 9;
-// int result[2];
-
-```
-
 ### Ordenamiento burbuja: dado un array de números enteros y un objetivo, encontrar los índices de los dos números en el array cuya suma sea igual al objetivo.
 
 ```c
