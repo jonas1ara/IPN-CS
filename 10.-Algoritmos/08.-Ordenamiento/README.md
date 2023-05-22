@@ -15,8 +15,8 @@ Existen diferentes tipos de algoritmos de ordenamiento, cada uno con sus propias
 - Ordenamiento rápido (Quick sort) - O(n log n)
 - Ordenamiento por montículos (Heap sort) - O(n log n)
 - Ordenamiento Shell (Shell sort) - O(n²)
-- Ordenamiento por conteo (Counting sort) - O(n)
-- Ordenamiento por casillas (Bucket sort) - O(n)
+- Ordenamiento por conteo (Counting sort) - O(n+ k)
+- Ordenamiento por casillas (Bucket sort) - O(n + k)
 
 ### Ventajas
 
@@ -205,7 +205,7 @@ void ordenamientoPorMonticulo(int arr[], int n)
 }
 ```
 
-### Ordenamiento por conteo: Este algoritmo de Counting Sort se utiliza cuando se conocen los valores posibles de los elementos a ordenar y estos son enteros no negativos. Funciona mediante la creación de un arreglo auxiliar de tamaño igual al valor máximo más uno de los elementos a ordenar. Luego, cuenta la frecuencia de cada elemento y utiliza esta información para construir la lista ordenada - O(n)
+### Ordenamiento por conteo: Este algoritmo de Counting Sort se utiliza cuando se conocen los valores posibles de los elementos a ordenar y estos son enteros no negativos. Funciona mediante la creación de un arreglo auxiliar de tamaño igual al valor máximo más uno de los elementos a ordenar. Luego, cuenta la frecuencia de cada elemento y utiliza esta información para construir la lista ordenada - O(n + k)
 
 ![OC](/01.-Sources/Images/OC.png)
 
@@ -257,7 +257,7 @@ void ordenamientoPorConteo(int arr[], int n)
 }
 ```
 
-### Ordenamiento por casillas: Este algoritmo divide la lista en un número finito de "casillas" o "buckets". Luego, distribuye los elementos en cada casilla en función de un criterio específico. Cada casilla se ordena individualmente, ya sea utilizando otro algoritmo de ordenamiento o recursivamente. Finalmente, los elementos se concatenan para obtener la lista ordenada - O(n)
+### Ordenamiento por casillas: Este algoritmo divide la lista en un número finito de "casillas" o "buckets". Luego, distribuye los elementos en cada casilla en función de un criterio específico. Cada casilla se ordena individualmente, ya sea utilizando otro algoritmo de ordenamiento o recursivamente. Finalmente, los elementos se concatenan para obtener la lista ordenada - O(n + k)
 
 ![OC](/01.-Sources/Images/OC.png)
 
