@@ -28,6 +28,36 @@ _Este repositorio esta enumerado por la jerarquía de temas que debes seguir par
 
 _Si quieres ver el indice del repositorio da click [acá](https://github.com/Jonas-Lara/IPN-CS/tree/master/00.-Sources/README)_
 
+The repository is divided into 4 folders:
+
+```
+|- Repository
+    |- .vscode
+        |- tasks.json
+    |- Problems
+        |- Arrays
+        |- Matrix
+            |- Rotate-Image
+                |- Rotate-Image.c
+                |- Rotate-Image.cpp
+                |- Rotate-Image.cs
+                |- Rotate-Image.csproj
+                |- README.md
+            |- Set-Matrix-Zeroes
+            |- Spiral-Matrix
+            |- Word-Search
+        |- Strings
+        |- Intervals
+        |- Binary Search
+        |- Dynamic Programming
+        |- Linked Lists
+        |- Trees
+        |- Heaps
+        |- Graphs
+    |- Sources
+        |- Sheldon.gif
+```
+
 
 ## Construido con 🛠️
 
