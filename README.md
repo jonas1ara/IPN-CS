@@ -22,7 +22,7 @@ _ADVERTENCIA: Este repositorio no esta pensado en usarse con Windows por temas e
 
 ## Como usar este repositorio 🔧
 
-_Este repositorio esta enumerado por la jerarquía de temas que debes seguir para aprender C y un poco de su ecosistema (Linux, Gnome, Makefiles, y Networking), debido al poco alcance del repositorio y al surgiemiento de tecnologías como chatGPT me limito a solo comentar el codigo en **ESPAÑOL** y así lograr que sea autodocumentado, asegurate de saber que estás haciendo, si solo copias y pegas **el daño te lo haces a ti** y por último se escribieron post en mi blog sobre algunos temas más complejos de comprender, espero que te ayude para aprender y/o repasar algún tema:_
+_Este repositorio esta enumerado por la jerarquía de temas que debes seguir para aprender C y un poco de su ecosistema (Makefiles, Redes y Unix), debido al poco alcance del repositorio y al surgiemiento de tecnologías como chatGPT me limito a solo comentar el codigo en **ESPAÑOL** y así lograr que sea autodocumentado, asegurate de saber que estás haciendo, si solo copias y pegas **el daño te lo haces a ti** y por último se escribieron post en mi blog sobre algunos temas más complejos de comprender, espero que te ayude para aprender y/o repasar algún tema:_
 
 _Blog post:_
 - _[Recursion](https://jonas1ara.github.io/posts/algorithms-and-complexity/) - [Español](https://github.com/jonas1ara/IPN-CS/tree/master/09.-Recursi%C3%B3n)_
