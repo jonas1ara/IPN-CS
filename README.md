@@ -71,7 +71,7 @@ _Blog post:_
         |- Crear y unir hilos
         |- Pasar argumentos
         |- Problemas de seguridad y velocidad
-    |- 05.- Hacks
+    |- 05.- How to
         |- Medir tiempo de ejecución
         |- Generar números pseudoaleatorios
         |- Función para intercambiar valores
