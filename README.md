@@ -33,21 +33,14 @@ _Blog post:_
 ```
 |- Repositorio
     |- 01.- Básicos del lenguaje C
-        |- Hola mundo en C
-        |- Directivas del preprocesador
-        |- Suma de variables
-        |- Operaciones aritméticas
-        |- Variables y tipos de datos
-        |- Conversión de datos en C
-        |- Condicionales
-        |- Uso de casos en C
-        |- Break y Continue
-        |- Vectores
-        |- Matrices
+        |- Fundamentos
         |- Bucles
         |- Funciones
+        |- Estructuras
         |- Punteros
         |- Cadenas
+        |- Archivos
+        |- Modularidad
     |- 02.- Matemáticas básicas
         |- Fundamentos de la librería math.h
         |- Binario a decimal
