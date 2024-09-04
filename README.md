@@ -30,10 +30,6 @@ _Blog post:_
 
 ## Indice 📖
 
-_Si quieres ver el indice del repositorio da click [acá](https://github.com/Jonas-Lara/IPN-CS/tree/master/00.-Sources/README)_
-
-The repository is divided into 4 folders:
-
 ```
 |- Repositorio
     |- 01.- Básicos del lenguaje C
