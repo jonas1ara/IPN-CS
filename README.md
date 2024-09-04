@@ -35,31 +35,160 @@ _Si quieres ver el indice del repositorio da click [acá](https://github.com/Jon
 The repository is divided into 4 folders:
 
 ```
-|- Repository
-    |- .vscode
-        |- tasks.json
-    |- Problems
-        |- Arrays
-        |- Matrix
-            |- Rotate-Image
-                |- Rotate-Image.c
-                |- Rotate-Image.cpp
-                |- Rotate-Image.cs
-                |- Rotate-Image.csproj
-                |- README.md
-            |- Set-Matrix-Zeroes
-            |- Spiral-Matrix
-            |- Word-Search
-        |- Strings
-        |- Intervals
-        |- Binary Search
-        |- Dynamic Programming
-        |- Linked Lists
-        |- Trees
-        |- Heaps
-        |- Graphs
-    |- Sources
+|- Repositorio
+    |- 01.- Básicos del lenguaje C
+        |- Hola mundo en C
+        |- Directivas del preprocesador
+        |- Suma de variables
+        |- Operaciones aritméticas
+        |- Variables y tipos de datos
+        |- Conversión de datos en C
+        |- Condicionales
+        |- Uso de casos en C
+        |- Break y Continue
+        |- Vectores
+        |- Matrices
+        |- Bucles
+        |- Funciones
+        |- Punteros
+        |- Cadenas
+    |- 02.- Matemáticas básicas
+        |- Fundamentos de la librería math.h
+        |- Binario a decimal
+        |- Números primos
+        |- Números narcicistas
+        |- Número palindrome
+        |- Triángulo de Pascal
+        |- Grados a radianes
+        |- Distancia entre dos puntos
+        |- Conjetura de Collatz
+        |- Raíz cuadrada por el método de Newton
+        |- Valor absoluto
+        |- Suma de matrices
+        |- Resta de matrices
+        |- Multiplicación de matrices
+        |- Matriz transpuesta
+    |- 03.- Memoría dinámica
+        |- Memoría estática
+        |- Memoría pseudo estática
+        |- Memoría dinámica
+        |- Malloc y Realloc
+        |- Calloc y Free
+        |- Cadenas dinámicas
+        |- Matrices dinámicas
+        |- Funciones dinámicas
+        |- Estructuras dinámicas
+    |- 04.- Hilos en C 
+        |- Crear y unir hilos
+        |- Pasar argumentos
+        |- Problemas de seguridad y velocidad
+    |- 05.- Hacks
+        |- Medir tiempo de ejecución
+        |- Generar números pseudoaleatorios
+        |- Función para intercambiar valores
+        |- Invertir números
+        |- Invertir vector
+        |- Invertir cadena
+        |- Obtener el largo de una cadena
+        |- Imprimir pirámide
+        |- Imprimir círculo
+    |- 06.- Algoritmos Dr. Esaú 1
         |- Sheldon.gif
+    |- 07.- Make
+        |- Hola mundo usando Make
+        |- Calculadora usando Make
+    |- 08.- Aplicaciones de consola
+        |- Tic tac toe
+        |- Torres de Hanoi
+        |- Dona
+        |- Snake
+        |- Matrix
+        |- Ping pong
+    |- 09.- Recursión 
+        |- Factorial
+        |- Fibonacci
+        |- Torres de Hanoi
+    |- 10.- Algoritmos 
+        |- Fuerza bruta
+        |- Voraces
+        |- Divide y conquista
+        |- Programación dinámica
+        |- Backtracking
+        |- Ordenamiento
+        |- Búsqueda
+    |- 11.- Estructuras de datos 
+        |- Pilas
+            |- Pila estática
+            |- Pila dinámica
+            |- URL
+        |- Colas
+            |- Cola estática
+            |- Cola dinámica
+            |- DHL
+        |- Listas 
+            |- Lista enlazada simple
+            |- Lista enlazada doble
+            |- Lista enlazada circular
+            |- Agenda
+            |- Invertir lista enlazada
+            |- Intercambiar elementos
+            |- Ordenar lista enlazada (Merge sort)
+            |- Ordenar lista enlazada (Quick sort)
+        |- Tablas de Hash
+            |- Tabla de hash
+            |- Búsqueda hash
+        |- Árboles
+        |- Heaps
+        |- Grafos
+    |- 12.- Algoritmos Dr. Esaú 2
+        |- Tiempo de ordenamiento
+    |- 13.- Redes
+        |- Cliente web
+        |- Servidor web
+        |- Dirección del cliente
+        |- Issues
+        |- Servidor multihilos
+        |- Hilos escuchando socketts
+        |- Libcurl
+        |- Barra de progreso
+        |- Red final
+    |- 14.- Métodos numéricos
+        |- Método de la bisección
+    |- 15.- Llamadas al sistena 
+        |- Librería unistd.h
+        |- Shell
+    |- 16.- Algoritmos de que deberías conocer 
+        |- Básicos
+            |- Algoritmo de Fibonacci
+            |- Algoritmo de Euclides
+            |- Algoritmo de intercambio de valores
+        |- Arreglos
+            |- Algoritmo de Kadane
+            |- Algoritmo de Floyd
+            |- Algoritmo de detección
+            |- Algoritmo KMP
+            |- Algoritmo Boyer-More
+            |- Algoritmo para invertir arreglo
+        |- Ordenamiento
+            |- Ordenamiento burbuja
+            |- Ordenamiento por selección
+            |- Ordenamiento por insercción
+            |- Ordenamiento por mezcla
+            |- Ordenamiento rápido
+            |- Ordenamiento shell
+        |- Búsqueda
+            |- Búsqueda binaria
+            |- Búsqueda por interpolación
+            |- Búsqueda hash
+            |- Búsqueda en profundidad
+            |- Búsqueda en anchura
+        |- Grafos
+            |- Algoritmo de Kruskal
+            |- Algoritmo de Dijkstra
+            |- Algoritmo de Floyd Warshall
+            |- Ordenamiento topológico
+            |- Encontrar componentes conexos
+
 ```
 
 
