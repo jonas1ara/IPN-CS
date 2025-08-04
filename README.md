@@ -22,11 +22,7 @@ _ADVERTENCIA: Este repositorio no esta pensado en usarse con Windows por temas e
 
 ## Como usar este repositorio 🔧
 
-_Este repositorio esta enumerado por la jerarquía de temas que debes seguir para aprender C y un poco de su ecosistema (Makefiles, Redes y Unix), debido al poco alcance del repositorio y al surgiemiento de tecnologías como chatGPT me limito a solo comentar el codigo en **ESPAÑOL** y así lograr que sea autodocumentado, asegurate de saber que estás haciendo, si solo copias y pegas **el daño te lo haces a ti** y por último se escribieron post en mi blog sobre algunos temas más complejos de comprender, espero que te ayude para aprender y/o repasar algún tema:_
-
-_Blog post:_
-- _[Recursion](https://jonas1ara.github.io/posts/algorithms-and-complexity/) - [Español](https://github.com/jonas1ara/IPN-CS/tree/master/09.-Recursi%C3%B3n)_
-- _[Algorithms and complexity](https://jonas1ara.github.io/posts/recursion/) - [Español](https://github.com/jonas1ara/IPN-CS/tree/master/10.-Algoritmos)_
+_Este repositorio esta enumerado por la jerarquía de temas que debes seguir para aprender C y un poco de su ecosistema (Makefiles, Redes y Unix), debido al poco alcance del repositorio y al surgiemiento de tecnologías como chatGPT me limito a solo comentar el codigo en **ESPAÑOL** y así lograr que sea autodocumentado, asegurate de saber que estás haciendo, si solo copias y pegas **el daño te lo haces a ti** y por último se escribieron README's en la carpeta de cada tema, espero que te ayude para aprender y/o repasar algún tema:_
 
 ## Construido con 🛠️
 
@@ -43,5 +39,6 @@ _Cormen, T. H., Leiserson, C. E., Rivest, R. L. & Stein, C. (2009). [Introductio
 ## Expresiones de gratitud
 
 _Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/), para quien sea que este interesado_
+
 
 
